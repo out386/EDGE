@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -25,7 +26,7 @@ import java.util.Calendar;
 public class EventDetails extends AppCompatActivity {
 
     TextView tvDet, tvName, tvCont1, tvCont2, tvUpcoming;
-    Button bCall1, bCall2, bWA1, bWA2, bReminder;
+    ImageButton bCall1, bCall2, bWA1, bWA2, bReminder;
     LinearLayout llUpcoming;
     String name, det, linkadd, details, cont1, cont2, up;
     int date, month, hr, min;
@@ -71,12 +72,12 @@ public class EventDetails extends AppCompatActivity {
         tvCont1 = (TextView) findViewById(R.id.tvDetailsCont1);
         tvCont2 = (TextView) findViewById(R.id.tvDetailsCont2);
         tvUpcoming = (TextView) findViewById(R.id.tvDetailsUpcoming);
-        bCall1 = (Button) findViewById(R.id.bDetailsCall1);
-        bCall2 = (Button) findViewById(R.id.bDetailsCall2);
-        bWA1 = (Button) findViewById(R.id.bDetailsWA1);
-        bWA2 = (Button) findViewById(R.id.bDetailsWA2);
+        bCall1 = (ImageButton) findViewById(R.id.bDetailsCall1);
+        bCall2 = (ImageButton) findViewById(R.id.bDetailsCall2);
+        bWA1 = (ImageButton) findViewById(R.id.bDetailsWA1);
+        bWA2 = (ImageButton) findViewById(R.id.bDetailsWA2);
         llUpcoming = (LinearLayout) findViewById(R.id.llDetailsUpcoming);
-        bReminder = (Button) findViewById(R.id.bDetailsUpcoming);
+        bReminder = (ImageButton) findViewById(R.id.bDetailsUpcoming);
     }
 
 

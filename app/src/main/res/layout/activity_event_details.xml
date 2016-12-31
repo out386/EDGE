@@ -1,139 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_event_details"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context="com.harsh.starringharsh.EDGE.EventDetails">
-
-    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#121615"
+    >
+    <LinearLayout
+        android:id="@+id/linearlayout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tvDetailsName"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ECE9E8"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textView"
+            android:id="@+id/view" />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_height="180dp"
+            android:src="@drawable/edgewithtext"
+            />
+        <TextView
+            android:id="@+id/tvDetailsDet"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textroundborder"
+            android:padding="15dp"
+            />
+        <LinearLayout
+         
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
             android:orientation="vertical"
+            android:background="@drawable/textroundborder"
+            android:padding="15dp"
             >
-
-
-
-
-
             <TextView
+                android:id="@+id/contactsdetails"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="Contacts"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+            <View
+                android:id="@+id/viewdetails1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ECE9E8"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/contactsdetails"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvDetailsName"
-                android:textColor="@color/colorAccent"
-                android:textSize="30dp"
-                android:text="Hello World!" />
-
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp">
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/bDetailsCall1"
+                    android:background="@drawable/phone"
+                    android:layout_marginTop="14dp"
+                    />
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/bDetailsWA1"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginTop="14dp"
+                    />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvDetailsDet"
-                android:textSize="15dp"
-                android:text="Default Message"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvDetailsCont1"
+                android:layout_marginLeft="6dp"
+                android:textSize="20dp"
                 />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/llDetailsCont"
-                android:background="@color/colorAccent"
-                android:orientation="vertical"
-                >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tvDetailsCont1"
-                    android:textSize="15dp"
-                    android:text="Person1"
-                    />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/bDetailsCall1"
-                    android:text="CALL"
-                    />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/bDetailsWA1"
-                    android:text="WHATSAPP"
-                    />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tvDetailsCont2"
-                    android:textSize="15dp"
-                    android:text="Person2"
-                    android:visibility="gone"
-                    />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/bDetailsCall2"
-                    android:text="CALL"
-                    android:visibility="gone"
-                    />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/bDetailsWA2"
-                    android:text="WHATSAPP"
-                    android:visibility="gone"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/llDetailsUpcoming"
-                android:background="@color/colorPrimary"
-                android:visibility="gone"
-                android:orientation="vertical"
-                >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tvDetailsUpcoming"
-                    android:textColor="#ffffff"
-                    android:textSize="15dp"
-                    android:text="Upcoming"
-                    />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/bDetailsUpcoming"
-                    android:textColor="#ffffff"
-                    android:text="Reminder"
-                    />
-
-            </LinearLayout>
-
-
-
 
 
         </LinearLayout>
+            <View
+                android:id="@+id/viewdetails2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ECE9E8"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:id="@+id/detailsll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/bDetailsCall2"
+                    android:background="@drawable/phone"
+                    android:layout_marginTop="14dp"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/bDetailsWA2"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="14dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="5dp"
 
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/tvDetailsCont2"
+                    android:textSize="20dp"
+                    />
+
+
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:id="@+id/llDetailsUpcoming"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/textroundborder"
+                android:padding="15dp"
+                >
+                <TextView
+                    android:id="@+id/UpcomingEvents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upcoming Round"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+                <View
+                    android:id="@+id/viewUpcoming"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ECE9E8"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/contactsdetails"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/tvDetailsUpcoming"
+                        android:text="10:50"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="20dp"
+                        />
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/bDetailsUpcoming"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/calender"
+                        android:layout_marginTop="14dp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </LinearLayout>
 
     </ScrollView>
 
-</LinearLayout>

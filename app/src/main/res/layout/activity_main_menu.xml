@@ -1,79 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main_menu"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.harsh.starringharsh.EDGE.MainMenu"
-    android:orientation="vertical"
-    >
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linear1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Events"
-                android:id="@+id/bEvents"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/linkEdge"
+                android:background="@drawable/edgewithtext"
+                android:layout_gravity="left|center_vertical"
                 />
 
-            <Button
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mega Events"
-                android:id="@+id/bMegaEvents"
-                />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Fun Events"
-                android:id="@+id/bFunEvents"
-                />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sponsors"
-                android:id="@+id/bSponsors"
-                />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Team"
-                android:id="@+id/bTeam"
-                />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="About Us"
-                android:id="@+id/bAboutUs"
-                />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Schedule"
-                android:id="@+id/bSchedule"
-                />
+                android:layout_gravity="right"
+                >
 
 
-        </LinearLayout>
+            <ImageButton
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/facebook"
+                android:id="@+id/linkFacebook" />
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/youtube"
+                android:id="@+id/linkYoutube"/>
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/technoindia"
+                android:id="@+id/linkTechnoIndia"/>
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/geekonix"
+                android:id="@+id/linkGeekonix"/>
+        </LinearLayout>            </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#768282"
+            android:layout_marginTop="15dp"
+            android:id="@+id/view" />
 
-    </ScrollView>
 
-</LinearLayout>
+
+
+        <ImageButton
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bEvents"
+            android:background="@drawable/events"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+
+            />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bMegaEvents"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/megaevents"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+        <ImageButton
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bFunEvents"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/fun_events"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+        <ImageButton
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bSchedule"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/campus_ambasaddors"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+        <ImageButton
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bTeam"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/teamedge"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+        <ImageButton
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/bSponsors"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/sponsors"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+        <ImageButton
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/bAboutUs"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/aboutus"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

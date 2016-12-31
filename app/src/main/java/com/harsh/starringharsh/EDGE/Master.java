@@ -15,9 +15,11 @@ class Master {
     String events2[] = {"NSF Most Wanted", "CS Pro League", "CS College League"};
     String sponsors[] = {"ABC", "PQR", "XYZ"};
     String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEUHktS1d1Y240a1U";
+    String mega[] = {"ABC", "PQR", "XYZ"};
+    String megalink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEOUlTaEJSa3BDQzQ";
     String team[] = {"Ashish Choudhary", "Shubham Sharma"};
-    Map<String, String> eventDetails, link, teamPost, sponType, sponImg;
-    Map<String, Integer> teamImg;
+    Map<String, String> eventDetails, link, teamPost, sponType, sponImg, megaType, megaImg;
+    Map<String, Integer> teamImg, categoriesImg;
     Map<String, Long> teamNum;
 
 
@@ -65,6 +67,21 @@ class Master {
         sponImg.put("PQR", "https://pbs.twimg.com/profile_images/1709525450/PQR-icoon__jpg__400x400.jpg");
         sponImg.put("XYZ", "http://www.graphis.com/media/uploads/cache/b3/e4/b3e4bf424d71554226fc9c8bbe1d9c91.jpg");
 
+        megaType = new HashMap<String, String>();
+        megaType.put("ABC", "Bla Bla Bla Bla Bla Bla Bla Bla");
+        megaType.put("PQR", "jkhba vkuo ifnoq ihvo inoinnnlaaa aafn d tndv xcerh");
+        megaType.put("XYZ", "jhvjhbj kyfhlb uygl jkblk nunl knjkfvtkcvgh uyyfukybhg igglhj uyfuyig uyfuyf iufguiofg uyf uy fi");
+
+        megaImg = new HashMap<String, String>();
+        megaImg.put("ABC", "http://cdn.media.abc.com/m/images/global/butterscotch/abccom_logo.png");
+        megaImg.put("PQR", "https://pbs.twimg.com/profile_images/1709525450/PQR-icoon__jpg__400x400.jpg");
+        megaImg.put("XYZ", "http://www.graphis.com/media/uploads/cache/b3/e4/b3e4bf424d71554226fc9c8bbe1d9c91.jpg");
+
+
+        categoriesImg = new HashMap<String, Integer>();
+        categoriesImg.put("Compute Aid", R.drawable.computeaid);
+        categoriesImg.put("Robotics", R.drawable.robotics);
+        categoriesImg.put("Cyber Crusade", R.drawable.gaming);
     }
 
 }

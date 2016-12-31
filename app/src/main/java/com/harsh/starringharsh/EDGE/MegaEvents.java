@@ -26,7 +26,7 @@ import java.io.StringReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class Sponsors extends AppCompatActivity {
+public class MegaEvents extends AppCompatActivity {
 
     ImageView iv;
     TextView spName, spType;
@@ -39,15 +39,15 @@ public class Sponsors extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sponsors);
+        setContentView(R.layout.activity_mega_events);
 
         progress = new ProgressDialog(this);
         master = new Master();
-        linkadd = master.sponsorslink;
-        //0B9ir1SJLpxDEUHktS1d1Y240a1U
+        linkadd = master.megalink;
+        //0B9ir1SJLpxDEOUlTaEJSa3BDQzQ
 
         o = getWindow().getDecorView().getRootView();
-        grid = (GridView) findViewById(R.id.gridSpon);
+        grid = (GridView) findViewById(R.id.gridMega);
         new BackFetch().execute();
         cont = this;
 
@@ -73,15 +73,18 @@ public class Sponsors extends AppCompatActivity {
             try {
                 URL url = new URL(linkadd);
                 BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
-                String str;
+                String str, cpy="";
                 String[] Snames = new String[100];
                 String[] Stype = new String[100];
                 String[] Simglink = new String[100];
                 int c=0;
                 while ((str = br.readLine()) != null) {
                     Snames[c] = str;
+                    cpy+=str+"\n";
                     Stype[c] = br.readLine();
-                    Simglink[c++] = br.readLine();
+                    cpy+=Stype[c]+"\n";
+                    Simglink[c] = br.readLine();
+                    cpy+=Simglink[c++]+"\n";
                 }
                 names = new String[c];
                 type = new String[c];
@@ -95,7 +98,7 @@ public class Sponsors extends AppCompatActivity {
                 br.close();
             } catch (Exception e) {
                 System.out.println("Failed");
-                names = master.sponsors;
+                names = master.mega;
                 type = new String[100];
                 imglink = new String[100];
                 for(int i=0; i<names.length; i++)
@@ -151,10 +154,10 @@ public class Sponsors extends AppCompatActivity {
             if(row == null)
             {
                 LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                row = inflater.inflate(R.layout.sponsorgrid, viewGroup, false);
-                iv = (ImageView) row.findViewById(R.id.ivSpon);
-                spName = (TextView) row.findViewById(R.id.tvSponName);
-                spType = (TextView) row.findViewById(R.id.tvSponType);
+                row = inflater.inflate(R.layout.eventgrid, viewGroup, false);
+                iv = (ImageView) row.findViewById(R.id.ivSpEvent);
+                spName = (TextView) row.findViewById(R.id.tvSpEvent);
+                spType = (TextView) row.findViewById(R.id.tvSpEventDesc);
             }
             spName.setText(n[i]);
             spType.setText(type[i]);

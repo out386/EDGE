@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainMenu extends AppCompatActivity {
@@ -20,13 +21,13 @@ public class MainMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        Button events = (Button) findViewById(R.id.bEvents);
-        Button megaevents = (Button) findViewById(R.id.bMegaEvents);
-        Button funevents = (Button) findViewById(R.id.bFunEvents);
-        Button sponsors = (Button) findViewById(R.id.bSponsors);
-        Button team = (Button) findViewById(R.id.bTeam);
-        Button aboutus = (Button) findViewById(R.id.bAboutUs);
-        Button schedule = (Button) findViewById(R.id.bSchedule);
+        ImageButton events = (ImageButton) findViewById(R.id.bEvents);
+        ImageButton megaevents = (ImageButton)findViewById(R.id.bMegaEvents);
+        ImageButton funevents = (ImageButton) findViewById(R.id.bFunEvents);
+        ImageButton sponsors = (ImageButton) findViewById(R.id.bSponsors);
+        ImageButton team = (ImageButton)findViewById(R.id.bTeam);
+        ImageButton aboutus = (ImageButton)findViewById(R.id.bAboutUs);
+        ImageButton schedule = (ImageButton) findViewById(R.id.bSchedule);
 
         events.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +57,14 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, PdfViewer.class);
+                startActivity(intent);
+            }
+        });
+
+        megaevents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, MegaEvents.class);
                 startActivity(intent);
             }
         });
