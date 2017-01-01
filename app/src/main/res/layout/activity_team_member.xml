@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_team_member"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:paddingBottom="2dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="2dp"
     android:orientation="vertical"
+    android:background="@drawable/textroundborder"
     tools:context="com.harsh.starringharsh.EDGE.TeamMember">
 
-    <Button
-        android:text="X"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:background="@drawable/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:onClick="closeDialogue"
         android:layout_gravity="end"
         android:id="@+id/bCloseItdm"
@@ -32,13 +33,19 @@
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="40sp"
         android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
         android:id="@+id/tvMemberName" />
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25sp"
         android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
         android:id="@+id/tvMemberPost" />
 
     <LinearLayout
@@ -47,17 +54,17 @@
         android:layout_gravity="center_horizontal"
         >
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CALL"
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/phone"
             android:id="@+id/bTeamCall"
             />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Whatsapp"
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/whatsapp"
             android:id="@+id/bTeamWA"
             />
 

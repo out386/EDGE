@@ -9,12 +9,14 @@ import android.telephony.PhoneNumberUtils;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class TeamMember extends Activity {
 
-    Button call, whatsapp;
+    ImageButton call, whatsapp;
     TextView nameM, postM;
     ImageView iv;
     Master master;
@@ -27,8 +29,8 @@ public class TeamMember extends Activity {
         setContentView(R.layout.activity_team_member);
         master = new Master();
         iv = (ImageView) findViewById((R.id.ivTeamMember));
-        call = (Button) findViewById(R.id.bTeamCall);
-        whatsapp = (Button) findViewById(R.id.bTeamWA);
+        call = (ImageButton) findViewById(R.id.bTeamCall);
+        whatsapp = (ImageButton) findViewById(R.id.bTeamWA);
         nameM = (TextView) findViewById(R.id.tvMemberName);
         postM = (TextView) findViewById(R.id.tvMemberPost);
         Intent intent = getIntent();

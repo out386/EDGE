@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             RelativeLayout flTest = new RelativeLayout(this);
             cat[i] = new ImageButton(this);
             cat[i].setBackgroundResource(master.categoriesImg.get(categories[i]));
-            cat[i].getBackground().setAlpha(80);
+            //cat[i].getBackground().setAlpha(80);
            // cat[i].setBackgroundColor(Color.parseColor("#627275"));
             params.setMargins(0, 5, 0, 0);
 

@@ -165,9 +165,8 @@ public class EventDetails extends AppCompatActivity {
 
             if(phn1!=phn2)
             {
-                tvCont2.setVisibility(View.VISIBLE);
-                bCall2.setVisibility(View.VISIBLE);
-                bWA2.setVisibility(View.VISIBLE);
+                LinearLayout ll2 = (LinearLayout) findViewById(R.id.detailsll);
+                ll2.setVisibility(View.VISIBLE);
 
                 tvCont2.setText(cont2);
                 bCall2.setOnClickListener(new View.OnClickListener() {
@@ -197,13 +196,12 @@ public class EventDetails extends AppCompatActivity {
             int monthS = cal.get(Calendar.MONTH);
             int hrS = cal.get(Calendar.HOUR);
             int minS = cal.get(Calendar.MINUTE);
-            tvUpcoming.setText(dateS + "/" + monthS + "/2017 " + hrS + ":" + minS);
-            tvUpcoming.setText("Yes");
             calR = Calendar.getInstance();
-            calR.set(2016, month, date, hr, min);
+            calR.set(2017, month, date, hr, min);
             if(cal.getTimeInMillis() < calR.getTimeInMillis())
             {
                 llUpcoming.setVisibility(View.VISIBLE);
+                tvUpcoming.setText((""+date + "/" + (month+1) + "/2017 " + hr + ":" + min));
                 bReminder.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

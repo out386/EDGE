@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_below="@+id/view"
             android:layout_height="180dp"
-            android:src="@drawable/edgewithtext"
+            android:src="@drawable/edgelandscape"
             />
         <TextView
             android:id="@+id/tvDetailsDet"
@@ -121,7 +121,6 @@
                 android:layout_height="1dp"
                 android:background="#ECE9E8"
                 android:layout_marginTop="5dp"
-                android:visibility="gone"
                 />
             <LinearLayout
                 android:id="@+id/detailsll"
@@ -144,14 +143,13 @@
                     android:background="@drawable/whatsapp"
                     android:layout_marginLeft="6dp"
                     android:layout_marginTop="14dp"/>
-                <Button
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF"
                     android:layout_marginTop="5dp"
-
-                    android:layout_marginLeft="6dp"
                     android:id="@+id/tvDetailsCont2"
+                    android:layout_marginLeft="6dp"
                     android:textSize="20dp"
                     />
 
@@ -172,6 +170,7 @@
                 android:orientation="vertical"
                 android:background="@drawable/textroundborder"
                 android:padding="15dp"
+                android:visibility="gone"
                 >
                 <TextView
                     android:id="@+id/UpcomingEvents"

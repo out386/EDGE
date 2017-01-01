@@ -26,7 +26,7 @@ import java.io.StringReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class MegaEvents extends AppCompatActivity {
+public class FunEvents extends AppCompatActivity {
 
     ImageView iv;
     TextView spName, spType;
@@ -43,8 +43,7 @@ public class MegaEvents extends AppCompatActivity {
 
         progress = new ProgressDialog(this);
         master = new Master();
-        linkadd = master.megalink;
-        //0B9ir1SJLpxDEOUlTaEJSa3BDQzQ
+        linkadd = master.funlink;
 
         o = getWindow().getDecorView().getRootView();
         grid = (GridView) findViewById(R.id.gridMega);
@@ -73,18 +72,15 @@ public class MegaEvents extends AppCompatActivity {
             try {
                 URL url = new URL(linkadd);
                 BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
-                String str, cpy="";
-                String[] Snames = new String[50];
-                String[] Stype = new String[50];
-                String[] Simglink = new String[50];
+                String str;
+                String[] Snames = new String[100];
+                String[] Stype = new String[100];
+                String[] Simglink = new String[100];
                 int c=0;
                 while ((str = br.readLine()) != null) {
                     Snames[c] = str;
-                    cpy+=str+"\n";
                     Stype[c] = br.readLine();
-                    cpy+=Stype[c]+"\n";
-                    Simglink[c] = br.readLine();
-                    cpy+=Simglink[c++]+"\n";
+                    Simglink[c++] = br.readLine();
                 }
                 names = new String[c];
                 type = new String[c];

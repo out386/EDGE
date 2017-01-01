@@ -121,21 +121,19 @@ public class Sponsors extends AppCompatActivity {
     class SponAdapter extends BaseAdapter
     {
         Context context;
-        String n[];
 
         SponAdapter(Context context)
         {
             this.context = context;
-            n = names;
         }
         @Override
         public int getCount() {
-            return n.length;
+            return names.length;
         }
 
         @Override
         public Object getItem(int i) {
-            return n[i];
+            return names[i];
         }
 
         @Override
@@ -156,7 +154,7 @@ public class Sponsors extends AppCompatActivity {
                 spName = (TextView) row.findViewById(R.id.tvSponName);
                 spType = (TextView) row.findViewById(R.id.tvSponType);
             }
-            spName.setText(n[i]);
+            spName.setText(names[i]);
             spType.setText(type[i]);
             new ImageLoadTask(imglink[i], iv).execute();
             return row;

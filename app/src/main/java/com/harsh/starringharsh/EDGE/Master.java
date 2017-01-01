@@ -9,15 +9,24 @@ import java.util.Map;
 
 class Master {
 
-    String categories[] = {"Compute Aid", "Robotics", "Cyber Crusade"};
-    String events0[] = {"Bug Hunt", "Flaw Less", "Code Mart"};
-    String events1[] = {"Blitzkreig", "Robowar"};
-    String events2[] = {"NSF Most Wanted", "CS Pro League", "CS College League"};
+    String categories[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Money Matters", "Innovati", "Infocus", "Food For Fun", "Create It", "Newron"};
+    String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE MART", "CODE OUT", "GAME OF ZONES"};
+    //String events1[] = {"EXPEDITION", "EXCELSIOR", "KICK-O-BOT", "EXPORT", "PERPLEXITY", "EXULT", "EXPLORE", "BLITZKRIEG", "EXSTREET"};
+    //String events2[] = {"CS COLLEGE LEAGUE", "CS PRO LEAGUE", "DOTA 2", "MORTAL KOMBAT", "NEED FOR SPEED MOST WANTED", "FIFA COLLEGE LEAGUE", "FIFA 16 PRO LEAGUE"};
+    String events1[] = {};
+    String events2[] = {};
+    String events3[] = {};
+    String events4[] = {};
+    String events5[] = {};
+    String events6[] = {};
+    String events7[] = {};
+    String events8[] = {};
     String sponsors[] = {"ABC", "PQR", "XYZ"};
     String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEUHktS1d1Y240a1U";
     String mega[] = {"ABC", "PQR", "XYZ"};
     String megalink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEOUlTaEJSa3BDQzQ";
-    String team[] = {"Ashish Choudhary", "Shubham Sharma"};
+    String funlink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEOUlTaEJSa3BDQzQ";
+    String team[] = {"Ashish Choudhary", "Shubham Sharma", "Priyankar Banerjee", "Mayank", "Wriddhi Mukherjee", "Aqsa Zea", "Kumar Satyam Singh", "Anurag Ranjan", "Akhilesh Upadhyay"};
     Map<String, String> eventDetails, link, teamPost, sponType, sponImg, megaType, megaImg;
     Map<String, Integer> teamImg, categoriesImg;
     Map<String, Long> teamNum;
@@ -26,36 +35,107 @@ class Master {
     Master()
     {
         eventDetails = new HashMap<String, String>();
-        eventDetails.put("Bug Hunt", "Hello These Are Default Details For Bug Hunt");
-        eventDetails.put("Flaw Less", "Hello These Are Default Details For Flaw Less. khagflkgalbvl iausbciulwfhlui agfiluagcjkbc augvuiasbcuak cgsiuagfugl ifugakgf afgailuviul hgyyiu  iuiul ui g ilug ilugliugiul giulg iulg ugiulglu glig ilu giu gyfiuguig iuugiugiugiug iugiugiug iugiugoighoiu iugilugiulg iugiugliugliug iugiugiugiug iugifuydfy gutdytdytdyt tdytdyduitduiy 6r8riufuiyf 86ru66rfu7ruyr 6ururfuyfyuf 7i6r8t6r r76er76r76ir r68r87r78rt 868r87ro87t8 8r787ruyfi68e6 6r68r87r87 68r87r87r 76e76e76r 87t887ti7r cgsiuagfugl ifugakgf afgailuviul hgyyiu  iuiul ui g ilug ilugliugiul giulg iulg ugiulglu glig ilu giu gyfiuguig iuugiugiugiug iugiugiug iugiugoighoiu iugilugiulg iugiugliugliug iugiugiugiug iugifuydfy gutdytdytdyt tdytdyduitduiy 6r8riufuiyf 86ru66rfu7ruyr 6ururfuyfyuf 7i6r8t6r r76er76r76ir r68r87r78rt 868r87ro87t8 8r787ruyfi68e6 6r68r87r87 68r87r87r 76e76e76r 87t887ti7r cgsiuagfugl ifugakgf afgailuviul hgyyiu  iuiul ui g ilug ilugliugiul giulg iulg ugiulglu glig ilu giu gyfiuguig iuugiugiugiug iugiugiug iugiugoighoiu iugilugiulg iugiugliugliug iugiugiugiug iugifuydfy gutdytdytdyt tdytdyduitduiy 6r8riufuiyf 86ru66rfu7ruyr 6ururfuyfyuf 7i6r8t6r r76er76r76ir r68r87r78rt 868r87ro87t8 8r787ruyfi68e6 6r68r87r87 68r87r87r 76e76e76r 87t887ti7r 76r7i6ri7er e67e7r67i gsdhssh sdh sh hsdea e ystry rttstth heshtseh. cgsiuagfugl ifugakgf afgailuviul hgyyiu  iuiul ui g ilug ilugliugiul giulg iulg ugiulglu glig ilu giu gyfiuguig iuugiugiugiug iugiugiug iugiugoighoiu iugilugiulg iugiugliugliug iugiugiugiug iugifuydfy gutdytdytdyt tdytdyduitduiy 6r8riufuiyf 86ru66rfu7ruyr 6ururfuyfyuf 7i6r8t6r r76er76r76ir r68r87r78rt 868r87ro87t8 8r787ruyfi68e6 6r68r87r87 68r87r87r 76e76e76r 87t887ti7r 76r7i6ri7er e67e7r67i gsdhssh sdh sh hsdea e ystry rttstth heshtseh. cgsiuagfugl ifugakgf afgailuviul hgyyiu  iuiul ui g ilug ilugliugiul giulg iulg ugiulglu glig ilu giu gyfiuguig iuugiugiugiug iugiugiug iugiugoighoiu iugilugiulg iugiugliugliug iugiugiugiug iugifuydfy gutdytdytdyt tdytdyduitduiy 6r8riufuiyf 86ru66rfu7ruyr 6ururfuyfyuf 7i6r8t6r r76er76r76ir r68r87r78rt 868r87ro87t8 8r787ruyfi68e6 6r68r87r87 68r87r87r 76e76e76r 87t887ti7r 76r7i6ri7er e67e7r67i gsdhssh sdh sh hsdea e ystry rttstth heshtseh. cgsiuagfugl ifugakgf afgailuviul hgyyiu  iuiul ui g ilug ilugliugiul giulg iulg ugiulglu glig ilu giu gyfiuguig iuugiugiugiug iugiugiug iugiugoighoiu iugilugiulg iugiugliugliug iugiugiugiug iugifuydfy gutdytdytdyt tdytdyduitduiy 6r8riufuiyf 86ru66rfu7ruyr 6ururfuyfyuf 7i6r8t6r r76er76r76ir r68r87r78rt 868r87ro87t8 8r787ruyfi68e6 6r68r87r87 68r87r87r 76e76e76r 87t887ti7r 76r7i6ri7er e67e7r67i gsdhssh sdh sh hsdea e ystry rttstth heshtseh. 76r7i6ri7er e67e7r67i gsdhssh sdh sh hsdea e ystry rttstth heshtseh. 76r7i6ri7er e67e7r67i gsdhssh sdh sh hsdea e ystry rttstth heshtseh. cgsiuagfugl ifugakgf afgailuviul hgyyiu  iuiul ui g ilug ilugliugiul giulg iulg ugiulglu glig ilu giu gyfiuguig iuugiugiugiug iugiugiug iugiugoighoiu iugilugiulg iugiugliugliug iugiugiugiug iugifuydfy gutdytdytdyt tdytdyduitduiy 6r8riufuiyf 86ru66rfu7ruyr 6ururfuyfyuf 7i6r8t6r r76er76r76ir r68r87r78rt 868r87ro87t8 8r787ruyfi68e6 6r68r87r87 68r87r87r 76e76e76r 87t887ti7r 76r7i6ri7er e67e7r67i gsdhssh sdh sh hsdea e ystry rttstth heshtseh.\nHarsh Sheth\n9681253545\nAaditya\n8789675837\nN\n3\n3\n3\n3");
-        eventDetails.put("Code Mart", "Hello These Are Default Details For Code Mart");
-        eventDetails.put("Blitzkreig", "Hello These Are Default Details Blitskreig");
-        eventDetails.put("Robowar", "Hello These Are Default Details For Robowar");
-        eventDetails.put("NFS Most Wanted", "Hello These Are Default Details For NFS Most Wanted");
-        eventDetails.put("CS Pro League", "Hello These Are Default Details For CS Pro League");
-        eventDetails.put("CS College League", "Hello These Are Default Details For CS College League");
+        eventDetails.put("FLAWLESS", "A flawless code is all that you need to build the best and destroy the rest.\n" +
+                "Subhodeep\n" +
+                "9051734382\n" +
+                "Palash Das\n" +
+                "7686820875\n" +
+                "n\n" +
+                "9\n" +
+                "3\n" +
+                "13\n" +
+                "00");
+        eventDetails.put("BUG HUNT", "Only vigilant minds at work! Debug the buggy algorithm before anybody else does.\n" +
+                "Subhodeep\n" +
+                "9051734382\n" +
+                "Palash Das\n" +
+                "7686820875\n" +
+                "y\n" +
+                "9\n" +
+                "3\n" +
+                "13\n" +
+                "00");
+        eventDetails.put("CRYPTO QUEST", "Decrypt the encrypted problem and code out its solution.\n" +
+                "Subhodeep\n" +
+                "9051734382\n" +
+                "Palash Das\n" +
+                "7686820875\n" +
+                "y\n" +
+                "9\n" +
+                "3\n" +
+                "13\n" +
+                "00");
+        eventDetails.put("CODE MART", "An event that has a conglomeration of coding and trading skills.\n" +
+                "Subhodeep\n" +
+                "9051734382\n" +
+                "Palash Das\n" +
+                "7686820875\n" +
+                "y\n" +
+                "9\n" +
+                "3\n" +
+                "13\n" +
+                "00");
+        eventDetails.put("CODE OUT", "An online coding event on the platform of CodeChef.\n" +
+                "Subhodeep\n" +
+                "9051734382\n" +
+                "Palash Das\n" +
+                "7686820875\n" +
+                "n\n" +
+                "9\n" +
+                "3\n" +
+                "13\n" +
+                "00");
+        eventDetails.put("GAME OF ZONES", "For coders having strategic skills in them, this online map conquest event will be a cake- walk!\n" +
+                "Subhodeep\n" +
+                "9051734382\n" +
+                "Palash Das\n" +
+                "7686820875\n" +
+                "y\n" +
+                "9\n" +
+                "3\n" +
+                "13\n" +
+                "00");
 
         link = new HashMap<String, String>();
-        link.put("Bug Hunt", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEcGVHWkN4bkdWaVk");
-        link.put("Flaw Less", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEcGVHWkN4bkdWaVk");
-        link.put("Code Mart", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEcGVHWkN4bkdWaVk");
-        link.put("Blitzkreig", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEcGVHWkN4bkdWaVk");
-        link.put("Robowar", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEcGVHWkN4bkdWaVk");
-        link.put("NFS Most Wanted", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEcGVHWkN4bkdWaVk");
-        link.put("CS Pro League", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEcGVHWkN4bkdWaVk");
-        link.put("CS College League", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEcGVHWkN4bkdWaVk");
+        link.put("FLAWLESS", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDENzA1NVBZY3E5a1k");
+        link.put("BUG HUNT", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEYnpEZTUwWFJxTkU");
+        link.put("CRYPTO QUEST", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEeXZVODJNQ2xWZE0");
+        link.put("CODE MART", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDERWJMeE9tQVNyOUU");
+        link.put("CODE OUT", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEU0d0OUctREJEWnc");
+        link.put("GAME OF ZONES", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDETElNdWVLZm1Xd3M");
 
         teamImg = new HashMap<String, Integer>();
         teamImg.put("Ashish Choudhary", R.drawable.ashish);
         teamImg.put("Shubham Sharma", R.drawable.shubham);
+        teamImg.put("Priyankar Banerjee", R.drawable.priyankar);
+        teamImg.put("Mayank", R.drawable.mayank);
+        teamImg.put("Wriddhi Mukherjee", R.drawable.wridhhi);
+        teamImg.put("Aqsa Zea", R.drawable.aqsa);
+        teamImg.put("Kumar Satyam Singh", R.drawable.kumar);
+        teamImg.put("Anurag Ranjan", R.drawable.anurag);
+        teamImg.put("Akhilesh Upadhyay", R.drawable.akhilesh);
 
         teamPost = new HashMap<String, String>();
         teamPost.put("Ashish Choudhary", "Convener");
-        teamPost.put("Shubham Sharma", "Co Convener");
+        teamPost.put("Shubham Sharma", "Co-Convener");
+        teamPost.put("Priyankar Banerjee", "Co-Convener");
+        teamPost.put("Mayank", "Treasurer");
+        teamPost.put("Wriddhi Mukherjee", "Sponsorship Head");
+        teamPost.put("Aqsa Zea", "Co-Publicity Head");
+        teamPost.put("Kumar Satyam Singh", "Administrative Head");
+        teamPost.put("Anurag Ranjan", "Resource Head");
+        teamPost.put("Akhilesh Upadhyay", "On-Site Management Head");
 
         teamNum = new HashMap<String, Long>();
         teamNum.put("Ashish Choudhary", 9836891210L);
         teamNum.put("Shubham Sharma", 9836933862L);
+        teamNum.put("Priyankar Banerjee", 7044298043L);
+        teamNum.put("Mayank", 8443823443L);
+        teamNum.put("Wriddhi Mukherjee", 9002921922L);
+        teamNum.put("Aqsa Zea", 8981202855L);
+        teamNum.put("Kumar Satyam Singh", 8599913131L);
+        teamNum.put("Anurag Ranjan", 8013044530L);
+        teamNum.put("Akhilesh Upadhyay", 9674331776L);
 
         sponType = new HashMap<String, String>();
         sponType.put("ABC", "Associate Sponsor");
@@ -82,6 +162,12 @@ class Master {
         categoriesImg.put("Compute Aid", R.drawable.computeaid);
         categoriesImg.put("Robotics", R.drawable.robotics);
         categoriesImg.put("Cyber Crusade", R.drawable.gaming);
+        categoriesImg.put("Money Matters", R.drawable.moneymatters);
+        categoriesImg.put("Innovati", R.drawable.innovati);
+        categoriesImg.put("Infocus", R.drawable.infocus);
+        categoriesImg.put("Food For Fun", R.drawable.foodforfun);
+        categoriesImg.put("Create It", R.drawable.createit);
+        categoriesImg.put("Newron", R.drawable.newron);
     }
 
 }
