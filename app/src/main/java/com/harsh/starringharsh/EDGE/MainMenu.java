@@ -3,26 +3,39 @@ package com.harsh.starringharsh.EDGE;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.icu.text.SimpleDateFormat;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.ParseException;
 import android.net.Uri;
 import android.os.Handler;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Date;
 
 public class MainMenu extends AppCompatActivity {
 
     boolean doubleBackToExitPressedOnce = false;
+    long startTime;
+    //Thread timer;
+    //private Handler customHandler=new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
+        //startTime = SystemClock.uptimeMillis();
+        //TextView trial = (TextView) findViewById(R.id.tvTRIAL);
+        //trial.setText(""+(startTime/1000));
+        //customHandler.postDelayed(updateTimerThread, 0);
         ImageButton events = (ImageButton) findViewById(R.id.bEvents);
         ImageButton megaevents = (ImageButton)findViewById(R.id.bMegaEvents);
         ImageButton funevents = (ImageButton) findViewById(R.id.bFunEvents);
@@ -33,9 +46,9 @@ public class MainMenu extends AppCompatActivity {
         ImageButton campusambassadors = (ImageButton) findViewById(R.id.bCampusAmbassadors);
         ImageButton facebook = (ImageButton) findViewById(R.id.linkFacebook);
         ImageButton youtube = (ImageButton) findViewById(R.id.linkYoutube);
-        ImageButton geenonix = (ImageButton) findViewById(R.id.linkGeekonix);
         ImageButton techno = (ImageButton) findViewById(R.id.linkTechnoIndia);
         ImageButton edge = (ImageButton) findViewById(R.id.linkEdge);
+        ImageButton insta = (ImageButton) findViewById(R.id.linkInstagram);
 
 
         events.setOnClickListener(new View.OnClickListener() {
@@ -137,10 +150,18 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        geenonix.setOnClickListener(new View.OnClickListener() {
+        insta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.geekonix.org")));
+                try {
+                    Uri uri = Uri.parse("http://instagram.com/_u/geekonix");
+                    Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+                    likeIng.setPackage("com.instagram.android");
+                    startActivity(likeIng);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://instagram.com/geekonix")));
+                }
             }
         });
 
@@ -168,7 +189,40 @@ public class MainMenu extends AppCompatActivity {
             Toast.makeText(this, "Connect To Internet For Better Results.", Toast.LENGTH_SHORT).show();
         }
 
+
+
+
     }
+
+    /*private Runnable updateTimerThread = new Runnable() {
+        public void run() {
+            long timeInMilliseconds = (startTime - SystemClock.uptimeMillis());
+
+            //updatedTime = timeSwapBuff + timeInMilliseconds;
+            long secs = (int) (timeInMilliseconds / 1000);
+            long min = (int) secs/60;
+            secs = secs % 60;
+            long hrs = (int) min/60;
+            min = min % 60;
+            int days = (int) hrs/24;
+            hrs = hrs%24;
+
+
+            TextView tdays = (TextView) findViewById(R.id.tvDays);
+            TextView thrs = (TextView) findViewById(R.id.tvHours);
+            TextView tmins = (TextView) findViewById(R.id.tvMins);
+            TextView tsecs = (TextView) findViewById(R.id.tvSecs);
+
+            tdays.setText(String.format("%02d", days));
+            thrs.setText(String.format("%02d", (int)hrs));
+            tmins.setText(String.format("%02d", (int)min));
+            tsecs.setText(String.format("%02d", (int)secs));
+
+            customHandler.postDelayed(this, 0);
+        }
+    };*/
+
+
 
     @Override
     public void onBackPressed() {

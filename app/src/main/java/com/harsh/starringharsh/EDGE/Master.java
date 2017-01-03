@@ -9,7 +9,7 @@ import java.util.Map;
 
 class Master {
 
-    String categories[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Money Matters", "Innovati", "Infocus", "Food For Fun", "Create It", "Newron"};
+    String categories[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Money Matters", "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Just Like That"};
     String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE MART", "CODE OUT", "GAME OF ZONES"};
     //String events1[] = {"EXPEDITION", "EXCELSIOR", "KICK-O-BOT", "EXPORT", "PERPLEXITY", "EXULT", "EXPLORE", "BLITZKRIEG", "EXSTREET"};
     //String events2[] = {"CS COLLEGE LEAGUE", "CS PRO LEAGUE", "DOTA 2", "MORTAL KOMBAT", "NEED FOR SPEED MOST WANTED", "FIFA COLLEGE LEAGUE", "FIFA 16 PRO LEAGUE"};
@@ -25,10 +25,10 @@ class Master {
     String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEUHktS1d1Y240a1U";
     String mega[] = {"ABC", "PQR", "XYZ"};
     String megalink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEOUlTaEJSa3BDQzQ";
-    String funlink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEOUlTaEJSa3BDQzQ";
+    String funlink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWDFiWkRPR25OYzQ";
     String team[] = {"Ashish Choudhary", "Shubham Sharma", "Priyankar Banerjee", "Mayank", "Wriddhi Mukherjee", "Aqsa Zea", "Kumar Satyam Singh", "Anurag Ranjan", "Akhilesh Upadhyay"};
     Map<String, String> eventDetails, link, teamPost, sponType, sponImg, megaType, megaImg;
-    Map<String, Integer> teamImg, categoriesImg;
+    Map<String, Integer> teamImg, categoriesImg, eventsImg;
     Map<String, Long> teamNum;
 
 
@@ -96,6 +96,17 @@ class Master {
                 "13\n" +
                 "00");
 
+
+        eventsImg = new HashMap<String, Integer>();
+        eventsImg.put("BUG HUNT", R.drawable.bughunt);
+        eventsImg.put("FLAWLESS", R.drawable.flawless);
+        eventsImg.put("CRYPTO QUEST", R.drawable.cryptoquest);
+        eventsImg.put("CODE MART", R.drawable.codemart);
+        eventsImg.put("CODE OUT", R.drawable.codeout);
+        eventsImg.put("GAME OF ZONES", R.drawable.gameofzones);
+
+
+
         link = new HashMap<String, String>();
         link.put("FLAWLESS", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDENzA1NVBZY3E5a1k");
         link.put("BUG HUNT", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEYnpEZTUwWFJxTkU");
@@ -121,7 +132,7 @@ class Master {
         teamPost.put("Priyankar Banerjee", "Co-Convener");
         teamPost.put("Mayank", "Treasurer");
         teamPost.put("Wriddhi Mukherjee", "Sponsorship Head");
-        teamPost.put("Aqsa Zea", "Co-Publicity Head");
+        teamPost.put("Aqsa Zea", "Publicity Head");
         teamPost.put("Kumar Satyam Singh", "Administrative Head");
         teamPost.put("Anurag Ranjan", "Resource Head");
         teamPost.put("Akhilesh Upadhyay", "On-Site Management Head");
@@ -168,6 +179,7 @@ class Master {
         categoriesImg.put("Food For Fun", R.drawable.foodforfun);
         categoriesImg.put("Create It", R.drawable.createit);
         categoriesImg.put("Newron", R.drawable.newron);
+        categoriesImg.put("Just Like That", R.drawable.justlikethat);
     }
 
 }

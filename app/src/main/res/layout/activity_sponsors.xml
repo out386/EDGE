@@ -21,12 +21,12 @@
             android:layout_marginTop="7dp"
             android:text="SPONSORS"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#000000"
+            android:textColor="#ffffff"
             android:id="@+id/tvDetailsName"/>
         <View
             android:layout_width="fill_parent"
             android:layout_height="1dp"
-            android:background="#000000"
+            android:background="#ffffff"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
             android:layout_below="@+id/textView"

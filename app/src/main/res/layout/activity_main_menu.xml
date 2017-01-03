@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="#20201f">
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -15,20 +15,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <ImageButton
-                android:layout_width="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/technoindia"
+                android:id="@+id/linkTechnoIndia"/>
+
+            <ImageButton
+                android:layout_width="120dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="15dp"
                 android:id="@+id/linkEdge"
-                android:background="@drawable/edgewithtext"
-                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/edgetop"
                 />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
+                android:gravity="right"
+                android:paddingRight="10dp"
                 >
 
 
@@ -46,21 +56,22 @@
                 android:layout_height="30dp"
                 android:background="@drawable/youtube"
                 android:id="@+id/linkYoutube"/>
-            <ImageButton
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/technoindia"
-                android:id="@+id/linkTechnoIndia"/>
-            <ImageButton
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/geekonix"
-                android:id="@+id/linkGeekonix"/>
-        </LinearLayout>            </LinearLayout>
+
+                <ImageButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/instagram"
+                    android:id="@+id/linkInstagram"/>
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
         <View
             android:layout_width="fill_parent"
             android:layout_height="1dp"
@@ -149,6 +160,8 @@
             android:background="@drawable/aboutus"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp" />
+
+
 
 
 

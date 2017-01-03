@@ -13,28 +13,13 @@
 
         android:orientation="vertical"
         android:weightSum="1">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="7dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#FFFFFF"
-            android:id="@+id/tvDetailsName"/>
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="#ECE9E8"
-            android:layout_marginTop="15dp"
-            android:layout_below="@+id/textView"
-            android:id="@+id/view" />
 
         <ImageView
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
-            android:layout_below="@+id/view"
+            android:id="@+id/ivDetails"
             android:layout_height="180dp"
-            android:src="@drawable/edgelandscape"
+            android:src="@drawable/edgewithtext"
             />
         <TextView
             android:id="@+id/tvDetailsDet"

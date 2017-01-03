@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="360dp" android:layout_height="wrap_content"
-    android:background="#60cfcfcf"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/textroundborder"
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
     >
 
     <ImageView
-        android:layout_width="360dp"
-        android:layout_height="270dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:src="@drawable/edgelogo"
         android:layout_gravity="center_horizontal"
         android:id="@+id/ivSpEvent"
@@ -19,6 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:textColor="#cd2525"
+        android:gravity="center_horizontal"
         android:id="@+id/tvSpEvent"
         />
 
@@ -26,6 +28,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
         android:id="@+id/tvSpEventDesc"
         />
 

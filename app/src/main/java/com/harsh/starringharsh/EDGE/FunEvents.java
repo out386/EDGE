@@ -2,6 +2,8 @@ package com.harsh.starringharsh.EDGE;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -35,11 +37,15 @@ public class FunEvents extends AppCompatActivity {
     String names[] = {}, linkadd, imglink[] = {}, type[] = {};
     ProgressDialog progress;
     Context cont;
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
     View o;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mega_events);
+        sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
+        editor = sharedPreferences.edit();
 
         progress = new ProgressDialog(this);
         master = new Master();
@@ -72,16 +78,21 @@ public class FunEvents extends AppCompatActivity {
             try {
                 URL url = new URL(linkadd);
                 BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
-                String str;
+                String str, newstr="";
                 String[] Snames = new String[100];
                 String[] Stype = new String[100];
                 String[] Simglink = new String[100];
                 int c=0;
                 while ((str = br.readLine()) != null) {
+                    newstr+=str+"\n";
                     Snames[c] = str;
                     Stype[c] = br.readLine();
-                    Simglink[c++] = br.readLine();
+                    newstr+=Stype[c]+"\n";
+                    Simglink[c] = br.readLine();
+                    newstr+=Simglink[c++]+"\n";
                 }
+                editor.putString("Fun", newstr);
+                editor.commit();
                 names = new String[c];
                 type = new String[c];
                 imglink = new String[c];
@@ -94,6 +105,34 @@ public class FunEvents extends AppCompatActivity {
                 br.close();
             } catch (Exception e) {
                 System.out.println("Failed");
+                String newstr = sharedPreferences.getString("fun", "");
+                BufferedReader br = new BufferedReader(new StringReader(newstr));
+                String str;
+                String[] Snames = new String[100];
+                String[] Stype = new String[100];
+                String[] Simglink = new String[100];
+                int c=0;
+                try {
+                    while ((str = br.readLine()) != null) {
+                        Snames[c] = str;
+                        Stype[c] = br.readLine();
+                        Simglink[c++] = br.readLine();
+                    }
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+                editor.putString("Fun", newstr);
+                editor.commit();
+                names = new String[c];
+                type = new String[c];
+                imglink = new String[c];
+                for(int i =0; i<c; i++)
+                {
+                    names[i] = Snames[i];
+                    type[i] = Stype[i];
+                    imglink[i] = Simglink[i];
+                }
+
                 e.printStackTrace();
             }
 
@@ -106,6 +145,11 @@ public class FunEvents extends AppCompatActivity {
             super.onPostExecute(aVoid);
             progress.dismiss();
             grid.setAdapter(new SponAdapter(cont));
+            if(names.length==0)
+            {
+                Intent intent = new Intent(FunEvents.this, ComingSoon.class);
+                startActivity(intent);
+            }
         }
     }
 
@@ -183,6 +227,7 @@ public class FunEvents extends AppCompatActivity {
         @Override
         protected void onPostExecute(Bitmap result) {
             super.onPostExecute(result);
+            if(result != null)
             imageView.setImageBitmap(result);
         }
 

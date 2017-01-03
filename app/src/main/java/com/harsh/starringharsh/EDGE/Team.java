@@ -104,7 +104,7 @@ public class Team extends AppCompatActivity implements AdapterView.OnItemClickLi
                 iv = (ImageView) row.findViewById(R.id.ivMember);
             }
             EleTeam e = list.get(i);
-            iv.setImageResource(e.img);
+            iv.setBackgroundResource(e.img);
             return row;
         }
     }

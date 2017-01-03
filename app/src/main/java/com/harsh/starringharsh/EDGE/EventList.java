@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -67,49 +69,49 @@ public class EventList extends AppCompatActivity {
 
         int l = events.length;
 
-
-
         LinearLayout ll = (LinearLayout) findViewById(R.id.linearlayout2);
-        final SharedPreferences.Editor editor = sharedPreferences.edit();
-        Typeface myfont1 = Typeface.createFromAsset(getAssets(), "ColabThi.otf");
-
-        final Button eventButton[] = new Button[l];
-        for(i=0; i<l; i++)
+        if(l==0)
         {
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    150);
-            eventButton[i] = new Button(this);
-            eventButton[i].setId(i);
-            eventButton[i].setBackgroundColor(Color.parseColor("#000000"));
-            params.setMargins(0, 2, 0, 0);
-            eventButton[i].setTypeface(Typeface.DEFAULT_BOLD);
-            eventButton[i].setTextColor(Color.WHITE);
-            eventButton[i].setTextSize(TypedValue.COMPLEX_UNIT_PT,10);
-            final int id_ = eventButton[i].getId();
-            eventButton[i].setText(events[i]);
-            ll.addView(eventButton[i], params);
+            Intent intent = new Intent(EventList.this, ComingSoon.class);
+            startActivity(intent);
         }
 
-        for(i=0; i<l; i++)
-        {
-            eventButton[i].setOnClickListener(new View.OnClickListener() {
-                int j = i;
-                int l = events.length;
-                int k=l;
-                String name = events[i];
-                @Override
-                public void onClick(View view) {
-                    editor.putInt("SecondaryChoice",j);
-                    editor.putInt("Number",k);
-                    editor.putString("Name", name);
-                    editor.commit();
-                    Intent intent = new Intent(EventList.this, EventDetails.class);
-                    startActivity(intent);
+            final SharedPreferences.Editor editor = sharedPreferences.edit();
+            Typeface myfont1 = Typeface.createFromAsset(getAssets(), "ColabThi.otf");
 
-                }
-            });
-        }
+            final ImageButton eventButton[] = new ImageButton[l];
+            for (i = 0; i < l; i++) {
+                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        500);
+                eventButton[i] = new ImageButton(this);
+                eventButton[i].setId(i);
+                eventButton[i].setBackgroundResource(master.eventsImg.get(events[i]));
+
+                final int id_ = eventButton[i].getId();
+                ll.addView(eventButton[i], params);
+            }
+
+            for (i = 0; i < l; i++) {
+                eventButton[i].setOnClickListener(new View.OnClickListener() {
+                    int j = i;
+                    int l = events.length;
+                    int k = l;
+                    String name = events[i];
+
+                    @Override
+                    public void onClick(View view) {
+                        editor.putInt("SecondaryChoice", j);
+                        editor.putInt("Number", k);
+                        editor.putString("Name", name);
+                        editor.commit();
+                        Intent intent = new Intent(EventList.this, EventDetails.class);
+                        startActivity(intent);
+
+                    }
+                });
+            }
+
 
 
     }

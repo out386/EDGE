@@ -53,7 +53,8 @@
         <activity android:name=".PdfViewer" />
         <activity android:name=".MegaEvents" />
         <activity android:name=".CampusAmbassadors" />
-        <activity android:name=".FunEvents"></activity>
+        <activity android:name=".FunEvents" />
+        <activity android:name=".ComingSoon"></activity>
     </application>
 
 </manifest>

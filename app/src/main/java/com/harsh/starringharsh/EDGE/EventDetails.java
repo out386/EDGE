@@ -13,6 +13,7 @@ import android.telephony.PhoneNumberUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -25,8 +26,9 @@ import java.util.Calendar;
 
 public class EventDetails extends AppCompatActivity {
 
-    TextView tvDet, tvName, tvCont1, tvCont2, tvUpcoming;
+    TextView tvDet, tvCont1, tvCont2, tvUpcoming;
     ImageButton bCall1, bCall2, bWA1, bWA2, bReminder;
+    ImageView iv;
     LinearLayout llUpcoming;
     String name, det, linkadd, details, cont1, cont2, up;
     int date, month, hr, min;
@@ -50,9 +52,13 @@ public class EventDetails extends AppCompatActivity {
         name = sharedPreferences.getString("Name", "not found");
         editor = sharedPreferences.edit();
 
-        init();
 
-        tvName.setText(name);
+        System.out.println(name);
+
+        init();
+        int img = master.eventsImg.get(name);
+        iv.setImageResource(img);
+
 
         linkadd = master.link.get(name);
 
@@ -67,7 +73,6 @@ public class EventDetails extends AppCompatActivity {
     void init()
     {
         progress = new ProgressDialog(this);
-        tvName = (TextView) findViewById(R.id.tvDetailsName);
         tvDet = (TextView) findViewById(R.id.tvDetailsDet);
         tvCont1 = (TextView) findViewById(R.id.tvDetailsCont1);
         tvCont2 = (TextView) findViewById(R.id.tvDetailsCont2);
@@ -78,6 +83,7 @@ public class EventDetails extends AppCompatActivity {
         bWA2 = (ImageButton) findViewById(R.id.bDetailsWA2);
         llUpcoming = (LinearLayout) findViewById(R.id.llDetailsUpcoming);
         bReminder = (ImageButton) findViewById(R.id.bDetailsUpcoming);
+        iv = (ImageView) findViewById(R.id.ivDetails);
     }
 
 

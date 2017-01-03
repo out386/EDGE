@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="#20201f"
     tools:context="com.harsh.starringharsh.EDGE.Team">
 
     <TextView
@@ -20,12 +20,12 @@
         android:layout_marginTop="7dp"
         android:text="TEAM EDGE"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:id="@+id/tvDetailsName"/>
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:background="#000000"
+        android:background="#ffffff"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:layout_below="@+id/textView"
