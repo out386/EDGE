@@ -43,6 +43,7 @@ public class FunEvents extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(0,0);
         setContentView(R.layout.activity_mega_events);
         sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
@@ -149,6 +150,7 @@ public class FunEvents extends AppCompatActivity {
             {
                 Intent intent = new Intent(FunEvents.this, ComingSoon.class);
                 startActivity(intent);
+                finish();
             }
         }
     }
@@ -231,6 +233,23 @@ public class FunEvents extends AppCompatActivity {
             imageView.setImageBitmap(result);
         }
 
+
+
+
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        Intent intent = new Intent(FunEvents.this, MainMenu.class);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(0,0);
+    }
 }

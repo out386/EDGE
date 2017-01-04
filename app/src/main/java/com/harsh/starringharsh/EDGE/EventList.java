@@ -8,6 +8,7 @@ import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,7 @@ public class EventList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(0,0);
         setContentView(R.layout.activity_event_list);
 
         SharedPreferences sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
@@ -79,11 +81,17 @@ public class EventList extends AppCompatActivity {
             final SharedPreferences.Editor editor = sharedPreferences.edit();
             Typeface myfont1 = Typeface.createFromAsset(getAssets(), "ColabThi.otf");
 
-            final ImageButton eventButton[] = new ImageButton[l];
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        int height = metrics.heightPixels;
+        int width = metrics.widthPixels;
+
+
+        final ImageButton eventButton[] = new ImageButton[l];
             for (i = 0; i < l; i++) {
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.MATCH_PARENT,
-                        500);
+                        width,
+                        width/2);
                 eventButton[i] = new ImageButton(this);
                 eventButton[i].setId(i);
                 eventButton[i].setBackgroundResource(master.eventsImg.get(events[i]));
@@ -107,7 +115,7 @@ public class EventList extends AppCompatActivity {
                         editor.commit();
                         Intent intent = new Intent(EventList.this, EventDetails.class);
                         startActivity(intent);
-
+                        finish();
                     }
                 });
             }
@@ -116,4 +124,19 @@ public class EventList extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        Intent intent = new Intent(EventList.this, MainActivity.class);
+        startActivity(intent);
+        android.os.Process.killProcess(android.os.Process.myPid());
+        finish();
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(0,0);
+    }
 }

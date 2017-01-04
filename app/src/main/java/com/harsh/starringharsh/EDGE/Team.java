@@ -25,6 +25,7 @@ public class Team extends AppCompatActivity implements AdapterView.OnItemClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(0,0);
         setContentView(R.layout.activity_team);
         o = getWindow().getDecorView().getRootView();
 
@@ -107,5 +108,20 @@ public class Team extends AppCompatActivity implements AdapterView.OnItemClickLi
             iv.setBackgroundResource(e.img);
             return row;
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        Intent intent = new Intent(Team.this, MainMenu.class);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(0,0);
     }
 }

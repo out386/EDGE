@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EDGE</string>
+    <integer name="seek">0</integer>
 </resources>

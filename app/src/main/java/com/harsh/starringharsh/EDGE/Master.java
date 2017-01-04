@@ -10,6 +10,9 @@ import java.util.Map;
 class Master {
 
     String categories[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Money Matters", "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Just Like That"};
+
+
+
     String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE MART", "CODE OUT", "GAME OF ZONES"};
     //String events1[] = {"EXPEDITION", "EXCELSIOR", "KICK-O-BOT", "EXPORT", "PERPLEXITY", "EXULT", "EXPLORE", "BLITZKRIEG", "EXSTREET"};
     //String events2[] = {"CS COLLEGE LEAGUE", "CS PRO LEAGUE", "DOTA 2", "MORTAL KOMBAT", "NEED FOR SPEED MOST WANTED", "FIFA COLLEGE LEAGUE", "FIFA 16 PRO LEAGUE"};
@@ -97,6 +100,31 @@ class Master {
                 "00");
 
 
+        eventDetails.put("EXPEDITION", "Where you're the best kind of god, the one with the function controller in your hands.\n" +
+                "Subhodeep\n" +
+                "9051734382\n" +
+                "Palash Das\n" +
+                "7686820875\n" +
+                "n\n" +
+                "9\n" +
+                "3\n" +
+                "13\n" +
+                "00");
+
+        eventDetails.put("EXCELSIOR", "Robots are just people with semicolons instead of synapses. Triumph with the perfect creation.\n" +
+                "Loveneesh Singh\n" +
+                "7278601537\n" +
+                "Tiyash Kr Chanda\n" +
+                "9836441321\n" +
+                "n\n" +
+                "9\n" +
+                "3\n" +
+                "13\n" +
+                "00");
+
+
+
+
         eventsImg = new HashMap<String, Integer>();
         eventsImg.put("BUG HUNT", R.drawable.bughunt);
         eventsImg.put("FLAWLESS", R.drawable.flawless);
@@ -104,6 +132,8 @@ class Master {
         eventsImg.put("CODE MART", R.drawable.codemart);
         eventsImg.put("CODE OUT", R.drawable.codeout);
         eventsImg.put("GAME OF ZONES", R.drawable.gameofzones);
+        //eventsImg.put("EXPEDITION", R.drawable.expedetion);
+        //eventsImg.put("EXCELSIOR", R.drawable.excelsior);
 
 
 
@@ -114,6 +144,8 @@ class Master {
         link.put("CODE MART", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDERWJMeE9tQVNyOUU");
         link.put("CODE OUT", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEU0d0OUctREJEWnc");
         link.put("GAME OF ZONES", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDETElNdWVLZm1Xd3M");
+        link.put("EXPEDETION", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEMlFxSG93dzRJdVU");
+        link.put("EXCELSIOR", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDETnF3YklSM0o5Zkk");
 
         teamImg = new HashMap<String, Integer>();
         teamImg.put("Ashish Choudhary", R.drawable.ashish);

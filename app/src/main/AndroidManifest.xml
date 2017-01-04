@@ -51,10 +51,19 @@
             </intent-filter>
         </activity>
         <activity android:name=".PdfViewer" />
-        <activity android:name=".MegaEvents" />
-        <activity android:name=".CampusAmbassadors" />
-        <activity android:name=".FunEvents" />
-        <activity android:name=".ComingSoon"></activity>
+        <activity
+            android:name=".MegaEvents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CampusAmbassadors"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FunEvents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComingSoon"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AboutUs"></activity>
     </application>
 
 </manifest>

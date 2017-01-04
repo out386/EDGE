@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(0,0);
         setContentView(R.layout.activity_main);
 
     LinearLayout ll = (LinearLayout)findViewById(R.id.linearlayout);
@@ -37,14 +39,19 @@ public class MainActivity extends AppCompatActivity {
         String categories[] = master.categories;
         int l = categories.length;
 
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        int height = metrics.heightPixels;
+        int width = metrics.widthPixels;
+
         final ImageButton cat[] = new ImageButton[l];
         //final TextView tex[]=new TextView[l];
          for(i=0;i<l;i++)
 
         {
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    500);
+                    width,
+                    width/2);
             RelativeLayout flTest = new RelativeLayout(this);
             cat[i] = new ImageButton(this);
             cat[i].setBackgroundResource(master.categoriesImg.get(categories[i]));
@@ -78,13 +85,20 @@ public class MainActivity extends AppCompatActivity {
                     editor.commit();
                     Intent intent = new Intent(MainActivity.this, EventList.class);
                     startActivity(intent);
-
+                    finish();
                 }
             });
         }
 
+    }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
 
+        Intent intent = new Intent(MainActivity.this, MainMenu.class);
+        startActivity(intent);
+        finish();
     }
 }
 

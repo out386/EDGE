@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#20201f">
+
+    <com.harsh.starringharsh.EDGE.IntroVideoSurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearlayout"
@@ -16,5 +24,7 @@
     android:orientation="vertical"
     tools:context="com.harsh.starringharsh.EDGE.MainActivity">
 </LinearLayout>
+
     </ScrollView>
+    </FrameLayout>
 

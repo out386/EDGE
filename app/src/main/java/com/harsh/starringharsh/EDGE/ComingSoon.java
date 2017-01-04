@@ -9,6 +9,7 @@ public class ComingSoon extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(0,0);
         setContentView(R.layout.activity_coming_soon);
     }
 
@@ -18,5 +19,11 @@ public class ComingSoon extends AppCompatActivity {
 
             Intent intent = new Intent(ComingSoon.this, MainMenu.class);
             startActivity(intent);
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(0,0);
     }
 }

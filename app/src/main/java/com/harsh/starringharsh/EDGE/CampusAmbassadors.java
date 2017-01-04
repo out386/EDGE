@@ -15,6 +15,7 @@ public class CampusAmbassadors extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(0,0);
         setContentView(R.layout.activity_pdf_viewer);
 
         webView = (WebView) findViewById(R.id.webView1);
@@ -32,5 +33,9 @@ public class CampusAmbassadors extends AppCompatActivity {
         finish();
     }
 
-
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(0,0);
+    }
 }

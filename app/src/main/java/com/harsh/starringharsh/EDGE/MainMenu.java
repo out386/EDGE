@@ -9,12 +9,16 @@ import android.net.NetworkInfo;
 import android.net.ParseException;
 import android.net.Uri;
 import android.os.Handler;
+import android.os.Process;
 import android.os.SystemClock;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +34,7 @@ public class MainMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(0,0);
         setContentView(R.layout.activity_main_menu);
 
         //startTime = SystemClock.uptimeMillis();
@@ -50,12 +55,29 @@ public class MainMenu extends AppCompatActivity {
         ImageButton edge = (ImageButton) findViewById(R.id.linkEdge);
         ImageButton insta = (ImageButton) findViewById(R.id.linkInstagram);
 
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+
+        int height = metrics.heightPixels;
+        int width = metrics.widthPixels;
+
+        events.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        megaevents.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        funevents.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        sponsors.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        team.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        aboutus.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        schedule.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        campusambassadors.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+
+
 
         events.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -64,6 +86,7 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, Sponsors.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -72,6 +95,7 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, Team.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -80,6 +104,7 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, PdfViewer.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -88,6 +113,7 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, MegaEvents.class);
                 startActivity(intent);
+                finish();
             }
         });
         funevents.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +121,7 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, FunEvents.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -103,6 +130,16 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, CampusAmbassadors.class);
                 startActivity(intent);
+                finish();
+            }
+        });
+
+        aboutus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, AboutUs.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -189,9 +226,6 @@ public class MainMenu extends AppCompatActivity {
             Toast.makeText(this, "Connect To Internet For Better Results.", Toast.LENGTH_SHORT).show();
         }
 
-
-
-
     }
 
     /*private Runnable updateTimerThread = new Runnable() {
@@ -228,6 +262,8 @@ public class MainMenu extends AppCompatActivity {
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
             super.onBackPressed();
+            // Clear your session, remove preferences, etc.
+            finish();
             return;
         }
 
@@ -248,4 +284,9 @@ public class MainMenu extends AppCompatActivity {
         return connectivityManager.getActiveNetworkInfo() != null && connectivityManager.getActiveNetworkInfo().isConnected();
     }
 
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(0,0);
+    }
 }
