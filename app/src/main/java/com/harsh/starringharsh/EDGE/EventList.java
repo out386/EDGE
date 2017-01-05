@@ -65,6 +65,12 @@ public class EventList extends AppCompatActivity {
             case 8:
                 events = master.events8; break;
 
+            case 9:
+                events = master.events9; break;
+
+            case 10:
+                events = master.events10; break;
+
             default:
                 events = null;
         }
