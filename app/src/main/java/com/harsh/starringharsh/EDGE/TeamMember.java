@@ -3,6 +3,7 @@ package com.harsh.starringharsh.EDGE;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
@@ -22,11 +23,13 @@ public class TeamMember extends Activity {
     Master master;
     String name, post;
     long num;
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_team_member);
+        mp = MediaPlayer.create(this, R.raw.click);
         master = new Master();
         iv = (ImageView) findViewById((R.id.ivTeamMember));
         call = (ImageButton) findViewById(R.id.bTeamCall);
@@ -46,7 +49,7 @@ public class TeamMember extends Activity {
         call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                mp.start();
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + num));
                 startActivity(intent);
             }
@@ -55,7 +58,7 @@ public class TeamMember extends Activity {
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                mp.start();
                 Intent sendIntent = new Intent("android.intent.action.MAIN");
                 sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
                 sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + num)+"@s.whatsapp.net");//phone number without "+" prefix

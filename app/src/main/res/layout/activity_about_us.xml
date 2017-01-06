@@ -27,9 +27,8 @@
                 android:src="@drawable/edgewithtext"
                 />
             <TextView
-                android:id="@+id/tvDetailsDet"
                 android:layout_width="match_parent"
-                android:textSize="15dp"
+                android:textSize="20dp"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
@@ -42,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/textroundborder"
                 android:padding="15dp"
-                android:text="EDGE is the annual techno-management fest of Techno India Salt Lake. The first edition of EDGE was conceived in 2007, and it has been a long and pleasant journey so far. This year, we are celebrating our 11th anniversary. And we dedicate this edition to all the effort and imagination that has been put in by all the individuals who have worked towards making EDGE a grand success.\nEDGE provides a much needed platform to the students that lets them explore and develop their talents, and helps them grow and emerge as winners.\nJoin us in celebrating a decade of imagination. Join us and witness the amalgamation of talent, persistence and an urge to succeed. Join us and witness history in making."
+                android:text="The beloved masterpiece of Geekonix, is all set to take a step into a new decade, a new beginning, Techno India and Geekonix invites you to a new era in the event of innovation and ingenuity. EDGE 17 promises to tune up the boom box and to conjure up a vision beyond imagination. Following its essence and beliefs, EDGE, 17 will be a multiverse of events to polish already talented and intuitive minds of the society. Like every year, reaching for a new echelon is the goal."
                 />
             <LinearLayout
 
@@ -82,8 +81,8 @@
 
 
                     <ImageButton
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:id="@+id/linkEdge"
@@ -93,54 +92,73 @@
                     <ImageButton
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="15dp"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:background="@drawable/technoindia"
                         android:id="@+id/linkTechnoIndia"/>
+
 
                     <ImageButton
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="15dp"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/location"
+                        android:id="@+id/linkLocation"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <ImageButton
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:background="@drawable/facebook"
                         android:id="@+id/linkFacebook" />
                     <ImageButton
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="15dp"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:background="@drawable/youtube"
                         android:id="@+id/linkYoutube"/>
 
                     <ImageButton
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="15dp"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:background="@drawable/instagram"
                         android:id="@+id/linkInstagram"/>
-
 
                     <ImageButton
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="15dp"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:background="@drawable/location"
-                        android:id="@+id/linkLocation"/>
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/twitter"
+                        android:id="@+id/linkTwitter"/>
+
 
                 </LinearLayout>
 
 
             </LinearLayout>
+
+
             <LinearLayout
 
                 android:layout_width="match_parent"
                 android:textSize="15dp"
                 android:textColor="#000000"
                 android:layout_height="wrap_content"
-                android:id="@+id/llDetailsUpcoming"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
@@ -148,56 +166,260 @@
                 android:orientation="vertical"
                 android:background="@drawable/textroundborder"
                 android:padding="15dp"
-                android:visibility="gone"
                 >
                 <TextView
-                    android:id="@+id/UpcomingEvents"
+                    android:layout_width="match_parent"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Hope you liked our app and website. We would surely love to hear from you. Feel free to contact. Your feedback would make our efforts worth."
+                    />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Upcoming Round"
+                    android:layout_marginTop="10dp"
+                    android:text="App Development:"
                     android:textSize="20dp"
                     android:textColor="#000000"/>
                 <View
-                    android:id="@+id/viewUpcoming"
                     android:layout_width="fill_parent"
                     android:layout_height="1dp"
                     android:background="#ECE9E8"
                     android:layout_marginTop="10dp"
-                    android:layout_below="@+id/contactsdetails"
                     />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:background="#FFFFFF"
                     android:layout_marginTop="5dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
-                        android:layout_gravity="center_vertical"
-                        android:id="@+id/tvDetailsUpcoming"
-                        android:text="10:50"
-                        android:layout_marginLeft="6dp"
-                        android:textSize="20dp"
-                        />
+
                     <ImageButton
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:id="@+id/bDetailsUpcoming"
-                        android:layout_marginLeft="30dp"
-                        android:background="@drawable/calender"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/bAUCall1"
+                        android:background="@drawable/phone"
                         android:layout_marginTop="14dp"
                         />
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:id="@+id/bAUWA1"
+                        android:background="@drawable/whatsapp"
+                        android:layout_marginTop="14dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="20dp"
+                        android:text="Harsh Sheth"
+                        android:textColor="#000000"
+                        />
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/bAUCall2"
+                            android:background="@drawable/phone"
+                            android:layout_marginTop="14dp"
+                            />
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="6dp"
+                            android:id="@+id/bAUWA2"
+                            android:background="@drawable/whatsapp"
+                            android:layout_marginTop="14dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="6dp"
+                            android:textSize="20dp"
+                            android:text="Aaditya Adeez"
+                            android:textColor="#000000"
+                            />
 
                 </LinearLayout>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Website Development:"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ECE9E8"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/bAUCall3"
+                        android:background="@drawable/phone"
+                        android:layout_marginTop="14dp"
+                        />
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:id="@+id/bAUWA3"
+                        android:background="@drawable/whatsapp"
+                        android:layout_marginTop="14dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="20dp"
+                        android:text="Subhabrata Paul"
+                        android:textColor="#000000"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/bAUCall4"
+                        android:background="@drawable/phone"
+                        android:layout_marginTop="14dp"
+                        />
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:id="@+id/bAUWA4"
+                        android:background="@drawable/whatsapp"
+                        android:layout_marginTop="14dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="20dp"
+                        android:text="Ashish Kumar"
+                        android:textColor="#000000"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Designing:"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ECE9E8"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/bAUCall5"
+                        android:background="@drawable/phone"
+                        android:layout_marginTop="14dp"
+                        />
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:id="@+id/bAUWA5"
+                        android:background="@drawable/whatsapp"
+                        android:layout_marginTop="14dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="20dp"
+                        android:text="Neil Sen Gupta"
+                        android:textColor="#000000"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/bAUCall6"
+                        android:background="@drawable/phone"
+                        android:layout_marginTop="14dp"
+                        />
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:id="@+id/bAUWA6"
+                        android:background="@drawable/whatsapp"
+                        android:layout_marginTop="14dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="20dp"
+                        android:text="Rihel Bhowmik"
+                        android:textColor="#000000"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
             </LinearLayout>
 
-
-
-            </LinearLayout>
+         </LinearLayout>
 
     </ScrollView>
 

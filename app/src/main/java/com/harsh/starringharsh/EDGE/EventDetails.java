@@ -5,6 +5,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -39,6 +40,7 @@ public class EventDetails extends AppCompatActivity {
     SharedPreferences.Editor editor;
     Master master;
     ProgressDialog progress;
+    MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,8 @@ public class EventDetails extends AppCompatActivity {
 
 
         master = new Master();
+
+        mp = MediaPlayer.create(this, R.raw.click);
 
         sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
         name = sharedPreferences.getString("Name", "not found");
@@ -152,7 +156,7 @@ public class EventDetails extends AppCompatActivity {
             tvCont1.setText(cont1);
             bCall1.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View view) {
+                public void onClick(View view) { mp.start();
 
                     Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phn1));
                     startActivity(intent);
@@ -161,7 +165,7 @@ public class EventDetails extends AppCompatActivity {
 
             bWA1.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View view) {
+                public void onClick(View view) { mp.start();
 
                     Intent sendIntent = new Intent("android.intent.action.MAIN");
                     sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
@@ -178,7 +182,7 @@ public class EventDetails extends AppCompatActivity {
                 tvCont2.setText(cont2);
                 bCall2.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View view) {
+                    public void onClick(View view) { mp.start();
 
                         Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phn2));
                         startActivity(intent);
@@ -187,7 +191,7 @@ public class EventDetails extends AppCompatActivity {
 
                 bWA2.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View view) {
+                    public void onClick(View view) { mp.start();
                         Intent sendIntent = new Intent("android.intent.action.MAIN");
                         sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
                         sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + phn2)+"@s.whatsapp.net");//phone number without "+" prefix
@@ -208,10 +212,10 @@ public class EventDetails extends AppCompatActivity {
             if(cal.getTimeInMillis() < calR.getTimeInMillis())
             {
                 llUpcoming.setVisibility(View.VISIBLE);
-                tvUpcoming.setText((""+date + "/" + (month+1) + "/2017 " + hr + ":" + min));
+                tvUpcoming.setText((""+String.format("%02d",date) + "/" + String.format("%02d",(month+1)) + "/2017 " + String.format("%02d",hr) + ":" + String.format("%02d",min)));
                 bReminder.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View view) {
+                    public void onClick(View view) { mp.start();
                         Intent intent = new Intent(Intent.ACTION_EDIT);
                         intent.setType("vnd.android.cursor.item/event");
                         intent.putExtra("beginTime", calR.getTimeInMillis());

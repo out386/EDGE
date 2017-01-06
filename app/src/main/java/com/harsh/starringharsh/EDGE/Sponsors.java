@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,6 +43,9 @@ public class Sponsors extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         overridePendingTransition(0,0);
         setContentView(R.layout.activity_sponsors);
+
+        TextView tvHead = (TextView) findViewById(R.id.tvHeader);
+        tvHead.setTypeface(Typeface.createFromAsset(getAssets(),"TypoGraphica.otf"));
 
         progress = new ProgressDialog(this);
         master = new Master();

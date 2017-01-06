@@ -28,7 +28,7 @@ public class PdfViewer extends Activity {
 
         settings.setBuiltInZoomControls(true);
         webView.setWebChromeClient(new WebChromeClient());
-        webView.loadUrl("https://drive.google.com/file/d/0B9ir1SJLpxDEbXcyaHh6eGI3a2s/view?usp=sharing");
+        webView.loadUrl("https://drive.google.com/file/d/0B9ir1SJLpxDEZWtXX3pQY29MeFU/view?usp=sharing");
 
 
     }

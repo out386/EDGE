@@ -74,6 +74,14 @@
                     android:background="@drawable/instagram"
                     android:id="@+id/linkInstagram"/>
 
+                <ImageButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/twitter"
+                    android:id="@+id/linkTwitter"/>
+
         </LinearLayout>
 
 
@@ -163,17 +171,21 @@
 
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:id="@+id/bAccommodation"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/accomodation"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+        <ImageButton
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
             android:layout_marginBottom="5dp"
             android:id="@+id/bAboutUs"
             android:layout_marginTop="6dip"
             android:background="@drawable/aboutus"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp" />
-
-
-
-
-
 
     </LinearLayout>
     </ScrollView>

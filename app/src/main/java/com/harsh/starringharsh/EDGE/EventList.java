@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,12 +22,14 @@ import android.widget.TextView;
 public class EventList extends AppCompatActivity {
 
     int i;
+    MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         overridePendingTransition(0,0);
         setContentView(R.layout.activity_event_list);
+        mp = MediaPlayer.create(this, R.raw.click);
 
         SharedPreferences sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
         int n = sharedPreferences.getInt("PrimaryChoice", 99);
@@ -77,6 +80,11 @@ public class EventList extends AppCompatActivity {
 
         int l = events.length;
 
+
+        TextView tvHead = (TextView) findViewById(R.id.tvHeader);
+        tvHead.setTypeface(Typeface.createFromAsset(getAssets(),"TypoGraphica.otf"));
+        tvHead.setText(master.categories[n]);
+
         LinearLayout ll = (LinearLayout) findViewById(R.id.linearlayout2);
         if(l==0)
         {
@@ -115,6 +123,7 @@ public class EventList extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
+                        mp.start();
                         editor.putInt("SecondaryChoice", j);
                         editor.putInt("Number", k);
                         editor.putString("Name", name);

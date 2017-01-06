@@ -2,6 +2,8 @@ package com.harsh.starringharsh.EDGE;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -22,11 +25,15 @@ public class Team extends AppCompatActivity implements AdapterView.OnItemClickLi
     Master master;
     String name[];
     View o;
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         overridePendingTransition(0,0);
         setContentView(R.layout.activity_team);
+
+        mp = MediaPlayer.create(this, R.raw.click);
+
         o = getWindow().getDecorView().getRootView();
 
         master = new Master();
@@ -34,10 +41,14 @@ public class Team extends AppCompatActivity implements AdapterView.OnItemClickLi
         grid = (GridView) findViewById(R.id.gridTeam);
         grid.setAdapter(new teamAdapter(this));
         grid.setOnItemClickListener(this);
+
+        TextView tvHead = (TextView) findViewById(R.id.tvHeader);
+        tvHead.setTypeface(Typeface.createFromAsset(getAssets(),"TypoGraphica.otf"));
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        mp.start();
         Intent intent = new Intent(Team.this, TeamMember.class);
         intent.putExtra("name", name[i]);
         startActivity(intent);

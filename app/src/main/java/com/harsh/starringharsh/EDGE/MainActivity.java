@@ -2,6 +2,7 @@ package com.harsh.starringharsh.EDGE;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
@@ -24,17 +25,25 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     int i;
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         overridePendingTransition(0,0);
         setContentView(R.layout.activity_main);
 
+        mp = MediaPlayer.create(this, R.raw.click);
+
     LinearLayout ll = (LinearLayout)findViewById(R.id.linearlayout);
         SharedPreferences sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
         final SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        Typeface myfont1 = Typeface.createFromAsset(getAssets(), "ColabThi.otf");
+        //Typeface myfont1 = Typeface.createFromAsset(getAssets(), "ColabThi.otf");
+
+
+        TextView tvHead = (TextView) findViewById(R.id.tvHeader);
+        tvHead.setTypeface(Typeface.createFromAsset(getAssets(),"TypoGraphica.otf"));
+
         Master master = new Master();
         String categories[] = master.categories;
         int l = categories.length;
@@ -80,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             cat[i].setOnClickListener(new View.OnClickListener() {
                 int j = i;
                 @Override
-                public void onClick(View view) {
+                public void onClick(View view) { mp.start();
                     editor.putInt("PrimaryChoice", j);
                     editor.commit();
                     Intent intent = new Intent(MainActivity.this, EventList.class);

@@ -1,6 +1,7 @@
 package com.harsh.starringharsh.EDGE;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebChromeClient;
@@ -22,14 +23,20 @@ public class CampusAmbassadors extends AppCompatActivity {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
 
+        String link = getIntent().getStringExtra("weblink");
+
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://docs.google.com/forms/d/1fYtuK08jRcSTFwK1EIo3SiSsjx9QBjhfjLtj_kXYI_Y/viewform");
+        webView.loadUrl(link);
         webView.requestFocus();
 
 
     }
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
+
+        Intent intent = new Intent(CampusAmbassadors.this, MainMenu.class);
+        startActivity(intent);
         finish();
     }
 

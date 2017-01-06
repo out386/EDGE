@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.icu.text.SimpleDateFormat;
+import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.ParseException;
@@ -30,12 +31,15 @@ public class MainMenu extends AppCompatActivity {
     long startTime;
     //Thread timer;
     //private Handler customHandler=new Handler();
+    MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         overridePendingTransition(0,0);
         setContentView(R.layout.activity_main_menu);
+
+        mp = MediaPlayer.create(this, R.raw.click);
 
         //startTime = SystemClock.uptimeMillis();
         //TextView trial = (TextView) findViewById(R.id.tvTRIAL);
@@ -49,11 +53,13 @@ public class MainMenu extends AppCompatActivity {
         ImageButton aboutus = (ImageButton)findViewById(R.id.bAboutUs);
         ImageButton schedule = (ImageButton) findViewById(R.id.bSchedule);
         ImageButton campusambassadors = (ImageButton) findViewById(R.id.bCampusAmbassadors);
+        ImageButton accommodation = (ImageButton) findViewById(R.id.bAccommodation);
         ImageButton facebook = (ImageButton) findViewById(R.id.linkFacebook);
         ImageButton youtube = (ImageButton) findViewById(R.id.linkYoutube);
         ImageButton techno = (ImageButton) findViewById(R.id.linkTechnoIndia);
         ImageButton edge = (ImageButton) findViewById(R.id.linkEdge);
         ImageButton insta = (ImageButton) findViewById(R.id.linkInstagram);
+        ImageButton twitter = (ImageButton) findViewById(R.id.linkTwitter);
 
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
@@ -69,12 +75,21 @@ public class MainMenu extends AppCompatActivity {
         aboutus.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         schedule.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         campusambassadors.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        accommodation.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
 
 
+        accommodation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { mp.start();
+                Intent intent = new Intent(MainMenu.this, Accomodation.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         events.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 Intent intent = new Intent(MainMenu.this, MainActivity.class);
                 startActivity(intent);
                 finish();
@@ -83,7 +98,7 @@ public class MainMenu extends AppCompatActivity {
 
         sponsors.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 Intent intent = new Intent(MainMenu.this, Sponsors.class);
                 startActivity(intent);
                 finish();
@@ -92,7 +107,7 @@ public class MainMenu extends AppCompatActivity {
 
         team.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 Intent intent = new Intent(MainMenu.this, Team.class);
                 startActivity(intent);
                 finish();
@@ -101,7 +116,7 @@ public class MainMenu extends AppCompatActivity {
 
         schedule.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 Intent intent = new Intent(MainMenu.this, PdfViewer.class);
                 startActivity(intent);
                 finish();
@@ -110,7 +125,7 @@ public class MainMenu extends AppCompatActivity {
 
         megaevents.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 Intent intent = new Intent(MainMenu.this, MegaEvents.class);
                 startActivity(intent);
                 finish();
@@ -118,7 +133,7 @@ public class MainMenu extends AppCompatActivity {
         });
         funevents.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 Intent intent = new Intent(MainMenu.this, FunEvents.class);
                 startActivity(intent);
                 finish();
@@ -127,8 +142,9 @@ public class MainMenu extends AppCompatActivity {
 
         campusambassadors.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 Intent intent = new Intent(MainMenu.this, CampusAmbassadors.class);
+                intent.putExtra("weblink", "https://goo.gl/forms/rNo6TDXmkd9hYRjG2");
                 startActivity(intent);
                 finish();
             }
@@ -136,7 +152,7 @@ public class MainMenu extends AppCompatActivity {
 
         aboutus.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 Intent intent = new Intent(MainMenu.this, AboutUs.class);
                 startActivity(intent);
                 finish();
@@ -160,7 +176,7 @@ public class MainMenu extends AppCompatActivity {
         //481056431942181
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 try {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/481056431942181"));
                     startActivity(intent);
@@ -172,7 +188,7 @@ public class MainMenu extends AppCompatActivity {
 
         youtube.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 Intent intent=null;
                 try {
                     intent =new Intent(Intent.ACTION_VIEW);
@@ -187,9 +203,25 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
+        twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { mp.start();
+                try {
+                    Intent intent =new Intent(Intent.ACTION_VIEW);
+                    intent.setPackage("com.twitter.android");
+                    intent.setData(Uri.parse("twitter://user?screen_name=geekonixedge"));
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("https://twitter.com/geekonixedge")));
+                }
+            }
+        });
+
         insta.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 try {
                     Uri uri = Uri.parse("http://instagram.com/_u/geekonix");
                     Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
@@ -205,7 +237,7 @@ public class MainMenu extends AppCompatActivity {
 
         techno.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ticollege.ac.in/")));
             }
         });
@@ -213,7 +245,7 @@ public class MainMenu extends AppCompatActivity {
 
         edge.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { mp.start();
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.edg.co.in")));
             }
         });

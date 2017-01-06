@@ -15,7 +15,7 @@ class Master {
 
     String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE MART", "CODE OUT", "GAME OF ZONES"};
     String events1[] = {"EXPEDITION", "EXCELSIOR", "KICK-O-BOT", "EXPORT", "PERPLEXITY", "EXULT", "EXPLORE", "BLITZKRIEG", "EXSTREET"};
-    String events2[] = {"CS COLLEGE LEAGUE", "CS PRO LEAGUE", "DOTA 2", "MORTAL KOMBAT", "NEED FOR SPEED MOST WANTED", "FIFA COLLEGE LEAGUE", "FIFA 16 PRO LEAGUE"};
+    String events2[] = {"CS COLLEGE LEAGUE", "CS PRO LEAGUE", "DOTA 2", "CLASH OF CLANS", "NEED FOR SPEED MOST WANTED", "FIFA COLLEGE LEAGUE", "FIFA 16 PRO LEAGUE"};
     String events3[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA"};
     String events4[] = {"PROJECT VIEW"};
     String events5[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK"};
@@ -24,9 +24,8 @@ class Master {
     String events8[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
     String events9[] = {"CAD O MANIA", "NIRMAAN"};
     String events10[] = {"TREASURE HUNT", "GET SELFISH WITH EDGE17"};
-    String sponsors[] = {"ABC", "PQR", "XYZ"};
-    String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEUHktS1d1Y240a1U";
-    String mega[] = {"ABC", "PQR", "XYZ"};
+    String sponsors[] = {"GEEK ALUMS"};
+    String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN2RTOTBnLTZhNFE";
     String megalink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEOUlTaEJSa3BDQzQ";
     String funlink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWDFiWkRPR25OYzQ";
     String team[] = {"Ashish Choudhary", "Shubham Sharma", "Priyankar Banerjee", "Mayank", "Wriddhi Mukherjee", "Aqsa Zea", "Kumar Satyam Singh", "Anurag Ranjan", "Akhilesh Upadhyay"};
@@ -222,7 +221,7 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00");
-        eventDetails.put("MORTAL KOMBAT","There is no knowledge that is not power.\n"+
+        eventDetails.put("CLASH OF CLANS","There is no knowledge that is not power.\n"+
                 "Rahul Gupta\n" +
                 "8016580363\n" +
                 "Arunabho\n" +
@@ -513,7 +512,7 @@ class Master {
         eventsImg.put("CS COLLEGE LEAGUE",R.drawable.csgocollege);
         eventsImg.put("CS PRO LEAGUE",R.drawable.csgopro);
         eventsImg.put("DOTA 2",R.drawable.dota2);
-        eventsImg.put("MORTAL KOMBAT",R.drawable.mortalkombat);
+        eventsImg.put("CLASH OF CLANS",R.drawable.clashofclans);
         eventsImg.put("NEED FOR SPEED MOST WANTED",R.drawable.nfsmostwanted);
         eventsImg.put("FIFA COLLEGE LEAGUE",R.drawable.fifcollege);
         eventsImg.put("FIFA 16 PRO LEAGUE",R.drawable.fifapro);
@@ -561,7 +560,7 @@ class Master {
         link.put("CS COLLEGE LEAGUE", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiZ1ZaNll1enJMeWM");
         link.put("CS PRO LEAGUE", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiREozSVFrN0p4V0k");
         link.put("DOTA 2", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiaEFCb0tpSElGYTA");
-        link.put("MORTAL KOMBAT", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiV0hDc1d1RWxEWjg");
+        link.put("CLASH OF CLANS", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEMzdCV01YTU5YYUE");
         link.put("NEED FOR SPEED MOST WANTED", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiQXAtdTFuOFpSRE0");
         link.put("FIFA COLLEGE LEAGUE", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiLTVpMHpwZmdBOE0");
         link.put("FIFA 16 PRO LEAGUE", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqidHB6SzN2Vl9keTg");
@@ -585,7 +584,7 @@ class Master {
         link.put("THE QUIZ", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiN0VzTzRUaGpwLTg");
         link.put("YOUTH PARLIAMENT", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiZGpISjJtaFJEbzg");
         link.put("TREASURE HUNT", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiY3B2eXdUT1lZOGs");
-        link.put("GET SELFISH WITH EDGE17", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiUTczaXhrYVBoaE0");
+        link.put("GET SELFISH WITH EDGE17", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDER2FrejkxMEZ3ak0");
         link.put("CAD O MANIA","https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDETDZGQlJ6WUljRkE");
         link.put("NIRMAAN","https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEY2ZCRTRwazVuaXc");
 
@@ -627,22 +626,12 @@ class Master {
         sponType.put("ABC", "Associate Sponsor");
         sponType.put("PQR", "Title Sponsor");
         sponType.put("XYZ", "Training Partner");
+        sponType.put("GEEK ALUMS", "Supporters");
 
         sponImg = new HashMap<String, String>();
         sponImg.put("ABC", "http://cdn.media.abc.com/m/images/global/butterscotch/abccom_logo.png");
         sponImg.put("PQR", "https://pbs.twimg.com/profile_images/1709525450/PQR-icoon__jpg__400x400.jpg");
-        sponImg.put("XYZ", "http://www.graphis.com/media/uploads/cache/b3/e4/b3e4bf424d71554226fc9c8bbe1d9c91.jpg");
-
-        megaType = new HashMap<String, String>();
-        megaType.put("ABC", "Bla Bla Bla Bla Bla Bla Bla Bla");
-        megaType.put("PQR", "jkhba vkuo ifnoq ihvo inoinnnlaaa aafn d tndv xcerh");
-        megaType.put("XYZ", "jhvjhbj kyfhlb uygl jkblk nunl knjkfvtkcvgh uyyfukybhg igglhj uyfuyig uyfuyf iufguiofg uyf uy fi");
-
-        megaImg = new HashMap<String, String>();
-        megaImg.put("ABC", "http://cdn.media.abc.com/m/images/global/butterscotch/abccom_logo.png");
-        megaImg.put("PQR", "https://pbs.twimg.com/profile_images/1709525450/PQR-icoon__jpg__400x400.jpg");
-        megaImg.put("XYZ", "http://www.graphis.com/media/uploads/cache/b3/e4/b3e4bf424d71554226fc9c8bbe1d9c91.jpg");
-
+        sponImg.put("GEEK ALUMS", "https://pbs.twimg.com/profile_images/639172860041261056/g_KngOx4.png");
 
         categoriesImg = new HashMap<String, Integer>();
         categoriesImg.put("Compute Aid", R.drawable.computeaid);

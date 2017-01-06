@@ -1,20 +1,27 @@
 package com.harsh.starringharsh.EDGE;
 
 import android.app.ProgressDialog;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.telephony.PhoneNumberUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -31,15 +38,18 @@ import java.net.URL;
 public class MegaEvents extends AppCompatActivity {
 
     ImageView iv;
-    TextView spName, spType;
+    Button bcontPhn, contWA;
+    TextView spName, spType, tvcontName;
     GridView grid;
     Master master;
-    String names[] = {}, linkadd, imglink[] = {}, type[] = {};
+    String names[] = {}, linkadd, imglink[] = {}, type[] = {}, contName[] = {};
+    long contPhn[] = {};
     ProgressDialog progress;
     Context cont;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     View o;
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +58,7 @@ public class MegaEvents extends AppCompatActivity {
 
         sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
+        mp = MediaPlayer.create(this, R.raw.click);
 
         progress = new ProgressDialog(this);
         master = new Master();
@@ -59,6 +70,9 @@ public class MegaEvents extends AppCompatActivity {
         new BackFetch().execute();
         cont = this;
 
+        TextView tvHead = (TextView) findViewById(R.id.tvHeader);
+        tvHead.setTypeface(Typeface.createFromAsset(getAssets(),"TypoGraphica.otf"));
+        tvHead.setText("MEGA EVENTS");
 
     }
 
@@ -85,6 +99,8 @@ public class MegaEvents extends AppCompatActivity {
                 String[] Snames = new String[50];
                 String[] Stype = new String[50];
                 String[] Simglink = new String[50];
+                String[] ScontName = new String[50];
+                long[] ScontPhn = new long[50];
                 int c=0;
                 while ((str = br.readLine()) != null) {
                     newstr+=str+"\n";
@@ -92,48 +108,62 @@ public class MegaEvents extends AppCompatActivity {
                     Stype[c] = br.readLine();
                     newstr+=Stype[c]+"\n";
                     Simglink[c] = br.readLine();
-                    newstr+=Simglink[c++]+"\n";
+                    newstr+=Simglink[c]+"\n";
+                    ScontName[c] = br.readLine();
+                    newstr+=ScontName[c]+"\n";
+                    ScontPhn[c] = Long.parseLong(br.readLine());
+                    newstr+=ScontPhn[c++]+"\n";
                 }
                 editor.putString("Mega", newstr);
                 editor.commit();
                 names = new String[c];
                 type = new String[c];
                 imglink = new String[c];
+                contName = new String[c];
+                contPhn = new long[c];
                 for(int i =0; i<c; i++)
                 {
                     names[i] = Snames[i];
                     type[i] = Stype[i];
                     imglink[i] = Simglink[i];
+                    contName[i] = ScontName[i];
+                    contPhn[i] = ScontPhn[i];
                 }
                 br.close();
             } catch (Exception e) {
                 System.out.println("Failed");
-                String newstr = sharedPreferences.getString("fun", "");
+                String newstr = sharedPreferences.getString("Mega", "");
                 BufferedReader br = new BufferedReader(new StringReader(newstr));
                 String str;
                 String[] Snames = new String[100];
                 String[] Stype = new String[100];
                 String[] Simglink = new String[100];
+                String[] ScontName = new String[50];
+                long[] ScontPhn = new long[50];
                 int c=0;
                 try {
                     while ((str = br.readLine()) != null) {
                         Snames[c] = str;
                         Stype[c] = br.readLine();
-                        Simglink[c++] = br.readLine();
+                        Simglink[c] = br.readLine();
+                        ScontName[c] = br.readLine();
+                        ScontPhn[c++] = Long.parseLong(br.readLine());
                     }
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }
-                editor.putString("Mega", newstr);
-                editor.commit();
                 names = new String[c];
                 type = new String[c];
                 imglink = new String[c];
+                contName = new String[c];
+                contPhn = new long[c];
                 for(int i =0; i<c; i++)
                 {
                     names[i] = Snames[i];
                     type[i] = Stype[i];
                     imglink[i] = Simglink[i];
+                    contName[i] = ScontName[i];
+                    contPhn[i] = ScontPhn[i];
                 }
                 e.printStackTrace();
             }
@@ -191,10 +221,38 @@ public class MegaEvents extends AppCompatActivity {
                 iv = (ImageView) row.findViewById(R.id.ivSpEvent);
                 spName = (TextView) row.findViewById(R.id.tvSpEvent);
                 spType = (TextView) row.findViewById(R.id.tvSpEventDesc);
+                tvcontName = (TextView) row.findViewById(R.id.tvEventCont);
+                bcontPhn = (Button) row.findViewById(R.id.bEventCall);
+                contWA = (Button) row.findViewById(R.id.bEventWA);
             }
             spName.setText(names[i]);
             spType.setText(type[i]);
             new ImageLoadTask(imglink[i], iv).execute();
+            tvcontName.setText(contName[i]);
+            bcontPhn.setText("" + contPhn[i]);
+            contWA.setText("" + contPhn[i]);
+            bcontPhn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Button x = (Button)view;
+                    mp.start();
+                    Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + x.getText()));
+                    startActivity(intent);
+                }
+            });
+            contWA.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Button x = (Button)view;
+                    mp.start();
+                    Intent sendIntent = new Intent("android.intent.action.MAIN");
+                    sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
+                    sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + x.getText())+"@s.whatsapp.net");//phone number without "+" prefix
+                    startActivity(sendIntent);
+
+                }
+            });
+
             return row;
         }
     }
