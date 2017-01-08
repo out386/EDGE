@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.harsh.starringharsh.EDGE">
+    package="com.edge.starringharsh.EDGE">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".MainMenu"
+            android:name="com.edge.starringharsh.EDGE.MainMenu"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,26 +23,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EventList"
+            android:name="com.edge.starringharsh.EDGE.EventList"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".EventDetails"
+            android:name="com.edge.starringharsh.EDGE.EventDetails"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.edge.starringharsh.EDGE.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Sponsors"
+            android:name="com.edge.starringharsh.EDGE.Sponsors"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Team"
+            android:name="com.edge.starringharsh.EDGE.Team"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TeamMember"
+            android:name="com.edge.starringharsh.EDGE.TeamMember"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Dialog" />
         <activity
-            android:name=".Splashscreen"
+            android:name="com.edge.starringharsh.EDGE.Splashscreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,21 +50,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PdfViewer" />
+        <activity android:name="com.edge.starringharsh.EDGE.PdfViewer" />
         <activity
-            android:name=".MegaEvents"
+            android:name="com.edge.starringharsh.EDGE.MegaEvents"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".CampusAmbassadors"
+            android:name="com.edge.starringharsh.EDGE.CampusAmbassadors"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".FunEvents"
+            android:name="com.edge.starringharsh.EDGE.ComingSoon"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".ComingSoon"
-            android:screenOrientation="portrait" />
-        <activity android:name=".AboutUs" />
-        <activity android:name=".Accomodation"></activity>
+        <activity android:name="com.edge.starringharsh.EDGE.AboutUs" />
+        <activity android:name="com.edge.starringharsh.EDGE.Accomodation"></activity>
     </application>
 
 </manifest>

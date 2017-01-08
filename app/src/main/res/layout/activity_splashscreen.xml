@@ -12,7 +12,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#000000"
     android:orientation="vertical"
-    tools:context="com.harsh.starringharsh.EDGE.Splashscreen">
+    tools:context="com.edge.starringharsh.EDGE.Splashscreen">
 
     <VideoView
         android:layout_width="match_parent"

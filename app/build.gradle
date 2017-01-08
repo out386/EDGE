@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.1"
     defaultConfig {
-        applicationId "com.harsh.starringharsh.EDGE"
+        applicationId "com.edge.starringharsh.EDGE"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
@@ -28,4 +28,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.0.1'
     testCompile 'junit:junit:4.12'
     compile 'com.google.android.gms:play-services-maps:10.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }

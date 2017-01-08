@@ -11,7 +11,7 @@
     android:paddingTop="2dp"
     android:orientation="vertical"
     android:background="@drawable/textroundborder"
-    tools:context="com.harsh.starringharsh.EDGE.TeamMember">
+    tools:context="com.edge.starringharsh.EDGE.TeamMember">
 
     <ImageButton
         android:background="@drawable/close"

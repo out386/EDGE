@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#20201f">
 
-    <com.harsh.starringharsh.EDGE.IntroVideoSurfaceView
+    <com.edge.starringharsh.EDGE.IntroVideoSurfaceView
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         />

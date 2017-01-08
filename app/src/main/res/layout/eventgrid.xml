@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:src="@drawable/edgelogo"
+        android:background="@drawable/edgelogo"
         android:layout_gravity="center_horizontal"
         android:id="@+id/ivSpEvent"
         />

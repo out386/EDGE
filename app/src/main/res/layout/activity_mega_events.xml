@@ -4,13 +4,13 @@
     android:id="@+id/activity_mega_events"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.harsh.starringharsh.EDGE.MegaEvents"
+    tools:context="com.edge.starringharsh.EDGE.MegaEvents"
     android:background="#20201f"
     android:orientation="vertical"
     >
 
 
-    <com.harsh.starringharsh.EDGE.IntroVideoSurfaceView
+    <com.edge.starringharsh.EDGE.IntroVideoSurfaceView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
