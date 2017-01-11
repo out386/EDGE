@@ -13,7 +13,7 @@ class Master {
 
 
 
-    String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE MART", "CODE OUT", "GAME OF ZONES"};
+    String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "GAME OF ZONES"};
     String events1[] = {"EXPEDITION", "EXCELSIOR", "KICK-O-BOT", "EXPORT", "PERPLEXITY", "EXULT", "EXPLORE", "BLITZKRIEG", "EXSTREET"};
     String events2[] = {"CS COLLEGE LEAGUE", "CS PRO LEAGUE", "DOTA 2", "CLASH OF CLANS", "NEED FOR SPEED MOST WANTED", "FIFA COLLEGE LEAGUE", "FIFA 16 PRO LEAGUE"};
     String events3[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA"};
@@ -499,7 +499,7 @@ class Master {
         eventsImg.put("CRYPTO QUEST", R.drawable.cryptoquest);
         eventsImg.put("CODE MART", R.drawable.codemart);
         eventsImg.put("CODE OUT", R.drawable.codeout);
-        eventsImg.put("GAME OF ZONES", R.drawable.gameofzones);
+        eventsImg.put("GAME OF ZONES", R.drawable.codanwars);
         eventsImg.put("EXPEDITION", R.drawable.expedition);
         eventsImg.put("EXCELSIOR", R.drawable.excelsior);
         eventsImg.put("KICK-O-BOT",R.drawable.kickobot);
