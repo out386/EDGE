@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name="com.edge.starringharsh.EDGE.MainMenu"
+            android:name=".MainMenu"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,26 +23,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.edge.starringharsh.EDGE.EventList"
+            android:name=".EventList"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.edge.starringharsh.EDGE.EventDetails"
+            android:name=".EventDetails"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.edge.starringharsh.EDGE.MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.edge.starringharsh.EDGE.Sponsors"
+            android:name=".Sponsors"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.edge.starringharsh.EDGE.Team"
+            android:name=".Team"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.edge.starringharsh.EDGE.TeamMember"
+            android:name=".TeamMember"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Dialog" />
         <activity
-            android:name="com.edge.starringharsh.EDGE.Splashscreen"
+            android:name=".Splashscreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,18 +50,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.edge.starringharsh.EDGE.PdfViewer" />
+        <activity android:name=".PdfViewer" />
         <activity
-            android:name="com.edge.starringharsh.EDGE.MegaEvents"
+            android:name=".MegaEvents"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.edge.starringharsh.EDGE.CampusAmbassadors"
+            android:name=".CampusAmbassadors"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.edge.starringharsh.EDGE.ComingSoon"
+            android:name=".ComingSoon"
             android:screenOrientation="portrait" />
-        <activity android:name="com.edge.starringharsh.EDGE.AboutUs" />
-        <activity android:name="com.edge.starringharsh.EDGE.Accomodation"></activity>
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Accomodation" />
+        <activity
+            android:name=".KukuKube"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubmitScore"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EdgeMash"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Intra"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".IntraEvents"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

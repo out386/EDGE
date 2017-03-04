@@ -10,7 +10,7 @@ import java.util.Map;
 class Master {
 
     String categories[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Money Matters", "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Elevation", "Just Like That"};
-
+    String intraCat[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Infocus", "Food For Fun", "Newron", "Elevation", "Fun Events"};
 
 
     String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "GAME OF ZONES"};
@@ -29,7 +29,7 @@ class Master {
     String megalink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEOUlTaEJSa3BDQzQ";
     String funlink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWDFiWkRPR25OYzQ";
     String team[] = {"Ashish Choudhary", "Shubham Sharma", "Priyankar Banerjee", "Mayank", "Wriddhi Mukherjee", "Aqsa Zea", "Kumar Satyam Singh", "Anurag Ranjan", "Akhilesh Upadhyay"};
-    Map<String, String> eventDetails, link, teamPost, sponType, sponImg, megaType, megaImg;
+    Map<String, String> eventDetails, link, teamPost, sponType, intraLink, intraDetails, sponImg, megaType, megaImg;
     Map<String, Integer> teamImg, teamImg1, categoriesImg, eventsImg;
     Map<String, Long> teamNum;
 
@@ -656,6 +656,134 @@ class Master {
         categoriesImg.put("Newron", R.drawable.newron);
         categoriesImg.put("Elevation", R.drawable.elevation);
         categoriesImg.put("Just Like That", R.drawable.justlikethat);
+        categoriesImg.put("Fun Events", R.drawable.fun_events);
+
+        intraLink = new HashMap<String, String>();
+        intraLink.put("Compute Aid", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN1U0S3ZhZjQwOUk");
+        intraLink.put("Robotics", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEd1d3VFhsQTNzREU");
+        intraLink.put("Cyber Crusade", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEdE9vUExqdnplV1k");
+        //intraLink.put("Money Matters", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN1U0S3ZhZjQwOUk");
+        //intraLink.put("Innovati", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN1U0S3ZhZjQwOUk");
+        intraLink.put("Infocus", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEZ0FlZ2V1bFBTSTA");
+        intraLink.put("Food For Fun", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDENlFnWVFQUUhBczQ");
+        //intraLink.put("Create It", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN1U0S3ZhZjQwOUk");
+        intraLink.put("Newron", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEYmU4Y3lhSFVtTmM");
+        intraLink.put("Elevation", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEbHA2WmNNN2lRSm8");
+        intraLink.put("Fun Events", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEV09PRmhvSUxJRWc");
+
+        intraDetails = new HashMap<String, String>();
+        intraDetails.put("Compute Aid", "FLAWLESS\n" +
+                "If coding is your passion and whenever you see a problem you cannot wait to get down to code it, then this is the perfect event for you. Code out with your heart and race with the others to win the battle of wits and will. Be Flawless!\n" +
+                "http://intrafest17.edg.co.in/assets/Banner_Flawless.pdf\n" +
+                "Suraj Kumar\n" +
+                "8820070440\n" +
+                "BUGHUNT\n" +
+                "Do you often find faults in others’ codes? Or are you always on the hunt for errors whenever you see a code? Well, then this event might just be for you. Find out the trickiest of bugs in the simplest codes and correct them in the shortest and smartest way possible. Beat the others to the finish and claim the prize.\n" +
+                "http://intrafest17.edg.co.in/assets/Banner_BugHunt.pdf\n" +
+                "Ritwik Dutta\n" +
+                "8334881521\n" +
+                "CRYPTO QUEST\n" +
+                "Can you solve the cipher above and make a meaningful sentence out of it? Well if you can then you are made for this event. Crypto Quest is back again for the third time in EDGE with a lot of thrills and surprises. Well, in this event you need to be calm and gather all your wits to make meaning of most of the questions. Get ready for a cryptic experience!!!\n" +
+                "http://intrafest17.edg.co.in/assets/Banner_Crypto.pdf\n" +
+                "Suraj Kumar\n" +
+                "8820070440\n" +
+                "WEB CREATIONS\n" +
+                "Are you a web developer? If yes, then this would be the best platform to show us your web development skills.\n" +
+                "http://intrafest17.edg.co.in/assets/Banner_Web.pdf\n" +
+                "Subhabrata Paul\n" +
+                "9674842750");
+        intraDetails.put("Robotics", "MICRO-MACHINA\n" +
+                "Build an autonomous line follower bot based on microcontroller which is capable of following a white path on black surface and detecting crossroads and walls.\n" +
+                "http://intrafest17.edg.co.in/assets/Micro-Machina.pdf\n" +
+                "Dwitam Ghosh\n" +
+                "8293929077\n" +
+                "PIC-A-PARCEL\n" +
+                "Design a manually controlled robot capable of dragging blocks and scoring maximum number of matching and avoid different obstacles which come in their way and moving blocks to their destined positions for required structure.\n" +
+                "http://intrafest17.edg.co.in/assets/Pic-a-parcel.pdf\n" +
+                "Piyush Raj\n" +
+                "8282926317\n" +
+                "RETRACK\n" +
+                "You need to make a robot which is capable of traversing various terrains and is capable of dragging or pushing objects in the shortest time interval.\n" +
+                "http://intrafest17.edg.co.in/assets/Retrack.pdf\n" +
+                "Puja Singh\n" +
+                "9073144225\n" +
+                "SEGUIDOR\n" +
+                "To build an autonomous line follower bot based on logic gates and capable of following a white path on black surface and detecting crossroads.\n" +
+                "http://intrafest17.edg.co.in/assets/Seguidor.pdf\n" +
+                "Utsav Shah\n" +
+                "8697108688");
+        intraDetails.put("Cyber Crusade", "COUNTER-STRIKE 1.6\n" +
+                "CS 1.6 for college students who are dexterous counter strikers.\n" +
+                "http://intrafest17.edg.co.in/assets/Counter%20Strike%201.6.pdf\n" +
+                "Arkadeep Chatterjee\n" +
+                "9830370622\n" +
+                "NEED FOR SPEED\n" +
+                "Got gas-tank for brain and gasoline for blood? Come prove it.\n" +
+                "http://intrafest17.edg.co.in/assets/Need%20for%20Speed.pdf\n" +
+                "Swarup Sukai\n" +
+                "7098501151\n" +
+                "FIFA 11\n" +
+                "Keep scoring until your virtual limbs wear out. The strength of the leg lies in the hands.\n" +
+                "http://intrafest17.edg.co.in/assets/FIFA%2011.pdf\n" +
+                "Suman Mandal\n" +
+                "9038457494\n" +
+                "CLASH OF CLANS\n" +
+                "Reserve and preserve your gems as the ultimate battle is yet to begin. (To register- go to intra2017.edg.co.in)\n" +
+                "http://intrafest17.edg.co.in/assets/Clash%20of%20Clans.pdf\n" +
+                "Abhik Das\n" +
+                "7501794441");
+        intraDetails.put("Infocus", "CRUMBS\n" +
+                "General Photography where Tampering EXIF is not allowed. Mild post processing is allowed.\n" +
+                "http://intrafest17.edg.co.in/assets/comingsoon.pdf\n" +
+                "SAPTADIP DAS\n" +
+                "7059703077\n" +
+                "SHOOT-M-UP\n" +
+                "Upload on your facebook timeline with #intra #InFocus #EDGE17 with a suitable caption and your details and receipt no. Submission start from 1st March, Last Date of Submission 8th March,2017 8 pm.\n" +
+                "http://intrafest17.edg.co.in/assets/comingsoon.pdf\n" +
+                "RUDRANIL DAS\n" +
+                "8013785503");
+        intraDetails.put("Food For Fun", "X-QUIZ IT\n" +
+                "Do you think you know everything about food? Then gear up for the biggest and most exciting food quiz of India which will challenge your knowledge about the realm of food.\n" +
+                "http://intrafest17.edg.co.in/assets/X-Quiz%20IT.pdf\n" +
+                "Sriyanshi Banerjee\n" +
+                "9674341362\n" +
+                "FOOD RELAY\n" +
+                "Have you ever shown your team work? A chance is given to you by EDGE 2016 to show your skills in team game “FOOD RELAY”\n" +
+                "http://intrafest17.edg.co.in/assets/Food%20Relay.pdf\n" +
+                "Soumyajit Bagchi\n" +
+                "9038649522\n" +
+                "The Elevator\n" +
+                "\"Knowing it and seeing it are two different things.\" Have you ever checked the food labels that you consume?How would it feel to market and sell your own product?\n" +
+                "http://intrafest17.edg.co.in/assets/Elevator.pdf\n" +
+                "Sreyasee Biswas\n" +
+                "9051972439");
+        intraDetails.put("Newron", "QUIZ\n" +
+                "Come and use your random knowledge for this fun quiz.\n" +
+                "http://intrafest17.edg.co.in/assets/comingsoon.pdf\n" +
+                "SAMANWAY BANERJEE\n" +
+                "7998012802\n" +
+                "YOUTH PARLIAMENT\n" +
+                "Youth parliament is a form of modern debate to explore your knowledge about Indian parliamentary system. A topic will be given or discussion in the house. The more you research, the hotter you will be able to debate.\n" +
+                "http://intrafest17.edg.co.in/assets/Youth%20Parliament.pdf\n" +
+                "Ankit Anjan\n" +
+                "9020349610");
+        intraDetails.put("Elevation", "NIRMAAN\n" +
+                "The art of constructing Bridge. Bring out the Engineer inside you. May the BRIDGE you build today, light the way for a better tomorrow. (4 members per team)\n" +
+                "http://intrafest17.edg.co.in/assets/Nirmaan.pdf\n" +
+                "Soumyabrata Guha\n" +
+                "8981696657");
+        intraDetails.put("Fun Events", "MINI-MILITIA\n" +
+                "Hear the whiz of bullets flying past your face as you tumble for over. Out smart the enemy with a well placed grenade and watch them explode into bloody confetti.\n" +
+                "http://intrafest17.edg.co.in/assets/comingsoon.pdf\n" +
+                "Surajit Ghosh\n" +
+                "9038810174\n" +
+                "ROBOPUNTER\n" +
+                "Race your manual control robot which is capable of competing with other robot  in a given individual track to run. The robot to reach the finish line first will be tagged as the winner of the race and team will be awarded with the double amount of registration in hand.\n" +
+                "http://intrafest17.edg.co.in/assets/Robopunter.pdf\n" +
+                "Md. Ekram Ansari\n" +
+                "7890145686");
+
+
     }
 
 }

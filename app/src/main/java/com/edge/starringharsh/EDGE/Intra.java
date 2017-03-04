@@ -14,26 +14,21 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
-public class MainActivity extends AppCompatActivity {
+public class Intra extends AppCompatActivity {
     int i;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         overridePendingTransition(0,0);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_intra);
 
         LinearLayout ll = (LinearLayout)findViewById(R.id.linearlayout);
-        SharedPreferences sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
-        final SharedPreferences.Editor editor = sharedPreferences.edit();
-
-        //Typeface myfont1 = Typeface.createFromAsset(getAssets(), "ColabThi.otf");
-
 
         TextView tvHead = (TextView) findViewById(R.id.tvHeader);
         tvHead.setTypeface(Typeface.createFromAsset(getAssets(),"TypoGraphica.otf"));
 
         Master master = new Master();
-        String categories[] = master.categories;
+        final String categories[] = master.intraCat;
         int l = categories.length;
 
         DisplayMetrics metrics = new DisplayMetrics();
@@ -42,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         int width = metrics.widthPixels;
 
         final ImageButton cat[] = new ImageButton[l];
-        //final TextView tex[]=new TextView[l];
-         for(i=0;i<l;i++)
+
+        for(i=0;i<l;i++)
 
         {
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
@@ -52,24 +47,9 @@ public class MainActivity extends AppCompatActivity {
             RelativeLayout flTest = new RelativeLayout(this);
             cat[i] = new ImageButton(this);
             cat[i].setBackgroundResource(master.categoriesImg.get(categories[i]));
-            //cat[i].getBackground().setAlpha(80);
-           // cat[i].setBackgroundColor(Color.parseColor("#627275"));
             params.setMargins(0, 5, 0, 0);
-
-            /*tex[i]=new TextView(this);
-            tex[i].setTextColor(Color.BLACK);
-            tex[i].setTypeface(myfont1);
-            tex[i].setTypeface(Typeface.DEFAULT_BOLD);
-            tex[i].setGravity(Gravity.CENTER);
-            tex[i].setTextSize(TypedValue.COMPLEX_UNIT_PT,15);
-            tex[i].setId(i);
-            final int id_ = cat[i].getId();
-            tex[i].setText(categories[i]);
-            flTest.addView(cat[i],params);
-            flTest.addView(tex[i],params);*/
             flTest.addView(cat[i],params);
             ll.addView(flTest, params);
-           // ll.addView(tex[i],params);
         }
 
         for(i=0; i<l; i++)
@@ -77,10 +57,9 @@ public class MainActivity extends AppCompatActivity {
             cat[i].setOnClickListener(new View.OnClickListener() {
                 int j = i;
                 @Override
-                public void onClick(View view) { 
-                    editor.putInt("PrimaryChoice", j);
-                    editor.commit();
-                    Intent intent = new Intent(MainActivity.this, EventList.class);
+                public void onClick(View view) {
+                    Intent intent = new Intent(Intra.this, IntraEvents.class);
+                    intent.putExtra("category", categories[j]);
                     startActivity(intent);
                     finish();
                 }
@@ -91,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(MainActivity.this, MainMenu.class);
+        Intent intent = new Intent(Intra.this, MainMenu.class);
         startActivity(intent);
         finish();
     }

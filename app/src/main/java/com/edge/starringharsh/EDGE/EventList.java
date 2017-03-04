@@ -134,7 +134,6 @@ public class EventList extends AppCompatActivity {
     public void onBackPressed() {
         Intent intent = new Intent(EventList.this, MainActivity.class);
         startActivity(intent);
-        android.os.Process.killProcess(android.os.Process.myPid());
         finish();
     }
 

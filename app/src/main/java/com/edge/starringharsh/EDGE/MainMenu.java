@@ -31,14 +31,17 @@ public class MainMenu extends AppCompatActivity {
         //TextView trial = (TextView) findViewById(R.id.tvTRIAL);
         //trial.setText(""+(startTime/1000));
         //customHandler.postDelayed(updateTimerThread, 0);
+        ImageButton edgekube = (ImageButton) findViewById(R.id.bEdgeKube);
         ImageButton events = (ImageButton) findViewById(R.id.bEvents);
+        ImageButton intra = (ImageButton) findViewById(R.id.bIntra);
+        ImageButton edgemash = (ImageButton) findViewById(R.id.bEdgeMash);
         ImageButton megaevents = (ImageButton)findViewById(R.id.bMegaEvents);
         ImageButton funevents = (ImageButton) findViewById(R.id.bFunEvents);
         ImageButton sponsors = (ImageButton) findViewById(R.id.bSponsors);
         ImageButton team = (ImageButton)findViewById(R.id.bTeam);
         ImageButton aboutus = (ImageButton)findViewById(R.id.bAboutUs);
         ImageButton schedule = (ImageButton) findViewById(R.id.bSchedule);
-        ImageButton campusambassadors = (ImageButton) findViewById(R.id.bCampusAmbassadors);
+        //ImageButton campusambassadors = (ImageButton) findViewById(R.id.bCampusAmbassadors);
         ImageButton accommodation = (ImageButton) findViewById(R.id.bAccommodation);
         ImageButton facebook = (ImageButton) findViewById(R.id.linkFacebook);
         ImageButton youtube = (ImageButton) findViewById(R.id.linkYoutube);
@@ -53,6 +56,7 @@ public class MainMenu extends AppCompatActivity {
         int height = metrics.heightPixels;
         int width = metrics.widthPixels;
 
+        edgekube.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         events.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         megaevents.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         funevents.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
@@ -60,8 +64,10 @@ public class MainMenu extends AppCompatActivity {
         team.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         aboutus.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         schedule.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        campusambassadors.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        //campusambassadors.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         accommodation.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        intra.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        edgemash.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
 
         final Master master = new Master();
 
@@ -75,10 +81,28 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
+        edgemash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, EdgeMash.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         events.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { 
                 Intent intent = new Intent(MainMenu.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        intra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, Intra.class);
                 startActivity(intent);
                 finish();
             }
@@ -121,6 +145,16 @@ public class MainMenu extends AppCompatActivity {
                 finish();
             }
         });
+
+        edgekube.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, KukuKube.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         funevents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { 
@@ -132,7 +166,7 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        campusambassadors.setOnClickListener(new View.OnClickListener() {
+        /*campusambassadors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { 
                 Intent intent = new Intent(MainMenu.this, CampusAmbassadors.class);
@@ -140,7 +174,7 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        });
+        });*/
 
         aboutus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -284,6 +318,7 @@ public class MainMenu extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
         if (doubleBackToExitPressedOnce) {
             super.onBackPressed();
             // Clear your session, remove preferences, etc.

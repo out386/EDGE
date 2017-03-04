@@ -96,7 +96,11 @@
             android:layout_marginTop="15dp"
             android:id="@+id/view" />
 
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/datetag"
+            />
 
 
         <ImageButton
@@ -105,6 +109,19 @@
             android:layout_height="200dp"
             android:id="@+id/bEvents"
             android:background="@drawable/events"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+
+            />
+        <ImageButton
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bIntra"
+            android:background="@drawable/intra"
             android:textColor="#000000"
             android:textStyle="bold"
             android:layout_marginLeft="5dp"
@@ -134,11 +151,25 @@
 
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:id="@+id/bCampusAmbassadors"
+            android:id="@+id/bEdgeMash"
             android:layout_marginTop="6dip"
-            android:background="@drawable/campus_ambasaddors"
+            android:background="@drawable/edgemash"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp" />
+        <ImageButton
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bEdgeKube"
+            android:background="@drawable/edgekube"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+
+            />
+
         <ImageButton
 
             android:layout_width="match_parent"
