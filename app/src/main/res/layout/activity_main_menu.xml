@@ -116,19 +116,7 @@
 
 
             />
-        <ImageButton
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:id="@+id/bIntra"
-            android:background="@drawable/intra"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
 
-
-            />
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -148,14 +136,19 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp" />
         <ImageButton
-
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:id="@+id/bEdgeMash"
-            android:layout_marginTop="6dip"
-            android:background="@drawable/edgemash"
+            android:id="@+id/bIntra"
+            android:background="@drawable/intra"
+            android:textColor="#000000"
+            android:textStyle="bold"
             android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp" />
+            android:layout_marginRight="5dp"
+
+
+            />
+
         <ImageButton
             android:layout_marginTop="15dp"
             android:layout_width="match_parent"
@@ -177,6 +170,15 @@
             android:id="@+id/bSchedule"
             android:layout_marginTop="6dip"
             android:background="@drawable/schedule"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+        <ImageButton
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bEdgeMash"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/edgemash"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp" />
         <ImageButton

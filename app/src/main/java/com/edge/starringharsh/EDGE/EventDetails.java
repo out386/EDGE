@@ -10,7 +10,9 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -27,9 +29,10 @@ public class EventDetails extends AppCompatActivity {
 
     TextView tvDet, tvCont1, tvCont2, tvUpcoming;
     ImageButton bCall1, bCall2, bWA1, bWA2, bReminder;
+    Button pdf;
     ImageView iv;
     LinearLayout llUpcoming;
-    String name, det, linkadd, details, cont1, cont2, up;
+    String name, det, linkadd, details, cont1, cont2, up, pdflink;
     int date, month, hr, min;
     long phn1, phn2;
     int p=0;
@@ -63,6 +66,7 @@ public class EventDetails extends AppCompatActivity {
 
 
         tvDet.setText(det);
+        tvDet.setMovementMethod(LinkMovementMethod.getInstance());
 
         new BackFetch().execute();
 
@@ -83,6 +87,7 @@ public class EventDetails extends AppCompatActivity {
         llUpcoming = (LinearLayout) findViewById(R.id.llDetailsUpcoming);
         bReminder = (ImageButton) findViewById(R.id.bDetailsUpcoming);
         iv = (ImageView) findViewById(R.id.ivDetails);
+        pdf = (Button) findViewById(R.id.bDownloadPdf);
     }
 
 
@@ -141,10 +146,18 @@ public class EventDetails extends AppCompatActivity {
                 month = Integer.parseInt(br.readLine());
                 hr = Integer.parseInt(br.readLine());
                 min = Integer.parseInt(br.readLine());
+                pdflink = br.readLine();
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
+            pdf.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(pdflink));
+                    startActivity(intent);
+                }
+            });
 
             tvDet.setText(details);
             tvCont1.setText(cont1);

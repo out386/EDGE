@@ -15,194 +15,254 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <LinearLayout
-        android:id="@+id/linearlayout3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
 
-        android:orientation="vertical"
-        android:weightSum="1">
-
-        <ImageView
-            android:layout_marginTop="5dp"
-            android:layout_width="wrap_content"
-            android:id="@+id/ivDetails"
-            android:layout_height="180dp"
-            android:src="@drawable/edgewithtext"
-            />
-        <TextView
-            android:id="@+id/tvDetailsDet"
-            android:layout_width="match_parent"
-            android:textSize="15dp"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="5dp"
-            android:textColor="#000000"
-            android:layout_height="wrap_content"
-            android:background="@drawable/textroundborder"
-            android:padding="15dp"
-            />
         <LinearLayout
-         
+            android:id="@+id/linearlayout3"
             android:layout_width="match_parent"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"
+
             android:orientation="vertical"
-            android:background="@drawable/textroundborder"
-            android:padding="15dp"
-            >
-            <TextView
-                android:id="@+id/contactsdetails"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/ivDetails"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" 
-                android:text="Contacts"
-                android:textSize="20dp"
-                android:textColor="#000000"/>
-            <View
-                android:id="@+id/viewdetails1"
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:background="#ECE9E8"
-                android:layout_marginTop="10dp"
-                android:layout_below="@+id/contactsdetails"
-                />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp">
-                <ImageButton
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/bDetailsCall1"
-                    android:background="@drawable/phone"
-                    />
-                <ImageButton
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="6dp"
-                    android:id="@+id/bDetailsWA1"
-                    android:background="@drawable/whatsapp"
-                    />
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/edgewithtext" />
+
             <TextView
+                android:id="@+id/tvDetailsDet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:id="@+id/tvDetailsCont1"
-                android:layout_marginLeft="6dp"
-                android:textSize="20dp"
-                android:text="CONTACT"
-                android:textColor="#000000" />
-
-
-        </LinearLayout>
-            <View
-                android:id="@+id/viewdetails2"
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:background="#ECE9E8"
-                android:layout_marginTop="5dp"
-                />
-            <LinearLayout
-                android:id="@+id/detailsll"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp"
-                android:visibility="gone">
-                <ImageButton
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/bDetailsCall2"
-                    android:background="@drawable/phone"/>
-                <ImageButton
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/bDetailsWA2"
-                    android:background="@drawable/whatsapp"
-                    android:layout_marginLeft="6dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:id="@+id/tvDetailsCont2"
-                    android:layout_marginLeft="6dp"
-                    android:textSize="20dp"
-                    android:textColor="#000000" />
-
-
-            </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:textSize="15dp"
-                android:textColor="#000000"
-                android:layout_height="wrap_content"
-                android:id="@+id/llDetailsUpcoming"
+                android:autoLink="web"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
-                android:orientation="vertical"
                 android:background="@drawable/textroundborder"
                 android:padding="15dp"
-                android:visibility="gone"
-                >
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textroundborder"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp">
+
                 <TextView
-                    android:id="@+id/UpcomingEvents"
+                    android:id="@+id/tvPdf"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Upcoming Round"
-                    android:textSize="20dp"
-                    android:textColor="#000000"/>
+                    android:text="Rules And More..."
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
                 <View
-                    android:id="@+id/viewUpcoming"
                     android:layout_width="fill_parent"
                     android:layout_height="1dp"
-                    android:background="#ECE9E8"
-                    android:layout_marginTop="10dp"
                     android:layout_below="@+id/contactsdetails"
-                    />
+                    android:layout_marginTop="10dp"
+                    android:background="#ECE9E8" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="5dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:id="@+id/tvDetailsUpcoming"
-                        android:text="10:50"
-                        android:textSize="20dp"
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="5dp"
-                        android:textColor="#000000"
-                         />
-                    <ImageButton
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bDownloadPdf"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:id="@+id/bDetailsUpcoming"
-                        android:layout_marginLeft="30dp"
-                        android:background="@drawable/calender"
-                        />
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/pdf"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:textColor="#00000000" />
 
 
                 </LinearLayout>
 
             </LinearLayout>
-    </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textroundborder"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp">
+
+                <TextView
+                    android:id="@+id/contactsdetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contacts"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <View
+                    android:id="@+id/viewdetails1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/contactsdetails"
+                    android:layout_marginTop="10dp"
+                    android:background="#ECE9E8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/bDetailsCall1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/phone" />
+
+                    <ImageButton
+                        android:id="@+id/bDetailsWA1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/whatsapp" />
+
+                    <TextView
+                        android:id="@+id/tvDetailsCont1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="5dp"
+                        android:text="CONTACT"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewdetails2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ECE9E8" />
+
+                <LinearLayout
+                    android:id="@+id/detailsll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageButton
+                        android:id="@+id/bDetailsCall2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/phone" />
+
+                    <ImageButton
+                        android:id="@+id/bDetailsWA2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/whatsapp" />
+
+                    <TextView
+                        android:id="@+id/tvDetailsCont2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/llDetailsUpcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textroundborder"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/UpcomingEvents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upcoming Round"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <View
+                    android:id="@+id/viewUpcoming"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/contactsdetails"
+                    android:layout_marginTop="10dp"
+                    android:background="#ECE9E8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvDetailsUpcoming"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="5dp"
+                        android:text="10:50"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ImageButton
+                        android:id="@+id/bDetailsUpcoming"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/calender" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
 
     </ScrollView>
 
