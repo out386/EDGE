@@ -30,10 +30,15 @@ public class Team extends AppCompatActivity implements AdapterView.OnItemClickLi
         overridePendingTransition(0,0);
         setContentView(R.layout.activity_team);
 
+        int year = getIntent().getIntExtra("year", 18);
+
         o = getWindow().getDecorView().getRootView();
 
         master = new Master();
-        name = master.team;
+        if(year==18)
+            name = master.team;
+        else
+            name = master.team17;
         grid = (GridView) findViewById(R.id.gridTeam);
         grid.setAdapter(new teamAdapter(this));
         grid.setOnItemClickListener(this);

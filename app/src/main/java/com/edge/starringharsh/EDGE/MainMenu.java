@@ -14,6 +14,8 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.edge.starringharsh.EDGE.ui.SnakesGameActivity;
+
 public class MainMenu extends AppCompatActivity {
 
     boolean doubleBackToExitPressedOnce = false;
@@ -32,9 +34,11 @@ public class MainMenu extends AppCompatActivity {
         //trial.setText(""+(startTime/1000));
         //customHandler.postDelayed(updateTimerThread, 0);
         ImageButton edgekube = (ImageButton) findViewById(R.id.bEdgeKube);
+        //ImageButton geeksnake = (ImageButton) findViewById(R.id.bGeekSnake);
         ImageButton events = (ImageButton) findViewById(R.id.bEvents);
-        ImageButton intra = (ImageButton) findViewById(R.id.bIntra);
-        ImageButton edgemash = (ImageButton) findViewById(R.id.bEdgeMash);
+        ImageButton upcomingEvents = (ImageButton) findViewById(R.id.bUpcomingEvents);
+        //ImageButton intra = (ImageButton) findViewById(R.id.bIntra);
+        //ImageButton edgemash = (ImageButton) findViewById(R.id.bEdgeMash);
         ImageButton megaevents = (ImageButton)findViewById(R.id.bMegaEvents);
         ImageButton funevents = (ImageButton) findViewById(R.id.bFunEvents);
         ImageButton sponsors = (ImageButton) findViewById(R.id.bSponsors);
@@ -57,7 +61,9 @@ public class MainMenu extends AppCompatActivity {
         int width = metrics.widthPixels;
 
         edgekube.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        //geeksnake.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         events.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        upcomingEvents.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         megaevents.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         funevents.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         sponsors.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
@@ -66,8 +72,8 @@ public class MainMenu extends AppCompatActivity {
         schedule.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         //campusambassadors.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         accommodation.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        intra.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        edgemash.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        //intra.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
+        //edgemash.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
 
         final Master master = new Master();
 
@@ -81,14 +87,14 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        edgemash.setOnClickListener(new View.OnClickListener() {
+        /*edgemash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, EdgeMash.class);
                 startActivity(intent);
                 finish();
             }
-        });
+        });*/
 
         events.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,14 +105,14 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        intra.setOnClickListener(new View.OnClickListener() {
+        /*intra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, Intra.class);
                 startActivity(intent);
                 finish();
             }
-        });
+        });*/
 
         sponsors.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,8 +125,9 @@ public class MainMenu extends AppCompatActivity {
 
         team.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { 
+            public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, Team.class);
+                intent.putExtra("year", 18);
                 startActivity(intent);
                 finish();
             }
@@ -130,6 +137,17 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) { 
                 Intent intent = new Intent(MainMenu.this, PdfViewer.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        upcomingEvents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, MegaEvents.class);
+                intent.putExtra("actName", "Upcoming");
+                intent.putExtra("actLink", master.upcominglink);
                 startActivity(intent);
                 finish();
             }
@@ -154,6 +172,15 @@ public class MainMenu extends AppCompatActivity {
                 finish();
             }
         });
+
+        /*geeksnake.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, SnakesGameActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });*/
 
         funevents.setOnClickListener(new View.OnClickListener() {
             @Override

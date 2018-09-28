@@ -13,22 +13,24 @@ class Master {
     String intraCat[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Infocus", "Food For Fun", "Newron", "Elevation", "Fun Events"};
 
 
-    String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "CODANWARS", "BLIND CODING"};
-    String events1[] = {"SARVATRA", "AFFILIATOR", "DRAG-ON", "MARINODRIFT", "JIGSAW", "DOUBLE-UP", "STALKER", "BLITZKRIEG", "WALLSTREET"};
-    String events2[] = {"CS COLLEGE LEAGUE", "CS PRO LEAGUE", "DOTA 2", "CLASH OF CLANS", "NEED FOR SPEED MOST WANTED", "FIFA COLLEGE LEAGUE", "FIFA 16 PRO LEAGUE"};
+    String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "BLIND CODING", "INFINITY WARS", "WEB DESIGN"};
+    String events1[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
+    String events2[] = {"CS COLLEGE LEAGUE", "CS PRO LEAGUE", "DOTA 2", "NEED FOR SPEED MOST WANTED", "FIFA 14", "FIFA 18", "MINI MILITIA", "8 BALL POOL"};
     String events3[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
     String events4[] = {"PROJECT VIEW"};
-    String events5[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK"};
-    String events6[] = {"X QUIZ'IT", "WIZCASE", "KWIZNET", "FOOD PRODUCT LABELLING", "CREATION-X-NIHILO", "WORD WARRIOR"};
+    String events5[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA FILM"};
+    String events6[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD PROCESSING","FOOD HUNT"};
     String events7[] = {"MEKANIX", "RAGS TO RICHES"};
     String events8[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
     String events9[] = {"CAD O MANIA", "NIRMAAN"};
-    String events10[] = {"TREASURE HUNT"};
+    String events10[] = {"KHUL JAA SIM SIM", "BOOMERANG", "MUSICAL.LY", "REWIND"};
     String sponsors[] = {"GEEK ALUMS"};
     String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN2RTOTBnLTZhNFE";
     String megalink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEOUlTaEJSa3BDQzQ";
+    String upcominglink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWF9kaUIyeUx6V28";
     String funlink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWDFiWkRPR25OYzQ";
-    String team[] = {"Ashish Choudhary", "Shubham Sharma", "Priyankar Banerjee", "Mayank", "Wriddhi Mukherjee", "Aqsa Zea", "Kumar Satyam Singh", "Anurag Ranjan", "Akhilesh Upadhyay"};
+    String team17[] = {"Ashish Choudhary", "Shubham Sharma", "Priyankar Banerjee", "Mayank", "Wriddhi Mukherjee", "Aqsa Zea", "Kumar Satyam Singh", "Anurag Ranjan", "Akhilesh Upadhyay"};
+    String team[] = {"Abhishek Singh", "Ayush Tiwari", "Deep Arora", "Shuvojit Ray Chaudhuri", "Harsh Sheth", "Ashif Iqbal", "Md. Mukarram Quraishi", "Neha Roy", "Priya Chaudhuri"};
     Map<String, String> eventDetails, link, teamPost, sponType, intraLink, intraDetails, sponImg, megaType, megaImg;
     Map<String, Integer> teamImg, teamImg1, categoriesImg, eventsImg;
     Map<String, Long> teamNum;
@@ -37,266 +39,298 @@ class Master {
     Master()
     {
         eventDetails = new HashMap<String, String>();
-        eventDetails.put("FLAWLESS", "A flawless code is all that you need to build the best and destroy the rest.\n" +
-                "Suraj Kumar\n" +
-                "8820070440\n" +
-                "Ashish Kumar\n" +
-                "8697879005\n" +
+        eventDetails.put("FLAWLESS", "Just like the name suggests, as flawless as ones codes become the better chance they have of winning.\n" +
+                "Saquib Ul Hassan\n" +
+                "9804887223\n" +
+                "Suyash Mittal\n" +
+                "7044793121\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
-                "13\n" +
+                "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/Flawless.pdf");
-        eventDetails.put("BUG HUNT", "Only vigilant minds at work! Debug the buggy algorithm before anybody else does.\n" +
-                "Raunak Roy\n" +
-                "9831079974\n" +
-                "Shubhadeep Basu\n" +
-                "9051734382\n" +
+                "http://edg.co.in/#/events/Compute%20Aid/FlawLess");
+
+        eventDetails.put("BUG HUNT", "A coder is all about perfection and identifying the cracks and holes to make a flawed algorithm picture perfect.\n" +
+                "Prince Kumar\n" +
+                "7059507444\n" +
+                "Indrajit Salui\n" +
+                "7209127729\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
-                "13\n" +
+                "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/BugHunt.pdf");
-        eventDetails.put("CRYPTO QUEST", "Decrypt the encrypted problem and code out its solution.\n" +
-                "Puja Singh\n" +
-                "9474373163\n" +
-                "Shreya Chamaria\n" +
-                "9163220215\n" +
+                "http://edg.co.in/#/events/Compute%20Aid/BugHunt");
+
+        eventDetails.put("CRYPTO QUEST", "Put your cryptography and deciphering skills to test by proving yourself while solving the clues.\n" +
+                "Suyash Mittal\n" +
+                "7044793121\n" +
+                "Priyadarshini Purkayastha\n" +
+                "8584944024\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
-                "13\n" +
-                "00\n" +
-                "http://edg.co.in/assets/CryptoQuest.pdf");
-        eventDetails.put("CODANWARS", "For coders having strategic skills in them, this online map conquest event will be a cake- walk!\n" +
-                "Ritwik Datta\n" +
-                "8334881521\n" +
-                "Suraj Kumar\n" +
-                "8820070440\n" +
-                "n\n" +
                 "9\n" +
-                "3\n" +
-                "13\n" +
                 "00\n" +
-                "http://edg.co.in/assets/Codan%20Wars.pdf");
-        eventDetails.put("CODE OUT", "An online coding event on the platform of CodeChef.\n" +
-                "Ashish Kumar\n" +
-                "8820022347\n" +
-                "Shubhadeep Basu\n" +
-                "9051734382\n" +
-                "n\n" +
-                "9\n" +
-                "3\n" +
-                "13\n" +
-                "00\n" +
-                "http://edg.co.in/assets/Code%20Out.pdf");
-        eventDetails.put("CODANWARS", "For coders having strategic skills in them, this online map conquest event will be a cake- walk!\n" +
-                "Ritwik Datta\n" +
-                "8334881521\n" +
-                "Suraj Kumar\n" +
-                "8820070440\n" +
-                "n\n" +
-                "9\n" +
-                "3\n" +
-                "13\n" +
-                "00\n" +
-                "http://edg.co.in/assets/Codan%20Wars.pdf");
-        eventDetails.put("BLIND CODING", "Can you code blindly? Then come show us your power of coding at Edge 2017.\n" +
-                "Shubhadeep Basu\n" +
-                "9051734382\n" +
-                "Supratik Basu\n" +
-                "9046688464\n" +
-                "n\n" +
-                "9\n" +
-                "3\n" +
-                "13\n" +
-                "00\n" +
-                "http://edg.co.in/assets/BLINDCODING.pdf");
+                "http://edg.co.in/#/events/Compute%20Aid/CryptoQuest");
 
+       eventDetails.put("INFINITY WARS", "For coders having strategic skills in them, this online map conquest event will be a cake- walk!\n" +
+               "Shiv Kumar\n" +
+               "8820315476\n" +
+               "Saquib ul Hassan\n" +
+               "9804887223\n" +
+                "n\n" +
+                "9\n" +
+                "3\n" +
+                "13\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Compute%20Aid");
 
+        eventDetails.put("CODE OUT", "A call out to all you hidden gem coders to prove your abilities in this online event.\n" +
+                "Shiv Kumar\n" +
+                "8820315476\n" +
+                "Saquib ul Hassan\n" +
+                "9804887223\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Compute%20Aid/CodeOut");
 
-        eventDetails.put("SARVATRA", "A competition of collaboration of the hands and the mind bots in the field in which only joint perfections will triumph.\n" +
-                "Rahul Kumar Goel\n" +
-                "9804150874\n" +
+        eventDetails.put("BLIND CODING", "Practice in coding makes a coder perfect. But to the extent where you can code blindfolded?\n" +
+                "Amar Bathwal\n" +
+                "8820549897\n" +
+                "Meghna roy\n" +
+                "7059306878\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Compute%20Aid/Blind%20Coding");
+
+        eventDetails.put("WEB DESIGN", "There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.\n" +
+                "Saquib Ul Hassan\n" +
+                "9804887223\n" +
+                "Sanjeev Kumar\n" +
+                "7003566634\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Compute%20Aid/Web%20Design");
+
+        eventDetails.put("BLITZKRIEG", "A moment of pain is worth a lifetime of glory. The bot that survives till the end emerges as the victor.\n" +
+                "Sagar Sangam\n" +
+                "7991186092\n" +
                 "Saurabh Kumar Gupta\n" +
                 "8697474145\n" +
                 "n\n" +
-                "9\n" +
+                "7\n" +
                 "3\n" +
-                "13\n" +
+                "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/sarvatra.pdf");
+                "http://www.edg.co.in/#/events/Robotics/Blitzkrieg");
 
-        eventDetails.put("AFFILIATOR", "Where you're the best kind of god, the one with the function controller in your hands.\n" +
-                "Aman Jaiswal\n" +
-                "7059486071\n" +
+        eventDetails.put("DOUBLE-UP", "You want to double-up, then first toe the line.\n" +
                 "Sagar Sangam\n" +
-                "7059486078\n" +
+                "7991186092\n" +
+                "Saurabh Kumar Gupta\n" +
+                "8697474145\n" +
                 "n\n" +
-                "9\n" +
+                "7\n" +
                 "3\n" +
-                "13\n" +
+                "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/affiliator.pdf");
+                "http://www.edg.co.in/#/events/Robotics/Double-Up");
 
-        eventDetails.put("DRAG-ON","The better you dodge your bot through the field, the more goals you score.\n" +
-                "Himanshu Kumar Micky\n" +
-                "8620038947\n" +
-                "Tuhin Pal\n" +
-                "9475263491\n" +
-                "n\n" +
-                "9\n" +
-                "3\n" +
-                "13\n" +
-                "00\n" +
-                "http://edg.co.in/assets/drag-on.pdf");
-        eventDetails.put("MARINODRIFT","Simultaneous success in both terrains in the field will bring about victory.\n" +
-                "Aman Singh\n" +
-                "7044296374\n" +
-                "Ekram Ansari\n" +
-                "7890145686\n" +
-                "n\n" +
-                "9\n" +
-                "3\n" +
-                "13\n" +
-                "00\n" +
-                "http://edg.co.in/assets/marinodrift.pdf");
-        eventDetails.put("JIGSAW","Life is a maze so don't just gaze but change your pace to win the race.\n" +
-                "Dwitam Ghosh\n" +
-                "8293929077\n" +
-                "Akramul Kabir\n" +
-                "8017510039\n" +
-                "n\n" +
-                "9\n" +
-                "3\n" +
-                "13\n" +
-                "00\n" +
-                "http://edg.co.in/assets/jigsaw.pdf");
-        eventDetails.put("DOUBLE-UP","All work and no play makes Jack's bot tired of its job, so have fun with your bots in this robotics fun event.\n" +
-                "Md Arqum Shahzad\n" +
-                "9471945558\n" +
-                "Chetna Bulbul\n" +
-                "9007221426\n" +
-                "9\n" +
-                "3\n" +
-                "13\n" +
-                "00\n" +
-                "http://edg.co.in/assets/double-up.pdf");
-        eventDetails.put("STALKER","Where you bestow sentience upon an electro-mechanic jumble with a few taps of the keyboard to complete its quest.\n" +
-                "Utsav Shah\n" +
-                "8697108688\n" +
-                "Beauty Kumari\n" +
-                "9748430057\n" +
-                "n\n" +
-                "9\n" +
-                "3\n" +
-                "13\n" +
-                "00\n" +
-                "http://edg.co.in/assets/stalker.pdf");
-        eventDetails.put("BLITZKRIEG","War does not only determine who is right – only who is left victorious in the end.\n" +
-                "Ashif Iqbal\n" +
-                "7059546856\n" +
+        eventDetails.put("LIFT'N'LAY", "Put the right effort and things will get rightly placed.\n" +
+                "Sagar Sangam\n" +
+                "7991186092\n" +
                 "Piyush Raj\n" +
                 "8282926317\n" +
                 "n\n" +
-                "9\n" +
+                "7\n" +
                 "3\n" +
-                "13\n" +
+                "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/blitzkrieg.pdf");
-        eventDetails.put("WALLSTREET","Robots are just people with semicolons instead of synapses. Triumph with the perfect creation.\n" +
-                "Indranil Chatterjee\n" +
-                "8116288844\n" +
-                "Sourabh Shivendra Pathak\n" +
-                "7059485134\n" +
+                "http://www.edg.co.in/#/events/Robotics/Lift%20'N'%20Lay");
+
+        eventDetails.put("MARINODRIFT", "Strategize with your bot to win glory on both the terrains.\n" +
+                "Saurabh Kumar Gupta\n" +
+                "8697474145\n" +
+                "Piyush Raj\n" +
+                "8282926317\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "30\n" +
-                "http://edg.co.in/assets/wallstreet.pdf");
-        eventDetails.put("CS COLLEGE LEAGUE","Put your AWP skills acquired from bunked classes into good use here.\n" +
-                "Arabindo Ghosh\n" +
-                "9038814910\n" +
+                "00\n" +
+                "http://www.edg.co.in/#/events/Robotics/Marino%20Drift");
+
+        eventDetails.put("STALKER", "Follow the trail and glory waits for you at the finishing line.\n" +
+                "Utsav Shah\n" +
+                "8697108688\n" +
+                "Dwitam Ghosh\n" +
+                "8293929077\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://www.edg.co.in/#/events/Robotics/Line%20Follower");
+
+        eventDetails.put("JIGSAW", "Only the craze to solve the maze can help you win and subjects you to praise.\n" +
+                "Dwitam Ghosh\n" +
+                "8293929077\n" +
+                "Utsav Shah\n" +
+                "8697108688\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://www.edg.co.in/#/events/Robotics/Maze%20Solver");
+
+        eventDetails.put("ROBO RACE", "The better you maneuver, the farther you reach.\n" +
+                "Sagar Sangam\n" +
+                "7991186092\n" +
+                "Saurabh Kumar Gupta\n" +
+                "8697474145\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://www.edg.co.in/#/events/Robotics/Robo%20Race");
+
+        eventDetails.put("ROBO SOCCER", "Steer your bot expertly to score the maximum number of goals and win the match.\n" +
+                "Sagar Sangam\n" +
+                "7991186092\n" +
+                "Piyush Raj\n" +
+                "8282926317\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://www.edg.co.in/#/events/Robotics/Robo%20Soccer");
+
+        eventDetails.put("WALLSTREET", "Follow the trail and glory awaits you at the finishing line.\n" +
+                "Dwitam Ghosh\n" +
+                "8293929077\n" +
+                "Utsav Shah\n" +
+                "8697108688\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Robotics/Wall%20Street");
+
+        eventDetails.put("CS COLLEGE LEAGUE", "For the action frenzy college studying aficionados who got a trigger for an arm and flashbang for the other.\n" +
+                "Prangshu Shyam\n" +
+                "7551833860\n" +
+                "Agnideep Mukherjee\n" +
+                "8478954693\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Cyber%20Crusade/CS%20GO%20College-League");
+
+        eventDetails.put("CS PRO LEAGUE", "The PRO CSGO League , for all hardcore CS Gamers and learners alike.\n" +
                 "Neel Roy\n" +
                 "9830052618\n" +
+                "Swastik Samaddar Chowdhury\n" +
+                "9874436481\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/csgo-college-league.pdf");
-        eventDetails.put("CS PRO LEAGUE","For the best of the best.\n" +
-                "Tapobrata Saha\n" +
-                "9830590381\n" +
-                "Arabindo Ghosh\n" +
-                "9038814910\n" +
+                "http://edg.co.in/#/events/Cyber%20Crusade/Cs%20GO%20Pro-League");
+
+        eventDetails.put("DOTA 2", "It’s time to choose the sides. Would you choose the might of the dark or the glory of the light?\n" +
+                "Abhirup Saha\n" +
+                "9434250077\n" +
+                "Jyotishman Chakraborty\n" +
+                "8910664354\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/csgo-pro-league.pdf");
-        eventDetails.put("DOTA 2","No business but war, no family but death, no mercy but the grave! It's time to choose the sides. Would you choose the might of the dark or the glory of the light.\n" +
-                "Ayan Ghosh\n" +
-                "9734464681\n" +
-                "Akash Mitra Thakur\n" +
-                "8759402431\n" +
+                "http://edg.co.in/#/events/Cyber%20Crusade/DOTA%202");
+
+        eventDetails.put("NEED FOR SPEED MOST WANTED", "Put your feet down on the throttle to burn the tires with raging speed.\n" +
+                "Sohail Khan\n" +
+                "7278282148\n" +
+                "Sujoy Das\n" +
+                "91-9073107423\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/dota-2.pdf");
-        eventDetails.put("CLASH OF CLANS","Get ready for the biggest clash at Edge 17.\n" +
-                "Abhik Das\n" +
-                "7501794441\n" +
-                "Surajit Ghosh\n" +
-                "9038810174\n" +
+                "http://edg.co.in/#/events/Cyber%20Crusade/Need%20For%20Speed%20most%20wanted");
+
+        eventDetails.put("FIFA 14", "Tuned down gameplay and graphics of FIFA 14 here paves the way for a richer competition coming from years of experience.\n" +
+                "Avishek Chakraborty\n" +
+                "7063280262\n" +
+                "Tamesh Chakraborty\n" +
+                "9831764352\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/coc.pdf");
-        eventDetails.put("NEED FOR SPEED MOST WANTED","Got gas-tank for brain and gasoline for blood? Come prove it.\n" +
-                "Shivalik Chakravarty\n" +
-                "8017734424\n" +
-                "Swarup Sukai\n" +
-                "7098501151\n" +
+                "http://edg.co.in/#/events/Cyber%20Crusade/Fifa%2014%20College%20League");
+
+        eventDetails.put("FIFA 18", "For the Hard and Tough FIFA veterans out there , come battle it out.\n" +
+                "Sayantan Mondal\n" +
+                "768091091\n" +
+                "Md. Imran Khan\n" +
+                "9007272859\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/need-for-speed.pdf");
-        eventDetails.put("FIFA COLLEGE LEAGUE","The strength of the leg lies in the hands.\n" +
-                "Suman Mandal\n" +
-                "9038457494\n" +
-                "Arkadeep Chatterjee\n" +
-                "9830370622\n" +
+                "http://edg.co.in/#/events/Cyber%20Crusade/Fifa%2018%20Pro%20League");
+
+        eventDetails.put("MINI MILITIA", "Go in with all guns blazing and take down your foe.\n" +
+                "Arkaprava Banerjee\n" +
+                "8101041843\n" +
+                "Abhinaba Ray\n" +
+                "9474979853\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/fifa-college-league.pdf");
-        eventDetails.put("FIFA 16 PRO LEAGUE","Attack like Barca, defend like Juventus, win like Bayern; Be the best of the best\n" +
-                "Arkadeep Chatterjee\n" +
-                "9830370622\n" +
-                "Rohan Sarkhel\n" +
-                "9474579101\n" +
+                "http://edg.co.in/#/events/Cyber%20Crusade/Mini%20Militia");
+
+        eventDetails.put("8 BALL POOL", "Take aim and shoot.\n" +
+                "Arkaprava Banerjee\n" +
+                "8101041843\n" +
+                "Abhinaba Ray\n" +
+                "9474979853\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/fifa-pro-league.pdf");
-        eventDetails.put("B-PLAN","Money speaks, but only if you're an able enough interrogator with a judicious business plan.\n" +
-                "Harsh H Sheth\n" +
-                "9681253545\n" +
+                "http://edg.co.in/#/events/Cyber%20Crusade/8-Ball%20Pool");
+
+
+        eventDetails.put("B-PLAN", "If you fail to plan, you plan to fail.\n" +
+                "Kirti\n" +
+                "9038870176\n" +
                 "Punit Ojha\n" +
                 "9163413293\n" +
                 "n\n" +
@@ -304,217 +338,239 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/B-Plan.pdf");
-        eventDetails.put("B-QUIZ","In a sea of uncertainty, be the anchor, be the map, be the compass.\n" +
-                "Saptarshi Ghosh\n" +
-                "9474092342\n" +
-                "Md Isa\n" +
-                "9681089227\n" +
-                "n\n" +
-                "7\n" +
-                "3\n" +
-                "9\n" +
-                "00\n" +
-                "http://edg.co.in/assets/B-Quiz.pdf");
-        eventDetails.put("ADDOMEDIA","Creative without strategy is called art, creative with strategy is called advertising.\n" +
+                "http://edg.co.in/#/events/Money%20Matters/B-PLAN");
+
+        eventDetails.put("B-QUIZ", "A one of it's kind BizTech quiz that puts your knowledge of technology and business mindedness to test.\n" +
+                "Kirti\n" +
+                "9038870176\n" +
                 "Punit Ojha\n" +
                 "9163413293\n" +
-                "Saptarshi Ghosh\n" +
-                "9474092342\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/Addomedia.pdf");
-        eventDetails.put("STOCK IT","\"Rule No.1: Never lose money. Rule No.2: Never forget rule No.1.\" - Warren Buffet. It is that simple. Or is it? Find out as you take on the stock market in a quest to gather as much wealth as you can. Limited participants allowed. Register Here: http://www.dsij.in/stock-edge-2017.aspx Challenge Key: DgQWBvB7\n" +
-                "Harsh H Sheth\n" +
-                "9681253545\n" +
-                "Harsh H Sheth\n" +
-                "9681253545\n" +
+                "http://edg.co.in/#/events/Money%20Matters/B-Quiz");
+
+        eventDetails.put("ADDOMEDIA", "Without innovation, advertisement won't grab attention. With innovation , it will also grab you a handsome prize money.\n" +
+                "Saptarshi\n" +
+                "9474092342\n" +
+                "Punit Ojha\n" +
+                "947492342\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "30\n" +
-                "http://edg.co.in/assets/StockIt.pdf");
-        eventDetails.put("PROJECT VIEW","Think out of the box! Explore your innovation, implement the ideas and impress the jury with your creation.\n" +
-                "ANUKALPA ROY\n" +
-                "9474158507\n" +
-                "ADITI KUMARI\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Money%20Matters/AddoMedia");
+
+        eventDetails.put("STOCK IT", "Traverse the turbulent waters of the stock market in this online event that simulates the thrill of the stock market without any of the risks involved.\n" +
+                "Kirti\n" +
+                "9038870176\n" +
+                "Kirti\n" +
+                "9038870176\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Money%20Matters/Stock%20It");
+
+        eventDetails.put("PROJECT VIEW", "Ideas exploring the technical field that is advancing with every passing day need a push and here we give it to you.\n" +
+                "Aditi Kumari\n" +
                 "8276960454\n" +
+                "Nabanita Bhandary\n" +
+                "7059485319\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/innovati.pdf");
-        eventDetails.put("CRUMBS","Landscape photography? That be too mainstream. Time to discover and capture the elegance in the most inconspicuous things around.\n" +
-                "Rudranil Das (Rudy)\n" +
-                "8013785503\n" +
-                "Rudranil Das (Rudy)\n" +
-                "8013785503\n" +
-                "n\n" +
-                "7\n" +
-                "3\n" +
-                "9\n" +
-                "00\n" +
-                "http://edg.co.in/assets/Crumbs.pdf");
-        eventDetails.put("ODYSSEY","A picture is worth a thousand words. Tell us your story as you capture the mobility.\n" +
-                "Rudranil Das (Rudy)\n" +
-                "8013785503\n" +
-                "Dipon (Danny Roger)\n" +
-                "8013138986\n" +
-                "n\n" +
-                "7\n" +
-                "3\n" +
-                "9\n" +
-                "00\n" +
-                "http://edg.co.in/assets/Odyssey.pdf");
-        eventDetails.put("SHOOT M UP","A live photography competition where your photographic skills combined with innovative ideas can bag you the first prize.\n" +
-                "Saptadip Das\n" +
-                "7059703077\n" +
-                "Subhradeep\n" +
+                "http://edg.co.in/#/events/Innovati/Project%20View");
+
+        eventDetails.put("CRUMBS", "Landscape photography? That’s too mainstream. Time to go against the tide and explore the elegance in the most inconspicuous items around. The topic is open so just give us the best of you.\n" +
+                "Priyanka Sengupta\n" +
+                "9748234607\n" +
+                "Subhradeep Basu\n" +
                 "8436238707\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/Shoot-em-up.pdf");
-        eventDetails.put("INSTA CLICK","The best and the most extraordinary photograph clicked on the spot gets awarded.\n" +
-                "Dipon (Danny Roger)\n" +
-                "8013138986\n" +
+                "http://edg.co.in/#/events/Infocus/Crumbs");
+
+        eventDetails.put("ODYSSEY", "If it can be written or thought, it can be filmed” A picture is worth a thousand words . Tell us your story as you capture the mobility.\n" +
                 "Priyanka Sengupta\n" +
                 "9748234607\n" +
+                "Biswajit Banerjee\n" +
+                "78090100127\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/InstaClick.pdf");
-        eventDetails.put("X QUIZ'IT","Think fast and think hard, thats the way you win this highly informative event.\n" +
-                "SRIYANSHI BANERJI\n" +
-                "9674341362\n" +
-                "PIYALI ROY\n" +
-                "8584065639\n" +
+                "http://edg.co.in/#/events/Infocus/Odyssey");
+
+        eventDetails.put("SHOOT M UP", "“Where you capture the soul infatuation with your cell phone.\n" +
+                "Priyanka Sengupta\n" +
+                "9748234607\n" +
+                "Biswajit Banerjee\n" +
+                "78090100127\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/x-quizit.pdf");
-        eventDetails.put("WIZCASE","Don the hats of real life consultants to figure out solutions of real life problems through practical thinking.\n" +
-                "VANDANA SINGH\n" +
-                "8620947119\n" +
-                "KOEL ROY\n" +
-                "8013946165\n" +
+                "http://edg.co.in/#/events/Infocus/Shoot-'M'-Up");
+
+        eventDetails.put("INSTA CLICK", "Capture the moment that’s gone and impossible to reproduce. Shoot at the moment.\n" +
+                "Subhradeep Basu\n" +
+                "8436238707\n" +
+                "Nilanjana Biswas\n" +
+                "9800996502\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/wizcase.pdf");
-        eventDetails.put("KWIZNET","Being fast and a foodie are the only requirements for this online quiz with a time limit.\n" +
-                "SRIYANSHI BANERJI\n" +
-                "9674341362\n" +
-                "PIYALI ROY\n" +
-                "8584065639\n" +
+                "http://edg.co.in/#/events/Infocus/Insta-Click");
+
+        eventDetails.put("INSTA FILM", "Live EDGE and thread the frames. The best mobile video with a creative approach , shot on the spot , gets rewarded.\n" +
+                "Sayantan Bhattacharya\n" +
+                "9163480278\n" +
+                "Biswajit Banarjee\n" +
+                "7890100127\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/kwiznet.pdf");
-        eventDetails.put("FOOD PRODUCT LABELLING","Create labels for a food product under strict guidelines in a fixed period of time to take home the winning prize.\n" +
-                "SREYASEE BISWAS\n" +
-                "9051972439\n" +
-                "ABHIJIT SAHA\n" +
-                "7001912929\n" +
-                "n\n" +
-                "7\n" +
-                "3\n" +
-                "9\n" +
-                "00\n" +
-                "http://edg.co.in/assets/crypto-label.pdf");
-        eventDetails.put("CREATION-X-NIHILO","Channel your inner innovator to create an effective machine from raw materials and showcase your creativity.\n" +
-                "Nilanjan Bhattacharyya\n" +
-                "9163506577\n" +
-                "RAPTILEKHA CHOWDHURY\n" +
+                "http://edg.co.in/#/events/Infocus/Insta-Film");
+
+        eventDetails.put("X-QUIZ-IT", "Unleash your brain cells and win this informative quiz on a wide spectrum of topics.\n" +
+                "Raptilekha\n" +
+                "9073853754\n" +
+                "Raptilekha\n" +
                 "9073853754\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/creationxnihilo.pdf");
-        eventDetails.put("WORD WARRIOR","An exhilarating event that combines teamwork with speed and accuracy in order to emerge victorious.\n" +
-                "SOUMYAJIT BAGCHI\n" +
-                "9038649522\n" +
-                "SANKHABRATA CHOWDHURY\n" +
-                "8697517273\n" +
+                "http://edg.co.in/#/events/Food%20for%20Fun/X-Quiz-It");
+
+        eventDetails.put("FOOD PRODUCT LABELLING", "Label the food products correctly to win this event.\n" +
+                "Raptilekha\n" +
+                "9073853754\n" +
+                "Raptilekha\n" +
+                "9073853754\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/WORD_WARRIOR.pdf");
-        eventDetails.put("MEKANIX","Let your concept of mechanics shine through and take you forward via your creativity.\n" +
-                "Srestha Paul\n" +
-                "9674480944\n" +
-                "Srestha Paul\n" +
-                "9674480944\n" +
-                "y\n" +
-                "7\n" +
-                "3\n" +
-                "9\n" +
-                "00\n" +
-                "http://edg.co.in/assets/mekanix.pdf");
-        eventDetails.put("RAGS TO RICHES","Your incredible mind, if used to turn the ordinary into the extraordinary, will take you from rags to riches.\n" +
-                "Srestha Paul\n" +
-                "9674480944\n" +
-                "Srestha Paul\n" +
-                "9674480944\n" +
-                "y\n" +
-                "7\n" +
-                "3\n" +
-                "9\n" +
-                "00\n" +
-                "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWjMyc21xcmlkbDQ");
-        eventDetails.put("ELECTRONICALLY YOURS","An on spot event which will ultimately reveal how well you know your electron.\n" +
-                "Nirjhar (NGT)\n" +
-                "8902230155\n" +
-                "Nirjhar (NGT)\n" +
-                "8902230155\n" +
+                "http://edg.co.in/#/events/Food%20for%20Fun/Food%20Product%20Labelling");
+
+
+        eventDetails.put("CREATION-X-NIHILO","Create a machine with the raw materials and take away the prize for your creative thinking.\n" +
+                "Raptilekha\n" +
+                "9073853754\n" +
+                "Raptilekha\n" +
+                "9073853754\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/electronicallyyours.pdf");
-        eventDetails.put("THE QUIZ","If you think you know about the world you live in, take your inquisitiveness a step further!\n" +
-                "Nirjhar (NGT)\n" +
-                "8902230155\n" +
-                "Nirjhar (NGT)\n" +
-                "8902230155\n" +
+                "http://edg.co.in/#/events/Food%20for%20Fun/Creation-X-Nihilo");
+
+        eventDetails.put("FOOD HUNT", "Hungry enough for the prize? Hunt your food down and satiate yourself.\n" +
+                "Raptilekha\n" +
+                "9073853754\n" +
+                "Raptilekha\n" +
+                "9073853754\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/Quiz.pdf");
-        eventDetails.put("YOUTH PARLIAMENT","A replica of the Indian Parliament itself with its members consisting of politically aware students, where the proceedings would be done through debate, party formation, policy making and voting.\n" +
-                "ANKIT ANJAN\n" +
-                "7739793511\n" +
-                "ANKIT ANJAN\n" +
-                "7739793511\n" +
+                "http://edg.co.in/#/events/Food%20for%20Fun/Food%20Hunt");
+
+        eventDetails.put("FOOD PROCESSING", "Think your way through food to solve riddles and puzzles.\n" +
+                "Raptilekha\n" +
+                "9073853754\n" +
+                "Raptilekha\n" +
+                "9073853754\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/Youth%20Parliament.pdf");
-        eventDetails.put("TREASURE HUNT","Time for you  to unveil an intriguing treasure that is only a few clues away.\n"+
+                "http://edg.co.in/#/events/Food%20for%20Fun/Food%20Relay");
+
+
+        eventDetails.put("MEKANIX", "Knowledge and creativity go hand in hand in this event that tests how updated and polished your mind is!\n" +
+                "Aditi Kumari\n" +
+                "8276960454\n" +
+                "Nabanita Bhandary\n" +
+                "7059485319\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Create%20It/Mekanix");
+
+        eventDetails.put("RAGS TO RICHES", "If creativity from scratch is your strength, rags to riches is definitely your platform.\n" +
+                "Nabanita Bhandary\n" +
+                "7059485319\n" +
+                "Medha Mishra\n" +
+                "8013290587\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Create%20It/Rags%20to%20Riches");
+
+        eventDetails.put("ELECTRONICALLY YOURS","It is all about how well you handle pressure and ultimately win using your knowledge in the domain of electronics.\n" +
+                "Alvin Karkun\n" +
+                "7890150690\n" +
+                "Alvin Karkun\n" +
+                "7890150690\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Newron/Electronically%20Yours");
+
+        eventDetails.put("THE QUIZ","Being inquisitive is how you win this event that tests your general knowledge.\n" +
+                "Samanway Banerjee\n" +
+                "799812802\n" +
+                "Sankarshan Sur\n" +
+                "9830792503\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Newron/The%20Quiz");
+
+        eventDetails.put("YOUTH PARLIAMENT","If you have a keen interest in the Indian parliamentary proceedings then this is an event where you can excel.\n" +
+                "Ankit Anjan\n" +
+                "9020349610\n" +
+                "Alvin Karkun\n" +
+                "7890150690\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Newron/Youth%20Parliament");
+
+        /*eventDetails.put("TREASURE HUNT","Time for you  to unveil an intriguing treasure that is only a few clues away.\n"+
                 "Harsh Sheth\n" +
                 "9681253545\n" +
                 "Harsh Sheth\n" +
@@ -524,8 +580,8 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWjMyc21xcmlkbDQ");
-        eventDetails.put("GET SELFISH WITH EDGE17", "Have a craze for clicking selfies?Click innovative Selfies during the event and get maximum likes to win exciting prizes!\n"+
+                "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWjMyc21xcmlkbDQ");*/
+        /*eventDetails.put("GET SELFISH WITH EDGE17", "Have a craze for clicking selfies?Click innovative Selfies during the event and get maximum likes to win exciting prizes!\n"+
         "Harsh Sheth\n" +
                 "9681253545\n" +
                 "Harsh Sheth\n" +
@@ -534,128 +590,185 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00");
-        eventDetails.put("CAD O MANIA", "Put your imagination into your drawing.\n" +
-                "Suvotosh Nandi\n" +
-                "9804137312\n" +
-                "Soumyabrata Guha\n" +
-                "8013811950\n" +
+                "00");*/
+        eventDetails.put("CAD O MANIA", "Showcase your expertise with AutoCAD by taking on the provided challenge head-on and give a suitable solution.\n" +
+                "Hritu Raj\n" +
+                "8282800821\n" +
+                "Deepak\n" +
+                "9831669967\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/Cad_o_mania.pdf");
-        eventDetails.put("NIRMAAN", "The art of constructing Bridge . Bring out the Engineer inside you. May the BRIDGE you build today, light the way for a better tomorrow.\n" +
-                "Soumyabrata Guha\n" +
-                "8013811950\n" +
-                "Suvotosh Nandi\n" +
-                "9804137312\n" +
+                "http://edg.co.in/#/events/Elevation/Cad-O-Mania");
+
+        eventDetails.put("NIRMAAN", "Build a model bridge good enough to take you over the competitors and take you towards the coveted winner's prize.\n" +
+                "Hritu Raj\n" +
+                "8282800821\n" +
+                "Mrityunjay\n" +
+                "8961383442\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/assets/Nirmaan.pdf");
+                "http://edg.co.in/#/events/Elevation/Nirmaan");
+
+        eventDetails.put("BOOMERANG", "Loop in back and forth, secure the maximum likes and take home exciting goodies.\n" +
+                "Neha Roy\n" +
+                "8327640533\n" +
+                "Neha Roy\n" +
+                "8327640533\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Just%20Like%20That/Boomerang");
+
+        eventDetails.put("KHUL JAA SIM SIM", "Decipher the clues provided as the hidden treasure awaits you.\n" +
+                "Aditi Kumari\n" +
+                "8276960454\n" +
+                "Nabanita Bhandary\n" +
+                "7059485319\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Just%20Like%20That/Khul%20Ja%20Sim%20Sim");
+
+        eventDetails.put("MUSICAL.LY", "Perform to your hearts content and your creativity will bag you exciting prizes.\n" +
+                "Neha Roy\n" +
+                "8327640533\n" +
+                "Neha Roy\n" +
+                "8327640533\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Just%20Like%20That/Musical.Ly");
+
+        eventDetails.put("REWIND", "Rewind, Rollback and Play.\n" +
+                "Neha Roy\n" +
+                "8327640533\n" +
+                "Neha Roy\n" +
+                "8327640533\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Just%20Like%20That/Rewind");
 
 
         eventsImg = new HashMap<String, Integer>();
-        eventsImg.put("BUG HUNT", R.drawable.bughunt);
         eventsImg.put("FLAWLESS", R.drawable.flawless);
+        eventsImg.put("BUG HUNT", R.drawable.bughunt);
         eventsImg.put("CRYPTO QUEST", R.drawable.cryptoquest);
-        eventsImg.put("CODANWARS", R.drawable.codemart);
         eventsImg.put("CODE OUT", R.drawable.codeout);
-        eventsImg.put("CODANWARS", R.drawable.codanwars);
         eventsImg.put("BLIND CODING", R.drawable.blindcoding);
-        eventsImg.put("SARVATRA", R.drawable.sarvatra);
-        eventsImg.put("AFFILIATOR", R.drawable.affiliator);
-        eventsImg.put("DRAG-ON",R.drawable.dragon);
-        eventsImg.put("MARINODRIFT",R.drawable.marinodrift);
-        eventsImg.put("JIGSAW",R.drawable.jigsaw);
-        eventsImg.put("DOUBLE-UP",R.drawable.doubleup);
-        eventsImg.put("STALKER",R.drawable.stalker);
-        eventsImg.put("BLITZKRIEG",R.drawable.blitzkrieg);
-        eventsImg.put("WALLSTREET",R.drawable.wallstreet);
-        eventsImg.put("CS COLLEGE LEAGUE",R.drawable.csgocollege);
-        eventsImg.put("CS PRO LEAGUE",R.drawable.csgopro);
-        eventsImg.put("DOTA 2",R.drawable.dota2);
-        eventsImg.put("CLASH OF CLANS",R.drawable.clashofclans);
-        eventsImg.put("NEED FOR SPEED MOST WANTED",R.drawable.nfsmostwanted);
-        eventsImg.put("FIFA COLLEGE LEAGUE",R.drawable.fifcollege);
-        eventsImg.put("FIFA 16 PRO LEAGUE",R.drawable.fifapro);
-        eventsImg.put("B-PLAN",R.drawable.bplan);
-        eventsImg.put("B-QUIZ",R.drawable.bquiz);
-        eventsImg.put("ADDOMEDIA",R.drawable.addomedia);
-        eventsImg.put("STOCK IT",R.drawable.stockit);
-        eventsImg.put("PROJECT VIEW",R.drawable.projectview);
-        eventsImg.put("CRUMBS",R.drawable.crumbs);
-        eventsImg.put("ODYSSEY",R.drawable.odyssey);
-        eventsImg.put("SHOOT M UP",R.drawable.shootmup);
-        eventsImg.put("INSTA CLICK",R.drawable.instaclick);
-        eventsImg.put("X QUIZ'IT",R.drawable.xquizit);
-        eventsImg.put("WIZCASE",R.drawable.wizcase);
-        eventsImg.put("KWIZNET",R.drawable.kwiznet);
-        eventsImg.put("FOOD PRODUCT LABELLING",R.drawable.foodproductlabelling);
-        eventsImg.put("CREATION-X-NIHILO",R.drawable.creationxnihilo);
-        eventsImg.put("WORD WARRIOR",R.drawable.wordwarrior);
-        eventsImg.put("MEKANIX",R.drawable.mekanix);
-        eventsImg.put("RAGS TO RICHES",R.drawable.ragstoriches);
-        eventsImg.put("ELECTRONICALLY YOURS",R.drawable.electronicallyyours);
-        eventsImg.put("THE QUIZ",R.drawable.quiz);
-        eventsImg.put("YOUTH PARLIAMENT",R.drawable.youthparliament);
-        eventsImg.put("TREASURE HUNT",R.drawable.treasurehunt);
-        eventsImg.put("GET SELFISH WITH EDGE17",R.drawable.getselfish);
+        eventsImg.put("INFINITY WARS", R.drawable.infinitywar);
+        eventsImg.put("WEB DESIGN", R.drawable.webdevelopment);
+        eventsImg.put("LIFT'N'LAY", R.drawable.liftnlay);
+        eventsImg.put("STALKER", R.drawable.stalker);
+        eventsImg.put("JIGSAW", R.drawable.jigsaw);
+        eventsImg.put("MARINODRIFT", R.drawable.marinodrift);
+        eventsImg.put("ROBO SOCCER", R.drawable.robosoccer);
+        eventsImg.put("DOUBLE-UP", R.drawable.doubleup);
+        eventsImg.put("ROBO RACE", R.drawable.roborace);
+        eventsImg.put("BLITZKRIEG", R.drawable.blitzkrieg);
+        eventsImg.put("WALLSTREET", R.drawable.wallstreet);
+        eventsImg.put("CS COLLEGE LEAGUE", R.drawable.csgocollege);
+        eventsImg.put("CS PRO LEAGUE", R.drawable.csgopro);
+        eventsImg.put("DOTA 2", R.drawable.dota2);
+        eventsImg.put("NEED FOR SPEED MOST WANTED", R.drawable.needforspeed);
+        eventsImg.put("FIFA 14", R.drawable.fifa14);
+        eventsImg.put("FIFA 18", R.drawable.fifa18);
+        eventsImg.put("MINI MILITIA", R.drawable.minimilitia);
+        eventsImg.put("8 BALL POOL", R.drawable.eightballpool);
+        eventsImg.put("B-PLAN", R.drawable.bplan);
+        eventsImg.put("B-QUIZ", R.drawable.bquiz);
+        eventsImg.put("ADDOMEDIA", R.drawable.addomedia);
+        eventsImg.put("STOCK IT", R.drawable.stockit);
+        eventsImg.put("PROJECT VIEW", R.drawable.projectview);
+        eventsImg.put("CRUMBS", R.drawable.crumbs);
+        eventsImg.put("ODYSSEY", R.drawable.odyssey);
+        eventsImg.put("SHOOT M UP", R.drawable.shootmup);
+        eventsImg.put("INSTA CLICK", R.drawable.instaclick);
+        eventsImg.put("INSTA FILM", R.drawable.instafilm);
+        eventsImg.put("X QUIZ'IT", R.drawable.xquizit);
+        eventsImg.put("FOOD PROCESSING", R.drawable.foodprocessing);
+        eventsImg.put("FOOD HUNT", R.drawable.foodhunt);
+        eventsImg.put("FOOD PRODUCT LABELLING", R.drawable.foodlabeling);
+        eventsImg.put("CREATION-X-NIHILO", R.drawable.creationxnihilo);
+        eventsImg.put("MEKANIX", R.drawable.mekanix);
+        eventsImg.put("RAGS TO RICHES", R.drawable.ragsriches);
+        eventsImg.put("ELECTRONICALLY YOURS", R.drawable.electronicallyyours);
+        eventsImg.put("THE QUIZ", R.drawable.thequiz);
+        eventsImg.put("YOUTH PARLIAMENT", R.drawable.youthparliament);
+        eventsImg.put("KHUL JAA SIM SIM", R.drawable.khuljasimsim);
+        eventsImg.put("REWIND", R.drawable.rewind);
+        eventsImg.put("MUSICAL.LY", R.drawable.musically);
+        eventsImg.put("BOOMERANG", R.drawable.boomerang);
         eventsImg.put("CAD O MANIA", R.drawable.cadomania);
-        eventsImg.put("NIRMAAN", R.drawable.nirmaan);
+        eventsImg.put("NIRMAAN",R.drawable.nirman);
+
 
 
         link = new HashMap<String, String>();
-        link.put("FLAWLESS", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEa0xFT09iWkdkcGc");
-        link.put("BUG HUNT", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEMXMzb3kwSk5DUWc");
-        link.put("CRYPTO QUEST", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEd01zUGZ5V2xHYkU");
-        link.put("CODANWARS", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDENHk2ck82Mnlvb2M");
-        link.put("CODE OUT", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDES1lYdWFaSnJvSU0");
-        link.put("BLIND CODING", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN3V6dUdjYjEyUXc");
-        link.put("SARVATRA", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEYldLcEZGcWw2Y28");
-        link.put("AFFILIATOR", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEcUZJNjdyYnpBMDA");
-        link.put("DRAG-ON", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEYWdBUnFBSXpnclU");
-        link.put("MARINODRIFT", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEa2tTQTI3dlB6U0k");
-        link.put("JIGSAW", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWERFMldZM0NYUkE" );
-        link.put("DOUBLE-UP", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEUV9nZ3YyczBBUkE");
-        link.put("STALKER", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDET3ZOUEE0akZEaWc");
-        link.put("BLITZKRIEG", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEb0NlVFEtVmtGNHc");
-        link.put("WALLSTREET", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEU1BWbldIOGp1YlE");
-        link.put("CS COLLEGE LEAGUE", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiZ1ZaNll1enJMeWM");
-        link.put("CS PRO LEAGUE", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiREozSVFrN0p4V0k");
-        link.put("DOTA 2", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiaEFCb0tpSElGYTA");
-        link.put("CLASH OF CLANS", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEMzdCV01YTU5YYUE");
-        link.put("NEED FOR SPEED MOST WANTED", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiQXAtdTFuOFpSRE0");
-        link.put("FIFA COLLEGE LEAGUE", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiLTVpMHpwZmdBOE0");
-        link.put("FIFA 16 PRO LEAGUE", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqidHB6SzN2Vl9keTg");
-        link.put("B-PLAN", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiLXlKelNMS0pxV1U");
-        link.put("B-QUIZ", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiNmlqU0dpNEdseEU");
-        link.put("ADDOMEDIA", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiSFNRVHNCaXBuWUk");
-        link.put("STOCK IT", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEY0VIdW9iLVhjYlU");
-        link.put("PROJECT VIEW", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiNlpkSXd6bV9ULVE");
-        link.put("CRUMBS", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqidWpOaWFrMnJNYUE");
-        link.put("ODYSSEY", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiYmdLTTZaM3VNdVE");
-        link.put("SHOOT M UP", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiZVFWZHNLMjM5LWM");
-        link.put("INSTA CLICK", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiaUFHTDczaGZUR3M");
-        link.put("X QUIZ'IT", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiZDBWUTJyblJBOEk");
-        link.put("WIZCASE", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiSU5sWGVwdDc1Y1U");
-        link.put("KWIZNET", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiT3FRSnNZdjVWc1U");
-        link.put("FOOD PRODUCT LABELLING", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEbWFtUkJ1dklabFU");
-        link.put("CREATION-X-NIHILO", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiVmxZcm1QRVczdnM");
-        link.put("WORD WARRIOR", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWVAwQ3h6Z2pRelE");
-        link.put("MEKANIX", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiV0JWMk13ZkpJN00");
-        link.put("RAGS TO RICHES", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiY21EdDEyT0NvY1k");
-        link.put("ELECTRONICALLY YOURS", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqibFFjRU1CTElnUzg");
-        link.put("THE QUIZ", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiN0VzTzRUaGpwLTg");
-        link.put("YOUTH PARLIAMENT", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiZGpISjJtaFJEbzg");
-        link.put("TREASURE HUNT", "https://drive.google.com/uc?export=download&id=0BywZFi8e3vqiY3B2eXdUT1lZOGs");
-        link.put("GET SELFISH WITH EDGE17", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDER2FrejkxMEZ3ak0");
-        link.put("CAD O MANIA","https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDETDZGQlJ6WUljRkE");
-        link.put("NIRMAAN","https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEY2ZCRTRwazVuaXc");
+        link.put("FLAWLESS", "https://drive.google.com/uc?export=download&id=1H4MJZUtw1eM3fQ8tEFYoqFFuU0xkecqc");
+        link.put("BUG HUNT", "https://drive.google.com/uc?export=download&id=1y8GOOoIF0OYpuv7Fn0Z8dWuleI7uwzmj");
+        link.put("CRYPTO QUEST", "https://drive.google.com/uc?export=download&id=1-q4oYtQfNy8N2NtV3_0nNAutGYCk1RLn");
+        link.put("CODE OUT", "https://drive.google.com/uc?export=download&id=1YUR5n5mOqTcrxNAcfm8pcU3HqdvLeB6a");
+        link.put("BLIND CODING", "https://drive.google.com/uc?export=download&id=18aryzwybBFjCafC6T3f69nu3zsGPs0to");
+        link.put("INFINITY WARS", "https://drive.google.com/uc?export=download&id=1wSgWsLhtFtI4dY8h4h7K8zN6z8bvtB6E");
+        link.put("WEB DESIGN", "https://drive.google.com/uc?export=download&id=1Nm7Toc6knx6DWZxkIAtXLu8zFpIGA83f");
+        link.put("LIFT'N'LAY", "https://drive.google.com/uc?export=download&id=1drfG9i2kbcLmR38QoTJosMmfciuQV1Tk");
+        link.put("STALKER", "https://drive.google.com/uc?export=download&id=1TtVGgMd2lM7rJgrf9zHi4AhKEmbNbxBW");
+        link.put("JIGSAW", "https://drive.google.com/uc?export=download&id=1R5Y46N37vhGitg_NWr3qioD3TAvV0DL6");
+        link.put("MARINODRIFT", "https://drive.google.com/uc?export=download&id=1N-mYclgKo482UxggEXdUX3iZ6vgvXbwY");
+        link.put("ROBO SOCCER", "https://drive.google.com/uc?export=download&id=1DT9J3OXsDwA8XHcmGRWWN9LGmSXBQ0fr" );
+        link.put("DOUBLE-UP", "https://drive.google.com/uc?export=download&id=1BmSdvdDwWgKGAyF5vrV8yHdIqT-l-ZzQ");
+        link.put("ROBO RACE", "https://drive.google.com/uc?export=download&id=1Ck3H5nrxPdadPk3MPZ3T2dQhkTnAmbq1");
+        link.put("BLITZKRIEG", "https://drive.google.com/uc?export=download&id=1_TH0_XBKEG_iPBLr568eaNEhivSNVJiG");
+        link.put("WALLSTREET", "https://drive.google.com/uc?export=download&id=1JzpJhwFY8hk5Hbd7iwAciD5EuHxRQBdl");
+        link.put("CS COLLEGE LEAGUE", "https://drive.google.com/uc?export=download&id=1R1DTgyeLuAnO8myYB6-cBgngHlBROH4o");
+        link.put("CS PRO LEAGUE", "https://drive.google.com/uc?export=download&id=1wuojjPeAjTexCIJy4_l8Cn6s6KJQAoKt");
+        link.put("DOTA 2", "https://drive.google.com/uc?export=download&id=1t48je_U4_2_HMF7cALb6J0faFRoUgdkF");
+        link.put("NEED FOR SPEED MOST WANTED", "https://drive.google.com/uc?export=download&id=15DuwK0m8lgd2XURoMzU-lCNsGCodW0h5");
+        link.put("FIFA 14", "https://drive.google.com/uc?export=download&id=160GC6vpb_8Qj6kJm-qckUnNbQS9J7FM6");
+        link.put("FIFA 18", "https://drive.google.com/uc?export=download&id=1swA6H4EeyEagVQoF3TbYLsoIzctCty8V");
+        link.put("MINI MILITIA","https://drive.google.com/uc?export=download&id=1bt4GlAYAm_INiZTPHWcYTAyTfnnku0Xn");
+        link.put("8 BALL POOL", "https://drive.google.com/uc?export=download&id=1kRJvvbrStEq9n6lr3DL2YrIa37YmhpZr");
+        link.put("B-PLAN", "https://drive.google.com/uc?export=download&id=10kEzTCaJY9XKjD1p0LdqzkknEjGDD4Gm");
+        link.put("B-QUIZ", "https://drive.google.com/uc?export=download&id=1gvgl4nX_Y4Clq_72V8WyA9mxZhu4VMWq");
+        link.put("ADDOMEDIA", "https://drive.google.com/uc?export=download&id=11Qu1CWLvthPhxU-vqEgEalUVpQ4Y4kWf");
+        link.put("STOCK IT", "https://drive.google.com/uc?export=download&id=1Gy-Zbg1gwd8_Pkjq-dKm9pT7FFbe3S8G");
+        link.put("PROJECT VIEW", "https://drive.google.com/uc?export=download&id=1OFdubHQkri5SrmoYoIIrkqzfRH3fm6ck");
+        link.put("CRUMBS", "https://drive.google.com/uc?export=download&id=1jd9aWFc_5MfRkLxmBx7X1rQcPzETOpA0");
+        link.put("ODYSSEY", "https://drive.google.com/uc?export=download&id=1fibG9x9GRjQFMxS84tv4Dih495hNudNS");
+        link.put("SHOOT M UP", "https://drive.google.com/uc?export=download&id=1LyGO1a2nCXP6jF4DWSVwvQffo1D6tySb");
+        link.put("INSTA CLICK", "https://drive.google.com/uc?export=download&id=1r2u7PYL_XT4-hhqGE0HA9R6rSseJtccK");
+        link.put("INSTA FILM", "https://drive.google.com/uc?export=download&id=1NFymjArkPLCQVnCUk8VpJkS_X3IU5ezA");
+        link.put("X QUIZ'IT", "https://drive.google.com/uc?export=download&id=1B8UM8qQG_vH6M6AsFHpywhs6YcbVYufK");
+        link.put("FOOD PROCESSING", "https://drive.google.com/uc?export=download&id=1w-MVmn47E_f4U5dE8ZhtF6_L7wYksLWJ");
+        link.put("FOOD HUNT", "https://drive.google.com/uc?export=download&id=1ciqWkVB0FdOb9HA-JZzVGIceh8YwXlXB");
+        link.put("FOOD PRODUCT LABELLING", "https://drive.google.com/uc?export=download&id=1SqExMuHf-8-zFLtXl94_dMk1jh6g2MUC");
+        link.put("CREATION-X-NIHILO", "https://drive.google.com/uc?export=download&id=1Ugyyug3cvYaRCT82NOXs53SjLKcrRoFW");
+        link.put("MEKANIX", "https://drive.google.com/uc?export=download&id=14MNioWdWFt0dYSleYYDkJDIAyHbZK8Z4");
+        link.put("RAGS TO RICHES", "https://drive.google.com/uc?export=download&id=1cZzLiYsKhouezRi4SJwJonGa7olkJ5ZT");
+        link.put("ELECTRONICALLY YOURS", "https://drive.google.com/uc?export=download&id=15wL6TDK7ezqC-AYD0cqSFY8wjD5u487H");
+        link.put("THE QUIZ", "https://drive.google.com/uc?export=download&id=1jyCCNykrbXwcISwT-CDfHXbvEh7SsY6Y");
+        link.put("YOUTH PARLIAMENT", "https://drive.google.com/uc?export=download&id=1FJJVZ-6Pb9RoRl6Fs-D6o6gr3YbTr9Vh");
+        link.put("KHUL JAA SIM SIM", "https://drive.google.com/uc?export=download&id=1E_fCNFGa4ahWh8x1glU3fvVkW5KKGbwM");
+        link.put("REWIND", "https://drive.google.com/uc?export=download&id=18dj9NkmRLSObogdfqJKqWHwU7B-n6ZFm");
+        link.put("MUSICAL.LY", "https://drive.google.com/uc?export=download&id=1EKkucr1PCe4NdfEfy_4v91yHELRo1Gtf");
+        link.put("BOOMERANG", "https://drive.google.com/uc?export=download&id=1eLs9zjP8uzWhHRb9VchXadEDESRfEVPV");
+        link.put("CAD O MANIA","https://drive.google.com/uc?export=download&id=1YuOWuePa8N6FAOUwv36qs-t8Ctmrdj8l");
+        link.put("NIRMAAN","https://drive.google.com/uc?export=download&id=1ylHvMeBa0ku9TX5ppTiGpv-MADswdGbD");
 
 
         teamImg = new HashMap<String, Integer>();
@@ -669,6 +782,17 @@ class Master {
         teamImg.put("Anurag Ranjan", R.drawable.anurag);
         teamImg.put("Akhilesh Upadhyay", R.drawable.akhilesh);
 
+        //String team[] = {"Abhishek Singh", "Ayush Tiwari", "Deep Arora", "Shuvojit Ray Chaudhuri", "Harsh Sheth", "Ashif Iqbal", "Md. Mukarram Quraishi", "Neha Roy", "Priya Chaudhuri"};
+        teamImg.put("Abhishek Singh", R.drawable.abhishek);
+        teamImg.put("Ayush Tiwari", R.drawable.ayush);
+        teamImg.put("Deep Arora", R.drawable.deep);
+        teamImg.put("Harsh Sheth", R.drawable.harsh);
+        teamImg.put("Shuvojit Ray Chaudhuri", R.drawable.shuvojit);
+        teamImg.put("Neha Roy", R.drawable.neha);
+        teamImg.put("Priya Chaudhuri", R.drawable.priya);
+        teamImg.put("Ashif Iqbal", R.drawable.ashif);
+        teamImg.put("Md. Mukarram Quraishi", R.drawable.mukarram);
+
         teamImg1 = new HashMap<String, Integer>();
         teamImg1.put("Ashish Choudhary", R.drawable.ashish1);
         teamImg1.put("Shubham Sharma", R.drawable.shubham1);
@@ -679,6 +803,17 @@ class Master {
         teamImg1.put("Kumar Satyam Singh", R.drawable.kumar1);
         teamImg1.put("Anurag Ranjan", R.drawable.anurag1);
         teamImg1.put("Akhilesh Upadhyay", R.drawable.akhilesh1);
+
+
+        teamImg1.put("Abhishek Singh", R.drawable.abhishek1);
+        teamImg1.put("Ayush Tiwari", R.drawable.ayush1);
+        teamImg1.put("Deep Arora", R.drawable.deep1);
+        teamImg1.put("Harsh Sheth", R.drawable.harsh1);
+        teamImg1.put("Shuvojit Ray Chaudhuri", R.drawable.shuvojit1);
+        teamImg1.put("Neha Roy", R.drawable.neha1);
+        teamImg1.put("Priya Chaudhuri", R.drawable.priya1);
+        teamImg1.put("Ashif Iqbal", R.drawable.ashif1);
+        teamImg1.put("Md. Mukarram Quraishi", R.drawable.mukarram1);
 
         teamPost = new HashMap<String, String>();
         teamPost.put("Ashish Choudhary", "Convener");
@@ -691,6 +826,16 @@ class Master {
         teamPost.put("Anurag Ranjan", "Resource Head");
         teamPost.put("Akhilesh Upadhyay", "On-Site Management Head");
 
+        teamPost.put("Abhishek Singh", "Convener");
+        teamPost.put("Ayush Tiwari", "Co-Convener");
+        teamPost.put("Deep Arora", "Co-Convener");
+        teamPost.put("Harsh Sheth", "Treasurer & App Developer");
+        teamPost.put("Shuvojit Ray Chaudhuri", "Sponsorship Head");
+        teamPost.put("Neha Roy", "Publicity Head");
+        teamPost.put("Priya Chaudhuri", "PR Head");
+        teamPost.put("Ashif Iqbal", "Administrative Head");
+        teamPost.put("Md. Mukarram Quraishi", "Resource Head");
+
         teamNum = new HashMap<String, Long>();
         teamNum.put("Ashish Choudhary", 9836891210L);
         teamNum.put("Shubham Sharma", 9836933862L);
@@ -701,6 +846,16 @@ class Master {
         teamNum.put("Kumar Satyam Singh", 8599913131L);
         teamNum.put("Anurag Ranjan", 8013044530L);
         teamNum.put("Akhilesh Upadhyay", 9674331776L);
+
+        teamNum.put("Abhishek Singh", 8820396924L);
+        teamNum.put("Ayush Tiwari", 7685065583L);
+        teamNum.put("Deep Arora", 8961088404L);
+        teamNum.put("Harsh Sheth", 9681253545L);
+        teamNum.put("Shuvojit Ray Chaudhuri", 8768135114L);
+        teamNum.put("Neha Roy", 8348620628L);
+        teamNum.put("Priya Chaudhuri", 9874711731L);
+        teamNum.put("Ashif Iqbal", 8017925928L);
+        teamNum.put("Md. Mukarram Quraishi", 8272965326L);
 
         sponType = new HashMap<String, String>();
         sponType.put("ABC", "Associate Sponsor");
@@ -716,16 +871,16 @@ class Master {
         categoriesImg = new HashMap<String, Integer>();
         categoriesImg.put("Compute Aid", R.drawable.computeaid);
         categoriesImg.put("Robotics", R.drawable.robotics);
-        categoriesImg.put("Cyber Crusade", R.drawable.gaming);
+        categoriesImg.put("Cyber Crusade", R.drawable.cybercrusade);
         categoriesImg.put("Money Matters", R.drawable.moneymatters);
         categoriesImg.put("Innovati", R.drawable.innovati);
         categoriesImg.put("Infocus", R.drawable.infocus);
-        categoriesImg.put("Food For Fun", R.drawable.foodforfun);
+        categoriesImg.put("Food For Fun", R.drawable.fff);
         categoriesImg.put("Create It", R.drawable.createit);
         categoriesImg.put("Newron", R.drawable.newron);
         categoriesImg.put("Elevation", R.drawable.elevation);
         categoriesImg.put("Just Like That", R.drawable.justlikethat);
-        categoriesImg.put("Fun Events", R.drawable.fun_events);
+        categoriesImg.put("Fun Events", R.drawable.funevents);
 
         intraLink = new HashMap<String, String>();
         intraLink.put("Compute Aid", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN1U0S3ZhZjQwOUk");
@@ -816,8 +971,8 @@ class Master {
                 "http://intrafest17.edg.co.in/assets/X-Quiz%20IT.pdf\n" +
                 "Sriyanshi Banerjee\n" +
                 "9674341362\n" +
-                "FOOD RELAY\n" +
-                "Have you ever shown your team work? A chance is given to you by EDGE 2016 to show your skills in team game “FOOD RELAY”\n" +
+                "FOOD PROCESSING\n" +
+                "Have you ever shown your team work? A chance is given to you by EDGE 2016 to show your skills in team game “FOOD PROCESSING”\n" +
                 "http://intrafest17.edg.co.in/assets/Food%20Relay.pdf\n" +
                 "Soumyajit Bagchi\n" +
                 "9038649522\n" +

@@ -3,7 +3,6 @@ package com.edge.starringharsh.EDGE;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Handler;
 import android.os.SystemClock;
 import android.support.v7.app.ActionBar;
@@ -103,7 +102,7 @@ public class KukuKube extends AppCompatActivity {
             {
                 customHandler.removeCallbacks(updateTimerThread);
                 timerValue.setText("00:0");
-                Intent intent = new Intent(KukuKube.this, SubmitScore.class);
+                Intent intent = new Intent(KukuKube.this, SubmitScoreKukuKube.class);
                 intent.putExtra("Score", ""+sco);
                 intent.putExtra("Time", ""+totTime);
                 startActivity(intent);

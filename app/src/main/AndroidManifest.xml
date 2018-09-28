@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -68,28 +68,34 @@
             android:name=".KukuKube"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SubmitScore"
+            android:name=".ui.SnakesGameActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".EdgeMash"
+        <activity
+            android:name=".SubmitScoreKukuKube"
             android:screenOrientation="portrait" />
-        <activity android:name=".Intra"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".IntraEvents"
-            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".EdgeMash"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Intra"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntraEvents"
+            android:screenOrientation="portrait" />
 
-        <service
-            android:name=".MyFirebaseMessagingService">
+        <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
-        <service
-            android:name=".MyFirebaseInstanceIDService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-            </intent-filter>
-        </service>
+        <activity android:name=".TeamTemporary" />
+        <activity android:name=".SubmitScoreSnakes"></activity>
     </application>
 
 </manifest>

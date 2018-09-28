@@ -96,11 +96,11 @@
             android:layout_marginTop="15dp"
             android:id="@+id/view" />
 
-        <ImageView
+        <!--<ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/datetag"
-            />
+            />-->
 
 
         <ImageButton
@@ -132,9 +132,26 @@
             android:layout_height="200dp"
             android:id="@+id/bFunEvents"
             android:layout_marginTop="6dip"
-            android:background="@drawable/fun_events"
+            android:background="@drawable/funevents"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp" />
+
+
+        <ImageButton
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bUpcomingEvents"
+            android:background="@drawable/upcoming"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+
+            />
+
+        <!--
         <ImageButton
             android:layout_marginTop="15dp"
             android:layout_width="match_parent"
@@ -147,7 +164,7 @@
             android:layout_marginRight="5dp"
 
 
-            />
+            />-->
 
         <ImageButton
             android:layout_marginTop="15dp"
@@ -163,6 +180,20 @@
 
             />
 
+        <!--<ImageButton
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bGeekSnake"
+            android:background="@drawable/snakes"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+
+            />-->
+
         <ImageButton
 
             android:layout_width="match_parent"
@@ -172,7 +203,9 @@
             android:background="@drawable/schedule"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp" />
-        <ImageButton
+
+
+        <!--<ImageButton
 
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -180,7 +213,9 @@
             android:layout_marginTop="6dip"
             android:background="@drawable/edgemash"
             android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp" />
+            android:layout_marginRight="5dp" />-->
+
+
         <ImageButton
 
             android:layout_width="match_parent"
@@ -197,7 +232,7 @@
             android:layout_marginBottom="5dp"
             android:id="@+id/bSponsors"
             android:layout_marginTop="6dip"
-            android:background="@drawable/sponsors"
+            android:background="@drawable/oursponsors"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp" />
         <ImageButton

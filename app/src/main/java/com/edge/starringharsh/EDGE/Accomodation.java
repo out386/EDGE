@@ -20,14 +20,14 @@ public class Accomodation extends AppCompatActivity {
         ImageButton bCall1 = (ImageButton) findViewById(R.id.bAccCall);
         ImageButton bWA1 = (ImageButton) findViewById(R.id.bAccWA);
         TextView link = (TextView) findViewById(R.id.AccForm);
-        final long phn1=8443823443L;
+        final long phn1=8961299221L;
 
         link.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 
                 Intent intent = new Intent(Accomodation.this, CampusAmbassadors.class);
-                intent.putExtra("weblink", "https://goo.gl/forms/aQXJ8sl3PuyQhApA2");
+                intent.putExtra("weblink", "https://docs.google.com/forms/d/e/1FAIpQLSdWeIXHyfydLeDCh6sDSKZZNNPlLMTFpopVz5GupL8OQuDSKw/viewform");
                 startActivity(intent);
             }
         });

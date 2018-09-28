@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorBack">#20201F</color>
+    <color name="elementBackground">#00ffffff</color>
+    <color name="colorSnake">#000000</color>
+    <color name="colorScore">#ff0000</color>
+    <color name="colorScoreHishest">#00cf00</color>
+    <color name="colorHighestTv">#000000</color>
 </resources>

@@ -136,14 +136,10 @@ public class AboutUs extends AppCompatActivity {
         ImageButton c2 = (ImageButton) findViewById(R.id.bAUCall2);
         ImageButton c3 = (ImageButton) findViewById(R.id.bAUCall3);
         ImageButton c4 = (ImageButton) findViewById(R.id.bAUCall4);
-        ImageButton c5 = (ImageButton) findViewById(R.id.bAUCall5);
-        ImageButton c6 = (ImageButton) findViewById(R.id.bAUCall6);
         ImageButton w1 = (ImageButton) findViewById(R.id.bAUWA1);
         ImageButton w2 = (ImageButton) findViewById(R.id.bAUWA2);
         ImageButton w3 = (ImageButton) findViewById(R.id.bAUWA3);
         ImageButton w4 = (ImageButton) findViewById(R.id.bAUWA4);
-        ImageButton w5 = (ImageButton) findViewById(R.id.bAUWA5);
-        ImageButton w6 = (ImageButton) findViewById(R.id.bAUWA6);
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { 
@@ -170,7 +166,7 @@ public class AboutUs extends AppCompatActivity {
             @Override
             public void onClick(View view) { 
 
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "8961512844"));
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "8017797401"));
                 startActivity(intent);
             }
         });
@@ -181,7 +177,7 @@ public class AboutUs extends AppCompatActivity {
 
                 Intent sendIntent = new Intent("android.intent.action.MAIN");
                 sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
-                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "8961512844")+"@s.whatsapp.net");//phone number without "+" prefix
+                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "8017797401")+"@s.whatsapp.net");//phone number without "+" prefix
                 startActivity(sendIntent);
             }
         });
@@ -189,7 +185,7 @@ public class AboutUs extends AppCompatActivity {
             @Override
             public void onClick(View view) { 
 
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "9674842750"));
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "8617767183"));
                 startActivity(intent);
             }
         });
@@ -200,7 +196,7 @@ public class AboutUs extends AppCompatActivity {
 
                 Intent sendIntent = new Intent("android.intent.action.MAIN");
                 sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
-                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "9038246967")+"@s.whatsapp.net");//phone number without "+" prefix
+                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "9804887223")+"@s.whatsapp.net");//phone number without "+" prefix
                 startActivity(sendIntent);
             }
         });
@@ -208,7 +204,7 @@ public class AboutUs extends AppCompatActivity {
             @Override
             public void onClick(View view) { 
 
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "8820022347"));
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "7003566634"));
                 startActivity(intent);
             }
         });
@@ -219,48 +215,11 @@ public class AboutUs extends AppCompatActivity {
 
                 Intent sendIntent = new Intent("android.intent.action.MAIN");
                 sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
-                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "8820022347")+"@s.whatsapp.net");//phone number without "+" prefix
+                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "8282935441")+"@s.whatsapp.net");//phone number without "+" prefix
                 startActivity(sendIntent);
             }
         });
-        c5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
 
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "7278719725"));
-                startActivity(intent);
-            }
-        });
-
-        w5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
-
-                Intent sendIntent = new Intent("android.intent.action.MAIN");
-                sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
-                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "7278719725")+"@s.whatsapp.net");//phone number without "+" prefix
-                startActivity(sendIntent);
-            }
-        });
-        c6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
-
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "9007215727"));
-                startActivity(intent);
-            }
-        });
-
-        w6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
-
-                Intent sendIntent = new Intent("android.intent.action.MAIN");
-                sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
-                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "9007215727")+"@s.whatsapp.net");//phone number without "+" prefix
-                startActivity(sendIntent);
-            }
-        });
 
 
 

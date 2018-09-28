@@ -1,7 +1,6 @@
 package com.edge.starringharsh.EDGE;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class SubmitScore extends AppCompatActivity {
+public class SubmitScoreSnakes extends AppCompatActivity {
 
     Button sub, replay;
     EditText etName, etPhone;
@@ -19,8 +18,8 @@ public class SubmitScore extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_submit_score);
-        //https://docs.google.com/spreadsheets/d/1vlHggNspJf09ff7YL0qE2hdmjwIoNOExLFiaTevbUNw/edit?usp=sharing
-        //https://docs.google.com/forms/d/e/1FAIpQLScTnNsusxumO_3Dv63qUQ6ttSqqduF8EpcP9Joacwxs8eCVnA/viewform#responses
+        //https://drive.google.com/open?id=1mL4ANxAh-3cyAj6P0ycqAX_mIRXeuLLYkC6Wbg48KSM
+        //https://docs.google.com/forms/d/e/1FAIpQLSfxsbwE-64hYKFS-rUkeleuy782YxS9no8npSowyj5RMM1oWQ/viewform?usp=sf_link
 
         etName = (EditText) findViewById(R.id.etName);
         etPhone = (EditText) findViewById(R.id.etPhone);
@@ -28,7 +27,6 @@ public class SubmitScore extends AppCompatActivity {
         sub = (Button) findViewById(R.id.bSubmit);
         replay = (Button) findViewById(R.id.bReplay);
         score = getIntent().getStringExtra("Score");
-        time = getIntent().getStringExtra("Time");
 
         tvScore.setText(score);
         sub.setOnClickListener(new View.OnClickListener() {
@@ -42,9 +40,9 @@ public class SubmitScore extends AppCompatActivity {
                 {
                     name = name.replaceAll(" ","_");
                     phone = phone.replaceAll(" ","");
-                    String url = "https://docs.google.com/forms/d/1yl2gu-v2dfUFNzY0KTaRkftOnY5Ls3Crqe6X_bzJA1o/formResponse?ifq&entry.2111959628="+name+"&entry.1987450122="+phone+"&entry.1952577711="+score+"&entry.1475228423="+time+"&submit=Submit";
+                    String url = "https://docs.google.com/forms/d/1xp6GJiJlnwvwhzm1xpEqu2_SmsC9yrGjagz-8f5ibcA/formResponse?ifq&entry.416112121="+name+"&entry.852195496="+phone+"&entry.63957030="+score+"&submit=Submit";
                     System.out.println(url);
-                    Intent intent = new Intent(SubmitScore.this, CampusAmbassadors.class);
+                    Intent intent = new Intent(SubmitScoreSnakes.this, CampusAmbassadors.class);
                     intent.putExtra("weblink", url);
                     startActivity(intent);
                     finish();
@@ -55,7 +53,7 @@ public class SubmitScore extends AppCompatActivity {
         replay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SubmitScore.this, KukuKube.class);
+                Intent intent = new Intent(SubmitScoreSnakes.this, KukuKube.class);
                 startActivity(intent);
                 finish();
             }
@@ -65,7 +63,7 @@ public class SubmitScore extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(SubmitScore.this, MainMenu.class);
+        Intent intent = new Intent(SubmitScoreSnakes.this, MainMenu.class);
         startActivity(intent);
         finish();
     }
