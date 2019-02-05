@@ -263,7 +263,7 @@ public class IntraEvents extends AppCompatActivity {
             holder.call.setText("" + item.giNum);
             holder.whatsapp.setText("" + item.giNum);
             holder.downloadPdf.setText("" + item.giLink);
-            //Picasso.with(mContext).load(item.giImage).into(holder.imageView);
+            //Picasso.get().load(item.giImage).into(holder.imageView);
 
             holder.downloadPdf.setOnClickListener(new View.OnClickListener() {
                 @Override

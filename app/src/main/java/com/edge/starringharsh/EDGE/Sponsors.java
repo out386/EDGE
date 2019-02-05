@@ -189,7 +189,7 @@ public class Sponsors extends AppCompatActivity {
             holder.titleTextView.setText(item.giName);
             holder.subTextView.setText(item.giType);
 
-            Picasso.with(mContext).load(item.giImage).into(holder.imageView);
+            Picasso.get().load(item.giImage).into(holder.imageView);
             return row;
         }
     }
