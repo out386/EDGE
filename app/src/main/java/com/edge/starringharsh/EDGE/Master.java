@@ -31,7 +31,8 @@ class Master {
     String upcominglink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWF9kaUIyeUx6V28";
     String funlink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWDFiWkRPR25OYzQ";
     String team17[] = {"Ashish Choudhary", "Shubham Sharma", "Priyankar Banerjee", "Mayank", "Wriddhi Mukherjee", "Aqsa Zea", "Kumar Satyam Singh", "Anurag Ranjan", "Akhilesh Upadhyay"};
-    String team[] = {"Abhishek Singh", "Ayush Tiwari", "Deep Arora", "Shuvojit Ray Chaudhuri", "Harsh Sheth", "Ashif Iqbal", "Md. Mukarram Quraishi", "Neha Roy", "Priya Chaudhuri"};
+    String team18[] = {"Abhishek Singh", "Ayush Tiwari", "Deep Arora", "Shuvojit Ray Chaudhuri", "Harsh Sheth", "Ashif Iqbal", "Md. Mukarram Quraishi", "Neha Roy", "Priya Chaudhuri"};
+    String team[] = {"Chandrasekhar Upadhyay", "Rohan Choudhury", "Souradipta Ojha", "Ritaban Chakrabarti", "Siddharth Verma", "Rounak Ghosh", "Shatavisha Biswas", "Urmimala Sen", "Ankur Rai"};
     Map<String, String> eventDetails, link, teamPost, sponType, intraLink, intraDetails, sponImg, megaType, megaImg;
     Map<String, Integer> teamImg, teamImg1, categoriesImg, eventsImg;
     Map<String, Long> teamNum;
@@ -773,15 +774,15 @@ class Master {
 
 
         teamImg = new HashMap<String, Integer>();
-        teamImg.put("Ashish Choudhary", R.drawable.ashish);
-        teamImg.put("Shubham Sharma", R.drawable.shubham);
-        teamImg.put("Priyankar Banerjee", R.drawable.priyankar);
-        teamImg.put("Mayank", R.drawable.mayank);
-        teamImg.put("Wriddhi Mukherjee", R.drawable.wridhhi);
-        teamImg.put("Aqsa Zea", R.drawable.aqsa);
-        teamImg.put("Kumar Satyam Singh", R.drawable.kumar);
-        teamImg.put("Anurag Ranjan", R.drawable.anurag);
-        teamImg.put("Akhilesh Upadhyay", R.drawable.akhilesh);
+        teamImg.put("Chandrasekhar Upadhyay", R.drawable.chandrasekhar);
+        teamImg.put("Rohan Choudhury", R.drawable.rohan);
+        teamImg.put("Souradipta Ojha", R.drawable.souradipta);
+        teamImg.put("Ritaban Chakrabarti", R.drawable.ritaban);
+        teamImg.put("Siddharth Verma", R.drawable.siddharth);
+        teamImg.put("Rounak Ghosh", R.drawable.rounak);
+        teamImg.put("Shatavisha Biswas", R.drawable.shatavisha);
+        teamImg.put("Urmimala Sen", R.drawable.urmimala);
+        teamImg.put("Ankur Rai", R.drawable.ankur);
 
         //String team[] = {"Abhishek Singh", "Ayush Tiwari", "Deep Arora", "Shuvojit Ray Chaudhuri", "Harsh Sheth", "Ashif Iqbal", "Md. Mukarram Quraishi", "Neha Roy", "Priya Chaudhuri"};
         teamImg.put("Abhishek Singh", R.drawable.abhishek);
@@ -795,68 +796,37 @@ class Master {
         teamImg.put("Md. Mukarram Quraishi", R.drawable.mukarram);
 
         teamImg1 = new HashMap<String, Integer>();
-        teamImg1.put("Ashish Choudhary", R.drawable.ashish1);
-        teamImg1.put("Shubham Sharma", R.drawable.shubham1);
-        teamImg1.put("Priyankar Banerjee", R.drawable.priyankar1);
-        teamImg1.put("Mayank", R.drawable.mayank1);
-        teamImg1.put("Wriddhi Mukherjee", R.drawable.wridhhi1);
-        teamImg1.put("Aqsa Zea", R.drawable.aqsa1);
-        teamImg1.put("Kumar Satyam Singh", R.drawable.kumar1);
-        teamImg1.put("Anurag Ranjan", R.drawable.anurag1);
-        teamImg1.put("Akhilesh Upadhyay", R.drawable.akhilesh1);
-
-
-        teamImg1.put("Abhishek Singh", R.drawable.abhishek1);
-        teamImg1.put("Ayush Tiwari", R.drawable.ayush1);
-        teamImg1.put("Deep Arora", R.drawable.deep1);
-        teamImg1.put("Harsh Sheth", R.drawable.harsh1);
-        teamImg1.put("Shuvojit Ray Chaudhuri", R.drawable.shuvojit1);
-        teamImg1.put("Neha Roy", R.drawable.neha1);
-        teamImg1.put("Priya Chaudhuri", R.drawable.priya1);
-        teamImg1.put("Ashif Iqbal", R.drawable.ashif1);
-        teamImg1.put("Md. Mukarram Quraishi", R.drawable.mukarram1);
+        teamImg1.put("Chandrasekhar Upadhyay", R.drawable.chandrasekhar1);
+        teamImg1.put("Rohan Choudhury", R.drawable.rohan1);
+        teamImg1.put("Souradipta Ojha", R.drawable.souradipta1);
+        teamImg1.put("Ritaban Chakrabarti", R.drawable.ritaban1);
+        teamImg1.put("Siddharth Verma", R.drawable.siddharth1);
+        teamImg1.put("Rounak Ghosh", R.drawable.rounak1);
+        teamImg1.put("Shatavisha Biswas", R.drawable.shatavisha1);
+        teamImg1.put("Urmimala Sen", R.drawable.urmimala1);
+        teamImg1.put("Ankur Rai", R.drawable.ankur1);
 
         teamPost = new HashMap<String, String>();
-        teamPost.put("Ashish Choudhary", "Convener");
-        teamPost.put("Shubham Sharma", "Co-Convener");
-        teamPost.put("Priyankar Banerjee", "Co-Convener");
-        teamPost.put("Mayank", "Treasurer");
-        teamPost.put("Wriddhi Mukherjee", "Sponsorship Head");
-        teamPost.put("Aqsa Zea", "Publicity Head");
-        teamPost.put("Kumar Satyam Singh", "Administrative Head");
-        teamPost.put("Anurag Ranjan", "Resource Head");
-        teamPost.put("Akhilesh Upadhyay", "On-Site Management Head");
-
-        teamPost.put("Abhishek Singh", "Convener");
-        teamPost.put("Ayush Tiwari", "Co-Convener");
-        teamPost.put("Deep Arora", "Co-Convener");
-        teamPost.put("Harsh Sheth", "Treasurer & App Developer");
-        teamPost.put("Shuvojit Ray Chaudhuri", "Sponsorship Head");
-        teamPost.put("Neha Roy", "Publicity Head");
-        teamPost.put("Priya Chaudhuri", "PR Head");
-        teamPost.put("Ashif Iqbal", "Administrative Head");
-        teamPost.put("Md. Mukarram Quraishi", "Resource Head");
+        teamPost.put("Chandrasekhar Upadhyay", "Convener");
+        teamPost.put("Rohan Choudhury", "Co-Convener, Co-sponsorship Head, Editorial Head");
+        teamPost.put("Souradipta Ojha", "Co-Convener, Co-Signing Authority");
+        teamPost.put("Ritaban Chakrabarti", "Sponsorship Head");
+        teamPost.put("Siddharth Verma", "Administrative Head");
+        teamPost.put("Rounak Ghosh", "Resource Head");
+        teamPost.put("Shatavisha Biswas", "Member Management Head");
+        teamPost.put("Urmimala Sen", "Outreach");
+        teamPost.put("Ankur Rai", "Media Strategist");
 
         teamNum = new HashMap<String, Long>();
-        teamNum.put("Ashish Choudhary", 9836891210L);
-        teamNum.put("Shubham Sharma", 9836933862L);
-        teamNum.put("Priyankar Banerjee", 7044298043L);
-        teamNum.put("Mayank", 8443823443L);
-        teamNum.put("Wriddhi Mukherjee", 9002921922L);
-        teamNum.put("Aqsa Zea", 8981202855L);
-        teamNum.put("Kumar Satyam Singh", 8599913131L);
-        teamNum.put("Anurag Ranjan", 8013044530L);
-        teamNum.put("Akhilesh Upadhyay", 9674331776L);
-
-        teamNum.put("Abhishek Singh", 8820396924L);
-        teamNum.put("Ayush Tiwari", 7685065583L);
-        teamNum.put("Deep Arora", 8961088404L);
-        teamNum.put("Harsh Sheth", 9681253545L);
-        teamNum.put("Shuvojit Ray Chaudhuri", 8768135114L);
-        teamNum.put("Neha Roy", 8348620628L);
-        teamNum.put("Priya Chaudhuri", 9874711731L);
-        teamNum.put("Ashif Iqbal", 8017925928L);
-        teamNum.put("Md. Mukarram Quraishi", 8272965326L);
+        teamNum.put("Chandrasekhar Upadhyay", 9038606282L);
+        teamNum.put("Rohan Choudhury", 9331556687L);
+        teamNum.put("Souradipta Ojha", 9002992220L);
+        teamNum.put("Ritaban Chakrabarti", 8444825573L);
+        teamNum.put("Siddharth Verma", 7688080223L);
+        teamNum.put("Rounak Ghosh", 9475593576L);
+        teamNum.put("Shatavisha Biswas", 9748017460L);
+        teamNum.put("Urmimala Sen", 8697802955L);
+        teamNum.put("Ankur Rai", 7687848761L);
 
         sponType = new HashMap<String, String>();
         sponType.put("ABC", "Associate Sponsor");

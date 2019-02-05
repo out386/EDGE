@@ -25,7 +25,7 @@
     <ImageView
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/ashish"
+        tools:src="@drawable/chandrasekhar"
         android:layout_gravity="center_horizontal"
         android:id="@+id/ivTeamMember" />
 

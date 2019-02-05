@@ -30,13 +30,17 @@ public class Team extends AppCompatActivity implements AdapterView.OnItemClickLi
         overridePendingTransition(0,0);
         setContentView(R.layout.activity_team);
 
-        int year = getIntent().getIntExtra("year", 18);
+        int year = getIntent().getIntExtra("year", 19);
 
         o = getWindow().getDecorView().getRootView();
 
         master = new Master();
-        if(year==18)
+
+        // year should never be anything BUT 19. Kept the if-else just to preserve app structure
+        if(year==19)
             name = master.team;
+        else if(year==18)
+            name = master.team18;
         else
             name = master.team17;
         grid = (GridView) findViewById(R.id.gridTeam);

@@ -26,6 +26,7 @@ import android.widget.LinearLayout;
         team18.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
         team17.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
 
+        // This activity doesn't seem to be used, so not bothering to add a "team19" here
 
         team18.setOnClickListener(new View.OnClickListener() {
             @Override

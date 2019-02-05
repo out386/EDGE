@@ -127,7 +127,7 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenu.this, Team.class);
-                intent.putExtra("year", 18);
+                intent.putExtra("year", 19);
                 startActivity(intent);
                 finish();
             }
