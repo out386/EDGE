@@ -20,16 +20,29 @@
             android:id="@+id/linearlayout3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
+            android:gravity="center_horizontal"
             android:orientation="vertical"
             android:weightSum="1">
 
             <ImageView
                 android:id="@+id/ivDetails"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                tools:src="@drawable/edgewithtext" />
+
+            <TextView
+                android:id="@+id/tvDetails"
                 android:layout_width="wrap_content"
-                android:layout_height="180dp"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/edgewithtext" />
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:fontFamily="@font/megrim"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                tools:text="EVENT NAME"/>
 
             <TextView
                 android:id="@+id/tvDetailsDet"

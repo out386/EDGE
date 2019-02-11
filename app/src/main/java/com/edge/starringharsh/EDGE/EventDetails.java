@@ -27,7 +27,7 @@ import java.util.Calendar;
 
 public class EventDetails extends AppCompatActivity {
 
-    TextView tvDet, tvCont1, tvCont2, tvUpcoming, tvRules;
+    TextView tvDet, tvCont1, tvCont2, tvUpcoming, tvRules, tvDetails;
     ImageButton bCall1, bCall2, bWA1, bWA2, bReminder;
     ImageView iv;
     LinearLayout llUpcoming;
@@ -61,6 +61,7 @@ public class EventDetails extends AppCompatActivity {
         init();
         int img = master.eventsImg.get(name);
         iv.setImageResource(img);
+        tvDetails.setText(name);
 
 
         linkadd = master.link.get(name);
@@ -80,6 +81,8 @@ public class EventDetails extends AppCompatActivity {
         tvDet = (TextView) findViewById(R.id.tvDetailsDet);
         tvCont1 = (TextView) findViewById(R.id.tvDetailsCont1);
         tvCont2 = (TextView) findViewById(R.id.tvDetailsCont2);
+        tvRules = (TextView) findViewById(R.id.tvRules);
+        tvDetails = (TextView) findViewById(R.id.tvDetails);
         tvUpcoming = (TextView) findViewById(R.id.tvDetailsUpcoming);
         bCall1 = (ImageButton) findViewById(R.id.bDetailsCall1);
         bCall2 = (ImageButton) findViewById(R.id.bDetailsCall2);
@@ -88,7 +91,6 @@ public class EventDetails extends AppCompatActivity {
         llUpcoming = (LinearLayout) findViewById(R.id.llDetailsUpcoming);
         bReminder = (ImageButton) findViewById(R.id.bDetailsUpcoming);
         iv = (ImageView) findViewById(R.id.ivDetails);
-        tvRules = (TextView) findViewById(R.id.tvRules);
     }
 
 
