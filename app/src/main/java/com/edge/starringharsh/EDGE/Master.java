@@ -16,8 +16,8 @@ class Master {
 
     String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "BLIND CODING", "INFINITY WARS", "WEB DESIGN"};
     String events1[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
-    String events2[] = {"CS COLLEGE LEAGUE", "CS PRO LEAGUE", "DOTA 2", "NEED FOR SPEED MOST WANTED", "FIFA 14", "FIFA 18", "MINI MILITIA", "8 BALL POOL"};
-    String events3[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
+    String events2[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
+    String events3[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT","CROWDPITCH","EDGEHACK","PITCHRIGHT","TROLLMARKETING"};
     String events4[] = {"PROJECT VIEW"};
     String events5[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA FILM"};
     String events6[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD PROCESSING","FOOD HUNT"};
@@ -233,11 +233,11 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Robotics/Wall%20Street");
 
-        eventDetails.put("CS COLLEGE LEAGUE", "For the action frenzy college studying aficionados who got a trigger for an arm and flashbang for the other.\n" +
-                "Prangshu Shyam\n" +
-                "7551833860\n" +
-                "Agnideep Mukherjee\n" +
-                "8478954693\n" +
+        eventDetails.put("CS GO COLLEGE LEAGUE", "For the action frenzy college studying aficionados who got a trigger for an arm and flashbang for the other.\n" +
+                "Ahana Sarkar\n" +
+                "9674362280\n" +
+                "Ahana Sarkar\n" +
+                "9674362280\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -245,9 +245,9 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Cyber%20Crusade/CS%20GO%20College-League");
 
-        eventDetails.put("CS PRO LEAGUE", "The PRO CSGO League , for all hardcore CS Gamers and learners alike.\n" +
-                "Neel Roy\n" +
-                "9830052618\n" +
+        eventDetails.put("CS GO PRO LEAGUE", "The PRO CSGO League , for all hardcore CS Gamers and learners alike.\n" +
+                "Swastik Samaddar Chowdhury\n" +
+                "9874436481\n" +
                 "Swastik Samaddar Chowdhury\n" +
                 "9874436481\n" +
                 "n\n" +
@@ -257,9 +257,9 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Cyber%20Crusade/Cs%20GO%20Pro-League");
 
-        eventDetails.put("DOTA 2", "It’s time to choose the sides. Would you choose the might of the dark or the glory of the light?\n" +
-                "Abhirup Saha\n" +
-                "9434250077\n" +
+        eventDetails.put("DOTA 2", "It\'s time to choose the sides. Would you choose the might of the dark or the glory of the light?\n" +
+                "Jyotishman Chakraborty\n" +
+                "8910664354\n" +
                 "Jyotishman Chakraborty\n" +
                 "8910664354\n" +
                 "n\n" +
@@ -281,11 +281,11 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Cyber%20Crusade/Need%20For%20Speed%20most%20wanted");
 
-        eventDetails.put("FIFA 14", "Tuned down gameplay and graphics of FIFA 14 here paves the way for a richer competition coming from years of experience.\n" +
-                "Avishek Chakraborty\n" +
-                "7063280262\n" +
-                "Tamesh Chakraborty\n" +
-                "9831764352\n" +
+        eventDetails.put("FIFA COLLEGE LEAGUE", "Tuned down gameplay and graphics of FIFA here paves the way for a richer competition coming from years of experience.\n" +
+                "Arkadeep Dey\n" +
+                "9051822311\n" +
+                "Arkadeep Dey\n" +
+                "9051822311\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -293,11 +293,11 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Cyber%20Crusade/Fifa%2014%20College%20League");
 
-        eventDetails.put("FIFA 18", "For the Hard and Tough FIFA veterans out there , come battle it out.\n" +
-                "Sayantan Mondal\n" +
-                "768091091\n" +
-                "Md. Imran Khan\n" +
-                "9007272859\n" +
+        eventDetails.put("FIFA PRO LEAGUE", "For the Hard and Tough FIFA veterans out there , come battle it out.\n" +
+                "Arkadeep Dey\n" +
+                "9051822311\n" +
+                "Arkadeep Dey\n" +
+                "9051822311\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -315,13 +315,13 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Cyber%20Crusade/Mini%20Militia");
+                "http://edg.co.in/#/events/Cyber%20Crusade/Mini%20Militia");*/
 
-        eventDetails.put("8 BALL POOL", "Take aim and shoot.\n" +
-                "Arkaprava Banerjee\n" +
-                "8101041843\n" +
-                "Abhinaba Ray\n" +
-                "9474979853\n" +
+        eventDetails.put("PUBG MOBILE", "PLACEHOLDER TEXT.\n" +
+                "Agnideep Mukherjee\n" +
+                "8478954693\n" +
+                "Agnideep Mukherjee\n" +
+                "8478954693\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -683,14 +683,14 @@ class Master {
         eventsImg.put("ROBO RACE", R.drawable.roborace);
         eventsImg.put("BLITZKRIEG", R.drawable.blitzkrieg);
         eventsImg.put("WALLSTREET", R.drawable.wallstreet);
-        eventsImg.put("CS COLLEGE LEAGUE", R.drawable.csgocollege);
-        eventsImg.put("CS PRO LEAGUE", R.drawable.csgopro);
+        eventsImg.put("CS GO COLLEGE LEAGUE", R.drawable.csgocollege);
+        eventsImg.put("CS GO PRO LEAGUE", R.drawable.csgopro);
         eventsImg.put("DOTA 2", R.drawable.dota2);
-        eventsImg.put("NEED FOR SPEED MOST WANTED", R.drawable.needforspeed);
-        eventsImg.put("FIFA 14", R.drawable.fifa14);
-        eventsImg.put("FIFA 18", R.drawable.fifa18);
-        eventsImg.put("MINI MILITIA", R.drawable.minimilitia);
-        eventsImg.put("8 BALL POOL", R.drawable.eightballpool);
+       // eventsImg.put("NEED FOR SPEED MOST WANTED", R.drawable.megaevents);
+        eventsImg.put("FIFA COLLEGE LEAGUE", R.drawable.fifacollege);
+        eventsImg.put("FIFA PRO LEAGUE", R.drawable.fifapro);
+      //  eventsImg.put("MINI MILITIA", R.drawable.minimilitia);
+        eventsImg.put("PUBG MOBILE", R.drawable.pubgm);
         eventsImg.put("B-PLAN", R.drawable.bplan);
         eventsImg.put("B-QUIZ", R.drawable.bquiz);
         eventsImg.put("ADDOMEDIA", R.drawable.addomedia);
@@ -737,14 +737,6 @@ class Master {
         link.put("ROBO RACE", "https://drive.google.com/uc?export=download&id=1Ck3H5nrxPdadPk3MPZ3T2dQhkTnAmbq1");
         link.put("BLITZKRIEG", "https://drive.google.com/uc?export=download&id=1_TH0_XBKEG_iPBLr568eaNEhivSNVJiG");
         link.put("WALLSTREET", "https://drive.google.com/uc?export=download&id=1JzpJhwFY8hk5Hbd7iwAciD5EuHxRQBdl");
-        link.put("CS COLLEGE LEAGUE", "https://drive.google.com/uc?export=download&id=1R1DTgyeLuAnO8myYB6-cBgngHlBROH4o");
-        link.put("CS PRO LEAGUE", "https://drive.google.com/uc?export=download&id=1wuojjPeAjTexCIJy4_l8Cn6s6KJQAoKt");
-        link.put("DOTA 2", "https://drive.google.com/uc?export=download&id=1t48je_U4_2_HMF7cALb6J0faFRoUgdkF");
-        link.put("NEED FOR SPEED MOST WANTED", "https://drive.google.com/uc?export=download&id=15DuwK0m8lgd2XURoMzU-lCNsGCodW0h5");
-        link.put("FIFA 14", "https://drive.google.com/uc?export=download&id=160GC6vpb_8Qj6kJm-qckUnNbQS9J7FM6");
-        link.put("FIFA 18", "https://drive.google.com/uc?export=download&id=1swA6H4EeyEagVQoF3TbYLsoIzctCty8V");
-        link.put("MINI MILITIA","https://drive.google.com/uc?export=download&id=1bt4GlAYAm_INiZTPHWcYTAyTfnnku0Xn");
-        link.put("8 BALL POOL", "https://drive.google.com/uc?export=download&id=1kRJvvbrStEq9n6lr3DL2YrIa37YmhpZr");
         link.put("B-PLAN", "https://drive.google.com/uc?export=download&id=10kEzTCaJY9XKjD1p0LdqzkknEjGDD4Gm");
         link.put("B-QUIZ", "https://drive.google.com/uc?export=download&id=1gvgl4nX_Y4Clq_72V8WyA9mxZhu4VMWq");
         link.put("ADDOMEDIA", "https://drive.google.com/uc?export=download&id=11Qu1CWLvthPhxU-vqEgEalUVpQ4Y4kWf");
