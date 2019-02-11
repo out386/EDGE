@@ -242,8 +242,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Cyber%20Crusade/CS%20GO%20College-League");
+                "00\n");
 
         eventDetails.put("CS GO PRO LEAGUE", "The PRO CSGO League , for all hardcore CS Gamers and learners alike.\n" +
                 "Swastik Samaddar Chowdhury\n" +
@@ -254,8 +253,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Cyber%20Crusade/Cs%20GO%20Pro-League");
+                "00\n");
 
         eventDetails.put("DOTA 2", "It\'s time to choose the sides. Would you choose the might of the dark or the glory of the light?\n" +
                 "Jyotishman Chakraborty\n" +
@@ -266,8 +264,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Cyber%20Crusade/DOTA%202");
+                "00\n");
 
         eventDetails.put("NEED FOR SPEED MOST WANTED", "Put your feet down on the throttle to burn the tires with raging speed.\n" +
                 "Sohail Khan\n" +
@@ -290,8 +287,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Cyber%20Crusade/Fifa%2014%20College%20League");
+                "00\n");
 
         eventDetails.put("FIFA PRO LEAGUE", "For the Hard and Tough FIFA veterans out there , come battle it out.\n" +
                 "Arkadeep Dey\n" +
@@ -302,8 +298,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Cyber%20Crusade/Fifa%2018%20Pro%20League");
+                "00\n");
 
         eventDetails.put("MINI MILITIA", "Go in with all guns blazing and take down your foe.\n" +
                 "Arkaprava Banerjee\n" +
@@ -326,8 +321,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Cyber%20Crusade/8-Ball%20Pool");
+                "00\n");
 
 
         eventDetails.put("B-PLAN", "If you fail to plan, you plan to fail.\n" +

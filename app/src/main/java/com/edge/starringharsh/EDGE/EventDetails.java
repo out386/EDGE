@@ -27,12 +27,11 @@ import java.util.Calendar;
 
 public class EventDetails extends AppCompatActivity {
 
-    TextView tvDet, tvCont1, tvCont2, tvUpcoming;
+    TextView tvDet, tvCont1, tvCont2, tvUpcoming, tvRules;
     ImageButton bCall1, bCall2, bWA1, bWA2, bReminder;
-    Button pdf;
     ImageView iv;
     LinearLayout llUpcoming;
-    String name, det, linkadd, details, cont1, cont2, up, pdflink;
+    String name, det, linkadd, details, cont1, cont2, up;
     int date, month, hr, min;
     long phn1, phn2;
     int p=0;
@@ -41,6 +40,7 @@ public class EventDetails extends AppCompatActivity {
     SharedPreferences.Editor editor;
     Master master;
     ProgressDialog progress;
+    Rules rules;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +49,7 @@ public class EventDetails extends AppCompatActivity {
         setContentView(R.layout.activity_event_details);
 
         master = new Master();
+        rules = new Rules();
 
         sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
         name = sharedPreferences.getString("Name", "not found");
@@ -87,7 +88,7 @@ public class EventDetails extends AppCompatActivity {
         llUpcoming = (LinearLayout) findViewById(R.id.llDetailsUpcoming);
         bReminder = (ImageButton) findViewById(R.id.bDetailsUpcoming);
         iv = (ImageView) findViewById(R.id.ivDetails);
-        pdf = (Button) findViewById(R.id.bDownloadPdf);
+        tvRules = (TextView) findViewById(R.id.tvRules);
     }
 
 
@@ -122,7 +123,7 @@ public class EventDetails extends AppCompatActivity {
             } catch (Exception e) {
                 System.out.println("Failed");
                 det = sharedPreferences.getString(name, master.eventDetails.get(name));
-                e.printStackTrace();
+                //e.printStackTrace();
             }
 
             return null;
@@ -146,18 +147,11 @@ public class EventDetails extends AppCompatActivity {
                 month = Integer.parseInt(br.readLine());
                 hr = Integer.parseInt(br.readLine());
                 min = Integer.parseInt(br.readLine());
-                pdflink = br.readLine();
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
-            pdf.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(pdflink));
-                    startActivity(intent);
-                }
-            });
+            tvRules.setText(rules.rules.get(name));
 
             tvDet.setText(details);
             tvCont1.setText(cont1);
