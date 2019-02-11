@@ -12,6 +12,8 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.edge.starringharsh.EDGE.utils.ButtonUtils;
+
 public class EventList extends AppCompatActivity {
 
     int i;
@@ -93,16 +95,17 @@ public class EventList extends AppCompatActivity {
 
 
         final ImageButton eventButton[] = new ImageButton[l];
+        int dp = ButtonUtils.dpToPx(this, 200);
             for (i = 0; i < l; i++) {
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                        width,
-                        width/2);
+                        dp,dp);
+                TextView text = ButtonUtils.getCaptionTv(this, events[i]);
                 eventButton[i] = new ImageButton(this);
                 eventButton[i].setId(i);
                 eventButton[i].setBackgroundResource(master.eventsImg.get(events[i]));
 
-                final int id_ = eventButton[i].getId();
                 ll.addView(eventButton[i], params);
+                ll.addView(text);
             }
 
             for (i = 0; i < l; i++) {

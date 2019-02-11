@@ -17,7 +17,7 @@
         android:id="@+id/linearlayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         >
 
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="7dp"
-            android:text="EVENTS"
+            tools:text="EVENTS"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#ffffff"
             android:id="@+id/tvHeader"/>
