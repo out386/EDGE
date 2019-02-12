@@ -121,7 +121,7 @@ public class MainMenu extends AppCompatActivity {
         edge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { 
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.edg.co.in")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://edg.co.in")));
             }
         });
 
