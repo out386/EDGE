@@ -193,14 +193,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="5dp">
+                    android:layout_marginTop="10dp">
 
                     <ImageButton
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:id="@+id/bAUCall1"
                         android:background="@drawable/phone"
-                        android:layout_marginTop="14dp"
                         />
                     <ImageButton
                         android:layout_width="30dp"
@@ -208,12 +207,10 @@
                         android:layout_marginLeft="6dp"
                         android:id="@+id/bAUWA1"
                         android:background="@drawable/whatsapp"
-                        android:layout_marginTop="14dp"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginLeft="6dp"
                         android:textSize="20dp"
                         android:text="Harsh Sheth"
@@ -226,14 +223,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_marginTop="5dp">
+                        android:layout_marginTop="10dp">
 
                         <ImageButton
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:id="@+id/bAUCall2"
                             android:background="@drawable/phone"
-                            android:layout_marginTop="14dp"
                             />
                         <ImageButton
                             android:layout_width="30dp"
@@ -241,17 +237,45 @@
                             android:layout_marginLeft="6dp"
                             android:id="@+id/bAUWA2"
                             android:background="@drawable/whatsapp"
-                            android:layout_marginTop="14dp"
                             />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
                             android:layout_marginLeft="6dp"
                             android:textSize="20dp"
                             android:text="Anku Ankita"
                             android:textColor="#000000"
                             />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/bAUCall5"
+                        android:background="@drawable/phone"
+                        />
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:id="@+id/bAUWA5"
+                        android:background="@drawable/whatsapp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="20dp"
+                        android:text="Ritayan Chakraborty"
+                        android:textColor="#000000"
+                        />
 
                 </LinearLayout>
 
@@ -272,14 +296,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="5dp">
+                    android:layout_marginTop="10dp">
 
                     <ImageButton
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:id="@+id/bAUCall3"
                         android:background="@drawable/phone"
-                        android:layout_marginTop="14dp"
                         />
                     <ImageButton
                         android:layout_width="30dp"
@@ -287,12 +310,10 @@
                         android:layout_marginLeft="6dp"
                         android:id="@+id/bAUWA3"
                         android:background="@drawable/whatsapp"
-                        android:layout_marginTop="14dp"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginLeft="6dp"
                         android:textSize="20dp"
                         android:text="Saquib-Ul-Hasan"
@@ -305,14 +326,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="5dp">
+                    android:layout_marginTop="10dp">
 
                     <ImageButton
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:id="@+id/bAUCall4"
                         android:background="@drawable/phone"
-                        android:layout_marginTop="14dp"
                         />
                     <ImageButton
                         android:layout_width="30dp"
@@ -320,12 +340,10 @@
                         android:layout_marginLeft="6dp"
                         android:id="@+id/bAUWA4"
                         android:background="@drawable/whatsapp"
-                        android:layout_marginTop="14dp"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginLeft="6dp"
                         android:textSize="20dp"
                         android:text="Sanjeev Kumar"

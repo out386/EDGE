@@ -136,10 +136,12 @@ public class AboutUs extends AppCompatActivity {
         ImageButton c2 = (ImageButton) findViewById(R.id.bAUCall2);
         ImageButton c3 = (ImageButton) findViewById(R.id.bAUCall3);
         ImageButton c4 = (ImageButton) findViewById(R.id.bAUCall4);
+        ImageButton c5 = (ImageButton) findViewById(R.id.bAUCall5);
         ImageButton w1 = (ImageButton) findViewById(R.id.bAUWA1);
         ImageButton w2 = (ImageButton) findViewById(R.id.bAUWA2);
         ImageButton w3 = (ImageButton) findViewById(R.id.bAUWA3);
         ImageButton w4 = (ImageButton) findViewById(R.id.bAUWA4);
+        ImageButton w5 = (ImageButton) findViewById(R.id.bAUWA5);
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { 
@@ -202,7 +204,7 @@ public class AboutUs extends AppCompatActivity {
         });
         c4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { 
+            public void onClick(View view) {
 
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "7003566634"));
                 startActivity(intent);
@@ -211,11 +213,30 @@ public class AboutUs extends AppCompatActivity {
 
         w4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { 
+            public void onClick(View view) {
 
                 Intent sendIntent = new Intent("android.intent.action.MAIN");
                 sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
                 sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "8282935441")+"@s.whatsapp.net");//phone number without "+" prefix
+                startActivity(sendIntent);
+            }
+        });
+        c5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "8240989283"));
+                startActivity(intent);
+            }
+        });
+
+        w5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent sendIntent = new Intent("android.intent.action.MAIN");
+                sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
+                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "8240989283")+"@s.whatsapp.net");//phone number without "+" prefix
                 startActivity(sendIntent);
             }
         });
