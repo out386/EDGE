@@ -534,18 +534,18 @@ class Master {
         eventDetails.put("ELECTRONICALLY YOURS","It is all about how well you handle pressure and ultimately win using your knowledge in the domain of electronics.\n" +
                 "Alvin Karkun\n" +
                 "7890150690\n" +
-                "Alvin Karkun\n" +
-                "7890150690\n" +
+                "Soumalya Ghosh\n" +
+                "8582834183\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Newron/Electronically%20Yours");
+                "http://edg.co.in/#/events/Newron");
 
         eventDetails.put("THE QUIZ","Being inquisitive is how you win this event that tests your general knowledge.\n" +
-                "Samanway Banerjee\n" +
-                "799812802\n" +
+                "Alvin Karkun\n" +
+                "7890150690\n" +
                 "Sankarshan Sur\n" +
                 "9830792503\n" +
                 "n\n" +
@@ -553,7 +553,7 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Newron/The%20Quiz");
+                "http://edg.co.in/#/events/Newron");
 
         eventDetails.put("YOUTH PARLIAMENT","If you have a keen interest in the Indian parliamentary proceedings then this is an event where you can excel.\n" +
                 "Ankit Anjan\n" +
@@ -565,7 +565,7 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Newron/Youth%20Parliament");
+                "http://edg.co.in/#/events/Newron");
 
         /*eventDetails.put("TREASURE HUNT","Time for you  to unveil an intriguing treasure that is only a few clues away.\n"+
                 "Harsh Sheth\n" +
@@ -704,7 +704,8 @@ class Master {
         eventsImg.put("MEKANIX", R.drawable.mekanix);
         eventsImg.put("RAGS TO RICHES", R.drawable.ragsriches);
         eventsImg.put("ELECTRONICALLY YOURS", R.drawable.electronicallyyours);
-        eventsImg.put("THE QUIZ", R.drawable.thequiz);
+
+       eventsImg.put("THE QUIZ", R.drawable.thequiz);
         eventsImg.put("YOUTH PARLIAMENT", R.drawable.youthparliament);
         eventsImg.put("KHUL JAA SIM SIM", R.drawable.khuljasimsim);
         eventsImg.put("REWIND", R.drawable.rewind);
@@ -762,9 +763,6 @@ class Master {
         link.put("CREATION-X-NIHILO", "https://drive.google.com/uc?export=download&id=1Ugyyug3cvYaRCT82NOXs53SjLKcrRoFW");
         link.put("MEKANIX", "https://drive.google.com/uc?export=download&id=14MNioWdWFt0dYSleYYDkJDIAyHbZK8Z4");
         link.put("RAGS TO RICHES", "https://drive.google.com/uc?export=download&id=1cZzLiYsKhouezRi4SJwJonGa7olkJ5ZT");
-        link.put("ELECTRONICALLY YOURS", "https://drive.google.com/uc?export=download&id=15wL6TDK7ezqC-AYD0cqSFY8wjD5u487H");
-        link.put("THE QUIZ", "https://drive.google.com/uc?export=download&id=1jyCCNykrbXwcISwT-CDfHXbvEh7SsY6Y");
-        link.put("YOUTH PARLIAMENT", "https://drive.google.com/uc?export=download&id=1FJJVZ-6Pb9RoRl6Fs-D6o6gr3YbTr9Vh");
         link.put("KHUL JAA SIM SIM", "https://drive.google.com/uc?export=download&id=1E_fCNFGa4ahWh8x1glU3fvVkW5KKGbwM");
         link.put("REWIND", "https://drive.google.com/uc?export=download&id=18dj9NkmRLSObogdfqJKqWHwU7B-n6ZFm");
         link.put("MUSICAL.LY", "https://drive.google.com/uc?export=download&id=1EKkucr1PCe4NdfEfy_4v91yHELRo1Gtf");
