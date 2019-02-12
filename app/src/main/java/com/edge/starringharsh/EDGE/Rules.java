@@ -45,5 +45,11 @@ class Rules {
         rules.put("ROBO SOCCER", R.string.rules_robo_soccer);
         rules.put("BLITZKRIEG", R.string.rules_blitzkrieg);
         rules.put("ROBO RACE", R.string.rules_robo_race);
+        rules.put("FLAWLESS", R.string.rules_flawless);
+        rules.put("BUG HUNT", R.string.rules_placeholder);
+        rules.put("CRYPTO QUEST", R.string.rules_placeholder);
+        rules.put("CODE OUT", R.string.rules_placeholder);
+        rules.put("CODE RELAY", R.string.rules_placeholder);
+        rules.put("WEB DEV", R.string.rules_placeholder);
     }
 }

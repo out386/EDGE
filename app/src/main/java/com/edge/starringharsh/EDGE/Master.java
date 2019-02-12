@@ -15,7 +15,7 @@ class Master {
     String intraCat[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Infocus", "Food For Fun", "Newron", "Elevation", "Fun Events"};
 
 
-    String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "BLIND CODING", "INFINITY WARS", "WEB DESIGN"};
+    String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "CODE RELAY", "WEB DEV"};
     String events1[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
     String events2[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
     String events3[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
@@ -43,8 +43,8 @@ class Master {
     {
         eventDetails = new HashMap<String, String>();
         eventDetails.put("FLAWLESS", "Just like the name suggests, as flawless as ones codes become the better chance they have of winning.\n" +
-                "Saquib Ul Hassan\n" +
-                "9804887223\n" +
+                "Raja Sachin\n" +
+                "9062647976\n" +
                 "Suyash Mittal\n" +
                 "7044793121\n" +
                 "n\n" +
@@ -52,31 +52,31 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid/FlawLess");
+                "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("BUG HUNT", "A coder is all about perfection and identifying the cracks and holes to make a flawed algorithm picture perfect.\n" +
-                "Prince Kumar\n" +
-                "7059507444\n" +
-                "Indrajit Salui\n" +
-                "7209127729\n" +
-                "n\n" +
-                "7\n" +
-                "3\n" +
-                "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid/BugHunt");
-
-        eventDetails.put("CRYPTO QUEST", "Put your cryptography and deciphering skills to test by proving yourself while solving the clues.\n" +
+                "Raja Sachin\n" +
+                "9062647976\n" +
                 "Suyash Mittal\n" +
                 "7044793121\n" +
-                "Priyadarshini Purkayastha\n" +
-                "8584944024\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid/CryptoQuest");
+                "http://edg.co.in/#/events/Compute%20Aid");
+
+        eventDetails.put("CRYPTO QUEST", "Put your cryptography and deciphering skills to test by proving yourself while solving the clues.\n" +
+                "Raja Sachin\n" +
+                "9062647976\n" +
+                "Suyash Mittal\n" +
+                "7044793121\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Compute%20Aid");
 
        eventDetails.put("INFINITY WARS", "For coders having strategic skills in them, this online map conquest event will be a cake- walk!\n" +
                "Shiv Kumar\n" +
@@ -91,16 +91,28 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("CODE OUT", "A call out to all you hidden gem coders to prove your abilities in this online event.\n" +
-                "Shiv Kumar\n" +
-                "8820315476\n" +
-                "Saquib ul Hassan\n" +
-                "9804887223\n" +
+                "Raja Sachin\n" +
+                "9062647976\n" +
+                "Suyash Mittal\n" +
+                "7044793121\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid/CodeOut");
+                "http://edg.co.in/#/events/Compute%20Aid");
+
+        eventDetails.put("CODE RELAY", "Description unavailable\n" +
+                "Raja Sachin\n" +
+                "9062647976\n" +
+                "Suyash Mittal\n" +
+                "7044793121\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("BLIND CODING", "Practice in coding makes a coder perfect. But to the extent where you can code blindfolded?\n" +
                 "Amar Bathwal\n" +
@@ -114,17 +126,17 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Compute%20Aid/Blind%20Coding");
 
-        eventDetails.put("WEB DESIGN", "There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.\n" +
-                "Saquib Ul Hassan\n" +
-                "9804887223\n" +
-                "Sanjeev Kumar\n" +
-                "7003566634\n" +
+        eventDetails.put("WEB DEV", "There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.\n" +
+                "Raja Sachin\n" +
+                "9062647976\n" +
+                "Suyash Mittal\n" +
+                "7044793121\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid/Web%20Design20Design");
+                "http://edg.co.in/#/events/Compute%20Aid/");
 
         eventDetails.put("BLITZKRIEG", "A moment of pain is worth a lifetime of glory. The bot that survives till the end emerges as the victor.\n" +
                 "Sagar Sangam\n" +
@@ -666,10 +678,11 @@ class Master {
         eventsImg.put("BUG HUNT", R.drawable.bughunt);
         eventsImg.put("CRYPTO QUEST", R.drawable.cryptoquest);
         eventsImg.put("CODE OUT", R.drawable.codeout);
-        eventsImg.put("BLIND CODING", R.drawable.blindcoding);
-        eventsImg.put("INFINITY WARS", R.drawable.infinitywar);
-        eventsImg.put("WEB DESIGN", R.drawable.webdevelopment);
-        eventsImg.put("LIFT'N'LAY", R.drawable.liftnlay);
+        eventsImg.put("CODE RELAY", R.drawable.coderelay);
+      //  eventsImg.put("BLIND CODING", R.drawable.blindcoding);
+        // eventsImg.put("INFINITY WARS", R.drawable.infinitywar);
+        eventsImg.put("WEB DEV", R.drawable.codeout);
+        eventsImg.put("LIFT'N'LAY", R.drawable.liftlay);
         eventsImg.put("STALKER", R.drawable.stalker);
         eventsImg.put("JIGSAW", R.drawable.jigsaw);
         eventsImg.put("MARINODRIFT", R.drawable.marinodrift);
@@ -730,13 +743,13 @@ class Master {
 
 
         link = new HashMap<String, String>();
-        link.put("FLAWLESS", "https://drive.google.com/uc?export=download&id=1H4MJZUtw1eM3fQ8tEFYoqFFuU0xkecqc");
-        link.put("BUG HUNT", "https://drive.google.com/uc?export=download&id=1y8GOOoIF0OYpuv7Fn0Z8dWuleI7uwzmj");
-        link.put("CRYPTO QUEST", "https://drive.google.com/uc?export=download&id=1-q4oYtQfNy8N2NtV3_0nNAutGYCk1RLn");
-        link.put("CODE OUT", "https://drive.google.com/uc?export=download&id=1YUR5n5mOqTcrxNAcfm8pcU3HqdvLeB6a");
-        link.put("BLIND CODING", "https://drive.google.com/uc?export=download&id=18aryzwybBFjCafC6T3f69nu3zsGPs0to");
-        link.put("INFINITY WARS", "https://drive.google.com/uc?export=download&id=1wSgWsLhtFtI4dY8h4h7K8zN6z8bvtB6E");
-        link.put("WEB DESIGN", "https://drive.google.com/uc?export=download&id=1Nm7Toc6knx6DWZxkIAtXLu8zFpIGA83f");
+        //link.put("FLAWLESS", "https://drive.google.com/uc?export=download&id=1H4MJZUtw1eM3fQ8tEFYoqFFuU0xkecqc");
+        //link.put("BUG HUNT", "https://drive.google.com/uc?export=download&id=1y8GOOoIF0OYpuv7Fn0Z8dWuleI7uwzmj");
+        //link.put("CRYPTO QUEST", "https://drive.google.com/uc?export=download&id=1-q4oYtQfNy8N2NtV3_0nNAutGYCk1RLn");
+        //link.put("CODE OUT", "https://drive.google.com/uc?export=download&id=1YUR5n5mOqTcrxNAcfm8pcU3HqdvLeB6a");
+        //link.put("BLIND CODING", "https://drive.google.com/uc?export=download&id=18aryzwybBFjCafC6T3f69nu3zsGPs0to");
+        //link.put("INFINITY WARS", "https://drive.google.com/uc?export=download&id=1wSgWsLhtFtI4dY8h4h7K8zN6z8bvtB6E");
+        //link.put("WEB DESIGN", "https://drive.google.com/uc?export=download&id=1Nm7Toc6knx6DWZxkIAtXLu8zFpIGA83f");
         //link.put("LIFT'N'LAY", "https://drive.google.com/uc?export=download&id=1drfG9i2kbcLmR38QoTJosMmfciuQV1Tk");
         //link.put("STALKER", "https://drive.google.com/uc?export=download&id=1TtVGgMd2lM7rJgrf9zHi4AhKEmbNbxBW");
         //link.put("JIGSAW", "https://drive.google.com/uc?export=download&id=1R5Y46N37vhGitg_NWr3qioD3TAvV0DL6");
