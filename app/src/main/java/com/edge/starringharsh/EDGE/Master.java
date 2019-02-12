@@ -313,7 +313,7 @@ class Master {
                 "9\n" +
                 "00\n");
 
-        eventDetails.put("MINI MILITIA", "Go in with all guns blazing and take down your foe.\n" +
+        /*eventDetails.put("MINI MILITIA", "Go in with all guns blazing and take down your foe.\n" +
                 "Arkaprava Banerjee\n" +
                 "8101041843\n" +
                 "Abhinaba Ray\n" +
@@ -711,7 +711,7 @@ class Master {
         eventsImg.put("INSTA EDIT", R.drawable.instaedit);
         //eventsImg.put("INSTA FILM", R.drawable.megaevents);
         eventsImg.put("X QUIZ'IT", R.drawable.xquizit);
-        eventsImg.put("FOOD PROCESSING", R.drawable.foodprocessing);
+        //eventsImg.put("FOOD PROCESSING", R.drawable.foodprocessing);
         eventsImg.put("FOOD HUNT", R.drawable.foodhunt);
         eventsImg.put("FOOD PRODUCT LABELLING", R.drawable.foodlabelling);
         eventsImg.put("CREATION-X-NIHILO", R.drawable.creationxnihilo);
@@ -792,17 +792,6 @@ class Master {
         teamImg.put("Shatavisha Biswas", R.drawable.shatavisha);
         teamImg.put("Urmimala Sen", R.drawable.urmimala);
         teamImg.put("Ankur Rai", R.drawable.ankur);
-
-        //String team[] = {"Abhishek Singh", "Ayush Tiwari", "Deep Arora", "Shuvojit Ray Chaudhuri", "Harsh Sheth", "Ashif Iqbal", "Md. Mukarram Quraishi", "Neha Roy", "Priya Chaudhuri"};
-        teamImg.put("Abhishek Singh", R.drawable.abhishek);
-        teamImg.put("Ayush Tiwari", R.drawable.ayush);
-        teamImg.put("Deep Arora", R.drawable.deep);
-        teamImg.put("Harsh Sheth", R.drawable.harsh);
-        teamImg.put("Shuvojit Ray Chaudhuri", R.drawable.shuvojit);
-        teamImg.put("Neha Roy", R.drawable.neha);
-        teamImg.put("Priya Chaudhuri", R.drawable.priya);
-        teamImg.put("Ashif Iqbal", R.drawable.ashif);
-        teamImg.put("Md. Mukarram Quraishi", R.drawable.mukarram);
 
         teamImg1 = new HashMap<String, Integer>();
         teamImg1.put("Chandrasekhar Upadhyay", R.drawable.chandrasekhar1);
