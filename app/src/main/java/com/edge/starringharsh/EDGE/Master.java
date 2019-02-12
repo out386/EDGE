@@ -589,28 +589,28 @@ class Master {
                 "9\n" +
                 "00");*/
         eventDetails.put("CAD O MANIA", "Showcase your expertise with AutoCAD by taking on the provided challenge head-on and give a suitable solution.\n" +
-                "Hritu Raj\n" +
-                "8282800821\n" +
-                "Deepak\n" +
-                "9831669967\n" +
+                "Sanjit Shaw\n" +
+                "9093058470\n" +
+                "Prashant Kumar Dubey\n" +
+                "9091397765\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Elevation/Cad-O-Mania");
+                "http://edg.co.in/#/events/Elevation");
 
         eventDetails.put("NIRMAAN", "Build a model bridge good enough to take you over the competitors and take you towards the coveted winner's prize.\n" +
-                "Hritu Raj\n" +
-                "8282800821\n" +
-                "Mrityunjay\n" +
-                "8961383442\n" +
+                "Sanjit Shaw\n" +
+                "9093058470\n" +
+                "Vishal Kumar\n" +
+                "7991176304\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Elevation/Nirmaan");
+                "http://edg.co.in/#/events/Elevation");
 
         eventDetails.put("BOOMERANG", "Loop in back and forth, secure the maximum likes and take home exciting goodies.\n" +
                 "Neha Roy\n" +
@@ -711,7 +711,7 @@ class Master {
         eventsImg.put("MUSICAL.LY", R.drawable.musically);
         eventsImg.put("BOOMERANG", R.drawable.boomerang);
         eventsImg.put("CAD O MANIA", R.drawable.cadomania);
-        eventsImg.put("NIRMAAN",R.drawable.nirman);
+        eventsImg.put("NIRMAAN",R.drawable.nirmaan);
 
 
         mainMenuImg = new HashMap<String, Integer>();
@@ -769,8 +769,6 @@ class Master {
         link.put("REWIND", "https://drive.google.com/uc?export=download&id=18dj9NkmRLSObogdfqJKqWHwU7B-n6ZFm");
         link.put("MUSICAL.LY", "https://drive.google.com/uc?export=download&id=1EKkucr1PCe4NdfEfy_4v91yHELRo1Gtf");
         link.put("BOOMERANG", "https://drive.google.com/uc?export=download&id=1eLs9zjP8uzWhHRb9VchXadEDESRfEVPV");
-        link.put("CAD O MANIA","https://drive.google.com/uc?export=download&id=1YuOWuePa8N6FAOUwv36qs-t8Ctmrdj8l");
-        link.put("NIRMAAN","https://drive.google.com/uc?export=download&id=1ylHvMeBa0ku9TX5ppTiGpv-MADswdGbD");
 
 
         teamImg = new HashMap<String, Integer>();

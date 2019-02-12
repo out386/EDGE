@@ -14,5 +14,7 @@ class Rules {
         rules.put("FIFA COLLEGE LEAGUE", R.string.rules_placeholder);
         rules.put("FIFA PRO LEAGUE", R.string.rules_placeholder);
         rules.put("PUBG MOBILE", R.string.rules_placeholder);
+        rules.put("NIRMAAN", R.string.rules_nirmaan);
+        rules.put("CAD O MANIA", R.string.rules_cadomania);
     }
 }
