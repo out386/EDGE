@@ -10,8 +10,9 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.edge.starringharsh.EDGE.utils.ButtonUtils;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -38,38 +39,20 @@ public class MainActivity extends AppCompatActivity {
 
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        int height = metrics.heightPixels;
-        int width = metrics.widthPixels;
 
         final ImageButton cat[] = new ImageButton[l];
-        //final TextView tex[]=new TextView[l];
+        int px = ButtonUtils.dpToPx(this, 200);
          for(i=0;i<l;i++)
 
         {
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                    width,
-                    width/2);
-            RelativeLayout flTest = new RelativeLayout(this);
+                    px, px);
             cat[i] = new ImageButton(this);
             cat[i].setBackgroundResource(master.categoriesImg.get(categories[i]));
-            //cat[i].getBackground().setAlpha(80);
-           // cat[i].setBackgroundColor(Color.parseColor("#627275"));
-            params.setMargins(0, 5, 0, 0);
 
-            /*tex[i]=new TextView(this);
-            tex[i].setTextColor(Color.BLACK);
-            tex[i].setTypeface(myfont1);
-            tex[i].setTypeface(Typeface.DEFAULT_BOLD);
-            tex[i].setGravity(Gravity.CENTER);
-            tex[i].setTextSize(TypedValue.COMPLEX_UNIT_PT,15);
-            tex[i].setId(i);
-            final int id_ = cat[i].getId();
-            tex[i].setText(categories[i]);
-            flTest.addView(cat[i],params);
-            flTest.addView(tex[i],params);*/
-            flTest.addView(cat[i],params);
-            ll.addView(flTest, params);
-           // ll.addView(tex[i],params);
+            TextView caption = ButtonUtils.getCaptionTv(this, categories[i]);
+            ll.addView(cat[i], params);
+            ll.addView(caption);
         }
 
         for(i=0; i<l; i++)
