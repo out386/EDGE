@@ -10,6 +10,7 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
+import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
@@ -153,7 +154,7 @@ public class EventDetails extends AppCompatActivity {
                 e.printStackTrace();
             }
 
-            tvRules.setText(rules.rules.get(name));
+            tvRules.setText(Html.fromHtml(getString(rules.rules.get(name))));
 
             tvDet.setText(details);
             tvCont1.setText(cont1);
