@@ -20,7 +20,7 @@ class Master {
     String events2[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
     String events3[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
     String events4[] = {"PROJECT VIEW"};
-    String events5[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK"};
+    String events5[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA EDIT"};
     String events6[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING"};
     String events7[] = {"MEKANIX", "RAGS TO RICHES"};
     String events8[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
@@ -395,31 +395,31 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Infocus/Crumbs");
+                "http://edg.co.in/#/events/Infocus");
 
-        eventDetails.put("ODYSSEY", "If it can be written or thought, it can be filmed” A picture is worth a thousand words . Tell us your story as you capture the mobility.\n" +
-                "Priyanka Sengupta\n" +
-                "9748234607\n" +
-                "Biswajit Banerjee\n" +
-                "78090100127\n" +
+        eventDetails.put("ODYSSEY", "“If it can be written or thought, it can be filmed” A picture is worth a thousand words . Tell us your story as you capture the mobility.\n" +
+                "Rohit Deb\n" +
+                "9038220806\n" +
+                "Karan Paul\n" +
+                "8906833180\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Infocus/Odyssey");
+                "http://edg.co.in/#/events/Infocus");
 
-        eventDetails.put("SHOOT M UP", "“Where you capture the soul infatuation with your cell phone.\n" +
-                "Priyanka Sengupta\n" +
-                "9748234607\n" +
-                "Biswajit Banerjee\n" +
-                "78090100127\n" +
+        eventDetails.put("SHOOT M UP", "Where you capture the soul infatuation with your cell phone.\n" +
+                "Rohit Deb\n" +
+                "9038220806\n" +
+                "Indrajeet Dhara\n" +
+                "9804179878\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Infocus/Shoot-'M'-Up");
+                "http://edg.co.in/#/events/Infocus");
 
         eventDetails.put("INSTA CLICK", "Capture the moment that’s gone and impossible to reproduce. Shoot at the moment.\n" +
                 "Subhradeep Basu\n" +
@@ -431,7 +431,19 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Infocus/Insta-Click");
+                "http://edg.co.in/#/events/Infocus");
+
+        eventDetails.put("INSTA EDIT", "INSTA EDIT is an editing competition where your creative mind blends perfectly with your Photoshop skills to create your masterpiece.\n" +
+                "Rohit Deb\n" +
+                "9038220806\n" +
+                "Karan Paul\n" +
+                "8906833180\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Infocus");
 
         eventDetails.put("INSTA FILM", "Live EDGE and thread the frames. The best mobile video with a creative approach , shot on the spot , gets rewarded.\n" +
                 "Sayantan Bhattacharya\n" +
@@ -695,7 +707,8 @@ class Master {
         eventsImg.put("ODYSSEY", R.drawable.odyssey);
         eventsImg.put("SHOOT M UP", R.drawable.shootmup);
         eventsImg.put("INSTA CLICK", R.drawable.instaclick);
-        eventsImg.put("INSTA FILM", R.drawable.instafilm);
+        eventsImg.put("INSTA EDIT", R.drawable.instaedit);
+        //eventsImg.put("INSTA FILM", R.drawable.megaevents);
         eventsImg.put("X QUIZ'IT", R.drawable.xquizit);
         eventsImg.put("FOOD PROCESSING", R.drawable.foodprocessing);
         eventsImg.put("FOOD HUNT", R.drawable.foodhunt);
@@ -751,11 +764,11 @@ class Master {
         //link.put("ADDOMEDIA", "https://drive.google.com/uc?export=download&id=11Qu1CWLvthPhxU-vqEgEalUVpQ4Y4kWf");
         //link.put("STOCK IT", "https://drive.google.com/uc?export=download&id=1Gy-Zbg1gwd8_Pkjq-dKm9pT7FFbe3S8G");
         //link.put("PROJECT VIEW", "https://drive.google.com/uc?export=download&id=1OFdubHQkri5SrmoYoIIrkqzfRH3fm6ck");
-        link.put("CRUMBS", "https://drive.google.com/uc?export=download&id=1jd9aWFc_5MfRkLxmBx7X1rQcPzETOpA0");
-        link.put("ODYSSEY", "https://drive.google.com/uc?export=download&id=1fibG9x9GRjQFMxS84tv4Dih495hNudNS");
-        link.put("SHOOT M UP", "https://drive.google.com/uc?export=download&id=1LyGO1a2nCXP6jF4DWSVwvQffo1D6tySb");
-        link.put("INSTA CLICK", "https://drive.google.com/uc?export=download&id=1r2u7PYL_XT4-hhqGE0HA9R6rSseJtccK");
-        link.put("INSTA FILM", "https://drive.google.com/uc?export=download&id=1NFymjArkPLCQVnCUk8VpJkS_X3IU5ezA");
+        //link.put("CRUMBS", "https://drive.google.com/uc?export=download&id=1jd9aWFc_5MfRkLxmBx7X1rQcPzETOpA0");
+        //link.put("ODYSSEY", "https://drive.google.com/uc?export=download&id=1fibG9x9GRjQFMxS84tv4Dih495hNudNS");
+        //link.put("SHOOT M UP", "https://drive.google.com/uc?export=download&id=1LyGO1a2nCXP6jF4DWSVwvQffo1D6tySb");
+        //link.put("INSTA CLICK", "https://drive.google.com/uc?export=download&id=1r2u7PYL_XT4-hhqGE0HA9R6rSseJtccK");
+        //link.put("INSTA FILM", "https://drive.google.com/uc?export=download&id=1NFymjArkPLCQVnCUk8VpJkS_X3IU5ezA");
         link.put("X QUIZ'IT", "https://drive.google.com/uc?export=download&id=1B8UM8qQG_vH6M6AsFHpywhs6YcbVYufK");
         link.put("FOOD PROCESSING", "https://drive.google.com/uc?export=download&id=1w-MVmn47E_f4U5dE8ZhtF6_L7wYksLWJ");
         link.put("FOOD HUNT", "https://drive.google.com/uc?export=download&id=1ciqWkVB0FdOb9HA-JZzVGIceh8YwXlXB");

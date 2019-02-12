@@ -28,5 +28,10 @@ class Rules {
         rules.put("STOCK IT", R.string.rules_stock_it);
         rules.put("CREATION-X-NIHILO", R.string.rules_placeholder);
         rules.put("FOOD PRODUCT LABELLING", R.string.rules_placeholder);
+        rules.put("CRUMBS", R.string.rules_crumbs);
+        rules.put("ODYSSEY", R.string.rules_odyssey);
+        rules.put("SHOOT M UP", R.string.rules_shootmup);
+        rules.put("INSTA CLICK", R.string.rules_insta_click);
+        rules.put("INSTA EDIT", R.string.rules_insta_edit);
     }
 }
