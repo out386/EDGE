@@ -11,6 +11,7 @@ import java.util.Map;
 class Master {
 
     String categories[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Money Matters", "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Elevation", "Just Like That"};
+    String mainMenu[] = {"Events", "Mega Events", "Fun Events", "Upcoming Events", "Edge Kube", "Schedule", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
     String intraCat[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Infocus", "Food For Fun", "Newron", "Elevation", "Fun Events"};
 
 
@@ -34,7 +35,7 @@ class Master {
     String team18[] = {"Abhishek Singh", "Ayush Tiwari", "Deep Arora", "Shuvojit Ray Chaudhuri", "Harsh Sheth", "Ashif Iqbal", "Md. Mukarram Quraishi", "Neha Roy", "Priya Chaudhuri"};
     String team[] = {"Chandrasekhar Upadhyay", "Rohan Choudhury", "Souradipta Ojha", "Ritaban Chakrabarti", "Siddharth Verma", "Rounak Ghosh", "Shatavisha Biswas", "Urmimala Sen", "Ankur Rai"};
     Map<String, String> eventDetails, link, teamPost, sponType, intraLink, intraDetails, sponImg, megaType, megaImg;
-    Map<String, Integer> teamImg, teamImg1, categoriesImg, eventsImg;
+    Map<String, Integer> teamImg, teamImg1, categoriesImg, eventsImg, mainMenuImg;
     Map<String, Long> teamNum;
 
 
@@ -711,6 +712,19 @@ class Master {
         eventsImg.put("BOOMERANG", R.drawable.boomerang);
         eventsImg.put("CAD O MANIA", R.drawable.cadomania);
         eventsImg.put("NIRMAAN",R.drawable.nirman);
+
+
+        mainMenuImg = new HashMap<String, Integer>();
+        mainMenuImg.put("Events", R.drawable.events);
+        mainMenuImg.put("Mega Events", R.drawable.megaevents);
+        mainMenuImg.put("Fun Events", R.drawable.funevents);
+        mainMenuImg.put("Upcoming Events", R.drawable.upcomingevents);
+        mainMenuImg.put("Edge Kube", R.drawable.edgekube);
+        mainMenuImg.put("Schedule", R.drawable.schedule);
+        mainMenuImg.put("Team EDGE", R.drawable.teamedge);
+        mainMenuImg.put("Our Sponsors", R.drawable.sponsers);
+        mainMenuImg.put("Accomodation", R.drawable.accomodation);
+        mainMenuImg.put("About Us", R.drawable.aboutus);
 
 
 

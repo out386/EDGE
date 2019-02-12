@@ -12,9 +12,11 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.edge.starringharsh.EDGE.ui.SnakesGameActivity;
+import com.edge.starringharsh.EDGE.utils.ButtonUtils;
 
 public class MainMenu extends AppCompatActivity {
 
@@ -33,20 +35,7 @@ public class MainMenu extends AppCompatActivity {
         //TextView trial = (TextView) findViewById(R.id.tvTRIAL);
         //trial.setText(""+(startTime/1000));
         //customHandler.postDelayed(updateTimerThread, 0);
-        ImageButton edgekube = (ImageButton) findViewById(R.id.bEdgeKube);
-        //ImageButton geeksnake = (ImageButton) findViewById(R.id.bGeekSnake);
-        ImageButton events = (ImageButton) findViewById(R.id.bEvents);
-        ImageButton upcomingEvents = (ImageButton) findViewById(R.id.bUpcomingEvents);
-        //ImageButton intra = (ImageButton) findViewById(R.id.bIntra);
-        //ImageButton edgemash = (ImageButton) findViewById(R.id.bEdgeMash);
-        ImageButton megaevents = (ImageButton)findViewById(R.id.bMegaEvents);
-        ImageButton funevents = (ImageButton) findViewById(R.id.bFunEvents);
-        ImageButton sponsors = (ImageButton) findViewById(R.id.bSponsors);
-        ImageButton team = (ImageButton)findViewById(R.id.bTeam);
-        ImageButton aboutus = (ImageButton)findViewById(R.id.bAboutUs);
-        ImageButton schedule = (ImageButton) findViewById(R.id.bSchedule);
-        //ImageButton campusambassadors = (ImageButton) findViewById(R.id.bCampusAmbassadors);
-        ImageButton accommodation = (ImageButton) findViewById(R.id.bAccommodation);
+
         ImageButton facebook = (ImageButton) findViewById(R.id.linkFacebook);
         ImageButton youtube = (ImageButton) findViewById(R.id.linkYoutube);
         ImageButton techno = (ImageButton) findViewById(R.id.linkTechnoIndia);
@@ -54,174 +43,7 @@ public class MainMenu extends AppCompatActivity {
         ImageButton insta = (ImageButton) findViewById(R.id.linkInstagram);
         ImageButton twitter = (ImageButton) findViewById(R.id.linkTwitter);
 
-        DisplayMetrics metrics = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(metrics);
-
-        int height = metrics.heightPixels;
-        int width = metrics.widthPixels;
-
-        edgekube.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        //geeksnake.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        events.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        upcomingEvents.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        megaevents.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        funevents.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        sponsors.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        team.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        aboutus.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        schedule.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        //campusambassadors.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        accommodation.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        //intra.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-        //edgemash.setLayoutParams(new LinearLayout.LayoutParams(width, width/2));
-
-        final Master master = new Master();
-
-
-        accommodation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
-                Intent intent = new Intent(MainMenu.this, Accomodation.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        /*edgemash.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainMenu.this, EdgeMash.class);
-                startActivity(intent);
-                finish();
-            }
-        });*/
-
-        events.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
-                Intent intent = new Intent(MainMenu.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        /*intra.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainMenu.this, Intra.class);
-                startActivity(intent);
-                finish();
-            }
-        });*/
-
-        sponsors.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
-                Intent intent = new Intent(MainMenu.this, Sponsors.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        team.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainMenu.this, Team.class);
-                intent.putExtra("year", 19);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        schedule.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
-                Intent intent = new Intent(MainMenu.this, PdfViewer.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        upcomingEvents.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainMenu.this, MegaEvents.class);
-                intent.putExtra("actName", "Upcoming");
-                intent.putExtra("actLink", master.upcominglink);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        megaevents.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
-                Intent intent = new Intent(MainMenu.this, MegaEvents.class);
-                intent.putExtra("actName", "Mega");
-                intent.putExtra("actLink", master.megalink);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        edgekube.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainMenu.this, KukuKube.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        /*geeksnake.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainMenu.this, SnakesGameActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });*/
-
-        funevents.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
-                Intent intent = new Intent(MainMenu.this, MegaEvents.class);
-                intent.putExtra("actName", "Fun");
-                intent.putExtra("actLink", master.funlink);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        /*campusambassadors.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
-                Intent intent = new Intent(MainMenu.this, CampusAmbassadors.class);
-                intent.putExtra("weblink", "https://goo.gl/forms/rNo6TDXmkd9hYRjG2");
-                startActivity(intent);
-                finish();
-            }
-        });*/
-
-        aboutus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { 
-                Intent intent = new Intent(MainMenu.this, AboutUs.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-
-
-
-
-
-
-
-
-
-
+        setupMenu();
 
 
 
@@ -374,5 +196,89 @@ public class MainMenu extends AppCompatActivity {
     public void finish() {
         super.finish();
         overridePendingTransition(0,0);
+    }
+
+    private void setupMenu() {
+        // TODO: Just eff this all. Use a RecyclerView.
+        final Master master = new Master();
+        final String menu[] = master.mainMenu;
+        int l = menu.length;
+
+        final ImageButton menuButtons[] = new ImageButton[l];
+        int px = ButtonUtils.dpToPx(this, 200);
+
+        for(int i=0;i<l;i++)
+        {
+            LinearLayout ll = (LinearLayout) findViewById(R.id.menuLayout);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                    px, px);
+            menuButtons[i] = new ImageButton(this);
+            menuButtons[i].setBackgroundResource(master.mainMenuImg.get(menu[i]));
+
+            TextView caption = ButtonUtils.getCaptionTv(this, menu[i]);
+            ll.addView(menuButtons[i], params);
+            ll.addView(caption);
+        }
+
+        for(int i=0; i<l; i++)
+        {
+            final int j = i;
+            menuButtons[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = getIntent(menu, master, j);
+                    if (intent != null) {
+                        startActivity(intent);
+                        finish();
+                    }
+                }
+            });
+        }
+    }
+
+    private Intent getIntent(String[] menu, Master master, int i) {
+        // TODO: Use models for the menu, and move this there.
+        Intent intent;
+        switch(menu[i]) {
+            case "Events":
+                intent = new Intent(MainMenu.this, MainActivity.class);
+                return intent;
+            case "Mega Events":
+                intent = new Intent(MainMenu.this, MegaEvents.class);
+                intent.putExtra("actName", "Mega");
+                intent.putExtra("actLink", master.megalink);
+                return intent;
+            case "Fun Events":
+                intent = new Intent(MainMenu.this, MegaEvents.class);
+                intent.putExtra("actName", "Fun");
+                intent.putExtra("actLink", master.funlink);
+                return intent;
+            case "Upcoming Events":
+                intent = new Intent(MainMenu.this, MegaEvents.class);
+                intent.putExtra("actName", "Upcoming");
+                intent.putExtra("actLink", master.upcominglink);
+                return intent;
+            case "Edge Kube":
+                intent = new Intent(MainMenu.this, KukuKube.class);
+                return intent;
+            case "Schedule":
+                intent = new Intent(MainMenu.this, PdfViewer.class);
+                return intent;
+            case "Team EDGE":
+                intent = new Intent(MainMenu.this, Team.class);
+                intent.putExtra("year", 19);
+                return intent;
+            case "Our Sponsors":
+                intent = new Intent(MainMenu.this, Sponsors.class);
+                return intent;
+            case "Accomodation":
+                intent = new Intent(MainMenu.this, Accomodation.class);
+                return intent;
+            case "About Us":
+                intent = new Intent(MainMenu.this, AboutUs.class);
+                return intent;
+            default:
+                return null;
+        }
     }
 }
