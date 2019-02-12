@@ -124,7 +124,7 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid/Web%20Design");
+                "http://edg.co.in/#/events/Compute%20Aid/Web%20Design20Design");
 
         eventDetails.put("BLITZKRIEG", "A moment of pain is worth a lifetime of glory. The bot that survives till the end emerges as the victor.\n" +
                 "Sagar Sangam\n" +
@@ -136,43 +136,43 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://www.edg.co.in/#/events/Robotics/Blitzkrieg");
+                "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("DOUBLE-UP", "You want to double-up, then first toe the line.\n" +
-                "Sagar Sangam\n" +
-                "7991186092\n" +
-                "Saurabh Kumar Gupta\n" +
-                "8697474145\n" +
+                "Ashutosh Priyadarshi\n" +
+                "8697276841\n" +
+                "Rajeev Ranjan\n" +
+                "8820879972\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://www.edg.co.in/#/events/Robotics/Double-Up");
+                "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("LIFT'N'LAY", "Put the right effort and things will get rightly placed.\n" +
-                "Sagar Sangam\n" +
-                "7991186092\n" +
-                "Piyush Raj\n" +
-                "8282926317\n" +
+                "Ashutosh Priyadarshi\n" +
+                "8697276841\n" +
+                "Rajeev Ranjan\n" +
+                "8820879972\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://www.edg.co.in/#/events/Robotics/Lift%20'N'%20Lay");
+                "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("MARINODRIFT", "Strategize with your bot to win glory on both the terrains.\n" +
-                "Saurabh Kumar Gupta\n" +
-                "8697474145\n" +
-                "Piyush Raj\n" +
-                "8282926317\n" +
+                "Ashutosh Priyadarshi\n" +
+                "8697276841\n" +
+                "Rajeev Ranjan\n" +
+                "8820879972\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://www.edg.co.in/#/events/Robotics/Marino%20Drift");
+                "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("STALKER", "Follow the trail and glory waits for you at the finishing line.\n" +
                 "Utsav Shah\n" +
@@ -184,7 +184,7 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://www.edg.co.in/#/events/Robotics/Line%20Follower");
+                "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("JIGSAW", "Only the craze to solve the maze can help you win and subjects you to praise.\n" +
                 "Dwitam Ghosh\n" +
@@ -196,7 +196,7 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://www.edg.co.in/#/events/Robotics/Maze%20Solver");
+                "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("ROBO RACE", "The better you maneuver, the farther you reach.\n" +
                 "Sagar Sangam\n" +
@@ -208,7 +208,7 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://www.edg.co.in/#/events/Robotics/Robo%20Race");
+                "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("ROBO SOCCER", "Steer your bot expertly to score the maximum number of goals and win the match.\n" +
                 "Sagar Sangam\n" +
@@ -220,7 +220,7 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://www.edg.co.in/#/events/Robotics/Robo%20Soccer");
+                "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("WALLSTREET", "Follow the trail and glory awaits you at the finishing line.\n" +
                 "Dwitam Ghosh\n" +
@@ -232,7 +232,7 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Robotics/Wall%20Street");
+                "http://edg.co.in/#/events/Robotics");
 
         eventDetails.put("CS GO COLLEGE LEAGUE", "For the action frenzy college studying aficionados who got a trigger for an arm and flashbang for the other.\n" +
                 "Ahana Sarkar\n" +
@@ -737,15 +737,15 @@ class Master {
         link.put("BLIND CODING", "https://drive.google.com/uc?export=download&id=18aryzwybBFjCafC6T3f69nu3zsGPs0to");
         link.put("INFINITY WARS", "https://drive.google.com/uc?export=download&id=1wSgWsLhtFtI4dY8h4h7K8zN6z8bvtB6E");
         link.put("WEB DESIGN", "https://drive.google.com/uc?export=download&id=1Nm7Toc6knx6DWZxkIAtXLu8zFpIGA83f");
-        link.put("LIFT'N'LAY", "https://drive.google.com/uc?export=download&id=1drfG9i2kbcLmR38QoTJosMmfciuQV1Tk");
-        link.put("STALKER", "https://drive.google.com/uc?export=download&id=1TtVGgMd2lM7rJgrf9zHi4AhKEmbNbxBW");
-        link.put("JIGSAW", "https://drive.google.com/uc?export=download&id=1R5Y46N37vhGitg_NWr3qioD3TAvV0DL6");
-        link.put("MARINODRIFT", "https://drive.google.com/uc?export=download&id=1N-mYclgKo482UxggEXdUX3iZ6vgvXbwY");
-        link.put("ROBO SOCCER", "https://drive.google.com/uc?export=download&id=1DT9J3OXsDwA8XHcmGRWWN9LGmSXBQ0fr" );
-        link.put("DOUBLE-UP", "https://drive.google.com/uc?export=download&id=1BmSdvdDwWgKGAyF5vrV8yHdIqT-l-ZzQ");
-        link.put("ROBO RACE", "https://drive.google.com/uc?export=download&id=1Ck3H5nrxPdadPk3MPZ3T2dQhkTnAmbq1");
-        link.put("BLITZKRIEG", "https://drive.google.com/uc?export=download&id=1_TH0_XBKEG_iPBLr568eaNEhivSNVJiG");
-        link.put("WALLSTREET", "https://drive.google.com/uc?export=download&id=1JzpJhwFY8hk5Hbd7iwAciD5EuHxRQBdl");
+        //link.put("LIFT'N'LAY", "https://drive.google.com/uc?export=download&id=1drfG9i2kbcLmR38QoTJosMmfciuQV1Tk");
+        //link.put("STALKER", "https://drive.google.com/uc?export=download&id=1TtVGgMd2lM7rJgrf9zHi4AhKEmbNbxBW");
+        //link.put("JIGSAW", "https://drive.google.com/uc?export=download&id=1R5Y46N37vhGitg_NWr3qioD3TAvV0DL6");
+        //link.put("MARINODRIFT", "https://drive.google.com/uc?export=download&id=1N-mYclgKo482UxggEXdUX3iZ6vgvXbwY");
+        //link.put("ROBO SOCCER", "https://drive.google.com/uc?export=download&id=1DT9J3OXsDwA8XHcmGRWWN9LGmSXBQ0fr" );
+        //link.put("DOUBLE-UP", "https://drive.google.com/uc?export=download&id=1BmSdvdDwWgKGAyF5vrV8yHdIqT-l-ZzQ");
+        //link.put("ROBO RACE", "https://drive.google.com/uc?export=download&id=1Ck3H5nrxPdadPk3MPZ3T2dQhkTnAmbq1");
+        //link.put("BLITZKRIEG", "https://drive.google.com/uc?export=download&id=1_TH0_XBKEG_iPBLr568eaNEhivSNVJiG");
+        //link.put("WALLSTREET", "https://drive.google.com/uc?export=download&id=1JzpJhwFY8hk5Hbd7iwAciD5EuHxRQBdl");
         //link.put("B-PLAN", "https://drive.google.com/uc?export=download&id=10kEzTCaJY9XKjD1p0LdqzkknEjGDD4Gm");
         //link.put("B-QUIZ", "https://drive.google.com/uc?export=download&id=1gvgl4nX_Y4Clq_72V8WyA9mxZhu4VMWq");
         //link.put("ADDOMEDIA", "https://drive.google.com/uc?export=download&id=11Qu1CWLvthPhxU-vqEgEalUVpQ4Y4kWf");

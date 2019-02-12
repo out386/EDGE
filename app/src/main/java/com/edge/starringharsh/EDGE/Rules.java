@@ -36,5 +36,14 @@ class Rules {
         rules.put("KHUL JAA SIM SIM", R.string.rules_placeholder);
         rules.put("BOOMERANG", R.string.rules_placeholder);
         rules.put("REWIND", R.string.rules_placeholder);
+        rules.put("LIFT'N'LAY", R.string.rules_lift_n_lay);
+        rules.put("STALKER", R.string.rules_stalker);
+        rules.put("JIGSAW", R.string.rules_jigsaw);
+        rules.put("WALLSTREET", R.string.rules_wallstreet);
+        rules.put("MARINODRIFT", R.string.rules_marinodrift);
+        rules.put("DOUBLE-UP", R.string.rules_double_up);
+        rules.put("ROBO SOCCER", R.string.rules_robo_soccer);
+        rules.put("BLITZKRIEG", R.string.rules_blitzkrieg);
+        rules.put("ROBO RACE", R.string.rules_robo_race);
     }
 }
