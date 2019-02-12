@@ -22,5 +22,9 @@ class Rules {
         rules.put("PROJECT VIEW", R.string.rules_project_view);
         rules.put("RAGS TO RICHES", R.string.rules_rags_to_riches);
         rules.put("MEKANIX", R.string.rules_mekanix);
+        rules.put("B-PLAN", R.string.rules_b_plan);
+        rules.put("B-QUIZ", R.string.rules_b_quiz);
+        rules.put("ADDOMEDIA", R.string.rules_addomedia);
+        rules.put("STOCK IT", R.string.rules_stock_it);
     }
 }
