@@ -26,5 +26,7 @@ class Rules {
         rules.put("B-QUIZ", R.string.rules_b_quiz);
         rules.put("ADDOMEDIA", R.string.rules_addomedia);
         rules.put("STOCK IT", R.string.rules_stock_it);
+        rules.put("CREATION-X-NIHILO", R.string.rules_placeholder);
+        rules.put("FOOD PRODUCT LABELLING", R.string.rules_placeholder);
     }
 }

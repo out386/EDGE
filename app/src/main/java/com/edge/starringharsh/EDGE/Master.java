@@ -20,8 +20,8 @@ class Master {
     String events2[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
     String events3[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
     String events4[] = {"PROJECT VIEW"};
-    String events5[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA FILM"};
-    String events6[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD PROCESSING","FOOD HUNT"};
+    String events5[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK"};
+    String events6[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING"};
     String events7[] = {"MEKANIX", "RAGS TO RICHES"};
     String events8[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
     String events9[] = {"CAD O MANIA", "NIRMAAN"};
@@ -699,7 +699,7 @@ class Master {
         eventsImg.put("X QUIZ'IT", R.drawable.xquizit);
         eventsImg.put("FOOD PROCESSING", R.drawable.foodprocessing);
         eventsImg.put("FOOD HUNT", R.drawable.foodhunt);
-        eventsImg.put("FOOD PRODUCT LABELLING", R.drawable.foodlabeling);
+        eventsImg.put("FOOD PRODUCT LABELLING", R.drawable.foodlabelling);
         eventsImg.put("CREATION-X-NIHILO", R.drawable.creationxnihilo);
         eventsImg.put("MEKANIX", R.drawable.mekanix);
         eventsImg.put("RAGS TO RICHES", R.drawable.ragstoriches);
