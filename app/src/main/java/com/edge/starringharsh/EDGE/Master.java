@@ -374,16 +374,16 @@ class Master {
                 "http://edg.co.in/#/events/Money%20Matters/Stock%20It");
 
         eventDetails.put("PROJECT VIEW", "Ideas exploring the technical field that is advancing with every passing day need a push and here we give it to you.\n" +
-                "Aditi Kumari\n" +
-                "8276960454\n" +
-                "Nabanita Bhandary\n" +
-                "7059485319\n" +
+                "Medha Mishra\n" +
+                "8013290587\n" +
+                "Parshati Chaodhury\n" +
+                "8961807090\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Innovati/Project%20View");
+                "http://edg.co.in/#/events/Innovati");
 
         eventDetails.put("CRUMBS", "Landscape photography? That’s too mainstream. Time to go against the tide and explore the elegance in the most inconspicuous items around. The topic is open so just give us the best of you.\n" +
                 "Priyanka Sengupta\n" +
@@ -750,7 +750,7 @@ class Master {
         link.put("B-QUIZ", "https://drive.google.com/uc?export=download&id=1gvgl4nX_Y4Clq_72V8WyA9mxZhu4VMWq");
         link.put("ADDOMEDIA", "https://drive.google.com/uc?export=download&id=11Qu1CWLvthPhxU-vqEgEalUVpQ4Y4kWf");
         link.put("STOCK IT", "https://drive.google.com/uc?export=download&id=1Gy-Zbg1gwd8_Pkjq-dKm9pT7FFbe3S8G");
-        link.put("PROJECT VIEW", "https://drive.google.com/uc?export=download&id=1OFdubHQkri5SrmoYoIIrkqzfRH3fm6ck");
+        //link.put("PROJECT VIEW", "https://drive.google.com/uc?export=download&id=1OFdubHQkri5SrmoYoIIrkqzfRH3fm6ck");
         link.put("CRUMBS", "https://drive.google.com/uc?export=download&id=1jd9aWFc_5MfRkLxmBx7X1rQcPzETOpA0");
         link.put("ODYSSEY", "https://drive.google.com/uc?export=download&id=1fibG9x9GRjQFMxS84tv4Dih495hNudNS");
         link.put("SHOOT M UP", "https://drive.google.com/uc?export=download&id=1LyGO1a2nCXP6jF4DWSVwvQffo1D6tySb");
