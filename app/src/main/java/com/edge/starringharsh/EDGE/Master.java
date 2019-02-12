@@ -325,7 +325,7 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Cyber%20Crusade/Mini%20Militia");*/
 
-        eventDetails.put("PUBG MOBILE", "PLACEHOLDER TEXT.\n" +
+        eventDetails.put("PUBG MOBILE", "Event details not available yet.\n" +
                 "Agnideep Mukherjee\n" +
                 "8478954693\n" +
                 "Agnideep Mukherjee\n" +
