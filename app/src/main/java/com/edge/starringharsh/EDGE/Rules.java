@@ -20,5 +20,7 @@ class Rules {
         rules.put("THE QUIZ", R.string.rules_the_quiz);
         rules.put("YOUTH PARLIAMENT", R.string.rules_youth_parliament);
         rules.put("PROJECT VIEW", R.string.rules_project_view);
+        rules.put("RAGS TO RICHES", R.string.rules_rags_to_riches);
+        rules.put("MEKANIX", R.string.rules_mekanix);
     }
 }

@@ -508,20 +508,20 @@ class Master {
 
 
         eventDetails.put("MEKANIX", "Knowledge and creativity go hand in hand in this event that tests how updated and polished your mind is!\n" +
-                "Aditi Kumari\n" +
-                "8276960454\n" +
-                "Nabanita Bhandary\n" +
-                "7059485319\n" +
+                "Medha Mishra\n" +
+                "8013290587\n" +
+                "Parshati Chaodhury\n" +
+                "8961807090\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Create%20It/Mekanix");
+                "http://edg.co.in/#/events/Create%20It");
 
         eventDetails.put("RAGS TO RICHES", "If creativity from scratch is your strength, rags to riches is definitely your platform.\n" +
-                "Nabanita Bhandary\n" +
-                "7059485319\n" +
+                "Parshati Chaodhury\n" +
+                "8961807090\n" +
                 "Medha Mishra\n" +
                 "8013290587\n" +
                 "n\n" +
@@ -529,7 +529,7 @@ class Master {
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Create%20It/Rags%20to%20Riches");
+                "http://edg.co.in/#/events/Create%20It");
 
         eventDetails.put("ELECTRONICALLY YOURS","It is all about how well you handle pressure and ultimately win using your knowledge in the domain of electronics.\n" +
                 "Alvin Karkun\n" +
@@ -702,7 +702,7 @@ class Master {
         eventsImg.put("FOOD PRODUCT LABELLING", R.drawable.foodlabeling);
         eventsImg.put("CREATION-X-NIHILO", R.drawable.creationxnihilo);
         eventsImg.put("MEKANIX", R.drawable.mekanix);
-        eventsImg.put("RAGS TO RICHES", R.drawable.ragsriches);
+        eventsImg.put("RAGS TO RICHES", R.drawable.ragstoriches);
         eventsImg.put("ELECTRONICALLY YOURS", R.drawable.electronicallyyours);
 
        eventsImg.put("THE QUIZ", R.drawable.thequiz);
@@ -761,8 +761,8 @@ class Master {
         link.put("FOOD HUNT", "https://drive.google.com/uc?export=download&id=1ciqWkVB0FdOb9HA-JZzVGIceh8YwXlXB");
         link.put("FOOD PRODUCT LABELLING", "https://drive.google.com/uc?export=download&id=1SqExMuHf-8-zFLtXl94_dMk1jh6g2MUC");
         link.put("CREATION-X-NIHILO", "https://drive.google.com/uc?export=download&id=1Ugyyug3cvYaRCT82NOXs53SjLKcrRoFW");
-        link.put("MEKANIX", "https://drive.google.com/uc?export=download&id=14MNioWdWFt0dYSleYYDkJDIAyHbZK8Z4");
-        link.put("RAGS TO RICHES", "https://drive.google.com/uc?export=download&id=1cZzLiYsKhouezRi4SJwJonGa7olkJ5ZT");
+        //link.put("MEKANIX", "https://drive.google.com/uc?export=download&id=14MNioWdWFt0dYSleYYDkJDIAyHbZK8Z4");
+        //link.put("RAGS TO RICHES", "https://drive.google.com/uc?export=download&id=1cZzLiYsKhouezRi4SJwJonGa7olkJ5ZT");
         link.put("KHUL JAA SIM SIM", "https://drive.google.com/uc?export=download&id=1E_fCNFGa4ahWh8x1glU3fvVkW5KKGbwM");
         link.put("REWIND", "https://drive.google.com/uc?export=download&id=18dj9NkmRLSObogdfqJKqWHwU7B-n6ZFm");
         link.put("MUSICAL.LY", "https://drive.google.com/uc?export=download&id=1EKkucr1PCe4NdfEfy_4v91yHELRo1Gtf");
