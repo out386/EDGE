@@ -33,5 +33,8 @@ class Rules {
         rules.put("SHOOT M UP", R.string.rules_shootmup);
         rules.put("INSTA CLICK", R.string.rules_insta_click);
         rules.put("INSTA EDIT", R.string.rules_insta_edit);
+        rules.put("KHUL JAA SIM SIM", R.string.rules_placeholder);
+        rules.put("BOOMERANG", R.string.rules_placeholder);
+        rules.put("REWIND", R.string.rules_placeholder);
     }
 }

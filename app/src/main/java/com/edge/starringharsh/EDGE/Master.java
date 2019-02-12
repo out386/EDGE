@@ -25,7 +25,7 @@ class Master {
     String events7[] = {"MEKANIX", "RAGS TO RICHES"};
     String events8[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
     String events9[] = {"CAD O MANIA", "NIRMAAN"};
-    String events10[] = {"KHUL JAA SIM SIM", "BOOMERANG", "MUSICAL.LY", "REWIND"};
+    String events10[] = {"KHUL JAA SIM SIM", "BOOMERANG", "REWIND"};
     String sponsors[] = {"GEEK ALUMS"};
     String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN2RTOTBnLTZhNFE";
     String megalink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEOUlTaEJSa3BDQzQ";
@@ -625,52 +625,40 @@ class Master {
                 "http://edg.co.in/#/events/Elevation");
 
         eventDetails.put("BOOMERANG", "Loop in back and forth, secure the maximum likes and take home exciting goodies.\n" +
-                "Neha Roy\n" +
-                "8327640533\n" +
-                "Neha Roy\n" +
-                "8327640533\n" +
+                "Pooja Priya\n" +
+                "9804673350\n" +
+                "Pooja Priya\n" +
+                "9804673350\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Just%20Like%20That/Boomerang");
+                "http://edg.co.in/#/events/Just%20Like%20That");
 
         eventDetails.put("KHUL JAA SIM SIM", "Decipher the clues provided as the hidden treasure awaits you.\n" +
-                "Aditi Kumari\n" +
-                "8276960454\n" +
-                "Nabanita Bhandary\n" +
-                "7059485319\n" +
+                "Pooja Priya\n" +
+                "9804673350\n" +
+                "Pooja Priya\n" +
+                "9804673350\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Just%20Like%20That/Khul%20Ja%20Sim%20Sim");
-
-        eventDetails.put("MUSICAL.LY", "Perform to your hearts content and your creativity will bag you exciting prizes.\n" +
-                "Neha Roy\n" +
-                "8327640533\n" +
-                "Neha Roy\n" +
-                "8327640533\n" +
-                "n\n" +
-                "7\n" +
-                "3\n" +
-                "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Just%20Like%20That/Musical.Ly");
+                "http://edg.co.in/#/events/Just%20Like%20That");
 
         eventDetails.put("REWIND", "Rewind, Rollback and Play.\n" +
-                "Neha Roy\n" +
-                "8327640533\n" +
-                "Neha Roy\n" +
-                "8327640533\n" +
+                "Pooja Priya\n" +
+                "9804673350\n" +
+                "Pooja Priya\n" +
+                "9804673350\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Just%20Like%20That/Rewind");
+                "http://edg.co.in/#/events/Just%20Like%20That");
 
 
         eventsImg = new HashMap<String, Integer>();
@@ -720,9 +708,8 @@ class Master {
 
        eventsImg.put("THE QUIZ", R.drawable.thequiz);
         eventsImg.put("YOUTH PARLIAMENT", R.drawable.youthparliament);
-        eventsImg.put("KHUL JAA SIM SIM", R.drawable.khuljasimsim);
+        eventsImg.put("KHUL JAA SIM SIM", R.drawable.kjss);
         eventsImg.put("REWIND", R.drawable.rewind);
-        eventsImg.put("MUSICAL.LY", R.drawable.musically);
         eventsImg.put("BOOMERANG", R.drawable.boomerang);
         eventsImg.put("CAD O MANIA", R.drawable.cadomania);
         eventsImg.put("NIRMAAN",R.drawable.nirmaan);
@@ -778,7 +765,7 @@ class Master {
         //link.put("RAGS TO RICHES", "https://drive.google.com/uc?export=download&id=1cZzLiYsKhouezRi4SJwJonGa7olkJ5ZT");
         link.put("KHUL JAA SIM SIM", "https://drive.google.com/uc?export=download&id=1E_fCNFGa4ahWh8x1glU3fvVkW5KKGbwM");
         link.put("REWIND", "https://drive.google.com/uc?export=download&id=18dj9NkmRLSObogdfqJKqWHwU7B-n6ZFm");
-        link.put("MUSICAL.LY", "https://drive.google.com/uc?export=download&id=1EKkucr1PCe4NdfEfy_4v91yHELRo1Gtf");
+        //link.put("MUSICAL.LY", "https://drive.google.com/uc?export=download&id=1EKkucr1PCe4NdfEfy_4v91yHELRo1Gtf");
         link.put("BOOMERANG", "https://drive.google.com/uc?export=download&id=1eLs9zjP8uzWhHRb9VchXadEDESRfEVPV");
 
 
