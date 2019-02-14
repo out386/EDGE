@@ -19,6 +19,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
@@ -253,9 +254,16 @@ public class MegaEvents extends AppCompatActivity {
             GridItem item = mGridData.get(position);
             holder.titleTextView.setText(item.giName);
             holder.subTextView.setText(item.giType);
-            holder.contName.setText(item.giCont);
-            holder.call.setText("" + item.giNum);
-            holder.whatsapp.setText("" + item.giNum);
+            if ("".equals(item.giCont)) {
+                LinearLayout layout = row.findViewById(R.id.contactslayout);
+                View view = row.findViewById(R.id.viewdetails1);
+                layout.setVisibility(View.GONE);
+                view.setVisibility(View.GONE);
+            } else {
+                holder.contName.setText(item.giCont);
+                holder.call.setText("" + item.giNum);
+                holder.whatsapp.setText("" + item.giNum);
+            }
             Picasso.get().load(item.giImage).into(holder.imageView);
 
             holder.call.setOnClickListener(new View.OnClickListener() {
