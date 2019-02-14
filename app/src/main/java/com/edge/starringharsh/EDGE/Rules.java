@@ -51,5 +51,9 @@ class Rules {
         rules.put("CODE OUT", R.string.rules_placeholder);
         rules.put("CODE RELAY", R.string.rules_placeholder);
         rules.put("WEB DEV", R.string.rules_placeholder);
+        rules.put("TROLL MARKETTING", R.string.rules_placeholder);
+        rules.put("CROWD PITCH", R.string.rules_placeholder);
+        rules.put("PITCH RIGHT", R.string.rules_placeholder);
+
     }
 }

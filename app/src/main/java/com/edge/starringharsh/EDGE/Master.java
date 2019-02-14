@@ -10,22 +10,22 @@ import java.util.Map;
 
 class Master {
 
-    String categories[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Money Matters", "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Elevation", "Just Like That"};
+    String categories[] = {"CIIC", "Compute Aid", "Robotics", "Cyber Crusade", "Money Matters", "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Elevation", "Just Like That"};
     String mainMenu[] = {"Events", "Mega Events", "Fun Events", "Upcoming Events", "Edge Kube", "Schedule", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
     String intraCat[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Infocus", "Food For Fun", "Newron", "Elevation", "Fun Events"};
 
-
-    String events0[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "CODE RELAY"};
-    String events1[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
-    String events2[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
-    String events3[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
-    String events4[] = {"PROJECT VIEW"};
-    String events5[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA EDIT"};
-    String events6[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING"};
-    String events7[] = {"MEKANIX", "RAGS TO RICHES"};
-    String events8[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
-    String events9[] = {"CAD O MANIA", "NIRMAAN"};
-    String events10[] = {"KHUL JAA SIM SIM", "BOOMERANG", "REWIND"};
+    String events0[] = {"TROLL MARKETTING", "CROWD PITCH", "PITCH RIGHT"};
+    String events1[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "CODE RELAY"};
+    String events2[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
+    String events3[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
+    String events4[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
+    String events5[] = {"PROJECT VIEW"};
+    String events6[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA EDIT"};
+    String events7[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING"};
+    String events8[] = {"MEKANIX", "RAGS TO RICHES"};
+    String events9[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
+    String events10[] = {"CAD O MANIA", "NIRMAAN"};
+    String events11[] = {"KHUL JAA SIM SIM", "BOOMERANG", "REWIND"};
     String sponsors[] = {"GEEK ALUMS"};
     String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN2RTOTBnLTZhNFE";
     String megalink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEOUlTaEJSa3BDQzQ";
@@ -42,6 +42,42 @@ class Master {
     Master()
     {
         eventDetails = new HashMap<String, String>();
+        eventDetails.put("TROLL MARKETTING", "Event details not available yet.\n" +
+                "Medha\n" +
+                "8961187020\n" +
+                "Medha\n" +
+                "8961187020\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Compute%20Aid");
+
+        eventDetails.put("CROWD PITCH", "Event details not available yet.\n" +
+                "Rahul Singh\n" +
+                "8420617283\n" +
+                "Medha\n" +
+                "8961187020\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Compute%20Aid");
+
+        eventDetails.put("PITCH RIGHT", "Event details not available yet.\n" +
+                "Medha\n" +
+                "8961187020\n" +
+                "Medha\n" +
+                "8961187020\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/Compute%20Aid");
+
         eventDetails.put("FLAWLESS", "Just like the name suggests, as flawless as ones codes become the better chance they have of winning.\n" +
                 "Raja Sachin\n" +
                 "9062647976\n" +
@@ -674,6 +710,9 @@ class Master {
 
 
         eventsImg = new HashMap<String, Integer>();
+        eventsImg.put("TROLL MARKETTING", R.drawable.trollmarketting);
+        eventsImg.put("CROWD PITCH", R.drawable.crowdpitch);
+        eventsImg.put("PITCH RIGHT", R.drawable.pitchright);
         eventsImg.put("FLAWLESS", R.drawable.flawless);
         eventsImg.put("BUG HUNT", R.drawable.bughunt);
         eventsImg.put("CRYPTO QUEST", R.drawable.cryptoquest);
@@ -838,6 +877,7 @@ class Master {
         sponImg.put("GEEK ALUMS", "https://pbs.twimg.com/profile_images/639172860041261056/g_KngOx4.png");
 
         categoriesImg = new HashMap<String, Integer>();
+        categoriesImg.put("CIIC", R.drawable.ciic);
         categoriesImg.put("Compute Aid", R.drawable.computeaid);
         categoriesImg.put("Robotics", R.drawable.robotics);
         categoriesImg.put("Cyber Crusade", R.drawable.cybercrusade);
