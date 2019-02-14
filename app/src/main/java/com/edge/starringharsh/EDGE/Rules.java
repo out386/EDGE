@@ -54,6 +54,8 @@ class Rules {
         rules.put("TROLL MARKETTING", R.string.rules_placeholder);
         rules.put("CROWD PITCH", R.string.rules_placeholder);
         rules.put("PITCH RIGHT", R.string.rules_placeholder);
+        rules.put("RED BULL PONG", R.string.rules_placeholder);
+        rules.put("BODY ZORBING", R.string.rules_placeholder);
 
     }
 }

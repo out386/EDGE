@@ -10,8 +10,8 @@ import java.util.Map;
 
 class Master {
 
-    String categories[] = {"CIIC", "Compute Aid", "Robotics", "Cyber Crusade", "Money Matters", "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Elevation", "Just Like That"};
-    String mainMenu[] = {"Events", "Mega Events", "Fun Events", "Upcoming Events", "Edge Kube", "Schedule", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
+    String categories[] = {"CIIC", "Compute Aid", "Robotics", "Cyber Crusade", "Money Matters", "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Elevation", "Just Like That", "Fun Events"};
+    String mainMenu[] = {"Events", "Mega Events", "Upcoming Events", "Edge Kube", "Schedule", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
     String intraCat[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Infocus", "Food For Fun", "Newron", "Elevation", "Fun Events"};
 
     String events0[] = {"TROLL MARKETTING", "CROWD PITCH", "PITCH RIGHT"};
@@ -26,6 +26,7 @@ class Master {
     String events9[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
     String events10[] = {"CAD O MANIA", "NIRMAAN"};
     String events11[] = {"KHUL JAA SIM SIM", "BOOMERANG", "REWIND"};
+    String events12[] = {"RED BULL PONG", "BODY ZORBING"};
     String sponsors[] = {"GEEK ALUMS"};
     String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN2RTOTBnLTZhNFE";
     String megalink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEOUlTaEJSa3BDQzQ";
@@ -708,6 +709,32 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Just%20Like%20That");
 
+        eventDetails.put("RED BULL PONG", "Sponsored by Red Bull this event became quite popular amongst the youth. " +
+                "This event judged how many balls each player could land into the red bull cups. The player with the maximum score was awarded by Red Bull.\n" +
+                "\n" +
+                "0\n" +
+                "\n" +
+                "0\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "https://edg.co.in/#/events/fun");
+
+        eventDetails.put("BODY ZORBING", "This fun event procures the highest participation every year since this high energy, fun-filled activity has been a treat for the participants. " +
+                "Here participants secured themselves in transparent balls and set everybody else laughing their hearts out while they fell down, " +
+                "bumped on each other or rolled down, trying to overthrow their opponents.\n" +
+                "\n" +
+                "0\n" +
+                "\n" +
+                "0\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "https://edg.co.in/#/events/fun");
 
         eventsImg = new HashMap<String, Integer>();
         eventsImg.put("TROLL MARKETTING", R.drawable.trollmarketting);
@@ -765,6 +792,9 @@ class Master {
         eventsImg.put("BOOMERANG", R.drawable.boomerang);
         eventsImg.put("CAD O MANIA", R.drawable.cadomania);
         eventsImg.put("NIRMAAN",R.drawable.nirmaan);
+
+        eventsImg.put("RED BULL PONG", R.drawable.redbullpong);
+        eventsImg.put("BODY ZORBING", R.drawable.zorbing);
 
 
         mainMenuImg = new HashMap<String, Integer>();
