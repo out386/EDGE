@@ -36,7 +36,6 @@ captures/
 
 # Intellij
 *.iml
-.idea
 .idea/
 
 # External native build folder generated in Android Studio 2.2 and later
