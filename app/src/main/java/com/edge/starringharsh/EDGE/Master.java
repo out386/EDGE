@@ -338,10 +338,10 @@ class Master {
 
 
         eventDetails.put("B-PLAN", "If you fail to plan, you plan to fail.\n" +
-                "Kirti\n" +
-                "9038870176\n" +
-                "Punit Ojha\n" +
-                "9163413293\n" +
+                "Rahul Singh\n" +
+                "8420617283\n" +
+                "Prince\n" +
+                "9038610317\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -350,10 +350,10 @@ class Master {
                 "http://edg.co.in/#/events/Money%20Matters");
 
         eventDetails.put("B-QUIZ", "A one of it's kind BizTech quiz that puts your knowledge of technology and business mindedness to test.\n" +
-                "Kirti\n" +
-                "9038870176\n" +
-                "Punit Ojha\n" +
-                "9163413293\n" +
+                "Prince\n" +
+                "9038610317\n" +
+                "Prince\n" +
+                "9038610317\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -362,10 +362,10 @@ class Master {
                 "http://edg.co.in/#/events/Money%20Matters/B-Quiz");
 
         eventDetails.put("ADDOMEDIA", "Without innovation, advertisement won't grab attention. With innovation , it will also grab you a handsome prize money.\n" +
-                "Saptarshi\n" +
-                "9474092342\n" +
-                "Punit Ojha\n" +
-                "947492342\n" +
+                "Prince\n" +
+                "9038610317\n" +
+                "Prince\n" +
+                "9038610317\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -374,10 +374,10 @@ class Master {
                 "http://edg.co.in/#/events/Money%20Matters/AddoMedia");
 
         eventDetails.put("STOCK IT", "Traverse the turbulent waters of the stock market in this online event that simulates the thrill of the stock market without any of the risks involved.\n" +
-                "Kirti\n" +
-                "9038870176\n" +
-                "Kirti\n" +
-                "9038870176\n" +
+                "Medha\n" +
+                "8961187020\n" +
+                "Medha\n" +
+                "8961187020\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
