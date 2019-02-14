@@ -8,11 +8,11 @@ class Rules {
 
     Rules() {
         rules = new HashMap<>();
-        rules.put("CS GO COLLEGE LEAGUE", R.string.rules_placeholder);
-        rules.put("CS GO PRO LEAGUE", R.string.rules_placeholder);
-        rules.put("DOTA 2", R.string.rules_placeholder);
-        rules.put("FIFA COLLEGE LEAGUE", R.string.rules_placeholder);
-        rules.put("FIFA PRO LEAGUE", R.string.rules_placeholder);
+        rules.put("CS GO COLLEGE LEAGUE", R.string.rules_cs_go_college);
+        rules.put("CS GO PRO LEAGUE", R.string.rules_cs_go_pro);
+        rules.put("DOTA 2", R.string.rules_dota2);
+        rules.put("FIFA COLLEGE LEAGUE", R.string.rules_fifa_college);
+        rules.put("FIFA PRO LEAGUE", R.string.rules_fifa_pro);
         rules.put("PUBG MOBILE", R.string.rules_placeholder);
         rules.put("NIRMAAN", R.string.rules_nirmaan);
         rules.put("CAD O MANIA", R.string.rules_cadomania);
