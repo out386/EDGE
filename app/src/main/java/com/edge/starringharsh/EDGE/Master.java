@@ -21,11 +21,11 @@ class Master {
     String events4[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
     String events5[] = {"PROJECT VIEW"};
     String events6[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA EDIT"};
-    String events7[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING"};
+    String events7[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD RELAY", "XQUIZIT", "FOOD DISPLAY PRESENTATION"};
     String events8[] = {"MEKANIX", "RAGS TO RICHES"};
     String events9[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
     String events10[] = {"CAD O MANIA", "NIRMAAN"};
-    String events11[] = {"KHUL JAA SIM SIM", "BOOMERANG", "REWIND"};
+    String events11[] = {"EDGE ZOOM", "UDAAN", "1 MINUTE STAND"};
     String events12[] = {"RED BULL PONG", "BODY ZORBING"};
     String sponsors[] = {"GEEK ALUMS"};
     String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN2RTOTBnLTZhNFE";
@@ -82,8 +82,8 @@ class Master {
         eventDetails.put("FLAWLESS", "Just like the name suggests, as flawless as ones codes become the better chance they have of winning.\n" +
                 "Raja Sachin\n" +
                 "9062647976\n" +
-                "Suyash Mittal\n" +
-                "7044793121\n" +
+                "Avnish Singh\n" +
+                "9162023260\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -92,10 +92,10 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("BUG HUNT", "A coder is all about perfection and identifying the cracks and holes to make a flawed algorithm picture perfect.\n" +
-                "Raja Sachin\n" +
-                "9062647976\n" +
-                "Suyash Mittal\n" +
-                "7044793121\n" +
+                "Shreya Agrawal\n" +
+                "9836566212\n" +
+                "Abhishek Das\n" +
+                "7033534472\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -104,8 +104,8 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("CRYPTO QUEST", "Put your cryptography and deciphering skills to test by proving yourself while solving the clues.\n" +
-                "Raja Sachin\n" +
-                "9062647976\n" +
+                "Radhika Mohta\n" +
+                "9163981049\n" +
                 "Suyash Mittal\n" +
                 "7044793121\n" +
                 "n\n" +
@@ -130,8 +130,8 @@ class Master {
         eventDetails.put("CODE OUT", "A call out to all you hidden gem coders to prove your abilities in this online event.\n" +
                 "Raja Sachin\n" +
                 "9062647976\n" +
-                "Suyash Mittal\n" +
-                "7044793121\n" +
+                "Indranil Choudhary\n" +
+                "9635874015\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -506,48 +506,48 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Infocus/Insta-Film");
 
-        eventDetails.put("X-QUIZ-IT", "Unleash your brain cells and win this informative quiz on a wide spectrum of topics.\n" +
-                "Raptilekha\n" +
-                "9073853754\n" +
-                "Raptilekha\n" +
-                "9073853754\n" +
+        eventDetails.put("XQUIZIT", "Unleash your brain cells and win this informative quiz on a wide spectrum of topics.\n" +
+                "Sanchari Kar\n" +
+                "6290283116\n" +
+                "Sanchari Kar\n" +
+                "6290283116\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Food%20for%20Fun/X-Quiz-It");
+                "http://edg.co.in/#/events/Food%20for%20Fun");
 
         eventDetails.put("FOOD PRODUCT LABELLING", "Label the food products correctly to win this event.\n" +
-                "Raptilekha\n" +
-                "9073853754\n" +
-                "Raptilekha\n" +
-                "9073853754\n" +
+                "Sanchari Kar\n" +
+                "6290283116\n" +
+                "Sanchari Kar\n" +
+                "6290283116\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Food%20for%20Fun/Food%20Product%20Labelling");
+                "http://edg.co.in/#/events/Food%20for%20Fun");
 
 
-        eventDetails.put("CREATION-X-NIHILO","Create a machine with the raw materials and take away the prize for your creative thinking.\n" +
-                "Raptilekha\n" +
-                "9073853754\n" +
-                "Raptilekha\n" +
-                "9073853754\n" +
+        eventDetails.put("CREATION-X-NIHILO", "Event details not available yet.\n" +
+                "\n" +
+                "0\n" +
+                "\n" +
+                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Food%20for%20Fun/Creation-X-Nihilo");
+                "http://edg.co.in/#/events/Food%20for%20Fun");
 
-        eventDetails.put("FOOD HUNT", "Hungry enough for the prize? Hunt your food down and satiate yourself.\n" +
-                "Raptilekha\n" +
-                "9073853754\n" +
-                "Raptilekha\n" +
-                "9073853754\n" +
+        eventDetails.put("FOOD DISPLAY PRESENTATION", "Event details not available yet.\n" +
+                "Saptarsi Dey\n" +
+                "7059285164\n" +
+                "Saptarsi Dey\n" +
+                "7059285164\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -555,11 +555,11 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Food%20for%20Fun/Food%20Hunt");
 
-        eventDetails.put("FOOD PROCESSING", "Think your way through food to solve riddles and puzzles.\n" +
-                "Raptilekha\n" +
-                "9073853754\n" +
-                "Raptilekha\n" +
-                "9073853754\n" +
+        eventDetails.put("FOOD RELAY", "Event details not available yet.\n" +
+                "\n" +
+                "0\n" +
+                "\n" +
+                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -673,11 +673,11 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Elevation");
 
-        eventDetails.put("BOOMERANG", "Loop in back and forth, secure the maximum likes and take home exciting goodies.\n" +
-                "Pooja Priya\n" +
-                "9804673350\n" +
-                "Pooja Priya\n" +
-                "9804673350\n" +
+        eventDetails.put("EDGE ZOOM", "Event details not available yet.\n" +
+                "\n" +
+                "0\n" +
+                "\n" +
+                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -685,11 +685,11 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Just%20Like%20That");
 
-        eventDetails.put("KHUL JAA SIM SIM", "Decipher the clues provided as the hidden treasure awaits you.\n" +
-                "Pooja Priya\n" +
-                "9804673350\n" +
-                "Pooja Priya\n" +
-                "9804673350\n" +
+        eventDetails.put("UDAAN", "Event details not available yet.\n" +
+                "\n" +
+                "0\n" +
+                "\n" +
+                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -697,11 +697,11 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Just%20Like%20That");
 
-        eventDetails.put("REWIND", "Rewind, Rollback and Play.\n" +
-                "Pooja Priya\n" +
-                "9804673350\n" +
-                "Pooja Priya\n" +
-                "9804673350\n" +
+        eventDetails.put("1 MINUTE STAND", "Event details not available yet.\n" +
+                "\n" +
+                "0\n" +
+                "\n" +
+                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -776,9 +776,10 @@ class Master {
         eventsImg.put("INSTA CLICK", R.drawable.instaclick);
         eventsImg.put("INSTA EDIT", R.drawable.instaedit);
         //eventsImg.put("INSTA FILM", R.drawable.megaevents);
-        eventsImg.put("X QUIZ'IT", R.drawable.xquizit);
         //eventsImg.put("FOOD PROCESSING", R.drawable.foodprocessing);
-        eventsImg.put("FOOD HUNT", R.drawable.foodhunt);
+        eventsImg.put("XQUIZIT", R.drawable.xquizit);
+        eventsImg.put("FOOD DISPLAY PRESENTATION", R.drawable.fooddisplaypresentation);
+        eventsImg.put("FOOD RELAY", R.drawable.foodrelay);
         eventsImg.put("FOOD PRODUCT LABELLING", R.drawable.foodlabelling);
         eventsImg.put("CREATION-X-NIHILO", R.drawable.creationxnihilo);
         eventsImg.put("MEKANIX", R.drawable.mekanix);
@@ -787,9 +788,9 @@ class Master {
 
        eventsImg.put("THE QUIZ", R.drawable.thequiz);
         eventsImg.put("YOUTH PARLIAMENT", R.drawable.youthparliament);
-        eventsImg.put("KHUL JAA SIM SIM", R.drawable.kjss);
-        eventsImg.put("REWIND", R.drawable.rewind);
-        eventsImg.put("BOOMERANG", R.drawable.boomerang);
+        eventsImg.put("EDGE ZOOM", R.drawable.edgezoom);
+        eventsImg.put("UDAAN", R.drawable.udaan);
+        eventsImg.put("1 MINUTE STAND", R.drawable.oneminstand);
         eventsImg.put("CAD O MANIA", R.drawable.cadomania);
         eventsImg.put("NIRMAAN",R.drawable.nirmaan);
 
@@ -838,17 +839,17 @@ class Master {
         //link.put("SHOOT M UP", "https://drive.google.com/uc?export=download&id=1LyGO1a2nCXP6jF4DWSVwvQffo1D6tySb");
         //link.put("INSTA CLICK", "https://drive.google.com/uc?export=download&id=1r2u7PYL_XT4-hhqGE0HA9R6rSseJtccK");
         //link.put("INSTA FILM", "https://drive.google.com/uc?export=download&id=1NFymjArkPLCQVnCUk8VpJkS_X3IU5ezA");
-        link.put("X QUIZ'IT", "https://drive.google.com/uc?export=download&id=1B8UM8qQG_vH6M6AsFHpywhs6YcbVYufK");
-        link.put("FOOD PROCESSING", "https://drive.google.com/uc?export=download&id=1w-MVmn47E_f4U5dE8ZhtF6_L7wYksLWJ");
-        link.put("FOOD HUNT", "https://drive.google.com/uc?export=download&id=1ciqWkVB0FdOb9HA-JZzVGIceh8YwXlXB");
-        link.put("FOOD PRODUCT LABELLING", "https://drive.google.com/uc?export=download&id=1SqExMuHf-8-zFLtXl94_dMk1jh6g2MUC");
-        link.put("CREATION-X-NIHILO", "https://drive.google.com/uc?export=download&id=1Ugyyug3cvYaRCT82NOXs53SjLKcrRoFW");
+        //link.put("X QUIZ'IT", "https://drive.google.com/uc?export=download&id=1B8UM8qQG_vH6M6AsFHpywhs6YcbVYufK");
+        //link.put("FOOD PROCESSING", "https://drive.google.com/uc?export=download&id=1w-MVmn47E_f4U5dE8ZhtF6_L7wYksLWJ");
+        //link.put("FOOD HUNT", "https://drive.google.com/uc?export=download&id=1ciqWkVB0FdOb9HA-JZzVGIceh8YwXlXB");
+        //link.put("FOOD PRODUCT LABELLING", "https://drive.google.com/uc?export=download&id=1SqExMuHf-8-zFLtXl94_dMk1jh6g2MUC");
+        //link.put("CREATION-X-NIHILO", "https://drive.google.com/uc?export=download&id=1Ugyyug3cvYaRCT82NOXs53SjLKcrRoFW");
         //link.put("MEKANIX", "https://drive.google.com/uc?export=download&id=14MNioWdWFt0dYSleYYDkJDIAyHbZK8Z4");
         //link.put("RAGS TO RICHES", "https://drive.google.com/uc?export=download&id=1cZzLiYsKhouezRi4SJwJonGa7olkJ5ZT");
-        link.put("KHUL JAA SIM SIM", "https://drive.google.com/uc?export=download&id=1E_fCNFGa4ahWh8x1glU3fvVkW5KKGbwM");
-        link.put("REWIND", "https://drive.google.com/uc?export=download&id=18dj9NkmRLSObogdfqJKqWHwU7B-n6ZFm");
+        //link.put("KHUL JAA SIM SIM", "https://drive.google.com/uc?export=download&id=1E_fCNFGa4ahWh8x1glU3fvVkW5KKGbwM");
+        //link.put("REWIND", "https://drive.google.com/uc?export=download&id=18dj9NkmRLSObogdfqJKqWHwU7B-n6ZFm");
         //link.put("MUSICAL.LY", "https://drive.google.com/uc?export=download&id=1EKkucr1PCe4NdfEfy_4v91yHELRo1Gtf");
-        link.put("BOOMERANG", "https://drive.google.com/uc?export=download&id=1eLs9zjP8uzWhHRb9VchXadEDESRfEVPV");
+        //link.put("BOOMERANG", "https://drive.google.com/uc?export=download&id=1eLs9zjP8uzWhHRb9VchXadEDESRfEVPV");
 
 
         teamImg = new HashMap<String, Integer>();
