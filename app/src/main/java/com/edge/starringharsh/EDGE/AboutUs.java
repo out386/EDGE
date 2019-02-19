@@ -142,25 +142,25 @@ public class AboutUs extends AppCompatActivity {
         ImageButton w3 = (ImageButton) findViewById(R.id.bAUWA3);
         ImageButton w4 = (ImageButton) findViewById(R.id.bAUWA4);
         ImageButton w5 = (ImageButton) findViewById(R.id.bAUWA5);
-        c1.setOnClickListener(new View.OnClickListener() {
+        /*c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { 
 
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "9681253545"));
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "0"));
                 startActivity(intent);
             }
-        });
+        });*/
 
-        w1.setOnClickListener(new View.OnClickListener() {
+       /* w1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { 
 
                 Intent sendIntent = new Intent("android.intent.action.MAIN");
                 sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
-                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "9681253545")+"@s.whatsapp.net");//phone number without "+" prefix
+                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "0")+"@s.whatsapp.net");//phone number without "+" prefix
                 startActivity(sendIntent);
             }
-        });
+        });*/
 
 
 
