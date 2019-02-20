@@ -30,7 +30,7 @@ class Master {
     String sponsors[] = {"GEEK ALUMS"};
     String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN2RTOTBnLTZhNFE";
     String megalink = "https://drive.google.com/uc?export=download&id=1PBcdHlBBqekwWcKBLVqwlQXZO4oFl1Cr";
-    String upcominglink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWF9kaUIyeUx6V28";
+    String upcominglink = "https://drive.google.com/uc?export=download&id=1Sb2SoByPtDPMuw5CRxX1emkPfaPAhgRf";
     String funlink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWDFiWkRPR25OYzQ";
     String team17[] = {"Ashish Choudhary", "Shubham Sharma", "Priyankar Banerjee", "Mayank", "Wriddhi Mukherjee", "Aqsa Zea", "Kumar Satyam Singh", "Anurag Ranjan", "Akhilesh Upadhyay"};
     String team18[] = {"Abhishek Singh", "Ayush Tiwari", "Deep Arora", "Shuvojit Ray Chaudhuri", "Harsh Sheth", "Ashif Iqbal", "Md. Mukarram Quraishi", "Neha Roy", "Priya Chaudhuri"};

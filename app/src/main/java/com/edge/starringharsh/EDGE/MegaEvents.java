@@ -264,7 +264,8 @@ public class MegaEvents extends AppCompatActivity {
                 holder.call.setText("" + item.giNum);
                 holder.whatsapp.setText("" + item.giNum);
             }
-            Picasso.get().load(item.giImage).into(holder.imageView);
+            if (item.giImage != null && !"".equals(item.giImage))
+                Picasso.get().load(item.giImage).into(holder.imageView);
 
             holder.call.setOnClickListener(new View.OnClickListener() {
                 @Override
