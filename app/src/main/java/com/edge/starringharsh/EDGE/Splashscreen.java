@@ -9,8 +9,16 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.VideoView;
+
+
+import java.io.IOException;
+
+import pl.droidsonroids.gif.AnimationListener;
+import pl.droidsonroids.gif.GifDrawable;
+import pl.droidsonroids.gif.GifTextView;
 
 public class Splashscreen extends AppCompatActivity {
 
@@ -27,13 +35,29 @@ public class Splashscreen extends AppCompatActivity {
         int uiOptions= View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        metrics = new DisplayMetrics();
+        /*metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
 
         int height = metrics.heightPixels;
-        int width = metrics.widthPixels;
+        int width = metrics.widthPixels;*/
 
-        VideoView videoHolder = (VideoView) findViewById(R.id.videoview);
+        ImageView videoHolder = findViewById(R.id.videoview);
+        try {
+            GifDrawable gifFromResource = new GifDrawable(getResources(), R.drawable.edgesplash);
+            gifFromResource.setLoopCount(1);
+            gifFromResource.setSpeed(1.8f);
+            gifFromResource.addAnimationListener(new AnimationListener() {
+                @Override
+                public void onAnimationCompleted(int loopNumber) {
+                    jump();
+                }
+            });
+            videoHolder.setImageDrawable(gifFromResource);
+        } catch(IOException e) {
+            jump();
+        }
+
+        /*VideoView videoHolder = (VideoView) findViewById(R.id.videoview);
         videoHolder.setLayoutParams(new LinearLayout.LayoutParams(width,height));
         try {
             Uri video = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.edgesplash);
@@ -50,7 +74,7 @@ public class Splashscreen extends AppCompatActivity {
         catch(Exception e) {
             Log.e("abc", "Exception caught!", e);
             jump();
-        }
+        }*/
     }
 
     private void jump()
