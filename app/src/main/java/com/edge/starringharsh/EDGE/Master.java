@@ -13,7 +13,7 @@ class Master {
     //String categories[] = {"CIIC", "Compute Aid",    "Robotics", "Cyber Crusade", "Money Matters",
     // "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Elevation", "Just Like That", "Fun Events"};
     String categories[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron",
-            "Elevation", "Money Matters", "Food For Fun", "Create It", "Just Like That", "Innovati", "Fun Events"};
+            "Elevation", "Food For Fun", "Create It", "Just Like That", "Innovati", "Fun Events"};
     String mainMenu[] = {"Events", "Mega Events", "Upcoming Events", "Edge Kube", "Schedule", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
     String intraCat[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Infocus", "Food For Fun", "Newron", "Elevation", "Fun Events"};
 
@@ -21,15 +21,14 @@ class Master {
     String events1[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
     String events2[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "CODE RELAY"};
     String events3[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA EDIT"};
-    String events4[] = {"TROLL MARKETTING", "CROWD PITCH", "PITCH RIGHT"};
+    String events4[] = {"TROLL MARKETTING", "CROWD PITCH", "PITCH RIGHT", "B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
     String events5[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
     String events6[] = {"CAD O MANIA", "NIRMAAN"};
-    String events7[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
-    String events8[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD RELAY", "XQUIZIT", "FOOD DISPLAY PRESENTATION"};
-    String events9[] = {"MEKANIX", "RAGS TO RICHES"};
-    String events10[] = {"EDGE ZOOM", "UDAAN", "1 MINUTE STAND"};
-    String events11[] = {"PROJECT VIEW"};
-    String events12[] = {"RED BULL PONG", "BODY ZORBING"};
+    String events7[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD RELAY", "XQUIZIT", "FOOD DISPLAY PRESENTATION"};
+    String events8[] = {"MEKANIX", "RAGS TO RICHES"};
+    String events9[] = {"EDGE ZOOM", "UDAAN", "1 MINUTE STAND"};
+    String events10[] = {"PROJECT VIEW"};
+    String events11[] = {"RED BULL PONG", "BODY ZORBING"};
     String sponsors[] = {"GEEK ALUMS"};
     String sponsorslink = "https://drive.google.com/uc?export=download&id=1k1bsfx019J9b8BOT61Ho2cYxKGeI0k2O";
     String megalink = "https://drive.google.com/uc?export=download&id=1PBcdHlBBqekwWcKBLVqwlQXZO4oFl1Cr";
