@@ -20,7 +20,7 @@ public class Accomodation extends AppCompatActivity {
         ImageButton bCall1 = (ImageButton) findViewById(R.id.bAccCall);
         ImageButton bWA1 = (ImageButton) findViewById(R.id.bAccWA);
         TextView link = (TextView) findViewById(R.id.AccForm);
-        final long phn1=8961299221L;
+        final long phn1=7688080223L;
 
         link.setOnClickListener(new View.OnClickListener() {
             @Override
