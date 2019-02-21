@@ -31,7 +31,7 @@ class Master {
     String events11[] = {"PROJECT VIEW"};
     String events12[] = {"RED BULL PONG", "BODY ZORBING"};
     String sponsors[] = {"GEEK ALUMS"};
-    String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN2RTOTBnLTZhNFE";
+    String sponsorslink = "https://drive.google.com/uc?export=download&id=1k1bsfx019J9b8BOT61Ho2cYxKGeI0k2O";
     String megalink = "https://drive.google.com/uc?export=download&id=1PBcdHlBBqekwWcKBLVqwlQXZO4oFl1Cr";
     String upcominglink = "https://drive.google.com/uc?export=download&id=1Sb2SoByPtDPMuw5CRxX1emkPfaPAhgRf";
     String funlink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWDFiWkRPR25OYzQ";
