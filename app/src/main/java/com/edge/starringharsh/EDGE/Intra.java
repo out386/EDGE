@@ -13,6 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.edge.starringharsh.EDGE.utils.ButtonUtils;
+
 
 public class Intra extends AppCompatActivity {
     int i;
@@ -37,19 +39,21 @@ public class Intra extends AppCompatActivity {
         int width = metrics.widthPixels;
 
         final ImageButton cat[] = new ImageButton[l];
-
+        int px = ButtonUtils.dpToPx(this, 200);
         for(i=0;i<l;i++)
 
         {
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                    width,
-                    width/2);
+                    px, px);
             RelativeLayout flTest = new RelativeLayout(this);
             cat[i] = new ImageButton(this);
             cat[i].setBackgroundResource(master.categoriesImg.get(categories[i]));
-            params.setMargins(0, 5, 0, 0);
-            flTest.addView(cat[i],params);
-            ll.addView(flTest, params);
+            TextView caption = ButtonUtils.getCaptionTv(this, categories[i]);
+            ll.addView(cat[i], params);
+            ll.addView(caption);
+
+            /*flTest.addView(cat[i],params);
+            ll.addView(flTest, params);*/
         }
 
         for(i=0; i<l; i++)

@@ -243,6 +243,9 @@ public class MainMenu extends AppCompatActivity {
             case "Events":
                 intent = new Intent(MainMenu.this, MainActivity.class);
                 return intent;
+            case "Intra":
+                intent = new Intent(MainMenu.this, Intra.class);
+                return intent;
             case "Mega Events":
                 intent = new Intent(MainMenu.this, MegaEvents.class);
                 intent.putExtra("actName", "Mega");
