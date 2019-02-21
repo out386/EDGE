@@ -12,15 +12,15 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class Team extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    GridView grid;
+    ListView grid;
     Context context;
-    ImageView iv;
     Master master;
     String name[];
     View o;
@@ -43,7 +43,7 @@ public class Team extends AppCompatActivity implements AdapterView.OnItemClickLi
             name = master.team18;
         else
             name = master.team17;
-        grid = (GridView) findViewById(R.id.gridTeam);
+        grid = findViewById(R.id.gridTeam);
         grid.setAdapter(new teamAdapter(this));
         grid.setOnItemClickListener(this);
 
@@ -78,6 +78,7 @@ public class Team extends AppCompatActivity implements AdapterView.OnItemClickLi
     {
         ArrayList<EleTeam> list;
         Context context;
+        EleTeam model;
         teamAdapter(Context context)
         {
             this.context = context;
@@ -86,7 +87,7 @@ public class Team extends AppCompatActivity implements AdapterView.OnItemClickLi
             {
                 String posi = master.teamPost.get(name[i]);
                 long num = master.teamNum.get(name[i]);
-                int img = master.teamImg.get(name[i]);
+                int img = master.teamImg1.get(name[i]);
                 EleTeam ob = new EleTeam(name[i], posi, num, img);
                 list.add(ob);
             }
@@ -112,17 +113,19 @@ public class Team extends AppCompatActivity implements AdapterView.OnItemClickLi
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
 
-            View row = view;
-
-            if(row == null)
+            if(view == null)
             {
-                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                row = inflater.inflate(R.layout.teamgrid, viewGroup, false);
-                iv = (ImageView) row.findViewById(R.id.ivMember);
+                LayoutInflater inflater = LayoutInflater.from(context);
+                view = inflater.inflate(R.layout.teamgrid, viewGroup, false);
             }
             EleTeam e = list.get(i);
+            ImageView iv = (ImageView) view.findViewById(R.id.ivMember);
+            TextView name = view.findViewById(R.id.tvMemberName);
+            TextView post = view.findViewById(R.id.tvMemberPost);
             iv.setBackgroundResource(e.img);
-            return row;
+            name.setText(e.name);
+            post.setText(e.posi);
+            return view;
         }
     }
 

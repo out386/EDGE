@@ -39,19 +39,12 @@
         android:layout_below="@+id/tvHeader"
         android:id="@+id/view" />
 
-    <GridView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:horizontalSpacing="10dp"
-        android:verticalSpacing="10dp"
-        android:numColumns="auto_fit"
-        android:id="@+id/gridTeam"
-        android:columnWidth="150dp"
-        android:layout_centerInParent="true"
-        android:stretchMode="spacingWidthUniform"
-        >
-
-    </GridView>
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:id="@+id/gridTeam"/>
 
     </LinearLayout>
 

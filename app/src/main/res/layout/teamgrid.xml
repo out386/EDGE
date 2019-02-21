@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="130dp" android:layout_height="130dp"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/textroundborder">
 
         <ImageView
             android:layout_height="130dp"
             android:layout_width="130dp"
             android:id="@+id/ivMember"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true">
+            tools:src="@drawable/chandrasekhar">
         </ImageView>
-</RelativeLayout>
+        <TextView
+            tools:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/tvMemberName" />
+        <TextView
+            tools:text="Post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/tvMemberPost" />
+</LinearLayout>
