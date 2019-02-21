@@ -10,22 +10,25 @@ import java.util.Map;
 
 class Master {
 
-    String categories[] = {"CIIC", "Compute Aid", "Robotics", "Cyber Crusade", "Money Matters", "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Elevation", "Just Like That", "Fun Events"};
+    //String categories[] = {"CIIC", "Compute Aid",    "Robotics", "Cyber Crusade", "Money Matters",
+    // "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Elevation", "Just Like That", "Fun Events"};
+    String categories[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron",
+            "Elevation", "Money Matters", "Food For Fun", "Create It", "Just Like That", "Innovati", "Fun Events"};
     String mainMenu[] = {"Events", "Mega Events", "Upcoming Events", "Edge Kube", "Schedule", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
     String intraCat[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Infocus", "Food For Fun", "Newron", "Elevation", "Fun Events"};
 
-    String events0[] = {"TROLL MARKETTING", "CROWD PITCH", "PITCH RIGHT"};
-    String events1[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "CODE RELAY"};
-    String events2[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
-    String events3[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
-    String events4[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
-    String events5[] = {"PROJECT VIEW"};
-    String events6[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA EDIT"};
-    String events7[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD RELAY", "XQUIZIT", "FOOD DISPLAY PRESENTATION"};
-    String events8[] = {"MEKANIX", "RAGS TO RICHES"};
-    String events9[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
-    String events10[] = {"CAD O MANIA", "NIRMAAN"};
-    String events11[] = {"EDGE ZOOM", "UDAAN", "1 MINUTE STAND"};
+    String events0[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
+    String events1[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
+    String events2[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "CODE RELAY"};
+    String events3[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA EDIT"};
+    String events4[] = {"TROLL MARKETTING", "CROWD PITCH", "PITCH RIGHT"};
+    String events5[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
+    String events6[] = {"CAD O MANIA", "NIRMAAN"};
+    String events7[] = {"B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
+    String events8[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD RELAY", "XQUIZIT", "FOOD DISPLAY PRESENTATION"};
+    String events9[] = {"MEKANIX", "RAGS TO RICHES"};
+    String events10[] = {"EDGE ZOOM", "UDAAN", "1 MINUTE STAND"};
+    String events11[] = {"PROJECT VIEW"};
     String events12[] = {"RED BULL PONG", "BODY ZORBING"};
     String sponsors[] = {"GEEK ALUMS"};
     String sponsorslink = "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN2RTOTBnLTZhNFE";
