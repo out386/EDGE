@@ -27,6 +27,7 @@
                 android:src="@drawable/edgewithtext"
                 />
             <TextView
+                android:id="@+id/about_tv"
                 android:layout_width="match_parent"
                 android:textSize="20dp"
                 android:paddingBottom="@dimen/activity_vertical_margin"
@@ -40,9 +41,7 @@
                 android:textColor="#000000"
                 android:layout_height="wrap_content"
                 android:background="@drawable/textroundborder"
-                android:padding="15dp"
-                android:text="The beloved masterpiece of Geekonix, is all set to take a step into a new decade, a new beginning, Techno India and Geekonix invites you to a new era in the event of innovation and ingenuity. EDGE 19 promises to tune up the boom box and to conjure up a vision beyond imagination. Following its essence and beliefs, EDGE 19 will be a multiverse of events to polish already talented and intuitive minds of the society. Like every year, reaching for a new echelon is the goal."
-                />
+                android:padding="15dp"/>
             <LinearLayout
 
                 android:layout_width="match_parent"
@@ -316,45 +315,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
                         android:textSize="20dp"
-                        android:text="Saquib-Ul-Hasan"
+                        android:text="Suyash Mittal"
                         android:textColor="#000000"
                         />
 
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp">
-
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:id="@+id/bAUCall4"
-                        android:background="@drawable/phone"
-                        />
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="6dp"
-                        android:id="@+id/bAUWA4"
-                        android:background="@drawable/whatsapp"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:textSize="20dp"
-                        android:text="Sanjeev Kumar"
-                        android:textColor="#000000"
-                        />
-
-                </LinearLayout>
-
-
-
-
 
 
             </LinearLayout>

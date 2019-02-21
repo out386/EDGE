@@ -7,8 +7,10 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
+import android.text.Html;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class AboutUs extends AppCompatActivity {
 
@@ -26,6 +28,9 @@ public class AboutUs extends AppCompatActivity {
         ImageButton insta = (ImageButton) findViewById(R.id.linkInstagram);
         ImageButton location = (ImageButton) findViewById(R.id.linkLocation);
         ImageButton twitter = (ImageButton) findViewById(R.id.linkTwitter);
+        TextView about = findViewById(R.id.about_tv);
+
+        about.setText(Html.fromHtml(getString(R.string.about_us)));
 
 
         facebook.setOnClickListener(new View.OnClickListener() {
@@ -135,12 +140,10 @@ public class AboutUs extends AppCompatActivity {
         ImageButton c1 = (ImageButton) findViewById(R.id.bAUCall1);
         ImageButton c2 = (ImageButton) findViewById(R.id.bAUCall2);
         ImageButton c3 = (ImageButton) findViewById(R.id.bAUCall3);
-        ImageButton c4 = (ImageButton) findViewById(R.id.bAUCall4);
         ImageButton c5 = (ImageButton) findViewById(R.id.bAUCall5);
         ImageButton w1 = (ImageButton) findViewById(R.id.bAUWA1);
         ImageButton w2 = (ImageButton) findViewById(R.id.bAUWA2);
         ImageButton w3 = (ImageButton) findViewById(R.id.bAUWA3);
-        ImageButton w4 = (ImageButton) findViewById(R.id.bAUWA4);
         ImageButton w5 = (ImageButton) findViewById(R.id.bAUWA5);
         /*c1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -187,7 +190,7 @@ public class AboutUs extends AppCompatActivity {
             @Override
             public void onClick(View view) { 
 
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "8617767183"));
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "7044793121"));
                 startActivity(intent);
             }
         });
@@ -198,26 +201,7 @@ public class AboutUs extends AppCompatActivity {
 
                 Intent sendIntent = new Intent("android.intent.action.MAIN");
                 sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
-                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "9804887223")+"@s.whatsapp.net");//phone number without "+" prefix
-                startActivity(sendIntent);
-            }
-        });
-        c4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "7003566634"));
-                startActivity(intent);
-            }
-        });
-
-        w4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent sendIntent = new Intent("android.intent.action.MAIN");
-                sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
-                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "8282935441")+"@s.whatsapp.net");//phone number without "+" prefix
+                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + "7044793121")+"@s.whatsapp.net");//phone number without "+" prefix
                 startActivity(sendIntent);
             }
         });
