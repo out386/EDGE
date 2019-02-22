@@ -15,7 +15,7 @@ class Master {
     String categories[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron",
             "Elevation", "Food For Fun", "Create It", "Just Like That", "Innovati", "Fun Events"};
     String mainMenu[] = {"Events", "Intra", "Mega Events", "Upcoming Events", "Edge Kube", "Schedule", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
-    String intraCat[] = {"Compute Aid", "Robotics", "Cyber Crusade", "Infocus", "Food For Fun", "Newron", "Elevation", "Fun Events"};
+    String intraCat[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron", "Elevation", "Food For Fun", "Create It"};
 
     String events0[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
     String events1[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
@@ -926,17 +926,17 @@ class Master {
         categoriesImg.put("Fun Events", R.drawable.funevents);
 
         intraLink = new HashMap<String, String>();
-        intraLink.put("Compute Aid", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN1U0S3ZhZjQwOUk");
-        intraLink.put("Robotics", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEd1d3VFhsQTNzREU");
-        intraLink.put("Cyber Crusade", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEdE9vUExqdnplV1k");
-        //intraLink.put("Money Matters", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN1U0S3ZhZjQwOUk");
+        intraLink.put("Compute Aid", "https://drive.google.com/uc?export=download&id=1nICB_ffCQDELEN5Bq82okiFOv-xDefm_");
+        intraLink.put("Robotics", "https://drive.google.com/uc?export=download&id=12KtvoljdIVtjNsdqPXRwlYhbE47R76Uw");
+        intraLink.put("Cyber Crusade", "https://drive.google.com/uc?export=download&id=1jylW7pYQmIWILF7C-VCdpGJON89WdryN");
         //intraLink.put("Innovati", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN1U0S3ZhZjQwOUk");
-        intraLink.put("Infocus", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEZ0FlZ2V1bFBTSTA");
-        intraLink.put("Food For Fun", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDENlFnWVFQUUhBczQ");
-        //intraLink.put("Create It", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEN1U0S3ZhZjQwOUk");
-        intraLink.put("Newron", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEYmU4Y3lhSFVtTmM");
-        intraLink.put("Elevation", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEbHA2WmNNN2lRSm8");
-        intraLink.put("Fun Events", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEV09PRmhvSUxJRWc");
+        intraLink.put("Infocus", "https://drive.google.com/uc?export=download&id=1sIwsbi03N1aU2sIs1HF-E3jI29O6dqQn");
+        intraLink.put("CIIC", "https://drive.google.com/uc?export=download&id=1ENGR0cZiXNq5Elt1F4zUndDEGYVyS6nf");
+        intraLink.put("Newron", "https://drive.google.com/uc?export=download&id=1rF8YCI_7uuVrI6-MaY318GtEwaF4KyOk");
+        intraLink.put("Elevation", "https://drive.google.com/uc?export=download&id=1_-21Vtt6g_PCrZVcAHbx9QX46xlVHdWw");
+        intraLink.put("Food For Fun", "https://drive.google.com/uc?export=download&id=1bmImgMJhj0OHiXb8vgRp0XmUX_czpe8-");
+        intraLink.put("Create It", "https://drive.google.com/uc?export=download&id=1JUXEx2q32H2bM0AFfhPJcYwyw-looJXf");
+        //intraLink.put("Fun Events", "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEV09PRmhvSUxJRWc");
 
         intraDetails = new HashMap<String, String>();
         intraDetails.put("Compute Aid", "FLAWLESS\n" +
