@@ -883,7 +883,7 @@ class Master {
         teamPost.put("Souradipta Ojha", "Co-Convener, Co-Signing Authority");
         teamPost.put("Ritaban Chakrabarti", "Sponsorship Head");
         teamPost.put("Siddharth Verma", "Administrative Head");
-        teamPost.put("Rounak Ghosh", "Resource Head");
+        teamPost.put("Rounak Ghosh", "Signing Authority & Resource Head");
         teamPost.put("Shatavisha Biswas", "Member Management Head");
         teamPost.put("Urmimala Sen", "Outreach");
         teamPost.put("Ankur Rai", "Media Strategist");

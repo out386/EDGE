@@ -7,8 +7,8 @@ android {
         applicationId "edg.geekonix.app"
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 11
-        versionName "2.1.2"
+        versionCode 12
+        versionName "2.1.3"
     }
     buildTypes {
         release {
