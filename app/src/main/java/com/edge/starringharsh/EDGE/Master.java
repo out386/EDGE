@@ -178,10 +178,10 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid/");
 
         eventDetails.put("BLITZKRIEG", "A moment of pain is worth a lifetime of glory. The bot that survives till the end emerges as the victor.\n" +
-                "Sagar Sangam\n" +
-                "7991186092\n" +
-                "Saurabh Kumar Gupta\n" +
-                "8697474145\n" +
+                "Ashutosh Priyadarshi\n" +
+                "8697276841\n" +
+                "Rajeev Ranjan\n" +
+                "8820879972\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -226,10 +226,10 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("STALKER", "Follow the trail and glory waits for you at the finishing line.\n" +
-                "Utsav Shah\n" +
-                "8697108688\n" +
-                "Dwitam Ghosh\n" +
-                "8293929077\n" +
+                "Sudhanshu Shivam\n" +
+                "8697892729\n"+
+                "Sourav Ghosh\n" +
+                "8013174091\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -238,10 +238,10 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("JIGSAW", "Only the craze to solve the maze can help you win and subjects you to praise.\n" +
-                "Dwitam Ghosh\n" +
-                "8293929077\n" +
-                "Utsav Shah\n" +
-                "8697108688\n" +
+                "Sudhanshu Shivam\n" +
+                "8697892729\n" +
+                "Sourav Ghosh\n" +
+                "8013174091\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -250,10 +250,10 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("ROBO RACE", "The better you maneuver, the farther you reach.\n" +
-                "Sagar Sangam\n" +
-                "7991186092\n" +
-                "Saurabh Kumar Gupta\n" +
-                "8697474145\n" +
+                "Ashutosh Priyadarshi\n" +
+                "8697276841\n" +
+                "Rajeev Ranjan\n" +
+                "8820879972\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -262,10 +262,10 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("ROBO SOCCER", "Steer your bot expertly to score the maximum number of goals and win the match.\n" +
-                "Sagar Sangam\n" +
-                "7991186092\n" +
-                "Piyush Raj\n" +
-                "8282926317\n" +
+                "Ashutosh Priyadarshi\n" +
+                "8697276841\n" +
+                "Rajeev Ranjan\n" +
+                "8820879972\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -274,10 +274,10 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("WALLSTREET", "Follow the trail and glory awaits you at the finishing line.\n" +
-                "Dwitam Ghosh\n" +
-                "8293929077\n" +
-                "Utsav Shah\n" +
-                "8697108688\n" +
+                "Sudhanshu Shivam\n" +
+                "8697892729\n" +
+                "Sourav Ghosh\n" +
+                "8013174091\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -437,10 +437,10 @@ class Master {
                 "http://edg.co.in/#/events/Innovati");
 
         eventDetails.put("CRUMBS", "Landscape photography? That’s too mainstream. Time to go against the tide and explore the elegance in the most inconspicuous items around. The topic is open so just give us the best of you.\n" +
-                "Priyanka Sengupta\n" +
-                "9748234607\n" +
-                "Subhradeep Basu\n" +
-                "8436238707\n" +
+                "Rohit Deb\n" +
+                "9038220806\n" +
+                "Karan Paul\n" +
+                "8906833180\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -473,10 +473,10 @@ class Master {
                 "http://edg.co.in/#/events/Infocus");
 
         eventDetails.put("INSTA CLICK", "Capture the moment that’s gone and impossible to reproduce. Shoot at the moment.\n" +
-                "Subhradeep Basu\n" +
-                "8436238707\n" +
-                "Nilanjana Biswas\n" +
-                "9800996502\n" +
+                "Indrajit Dhara\n" +
+                "9804179878\n" +
+                "Karan Paul\n" +
+                "8906833180\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -620,7 +620,7 @@ class Master {
 
         eventDetails.put("YOUTH PARLIAMENT","If you have a keen interest in the Indian parliamentary proceedings then this is an event where you can excel.\n" +
                 "Ankit Anjan\n" +
-                "9020349610\n" +
+                "7739793511\n" +
                 "Alvin Karkun\n" +
                 "7890150690\n" +
                 "n\n" +
