@@ -14,7 +14,7 @@ class Master {
     // "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Elevation", "Just Like That", "Fun Events"};
     String categories[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron",
             "Elevation", "Food For Fun", "Create It", "Just Like That", "Innovati", "Fun Events"};
-    String mainMenu[] = {"Events", "Intra", "Mega Events", "Upcoming Events", "Edge Kube", "Schedule", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
+    String mainMenu[] = {"Events", "Intra", "Mega Events", "Upcoming Events", "Edge Kube", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
     String intraCat[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron", "Elevation", "Food For Fun", "Create It"};
 
     String events0[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
