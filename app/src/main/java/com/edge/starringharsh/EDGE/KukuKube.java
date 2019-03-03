@@ -106,7 +106,6 @@ public class KukuKube extends AppCompatActivity {
                 intent.putExtra("Score", ""+sco);
                 intent.putExtra("Time", ""+totTime);
                 startActivity(intent);
-                finish();
             }
             odd.setOnClickListener(new View.OnClickListener() {
 
@@ -173,8 +172,6 @@ public class KukuKube extends AppCompatActivity {
         if (doubleBackToExitPressedOnce) {
             // Clear your session, remove preferences, etc.
             customHandler.removeCallbacks(updateTimerThread);
-            Intent intent = new Intent(KukuKube.this, MainMenu.class);
-            startActivity(intent);
             finish();
             return;
         }

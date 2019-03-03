@@ -127,20 +127,12 @@ public class EventList extends AppCompatActivity {
                         editor.commit();
                         Intent intent = new Intent(EventList.this, EventDetails.class);
                         startActivity(intent);
-                        finish();
                     }
                 });
             }
 
 
 
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(EventList.this, MainActivity.class);
-        startActivity(intent);
-        finish();
     }
 
     @Override

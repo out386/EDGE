@@ -65,18 +65,10 @@ public class MainActivity extends AppCompatActivity {
                     editor.commit();
                     Intent intent = new Intent(MainActivity.this, EventList.class);
                     startActivity(intent);
-                    finish();
                 }
             });
         }
 
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(MainActivity.this, MainMenu.class);
-        startActivity(intent);
-        finish();
     }
 }
 

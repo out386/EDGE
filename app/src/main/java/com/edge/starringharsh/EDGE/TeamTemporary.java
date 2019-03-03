@@ -34,7 +34,6 @@ import android.widget.LinearLayout;
                 Intent intent = new Intent(TeamTemporary.this, Team.class);
                 intent.putExtra("year", 18);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -44,19 +43,10 @@ import android.widget.LinearLayout;
                 Intent intent = new Intent(TeamTemporary.this, Team.class);
                 intent.putExtra("year", 17);
                 startActivity(intent);
-                finish();
             }
         });
 
     }
-
-
-        @Override
-        public void onBackPressed() {
-            Intent intent = new Intent(TeamTemporary.this, MainMenu.class);
-            startActivity(intent);
-            finish();
-        }
 
         @Override
         public void finish() {

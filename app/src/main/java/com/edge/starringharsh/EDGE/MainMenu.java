@@ -229,7 +229,6 @@ public class MainMenu extends AppCompatActivity {
                     Intent intent = getIntent(menu, master, j);
                     if (intent != null) {
                         startActivity(intent);
-                        finish();
                     }
                 }
             });

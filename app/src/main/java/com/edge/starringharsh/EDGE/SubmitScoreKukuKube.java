@@ -55,19 +55,9 @@ public class SubmitScoreKukuKube extends AppCompatActivity {
         replay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SubmitScoreKukuKube.this, KukuKube.class);
-                startActivity(intent);
                 finish();
             }
         });
-    }
-
-
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(SubmitScoreKukuKube.this, MainMenu.class);
-        startActivity(intent);
-        finish();
     }
 
     @Override

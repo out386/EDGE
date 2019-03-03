@@ -40,24 +40,18 @@ public class CampusAmbassadors extends AppCompatActivity {
             @Override
             public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
                 Toast.makeText(CampusAmbassadors.this, "Connection Error", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(CampusAmbassadors.this, MainMenu.class);
-                startActivity(intent);
                 finish();
             }
 
             @Override
             public void onReceivedHttpError(WebView view, WebResourceRequest request, WebResourceResponse errorResponse) {
                 Toast.makeText(CampusAmbassadors.this, "Connection Error", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(CampusAmbassadors.this, MainMenu.class);
-                startActivity(intent);
                 finish();
             }
 
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
                 Toast.makeText(CampusAmbassadors.this, "Connection Error", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(CampusAmbassadors.this, MainMenu.class);
-                startActivity(intent);
                 finish();
             }
 
@@ -65,19 +59,11 @@ public class CampusAmbassadors extends AppCompatActivity {
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
                 super.onReceivedError(view, errorCode, description, failingUrl);
                 Toast.makeText(CampusAmbassadors.this, "Connection Error", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(CampusAmbassadors.this, MainMenu.class);
-                startActivity(intent);
                 finish();
             }
         });
 
 
-    }
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(CampusAmbassadors.this, MainMenu.class);
-        startActivity(intent);
-        finish();
     }
 
     @Override

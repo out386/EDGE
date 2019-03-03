@@ -116,13 +116,6 @@ public class Results extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(this, MainMenu.class);
-        startActivity(intent);
-        finish();
-    }
-
-    @Override
     public void finish() {
         super.finish();
         overridePendingTransition(0, 0);

@@ -205,7 +205,6 @@ public class IntraEvents extends AppCompatActivity {
             {
                 Intent intent = new Intent(IntraEvents.this, ComingSoon.class);
                 startActivity(intent);
-                finish();
             }
             for(int i=0; i<names.length; i++)
             {
@@ -330,13 +329,6 @@ public class IntraEvents extends AppCompatActivity {
         TextView titleTextView, subTextView, contName;
         Button call, whatsapp, downloadPdf;
         //ImageView imageView;
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(IntraEvents.this, Intra.class);
-        startActivity(intent);
-        finish();
     }
 
     @Override

@@ -240,13 +240,6 @@ public class EventDetails extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(EventDetails.this, EventList.class);
-        startActivity(intent);
-        finish();
-    }
-
-    @Override
     public void finish() {
         super.finish();
         overridePendingTransition(0,0);

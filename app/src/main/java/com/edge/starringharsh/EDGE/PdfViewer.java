@@ -47,13 +47,6 @@ public class PdfViewer extends Activity {
     }
 
     @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(PdfViewer.this, MainMenu.class);
-        startActivity(intent);
-        finish();
-    }
-
-    @Override
     public void finish() {
         super.finish();
         overridePendingTransition(0,0);

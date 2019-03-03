@@ -65,18 +65,10 @@ public class Intra extends AppCompatActivity {
                     Intent intent = new Intent(Intra.this, IntraEvents.class);
                     intent.putExtra("category", categories[j]);
                     startActivity(intent);
-                    finish();
                 }
             });
         }
 
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(Intra.this, MainMenu.class);
-        startActivity(intent);
-        finish();
     }
 }
 
