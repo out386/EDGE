@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -21,6 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.edge.starringharsh.EDGE.BaseActivity;
 import com.edge.starringharsh.EDGE.KukuKube;
 import com.edge.starringharsh.EDGE.MainMenu;
 import com.edge.starringharsh.EDGE.R;
@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class SnakesGameActivity extends AppCompatActivity {
+public class SnakesGameActivity extends BaseActivity {
 
     private final int UP = 8;
     private final int DOWN = 5;

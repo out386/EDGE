@@ -9,7 +9,6 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
 import android.view.LayoutInflater;
@@ -31,7 +30,7 @@ import java.io.StringReader;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class MegaEvents extends AppCompatActivity {
+public class MegaEvents extends BaseActivity {
 
     ImageView iv;
     Button bcontPhn, contWA;

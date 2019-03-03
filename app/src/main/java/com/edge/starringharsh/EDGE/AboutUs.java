@@ -4,7 +4,6 @@ import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
 import android.text.Html;
@@ -12,7 +11,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class AboutUs extends AppCompatActivity {
+public class AboutUs extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -234,12 +233,5 @@ public class AboutUs extends AppCompatActivity {
     public void finish() {
         super.finish();
         overridePendingTransition(0,0);
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(AboutUs.this, MainMenu.class);
-        startActivity(intent);
-        finish();
     }
 }

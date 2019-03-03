@@ -3,14 +3,13 @@ package com.edge.starringharsh.EDGE;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class Accomodation extends AppCompatActivity {
+public class Accomodation extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,13 +51,6 @@ public class Accomodation extends AppCompatActivity {
                 startActivity(sendIntent);
             }
         });
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(Accomodation.this, MainMenu.class);
-        startActivity(intent);
-        finish();
     }
 
     @Override

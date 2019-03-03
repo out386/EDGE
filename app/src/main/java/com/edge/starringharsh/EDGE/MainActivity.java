@@ -1,7 +1,6 @@
 package com.edge.starringharsh.EDGE;
 
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
 import android.content.Intent;
@@ -15,7 +14,7 @@ import android.widget.TextView;
 import com.edge.starringharsh.EDGE.utils.ButtonUtils;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     int i;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

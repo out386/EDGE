@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -14,7 +13,7 @@ import android.widget.TextView;
 
 import com.edge.starringharsh.EDGE.utils.ButtonUtils;
 
-public class EventList extends AppCompatActivity {
+public class EventList extends BaseActivity {
 
     int i;
 

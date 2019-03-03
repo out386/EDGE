@@ -2,7 +2,6 @@ package com.edge.starringharsh.EDGE;
 
 import android.content.Intent;
 import android.net.http.SslError;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebResourceError;
@@ -13,7 +12,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-public class CampusAmbassadors extends AppCompatActivity {
+public class CampusAmbassadors extends BaseActivity {
 
     private WebView webView;
 

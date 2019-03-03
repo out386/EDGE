@@ -3,7 +3,6 @@ package com.edge.starringharsh.EDGE;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +16,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class Team extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class Team extends BaseActivity implements AdapterView.OnItemClickListener {
 
     ListView grid;
     Context context;

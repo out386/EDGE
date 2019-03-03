@@ -4,7 +4,6 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -14,7 +13,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 
-public class ResultsDetails extends AppCompatActivity {
+public class ResultsDetails extends BaseActivity {
 
     static final String RESULT_NAME = "resultName";
     static final String RESULT_URL = "resultUrl";

@@ -1,7 +1,6 @@
 package com.edge.starringharsh.EDGE;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -9,7 +8,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 
-    public class TeamTemporary extends AppCompatActivity {
+    public class TeamTemporary extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -11,7 +11,6 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
 import android.util.DisplayMetrics;
@@ -33,7 +32,7 @@ import java.io.StringReader;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class IntraEvents extends AppCompatActivity {
+public class IntraEvents extends BaseActivity {
 
     ImageView iv;
     Button bcontPhn, contWA;

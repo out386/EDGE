@@ -7,10 +7,7 @@
     android:background="#000000"
     tools:context="com.edge.starringharsh.EDGE.EdgeMash">
 
-    <com.edge.starringharsh.EDGE.IntroVideoSurfaceView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+    <include layout="@layout/layout_bg_video" />
 
     <LinearLayout
         android:layout_width="match_parent"

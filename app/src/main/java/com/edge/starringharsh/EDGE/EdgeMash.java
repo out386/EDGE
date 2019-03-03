@@ -5,13 +5,12 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class EdgeMash extends AppCompatActivity {
+public class EdgeMash extends BaseActivity {
 
     TextView details, st1, st2, st3;
     Button dubopen, sendmail, fbpage;

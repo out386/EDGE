@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
 import android.text.Html;
@@ -26,7 +25,7 @@ import java.io.StringReader;
 import java.net.URL;
 import java.util.Calendar;
 
-public class EventDetails extends AppCompatActivity {
+public class EventDetails extends BaseActivity {
 
     TextView tvDet, tvCont1, tvCont2, tvUpcoming, tvRules, tvDetails;
     ImageButton bCall1, bCall2, bWA1, bWA2, bReminder;

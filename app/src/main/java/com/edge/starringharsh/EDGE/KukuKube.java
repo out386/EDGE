@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.os.Handler;
 import android.os.SystemClock;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -18,7 +17,7 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-public class KukuKube extends AppCompatActivity {
+public class KukuKube extends BaseActivity {
 
     boolean doubleBackToExitPressedOnce = false;
     DisplayMetrics metrics;
