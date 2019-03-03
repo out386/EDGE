@@ -27,8 +27,7 @@ public class MainMenu extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0,0);
-        setContentView(R.layout.activity_main_menu);
+                setContentView(R.layout.activity_main_menu);
 
         //startTime = SystemClock.uptimeMillis();
         //TextView trial = (TextView) findViewById(R.id.tvTRIAL);
@@ -191,11 +190,6 @@ public class MainMenu extends BaseActivity {
         return connectivityManager.getActiveNetworkInfo() != null && connectivityManager.getActiveNetworkInfo().isConnected();
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
-    }
 
     private void setupMenu() {
         // TODO: Just eff this all. Use a RecyclerView.

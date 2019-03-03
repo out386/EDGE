@@ -1,5 +1,6 @@
 package com.edge.starringharsh.EDGE;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
@@ -20,5 +21,17 @@ public class BaseActivity extends AppCompatActivity {
             }
         } catch (IOException ignored) {
         }
+    }
+
+    @Override
+    public void startActivity(Intent intent) {
+        super.startActivity(intent);
+        overridePendingTransition(R.anim.zoom_enter,R.anim.zoom_exit);
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.zoom_enter_reverse,R.anim.zoom_exit_reverse);
     }
 }

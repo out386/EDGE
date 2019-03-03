@@ -20,8 +20,7 @@ public class Intra extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0,0);
-        setContentView(R.layout.activity_intra);
+                setContentView(R.layout.activity_intra);
 
         LinearLayout ll = (LinearLayout)findViewById(R.id.linearlayout);
 

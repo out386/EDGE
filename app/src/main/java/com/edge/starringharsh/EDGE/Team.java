@@ -26,8 +26,7 @@ public class Team extends BaseActivity implements AdapterView.OnItemClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0,0);
-        setContentView(R.layout.activity_team);
+                setContentView(R.layout.activity_team);
 
         int year = getIntent().getIntExtra("year", 19);
 
@@ -128,9 +127,4 @@ public class Team extends BaseActivity implements AdapterView.OnItemClickListene
         }
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
     }
-}

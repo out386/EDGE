@@ -53,8 +53,7 @@ public class IntraEvents extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0,0);
-        setContentView(R.layout.activity_mega_events);
+                setContentView(R.layout.activity_mega_events);
         actName = getIntent().getStringExtra("category");
 
         sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
@@ -330,9 +329,4 @@ public class IntraEvents extends BaseActivity {
         //ImageView imageView;
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
     }
-}

@@ -20,8 +20,7 @@ public class EventList extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0,0);
-        setContentView(R.layout.activity_event_list);
+                setContentView(R.layout.activity_event_list);
 
         SharedPreferences sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
         int n = sharedPreferences.getInt("PrimaryChoice", 99);
@@ -134,9 +133,4 @@ public class EventList extends BaseActivity {
 
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
     }
-}

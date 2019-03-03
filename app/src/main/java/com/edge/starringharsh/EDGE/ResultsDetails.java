@@ -26,8 +26,7 @@ public class ResultsDetails extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0, 0);
-        setContentView(R.layout.activity_results);
+                setContentView(R.layout.activity_results);
 
         topLayout = findViewById(R.id.results_top_ll);
         progress = new ProgressDialog(this);
@@ -107,9 +106,4 @@ public class ResultsDetails extends BaseActivity {
         }
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0, 0);
     }
-}

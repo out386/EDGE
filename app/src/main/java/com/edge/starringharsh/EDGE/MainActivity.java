@@ -19,8 +19,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0,0);
-        setContentView(R.layout.activity_main);
+                setContentView(R.layout.activity_main);
 
         LinearLayout ll = (LinearLayout)findViewById(R.id.linearlayout);
         SharedPreferences sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);

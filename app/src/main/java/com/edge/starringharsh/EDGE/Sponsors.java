@@ -37,8 +37,7 @@ public class Sponsors extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0,0);
-        setContentView(R.layout.activity_sponsors);
+                setContentView(R.layout.activity_sponsors);
 
         TextView tvHead = (TextView) findViewById(R.id.tvHeader);
         tvHead.setTypeface(Typeface.createFromAsset(getAssets(),"TypoGraphica.otf"));
@@ -198,9 +197,4 @@ public class Sponsors extends BaseActivity {
         ImageView imageView;
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
     }
-}

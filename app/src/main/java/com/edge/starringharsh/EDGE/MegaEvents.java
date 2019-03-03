@@ -51,8 +51,7 @@ public class MegaEvents extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0,0);
-        setContentView(R.layout.activity_mega_events);
+                setContentView(R.layout.activity_mega_events);
         actName = getIntent().getStringExtra("actName");
         linkadd = getIntent().getStringExtra("actLink");
 
@@ -299,9 +298,4 @@ public class MegaEvents extends BaseActivity {
         ImageView imageView;
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
     }
-}

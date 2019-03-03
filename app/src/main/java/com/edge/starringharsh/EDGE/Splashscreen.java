@@ -98,9 +98,4 @@ public class Splashscreen extends BaseActivity {
         super.onSaveInstanceState(outState, outPersistentState);
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
     }
-}

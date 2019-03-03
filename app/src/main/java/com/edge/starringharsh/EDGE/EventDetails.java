@@ -45,8 +45,7 @@ public class EventDetails extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0,0);
-        setContentView(R.layout.activity_event_details);
+                setContentView(R.layout.activity_event_details);
 
         master = new Master();
         rules = new Rules();
@@ -238,9 +237,4 @@ public class EventDetails extends BaseActivity {
         }
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
     }
-}

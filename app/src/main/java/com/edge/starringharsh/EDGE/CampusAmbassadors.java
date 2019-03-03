@@ -19,8 +19,7 @@ public class CampusAmbassadors extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0,0);
-        setContentView(R.layout.activity_pdf_viewer);
+                setContentView(R.layout.activity_pdf_viewer);
 
         webView = (WebView) findViewById(R.id.webView1);
         WebSettings settings = webView.getSettings();
@@ -65,9 +64,4 @@ public class CampusAmbassadors extends BaseActivity {
 
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
     }
-}

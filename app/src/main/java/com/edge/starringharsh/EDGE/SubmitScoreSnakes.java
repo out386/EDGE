@@ -67,10 +67,5 @@ public class SubmitScoreSnakes extends BaseActivity {
         finish();
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
-    }
 
 }

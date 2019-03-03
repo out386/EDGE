@@ -193,10 +193,5 @@ public class KukuKube extends BaseActivity {
     }
 
 
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
-    }
 
 }

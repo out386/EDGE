@@ -16,7 +16,6 @@ public class AboutUs extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0,0);
 
         setContentView(R.layout.activity_about_us);
 
@@ -227,11 +226,5 @@ public class AboutUs extends BaseActivity {
 
 
 
-    }
-
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(0,0);
     }
 }
