@@ -42,6 +42,11 @@ public class KukuKube extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kuku_kube);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
 
         metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
