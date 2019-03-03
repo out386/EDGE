@@ -256,6 +256,9 @@ public class MainMenu extends AppCompatActivity {
                 intent.putExtra("actName", "Upcoming");
                 intent.putExtra("actLink", master.upcominglink);
                 return intent;
+            case "Results":
+                intent = new Intent(MainMenu.this, Results.class);
+                return intent;
             case "Edge Kube":
                 intent = new Intent(MainMenu.this, KukuKube.class);
                 return intent;

@@ -86,7 +86,9 @@
             android:screenOrientation="portrait" />
 
         <activity android:name=".TeamTemporary" />
-        <activity android:name=".SubmitScoreSnakes"></activity>
+        <activity android:name=".SubmitScoreSnakes"/>
+        <activity android:name=".Results" />
+        <activity android:name=".ResultsDetails" />
     </application>
 
 </manifest>

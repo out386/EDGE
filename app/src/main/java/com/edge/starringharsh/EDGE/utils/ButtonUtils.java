@@ -29,6 +29,32 @@ public class ButtonUtils {
         return textV;
     }
 
+
+    public static TextView getResultsTv(Context context, String text, boolean center) {
+        return getResultsTv(context, text, center, 15);
+    }
+
+    public static TextView getResultsTv(Context context, String text, boolean center, int size) {
+        LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+        int margin = dpToPx(context, 5);
+        textParams.setMargins(margin, margin, margin, margin);
+        TextView textV = new TextView(context);
+        textV.setLayoutParams(textParams);
+        textV.setText(text);
+        textV.setTextSize(size);
+        textV.setTextColor(0xFF000000);
+        textV.setBackgroundResource(R.drawable.textroundborder);
+        int padding = dpToPx(context, 20);
+        textV.setPadding(padding, padding, padding, padding);
+
+        if (center)
+            textV.setGravity(Gravity.CENTER_HORIZONTAL);
+
+        return textV;
+    }
+
     public static int dpToPx( Context context, int dp){
         DisplayMetrics dm = context.getResources().getDisplayMetrics();
         return dp * (dm.densityDpi / DisplayMetrics.DENSITY_DEFAULT);

@@ -36,7 +36,7 @@ public class EdgeMash extends AppCompatActivity {
                 "EASY STEPS FOR PARTICIPATION :");
 
         st1.setText("STEP 1:\nMake an awesome dubsmash on any sound track and save it. Make sure your dub is decent enough to be selected.");
-        st2.setText("STEP 2:\nMail your dubsmash video along with your Name, Name of your College,your year in college, your stream and the link to your facebook profile at the following Email-id:\n" +
+        st2.setText("STEP 2:\nMail your dubsmash video along with your Name, Name of your College,your year in college, your stream and the url to your facebook profile at the following Email-id:\n" +
                 "edgemash@gmail.com");
         st3.setText("STEP 3:\nYour video (if approved) will be uploaded soon in our facebook page. Feel free to share the posts with tags #EDGE17 #EDGEMASH #GEEKONIX.");
 
