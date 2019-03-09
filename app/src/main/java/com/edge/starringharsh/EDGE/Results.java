@@ -17,6 +17,8 @@ import java.io.StringReader;
 import java.net.URL;
 
 public class Results extends BaseActivity {
+    final static String RESULTS_URL = "resultsUrl";
+    final static String HEADER_CAPTION = "headerCaption";
 
     String linkadd;
     ProgressDialog progress;
@@ -28,9 +30,13 @@ public class Results extends BaseActivity {
                 setContentView(R.layout.activity_results);
 
         topLayout = findViewById(R.id.results_top_ll);
-        progress = new ProgressDialog(this);
-        linkadd = "https://firebasestorage.googleapis.com/v0/b/edge-8fc5e.appspot.com/o/results%2Fresults_top.txt?alt=media";
+        TextView header = findViewById(R.id.results_name);
 
+        progress = new ProgressDialog(this);
+        linkadd = getIntent().getStringExtra(RESULTS_URL);
+        String caption = getIntent().getStringExtra(HEADER_CAPTION);
+
+        header.setText(caption != null ? caption : "RESULTS");
         new BackFetch().execute();
 
 
@@ -87,11 +93,12 @@ public class Results extends BaseActivity {
 
             try {
                 String name;
+                boolean isNextTop = "top".equals(br.readLine());
                 while ((name = br.readLine()) != null) {
                     String url = br.readLine();
                     noneAdded = false;
                     TextView view = getTv(name);
-                    view.setOnClickListener(new TextOnClickListener(name, url));
+                    view.setOnClickListener(new TextOnClickListener(name, url, isNextTop));
                     topLayout.addView(view);
                 }
             } catch (IOException e) {
@@ -117,17 +124,26 @@ public class Results extends BaseActivity {
     class TextOnClickListener implements TextView.OnClickListener {
         String eventName;
         String url;
+        boolean isTop;
 
-        TextOnClickListener(String eventName, String url) {
+        TextOnClickListener(String eventName, String url, boolean isTop) {
             this.eventName = eventName;
             this.url = url;
+            this.isTop = isTop;
         }
 
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(Results.this.getApplicationContext(), ResultsDetails.class);
-            intent.putExtra(ResultsDetails.RESULT_NAME, eventName);
-            intent.putExtra(ResultsDetails.RESULT_URL, url);
+            Intent intent;
+            if(isTop) {
+                intent = new Intent(Results.this.getApplicationContext(), Results.class);
+                intent.putExtra(Results.HEADER_CAPTION, eventName);
+                intent.putExtra(Results.RESULTS_URL, url);
+            } else {
+                intent = new Intent(Results.this.getApplicationContext(), ResultsDetails.class);
+                intent.putExtra(ResultsDetails.RESULT_NAME, eventName);
+                intent.putExtra(ResultsDetails.RESULT_URL, url);
+            }
             startActivity(intent);
         }
     }

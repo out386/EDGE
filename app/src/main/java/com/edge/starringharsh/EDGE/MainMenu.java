@@ -250,6 +250,8 @@ public class MainMenu extends BaseActivity {
                 return intent;
             case "Results":
                 intent = new Intent(MainMenu.this, Results.class);
+                intent.putExtra(Results.RESULTS_URL,
+                        "https://firebasestorage.googleapis.com/v0/b/edge-8fc5e.appspot.com/o/results%2Fresults_all_types.txt?alt=media");
                 return intent;
             case "Edge Kube":
                 intent = new Intent(MainMenu.this, KukuKube.class);

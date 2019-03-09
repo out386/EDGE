@@ -37,8 +37,7 @@
                 android:paddingRight="10dp"
                 android:fontFamily="@font/megrim"
                 android:textSize="30sp"
-                android:textColor="#FFFFFF"
-                android:text="RESULTS"/>
+                android:textColor="#FFFFFF"/>
 
         </LinearLayout>
 
