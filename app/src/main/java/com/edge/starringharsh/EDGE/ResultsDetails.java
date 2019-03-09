@@ -104,7 +104,7 @@ public class ResultsDetails extends BaseActivity {
             for (int i = 0; i < res.size(); i++) {
                 Pair<String, String> team = res.get(i);
 
-                if (team.first == null || "".equals(team.first)) {
+                if ("#$np".equals(team.first)) {
                     TextView names = ButtonUtils.getResultsTv(getApplicationContext(),
                             team.second, true, 20,
                             ButtonUtils.MARGIN_TYPE_ALL, true);
@@ -126,6 +126,8 @@ public class ResultsDetails extends BaseActivity {
         }
 
         private String getPositionCaption(int pos, String teamName) {
+            if (teamName == null || "".equals(teamName))
+                return FormatUtils.numToStr(pos);
             return FormatUtils.numToStr(pos) + " - " + teamName;
         }
     }
