@@ -42,11 +42,25 @@ public class KukuKube extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kuku_kube);
+        score = findViewById(R.id.tvScore);
+    }
+
+    private void setVars() {
+        i = 0;
+        j = 0;
+        n = 8;
+        sco = 0;
+        less = 10;
+        tg = 5000;
+        totTime = 0;
+        score.setText("Score: "+sco);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+
+        setVars();
 
         metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
@@ -130,7 +144,6 @@ public class KukuKube extends BaseActivity {
                         n=6;
                     else
                         n=8;
-                    score = (TextView) findViewById(R.id.tvScore);
                     score.setText("Score: "+sco);
                     ansi = sel.nextInt(n);
                     ansj = sel.nextInt(n);
