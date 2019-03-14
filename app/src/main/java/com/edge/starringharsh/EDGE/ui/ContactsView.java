@@ -12,19 +12,19 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.edge.starringharsh.EDGE.R;
+import com.edge.starringharsh.EDGE.model.ContactsModel;
 
 public class ContactsView extends LinearLayout {
 
-    private String name;
-    private String phone;
+    private ContactsModel contact;
 
     public ContactsView(Context context) {
         super(context);
     }
 
-    public ContactsView(Context context, String name, String phone) {
+    public ContactsView(Context context, ContactsModel contact) {
         super(context);
-        setData(context, name, phone);
+        setData(context, contact);
     }
 
     public ContactsView(Context context, @Nullable AttributeSet attrs) {
@@ -35,9 +35,8 @@ public class ContactsView extends LinearLayout {
         super(context, attrs, defStyleAttr);
     }
 
-    public void setData(Context context, String name, String phone) {
-        this.name = name;
-        this.phone = phone;
+    public void setData(Context context, ContactsModel contact) {
+        this.contact = contact;
         setupViews(context);
     }
 
@@ -54,11 +53,11 @@ public class ContactsView extends LinearLayout {
         ImageButton phoneButton = findViewById(R.id.contacts_call);
         ImageButton whatsappButton = findViewById(R.id.contacts_wa);
 
-        nameTv.setText(name);
+        nameTv.setText(contact.getName());
 
         phoneButton.setOnClickListener(view -> {
 
-            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phone));
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + contact.getPhone()));
             context.startActivity(intent);
         });
 
@@ -67,7 +66,7 @@ public class ContactsView extends LinearLayout {
             Intent sendIntent = new Intent("android.intent.action.MAIN");
             sendIntent.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
             sendIntent.putExtra("jid",
-                    "91" + phone + "@s.whatsapp.net");
+                    "91" + contact.getPhone() + "@s.whatsapp.net");
             context.startActivity(sendIntent);
         });
 

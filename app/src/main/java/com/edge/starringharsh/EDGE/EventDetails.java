@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.edge.starringharsh.EDGE.model.ContactsModel;
 import com.edge.starringharsh.EDGE.ui.ContactsView;
 
 import java.io.BufferedReader;
@@ -25,7 +26,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class EventDetails extends BaseActivity {
 
@@ -33,9 +38,8 @@ public class EventDetails extends BaseActivity {
     ImageButton bReminder;
     ImageView iv;
     LinearLayout llUpcoming, llcontacts;
-    String name, det, linkadd, details, cont1, cont2, up;
+    String name, det, linkadd, details, up;
     int date, month, hr, min;
-    String phn1, phn2;
     int p=0;
     Calendar cal, calR;
     SharedPreferences sharedPreferences;
@@ -116,6 +120,7 @@ public class EventDetails extends BaseActivity {
                 }
                 br.close();
                 det = newDet;
+                // TODO: Deserialize directly here into a Serializable model. Will remove the need for another loop in onPostExecute
                 editor.putString(name, newDet);
                 editor.commit();
             } catch (Exception e) {
@@ -129,6 +134,7 @@ public class EventDetails extends BaseActivity {
 
         @Override
         protected void onPostExecute(Void aVoid) {
+            Set<ContactsModel> contacts = new HashSet<>(2);
             System.out.println("POST");
             super.onPostExecute(aVoid);
             progress.dismiss();
@@ -136,10 +142,11 @@ public class EventDetails extends BaseActivity {
 
             try {
                 details =  br.readLine();
-                cont1 =  br.readLine();
-                phn1 = br.readLine();
-                cont2 =  br.readLine();
-                phn2 = br.readLine();
+
+                // It physically hurt to write these
+                splitContact(contacts, br.readLine(), br.readLine());
+                splitContact(contacts, br.readLine(), br.readLine());
+
                 up =  br.readLine();
                 date = Integer.parseInt(br.readLine());
                 month = Integer.parseInt(br.readLine());
@@ -152,14 +159,12 @@ public class EventDetails extends BaseActivity {
             tvRules.setText(Html.fromHtml(getString(rules.rules.get(name))));
 
             tvDet.setText(details);
-            if ("".equals(cont1)) {
+            if (contacts.size() == 0) {
                 LinearLayout ll = (LinearLayout) findViewById(R.id.contacts_layout);
                 ll.setVisibility(View.GONE);
             } else {
-                llcontacts.addView(new ContactsView(EventDetails.this, cont1, phn1));
-                if (! phn1.equals(phn2)) {
-                    llcontacts.addView(new ContactsView(EventDetails.this, cont2, phn2));
-                }
+                for (ContactsModel contact : contacts)
+                    llcontacts.addView(new ContactsView(EventDetails.this, contact));
             }
 
             if(up.equalsIgnoreCase("Y"))
@@ -190,6 +195,15 @@ public class EventDetails extends BaseActivity {
                 }
             }
 
+        }
+
+        private void splitContact(Set<ContactsModel> contacts, String name, String number) {
+            String [] names = name.split(",");
+            String [] numbers = number.split(",");
+            for (int i = 0; i < names.length; i++) {
+                if (! "".equals(names[i]) && ! "".equals(numbers[i]))
+                    contacts.add(new ContactsModel(names[i], numbers[i]));
+            }
         }
     }
 
