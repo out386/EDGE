@@ -18,6 +18,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.edge.starringharsh.EDGE.ui.ContactsView;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -27,13 +29,13 @@ import java.util.Calendar;
 
 public class EventDetails extends BaseActivity {
 
-    TextView tvDet, tvCont1, tvCont2, tvUpcoming, tvRules, tvDetails;
-    ImageButton bCall1, bCall2, bWA1, bWA2, bReminder;
+    TextView tvDet, tvUpcoming, tvRules, tvDetails;
+    ImageButton bReminder;
     ImageView iv;
-    LinearLayout llUpcoming;
+    LinearLayout llUpcoming, llcontacts;
     String name, det, linkadd, details, cont1, cont2, up;
     int date, month, hr, min;
-    long phn1, phn2;
+    String phn1, phn2;
     int p=0;
     Calendar cal, calR;
     SharedPreferences sharedPreferences;
@@ -78,17 +80,12 @@ public class EventDetails extends BaseActivity {
     {
         progress = new ProgressDialog(this);
         tvDet = (TextView) findViewById(R.id.tvDetailsDet);
-        tvCont1 = (TextView) findViewById(R.id.tvDetailsCont1);
-        tvCont2 = (TextView) findViewById(R.id.tvDetailsCont2);
         tvRules = (TextView) findViewById(R.id.tvRules);
         tvDetails = (TextView) findViewById(R.id.tvDetails);
         tvUpcoming = (TextView) findViewById(R.id.tvDetailsUpcoming);
-        bCall1 = (ImageButton) findViewById(R.id.bDetailsCall1);
-        bCall2 = (ImageButton) findViewById(R.id.bDetailsCall2);
-        bWA1 = (ImageButton) findViewById(R.id.bDetailsWA1);
-        bWA2 = (ImageButton) findViewById(R.id.bDetailsWA2);
         llUpcoming = (LinearLayout) findViewById(R.id.llDetailsUpcoming);
-        bReminder = (ImageButton) findViewById(R.id.bDetailsUpcoming);
+        llcontacts = (LinearLayout) findViewById(R.id.contacts_layout);
+                bReminder = (ImageButton) findViewById(R.id.bDetailsUpcoming);
         iv = (ImageView) findViewById(R.id.ivDetails);
     }
 
@@ -140,9 +137,9 @@ public class EventDetails extends BaseActivity {
             try {
                 details =  br.readLine();
                 cont1 =  br.readLine();
-                phn1 = Long.parseLong(br.readLine());
-                cont2 =  br.readLine();;
-                phn2 = Long.parseLong(br.readLine());
+                phn1 = br.readLine();
+                cont2 =  br.readLine();
+                phn2 = br.readLine();
                 up =  br.readLine();
                 date = Integer.parseInt(br.readLine());
                 month = Integer.parseInt(br.readLine());
@@ -159,50 +156,9 @@ public class EventDetails extends BaseActivity {
                 LinearLayout ll = (LinearLayout) findViewById(R.id.contacts_layout);
                 ll.setVisibility(View.GONE);
             } else {
-                tvCont1.setText(cont1);
-                bCall1.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-
-                        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phn1));
-                        startActivity(intent);
-                    }
-                });
-
-                bWA1.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-
-                        Intent sendIntent = new Intent("android.intent.action.MAIN");
-                        sendIntent.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
-                        sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + phn1) + "@s.whatsapp.net");//phone number without "+" prefix
-                        startActivity(sendIntent);
-                    }
-                });
-
-                if (phn1 != phn2) {
-                    LinearLayout ll2 = (LinearLayout) findViewById(R.id.detailsll);
-                    ll2.setVisibility(View.VISIBLE);
-
-                    tvCont2.setText(cont2);
-                    bCall2.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-
-                            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phn2));
-                            startActivity(intent);
-                        }
-                    });
-
-                    bWA2.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent sendIntent = new Intent("android.intent.action.MAIN");
-                            sendIntent.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
-                            sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91" + phn2) + "@s.whatsapp.net");//phone number without "+" prefix
-                            startActivity(sendIntent);
-                        }
-                    });
+                llcontacts.addView(new ContactsView(EventDetails.this, cont1, phn1));
+                if (! phn1.equals(phn2)) {
+                    llcontacts.addView(new ContactsView(EventDetails.this, cont2, phn2));
                 }
             }
 
