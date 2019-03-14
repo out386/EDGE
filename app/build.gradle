@@ -23,6 +23,10 @@ android {
     }
 
     sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -31,9 +35,8 @@ dependencies {
     implementation "com.android.support:appcompat-v7:$rootProject.ext.supportLibVersion"
     implementation "com.android.support:design:$rootProject.ext.supportLibVersion"
     implementation "com.android.support:recyclerview-v7:$rootProject.ext.supportLibVersion"
-    implementation "com.squareup.picasso:picasso:2.71828"
-    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.16"
-
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
     // Is the maps dep even being used right now?
     //implementation "com.google.android.gms:play-services-maps:16.0.0"
 }
