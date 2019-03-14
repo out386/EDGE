@@ -178,10 +178,10 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid/");
 
         eventDetails.put("BLITZKRIEG", "A moment of pain is worth a lifetime of glory. The bot that survives till the end emerges as the victor.\n" +
-                "Ashutosh Priyadarshi\n" +
-                "8697276841\n" +
-                "Rajeev Ranjan\n" +
-                "8820879972\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain\n" +
+                "8697276841,8583908125\n" +
+                "Rajeev Ranjan,Sujoy Basak\n" +
+                "8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -190,10 +190,10 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("DOUBLE-UP", "You want to double-up, then first toe the line.\n" +
-                "Ashutosh Priyadarshi\n" +
-                "8697276841\n" +
-                "Rajeev Ranjan\n" +
-                "8820879972\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain\n" +
+                "8697276841,8583908125\n" +
+                "Rajeev Ranjan,Sujoy Basak\n" +
+                "8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -202,10 +202,10 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("LIFT'N'LAY", "Put the right effort and things will get rightly placed.\n" +
-                "Ashutosh Priyadarshi\n" +
-                "8697276841\n" +
-                "Rajeev Ranjan\n" +
-                "8820879972\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain\n" +
+                "8697276841,8583908125\n" +
+                "Rajeev Ranjan,Sujoy Basak\n" +
+                "8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -214,10 +214,10 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("MARINODRIFT", "Strategize with your bot to win glory on both the terrains.\n" +
-                "Ashutosh Priyadarshi\n" +
-                "8697276841\n" +
-                "Rajeev Ranjan\n" +
-                "8820879972\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain\n" +
+                "8697276841,8583908125\n" +
+                "Rajeev Ranjan,Sujoy Basak\n" +
+                "8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -250,10 +250,10 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("ROBO RACE", "The better you maneuver, the farther you reach.\n" +
-                "Ashutosh Priyadarshi\n" +
-                "8697276841\n" +
-                "Rajeev Ranjan\n" +
-                "8820879972\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain\n" +
+                "8697276841,8583908125\n" +
+                "Rajeev Ranjan,Sujoy Basak\n" +
+                "8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -262,10 +262,10 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("ROBO SOCCER", "Steer your bot expertly to score the maximum number of goals and win the match.\n" +
-                "Ashutosh Priyadarshi\n" +
-                "8697276841\n" +
-                "Rajeev Ranjan\n" +
-                "8820879972\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain\n" +
+                "8697276841,8583908125\n" +
+                "Rajeev Ranjan,Sujoy Basak\n" +
+                "8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
