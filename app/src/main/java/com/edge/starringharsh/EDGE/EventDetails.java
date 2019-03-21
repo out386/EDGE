@@ -1,6 +1,6 @@
 package com.edge.starringharsh.EDGE;
 
-import android.app.ProgressDialog;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -17,11 +17,11 @@ import android.widget.TextView;
 
 import com.edge.starringharsh.EDGE.model.ContactsModel;
 import com.edge.starringharsh.EDGE.ui.ContactsView;
+import com.edge.starringharsh.EDGE.utils.EventsUpdateUtils;
 
 import java.io.BufferedReader;
-import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
-import java.io.StringReader;
 import java.net.URL;
 import java.util.Calendar;
 import java.util.List;
@@ -29,6 +29,9 @@ import java.util.List;
 import static com.edge.starringharsh.EDGE.utils.FormatUtils.splitContacts;
 
 public class EventDetails extends BaseActivity {
+
+    private static final String LAST_KNOWN_EVENT_VERSION = "lkeVer";
+    static final String EVENT_NAME = "eventName";
 
     TextView tvDet, tvUpcoming, tvRules, tvDetails;
     ImageButton bReminder;
@@ -41,9 +44,9 @@ public class EventDetails extends BaseActivity {
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     Master master;
-    ProgressDialog progress;
     Rules rules;
 
+    @SuppressLint("CommitPrefEdits")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,32 +54,41 @@ public class EventDetails extends BaseActivity {
 
         master = new Master();
         rules = new Rules();
+        EventsUpdateUtils eventsUpdateUtils = new EventsUpdateUtils();
 
-        sharedPreferences = getSharedPreferences("EventsChoice", Context.MODE_PRIVATE);
-        name = sharedPreferences.getString("Name", "not found");
+        name = getIntent().getStringExtra(EVENT_NAME);
+        if (name == null) {
+            // The world is ending. PANIC!
+            finish();
+        }
+
+        sharedPreferences = getSharedPreferences(name, Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
-
-
-        System.out.println(name);
 
         init();
         int img = master.eventsImg.get(name);
         iv.setImageResource(img);
         tvDetails.setText(name);
 
-
-        linkadd = master.link.get(name);
-
+        linkadd = String.format(Master.EVENT_LINK_FORMAT, name);
         tvDet.setMovementMethod(LinkMovementMethod.getInstance());
 
-        new BackFetch().execute();
+        setData(readFromCache());
 
+        eventsUpdateUtils.isCacheValid(getApplicationContext(),
+                sharedPreferences.getString(LAST_KNOWN_EVENT_VERSION, "0"),
+                (isCacheValid, cacheVersion) -> {
+                    Log.i("EventDetails", "cache valid: " + isCacheValid + ", version " + cacheVersion);
+                    if (!isCacheValid) {
+                        new BackFetch(cacheVersion).execute();
+                    }
+
+                });
 
     }
 
     void init()
     {
-        progress = new ProgressDialog(this);
         tvDet = (TextView) findViewById(R.id.tvDetailsDet);
         tvRules = (TextView) findViewById(R.id.tvRules);
         tvDetails = (TextView) findViewById(R.id.tvDetails);
@@ -89,18 +101,12 @@ public class EventDetails extends BaseActivity {
 
 
 
-    class BackFetch extends AsyncTask<Void, Void, String>
+    private class BackFetch extends AsyncTask<Void, Void, String>
     {
+        String newVersion;
 
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            progress.setIndeterminate(false);
-            progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-            progress.setCancelable(true);
-            progress.setMessage("Fetching Information...");
-            progress.show();
-            System.out.println("PRE");
+        BackFetch(String newVersion) {
+            this.newVersion = newVersion;
         }
 
         @Override
@@ -114,62 +120,29 @@ public class EventDetails extends BaseActivity {
                     allLines.append(line).append("\n");
                 }
                 br.close();
-                // TODO: Deserialize directly here into a Serializable model. Will remove the need for another loop in onPostExecute
+                // TODO: Deserialize directly here into a Serializable model. Will remove the need to iterate over this again
                 String res = allLines.toString();
-                editor.putString(name, res);
-                editor.apply();
+                editor.putString(name, res)
+                        .putString(LAST_KNOWN_EVENT_VERSION, newVersion)
+                        .apply();
                 return res;
+            } catch (FileNotFoundException e) {
+                // Don't try to get this file again unless the version number changes
+                editor.putString(LAST_KNOWN_EVENT_VERSION, newVersion)
+                        .apply();
+                return null;
             } catch (Exception e) {
-                System.out.println("Failed");
-                StringBuilder allLines = new StringBuilder(5000);
-                allLines.append(sharedPreferences.getString(name, ""));
-
-                if ("".equals(allLines.toString())) {
-                    // As data not updated just now, or read from sharedprefs, don't have rules in it.
-                    allLines.append(master.eventDetails.get(name))
-                            .append(getString(rules.rules.get(name)));
-                }
-                return allLines.toString();
+                return null;
             }
         }
 
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            List<ContactsModel> contacts = null;
-            String shortDesc = null, longDesc = null;
-            System.out.println("POST");
-            progress.dismiss();
-            BufferedReader br = new BufferedReader(new StringReader(result));
-
-            try {
-                shortDesc =  br.readLine();
-                contacts = splitContacts(br.readLine(), br.readLine());
-                up =  br.readLine();
-                date = Integer.parseInt(br.readLine());
-                month = Integer.parseInt(br.readLine());
-                hr = Integer.parseInt(br.readLine());
-                min = Integer.parseInt(br.readLine());
-                longDesc = br.readLine();
-            } catch (IOException e) {
-                e.printStackTrace();
+            if (result != null) {
+                setData(result);
+                handleUp();
             }
-
-            tvRules.setText(Html.fromHtml(
-                    longDesc == null ? getString(rules.rules.get(name)) : longDesc));
-            if (shortDesc == null || "".equals(shortDesc))
-                tvDet.setVisibility(View.GONE);
-            else
-                tvDet.setText(shortDesc);
-            if (contacts == null || contacts.size() == 0) {
-                LinearLayout ll = (LinearLayout) findViewById(R.id.contacts_layout);
-                ll.setVisibility(View.GONE);
-            } else {
-                for (ContactsModel contact : contacts)
-                    llcontacts.addView(new ContactsView(EventDetails.this, contact));
-            }
-
-            handleUp();
         }
     }
 
@@ -200,6 +173,51 @@ public class EventDetails extends BaseActivity {
                     }
                 });
             }
+        }
+    }
+
+    private String readFromCache() {
+        // TODO: Move away from this shitty way and just put the data in a POJO to begin with, for the cache
+        StringBuilder allLines = new StringBuilder(5000);
+        allLines.append(sharedPreferences.getString(name, ""));
+
+        if ("".equals(allLines.toString())) {
+            // As data not updated just now, or read from sharedprefs, don't have rules in it.
+            allLines.append(master.eventDetails.get(name))
+                    .append(getString(rules.rules.get(name)));
+        }
+        return allLines.toString();
+    }
+
+    private void setData(String data) {
+        System.out.println("Updating data");
+        String [] lines = data.split("\n");
+        List<ContactsModel> contacts = null;
+        String shortDesc = lines[0];
+        contacts = splitContacts(lines[1], lines[2]);
+        up = lines[3];
+        date = Integer.parseInt(lines[4]);
+        month = Integer.parseInt(lines[5]);
+        hr = Integer.parseInt(lines[6]);
+        min = Integer.parseInt(lines[7]);
+        String longDesc = lines[8];
+        // Happily assume that the entire data is useless and crash and burn in case of AIOOB.
+        // TODO: Maybe tell the user something crapped out instead of FC-ing. Just kidding, app's bad enough for me not to care, anyway.
+
+        tvRules.setText(Html.fromHtml(
+                longDesc == null ? getString(rules.rules.get(name)) : longDesc));
+        if (shortDesc == null || "".equals(shortDesc))
+            tvDet.setVisibility(View.GONE);
+        else
+            tvDet.setText(shortDesc);
+
+        llcontacts.removeAllViews();
+        if (contacts == null || contacts.size() == 0) {
+            LinearLayout ll = (LinearLayout) findViewById(R.id.contacts_layout);
+            ll.setVisibility(View.GONE);
+        } else {
+            for (ContactsModel contact : contacts)
+                llcontacts.addView(new ContactsView(EventDetails.this, contact));
         }
     }
 

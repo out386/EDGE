@@ -118,12 +118,8 @@ public class EventList extends BaseActivity {
 
                     @Override
                     public void onClick(View view) {
-                        
-                        editor.putInt("SecondaryChoice", j);
-                        editor.putInt("Number", k);
-                        editor.putString("Name", name);
-                        editor.commit();
                         Intent intent = new Intent(EventList.this, EventDetails.class);
+                        intent.putExtra(EventDetails.EVENT_NAME, name);
                         startActivity(intent);
                     }
                 });
