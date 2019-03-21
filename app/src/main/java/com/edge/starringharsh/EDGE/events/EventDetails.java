@@ -20,6 +20,7 @@ import com.edge.starringharsh.EDGE.Master;
 import com.edge.starringharsh.EDGE.R;
 import com.edge.starringharsh.EDGE.model.ContactsModel;
 import com.edge.starringharsh.EDGE.ui.ContactsView;
+import com.edge.starringharsh.EDGE.utils.SnackbarUtils;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -35,18 +36,19 @@ public class EventDetails extends BaseActivity {
     private static final String LAST_KNOWN_EVENT_VERSION = "lkeVer";
     static final String EVENT_NAME = "eventName";
 
-    TextView tvDet, tvUpcoming, tvRules, tvDetails;
-    ImageButton bReminder;
-    ImageView iv;
-    LinearLayout llUpcoming, llcontacts;
-    String name, linkadd, up;
-    int date, month, hr, min;
-    int p = 0;
-    Calendar cal, calR;
-    SharedPreferences sharedPreferences;
-    SharedPreferences.Editor editor;
-    Master master;
-    Rules rules;
+    private TextView tvDet, tvUpcoming, tvRules, tvDetails;
+    private ImageButton bReminder;
+    private ImageView iv;
+    private LinearLayout llUpcoming, llcontacts;
+    private String name, linkadd, up;
+    private int date, month, hr, min;
+    private int p = 0;
+    private Calendar cal, calR;
+    private SharedPreferences sharedPreferences;
+    private SharedPreferences.Editor editor;
+    private Master master;
+    private Rules rules;
+    private String eventData;
 
     @SuppressLint("CommitPrefEdits")
     @Override
@@ -75,17 +77,12 @@ public class EventDetails extends BaseActivity {
         linkadd = String.format(Master.EVENT_LINK_FORMAT, name);
         tvDet.setMovementMethod(LinkMovementMethod.getInstance());
 
-        setData(readFromCache());
+        eventData = readFromCache();
+        setData(false);
 
-        eventsUpdateUtils.isCacheValid(getApplicationContext(),
+        eventsUpdateUtils.isCacheValid(tvDet,
                 sharedPreferences.getString(LAST_KNOWN_EVENT_VERSION, "0"),
-                (isCacheValid, cacheVersion) -> {
-                    Log.i("EventDetails", "cache valid: " + isCacheValid + ", version " + cacheVersion);
-                    if (!isCacheValid) {
-                        new BackFetch(cacheVersion).execute();
-                    }
-
-                });
+                new OnCacheCheckListener());
 
     }
 
@@ -100,6 +97,20 @@ public class EventDetails extends BaseActivity {
         iv = findViewById(R.id.ivDetails);
     }
 
+    private class OnCacheCheckListener implements EventsUpdateUtils.OnCacheCheckListener {
+        @Override
+        public void onComplete(boolean isCacheValid, String cacheVersion) {
+            runOnUiThread(() -> {
+                Log.i("EventDetails", "cache valid: " + isCacheValid + ", version " + cacheVersion);
+                if (!isCacheValid) {
+                    SnackbarUtils.showNoDuplicate(tvDet, R.string.data_loading);
+                    new BackFetch(cacheVersion).execute();
+                } else {
+                    SnackbarUtils.dismiss();
+                }
+            });
+        }
+    }
 
     private class BackFetch extends AsyncTask<Void, Void, String> {
         String newVersion;
@@ -120,7 +131,7 @@ public class EventDetails extends BaseActivity {
                 }
                 br.close();
                 // TODO: Deserialize directly here into a Serializable model. Will remove the need to iterate over this again
-                String res = allLines.toString();
+                String res = allLines.toString().trim();
                 editor.putString(name, res)
                         .putString(LAST_KNOWN_EVENT_VERSION, newVersion)
                         .apply();
@@ -129,8 +140,10 @@ public class EventDetails extends BaseActivity {
                 // Don't try to get this file again unless the version number changes
                 editor.putString(LAST_KNOWN_EVENT_VERSION, newVersion)
                         .apply();
+                SnackbarUtils.dismiss();
                 return null;
             } catch (Exception e) {
+                SnackbarUtils.dismiss();
                 return null;
             }
         }
@@ -139,7 +152,13 @@ public class EventDetails extends BaseActivity {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             if (result != null) {
-                setData(result);
+                if (!eventData.equals(result)) {
+                    eventData = result;
+                    SnackbarUtils.showRefresh(tvDet, R.string.data_new_available, R.string.data_refresh,
+                            v -> setData(true));
+                } else {
+                    SnackbarUtils.dismiss();
+                }
                 handleUp();
             }
         }
@@ -186,9 +205,9 @@ public class EventDetails extends BaseActivity {
         return allLines.toString();
     }
 
-    private void setData(String data) {
+    private void setData(boolean showSnackbar) {
         System.out.println("Updating data");
-        String[] lines = data.split("\n");
+        String[] lines = eventData.split("\n");
         List<ContactsModel> contacts = null;
         String shortDesc = lines[0];
         contacts = splitContacts(lines[1], lines[2]);
@@ -216,6 +235,9 @@ public class EventDetails extends BaseActivity {
             for (ContactsModel contact : contacts)
                 llcontacts.addView(new ContactsView(EventDetails.this, contact));
         }
+
+        if (showSnackbar)
+            SnackbarUtils.showTemporary(tvDet, R.string.data_refresh_done);
     }
 
 }

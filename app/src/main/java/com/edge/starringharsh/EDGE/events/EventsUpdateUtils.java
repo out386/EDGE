@@ -1,16 +1,19 @@
 package com.edge.starringharsh.EDGE.events;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.SystemClock;
 import android.preference.PreferenceManager;
+import android.view.View;
+
+import com.edge.starringharsh.EDGE.R;
+import com.edge.starringharsh.EDGE.utils.SnackbarUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 
-public class EventsUpdateUtils {
+class EventsUpdateUtils {
     private static final String DETAILS_VERSION_URL = "https://firebasestorage.googleapis.com/v0/b/edge-8fc5e.appspot.com/o/event_details%2Fdetails_version?alt=media";
     private static final String LAST_KNOWN_VERSION = "lastKnownVersion";
     private static final long VERSION_VALIDITY_MS = 5 * 60000;
@@ -22,12 +25,13 @@ public class EventsUpdateUtils {
      * referred to by {@link #DETAILS_VERSION_URL} does not match {@code lastKnownEventVersion}, it
      * is assumed that new data for this event might be available.
      *
-     * @param context               Duh
+     * @param view                  Needed to show a status snackbar
      * @param lastKnownEventVersion The last details version this event knows
      * @param listener              A listener that is called with the results
      */
-    public void isCacheValid(Context context, String lastKnownEventVersion, OnCacheCheckListener listener) {
-        SharedPreferences defaultPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+    void isCacheValid(View view, String lastKnownEventVersion, OnCacheCheckListener listener) {
+        SharedPreferences defaultPrefs = PreferenceManager.getDefaultSharedPreferences(
+                view.getContext());
         String lastKnownVersion = defaultPrefs.getString(LAST_KNOWN_VERSION, "0");
 
         /* If the version details file was fetched less than VERSION_VALIDITY_MS ago, assume that
@@ -43,6 +47,7 @@ public class EventsUpdateUtils {
             return;
         }
 
+        SnackbarUtils.show(view, R.string.data_loading);
         new Thread(() -> {
             String currentVersion;
             try {
