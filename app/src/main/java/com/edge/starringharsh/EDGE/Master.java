@@ -22,7 +22,7 @@ class Master {
     String events4[] = {"TROLL MARKETTING", "CROWD PITCH", "PITCH RIGHT", "B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
     String events5[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
     String events6[] = {"CAD O MANIA", "NIRMAAN"};
-    String events7[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD RELAY", "XQUIZIT", "FOOD DISPLAY PRESENTATION"};
+    String events7[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD RELAY", "XQUIZIT", "FOOD DISPLAY PRESENTATION", "ANIMATE"};
     String events8[] = {"MEKANIX", "RAGS TO RICHES"};
     String events9[] = {"EDGE ZOOM", "UDAAN", "1 MINUTE STAND"};
     String events10[] = {"PROJECT VIEW"};
@@ -459,15 +459,25 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Food%20for%20Fun/Food%20Hunt");
 
-        eventDetails.put("FOOD RELAY", "Event details not available yet.\n" +
-                "\n" +
-                "\n" +
+        eventDetails.put("FOOD RELAY", "It consists of 4 sub games. Whichever team finishes the task first wins the game.\n" +
+                "Sanchari Kar\n" +
+                "6290283116\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n" +
-                "http://edg.co.in/#/events/Food%20for%20Fun/Food%20Relay");
+                "http://edg.co.in/#/events/fff");
+
+        eventDetails.put("ANIMATE", "Prepare an advertisement for a specific food product in whichever possible way!\n" +
+                "Sanchari Kar\n" +
+                "6290283116\n" +
+                "n\n" +
+                "7\n" +
+                "3\n" +
+                "9\n" +
+                "00\n" +
+                "http://edg.co.in/#/events/fff");
 
 
         eventDetails.put("MEKANIX", "Knowledge and creativity go hand in hand in this event that tests how updated and polished your mind is!\n" +
@@ -639,6 +649,7 @@ class Master {
         eventsImg.put("FOOD RELAY", R.drawable.foodrelay);
         eventsImg.put("FOOD PRODUCT LABELLING", R.drawable.foodlabelling);
         eventsImg.put("CREATION-X-NIHILO", R.drawable.creationxnihilo);
+        eventsImg.put("ANIMATE", R.drawable.animate);
         eventsImg.put("MEKANIX", R.drawable.mekanix);
         eventsImg.put("RAGS TO RICHES", R.drawable.ragstoriches);
         eventsImg.put("ELECTRONICALLY YOURS", R.drawable.electronicallyyours);

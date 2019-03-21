@@ -26,11 +26,12 @@ class Rules {
         rules.put("B-QUIZ", R.string.rules_b_quiz);
         rules.put("ADDOMEDIA", R.string.rules_addomedia);
         rules.put("STOCK IT", R.string.rules_stock_it);
-        rules.put("CREATION-X-NIHILO", R.string.rules_placeholder);
+        rules.put("CREATION-X-NIHILO", R.string.rules_creation_x_nihilo);
         rules.put("FOOD PRODUCT LABELLING", R.string.rules_placeholder);
-        rules.put("FOOD RELAY", R.string.rules_placeholder);
-        rules.put("XQUIZIT", R.string.rules_placeholder);
-        rules.put("FOOD DISPLAY PRESENTATION", R.string.rules_placeholder);
+        rules.put("FOOD RELAY", R.string.rules_food_relay);
+        rules.put("XQUIZIT", R.string.rules_xquizit);
+        rules.put("FOOD DISPLAY PRESENTATION", R.string.rules_display_presentation);
+        rules.put("ANIMATE", R.string.rules_animate);
         rules.put("CRUMBS", R.string.rules_crumbs);
         rules.put("ODYSSEY", R.string.rules_odyssey);
         rules.put("SHOOT M UP", R.string.rules_shootmup);
