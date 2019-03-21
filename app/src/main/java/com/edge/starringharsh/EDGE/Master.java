@@ -43,35 +43,32 @@ class Master {
     Master()
     {
         eventDetails = new HashMap<String, String>();
-        eventDetails.put("TROLL MARKETTING", "Event details not available yet.\n" +
+        eventDetails.put("TROLL MARKETTING", "\n" +
                 "Medha\n" +
                 "8961187020\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid");
+                "00\n");
 
-        eventDetails.put("CROWD PITCH", "Event details not available yet.\n" +
+        eventDetails.put("CROWD PITCH", "\n" +
                 "Rahul Singh,Medha\n" +
                 "8420617283,8961187020\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid");
+                "00\n");
 
-        eventDetails.put("PITCH RIGHT", "Event details not available yet.\n" +
+        eventDetails.put("PITCH RIGHT", "\n" +
                 "Medha\n" +
                 "8961187020\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid");
+                "00\n");
 
         eventDetails.put("FLAWLESS", "Just like the name suggests, as flawless as ones codes become the better chance they have of winning.\n" +
                 "Raja Sachin,Avnish Kumar\n" +
@@ -80,8 +77,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid");
+                "00\n");
 
         eventDetails.put("BUG HUNT", "A coder is all about perfection and identifying the cracks and holes to make a flawed algorithm picture perfect.\n" +
                 "Shreya Agarwal,Abhishek Das\n" +
@@ -90,8 +86,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid");
+                "00\n");
 
         eventDetails.put("CRYPTO QUEST", "Put your cryptography and deciphering skills to test by proving yourself while solving the clues.\n" +
                 "Radhika Mohta,Suyash Mittal\n" +
@@ -100,8 +95,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid");
+                "00\n");
 
        eventDetails.put("INFINITY WARS", "For coders having strategic skills in them, this online map conquest event will be a cake- walk!\n" +
                "Shiv Kumar,Saquib ul Hassan\n" +
@@ -110,8 +104,7 @@ class Master {
                 "9\n" +
                 "3\n" +
                 "13\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid");
+                "00\n");
 
         eventDetails.put("CODE OUT", "A call out to all you hidden gem coders to prove your abilities in this online event.\n" +
                 "Raja Sachin,Indranil Chowdhury\n" +
@@ -120,8 +113,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid");
+                "00\n");
 
         eventDetails.put("CODE RELAY", "Description unavailable\n" +
                 "Raja Sachin,Suyash Mittal\n" +
@@ -130,8 +122,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid");
+                "00\n");
 
         eventDetails.put("BLIND CODING", "Practice in coding makes a coder perfect. But to the extent where you can code blindfolded?\n" +
                 "Amar Bathwal,Meghna roy\n" +
@@ -140,8 +131,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid/Blind%20Coding");
+                "00\n");
 
         eventDetails.put("WEB DEV", "There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.\n" +
                 "Raja Sachin,Suyash Mittal\n" +
@@ -150,8 +140,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Compute%20Aid/");
+                "00\n");
 
         eventDetails.put("BLITZKRIEG", "A moment of pain is worth a lifetime of glory. The bot that survives till the end emerges as the victor.\n" +
                 "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
@@ -160,8 +149,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://www.edg.co.in/#/events/Robotics");
+                "00\n");
 
         eventDetails.put("DOUBLE-UP", "You want to double-up, then first toe the line.\n" +
                 "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
@@ -170,8 +158,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://www.edg.co.in/#/events/Robotics");
+                "00\n");
 
         eventDetails.put("LIFT'N'LAY", "Put the right effort and things will get rightly placed.\n" +
                 "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
@@ -180,8 +167,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://www.edg.co.in/#/events/Robotics");
+                "00\n");
 
         eventDetails.put("MARINODRIFT", "Strategize with your bot to win glory on both the terrains.\n" +
                 "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
@@ -190,8 +176,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://www.edg.co.in/#/events/Robotics");
+                "00\n");
 
         eventDetails.put("STALKER", "Follow the trail and glory waits for you at the finishing line.\n" +
                 "Sudhanshu Shivam,Sourav Ghosh\n" +
@@ -200,8 +185,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://www.edg.co.in/#/events/Robotics");
+                "00\n");
 
         eventDetails.put("JIGSAW", "Only the craze to solve the maze can help you win and subjects you to praise.\n" +
                 "Sudhanshu Shivam,Sourav Ghosh\n" +
@@ -210,8 +194,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://www.edg.co.in/#/events/Robotics");
+                "00\n");
 
         eventDetails.put("ROBO RACE", "The better you maneuver, the farther you reach.\n" +
                 "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
@@ -220,8 +203,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://www.edg.co.in/#/events/Robotics");
+                "00\n");
 
         eventDetails.put("ROBO SOCCER", "Steer your bot expertly to score the maximum number of goals and win the match.\n" +
                 "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
@@ -230,8 +212,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://www.edg.co.in/#/events/Robotics");
+                "00\n");
 
         eventDetails.put("WALLSTREET", "Follow the trail and glory awaits you at the finishing line.\n" +
                 "Sudhanshu Shivam,Sourav Ghosh\n" +
@@ -240,8 +221,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Robotics");
+                "00\n");
 
         eventDetails.put("CS GO COLLEGE LEAGUE", "For the action frenzy college studying aficionados who got a trigger for an arm and flashbang for the other.\n" +
                 "Ahana Sarkar\n" +
@@ -277,8 +257,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Cyber%20Crusade/Need%20For%20Speed%20most%20wanted");
+                "00\n");
 
         eventDetails.put("FIFA COLLEGE LEAGUE", "Tuned down gameplay and graphics of FIFA here paves the way for a richer competition coming from years of experience.\n" +
                 "Arkadeep Dey\n" +
@@ -298,7 +277,7 @@ class Master {
                 "9\n" +
                 "00\n");
 
-        eventDetails.put("PUBG MOBILE", "Event details not available yet.\n" +
+        eventDetails.put("PUBG MOBILE", "\n" +
                 "Agnideep Mukherjee\n" +
                 "8478954693\n" +
                 "n\n" +
@@ -315,8 +294,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Money%20Matters");
+                "00\n");
 
         eventDetails.put("B-QUIZ", "A one of it's kind BizTech quiz that puts your knowledge of technology and business mindedness to test.\n" +
                 "Prince\n" +
@@ -325,8 +303,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Money%20Matters/B-Quiz");
+                "00\n");
 
         eventDetails.put("ADDOMEDIA", "Without innovation, advertisement won't grab attention. With innovation , it will also grab you a handsome prize money.\n" +
                 "Prince\n" +
@@ -335,8 +312,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Money%20Matters/AddoMedia");
+                "00\n");
 
         eventDetails.put("STOCK IT", "Traverse the turbulent waters of the stock market in this online event that simulates the thrill of the stock market without any of the risks involved.\n" +
                 "Medha\n" +
@@ -345,8 +321,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Money%20Matters/Stock%20It");
+                "00\n");
 
         eventDetails.put("PROJECT VIEW", "Ideas exploring the technical field that is advancing with every passing day need a push and here we give it to you.\n" +
                 "Medha Mishra,Parshati Chaudhury\n" +
@@ -355,8 +330,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Innovati");
+                "00\n");
 
         eventDetails.put("CRUMBS", "Landscape photography? That’s too mainstream. Time to go against the tide and explore the elegance in the most inconspicuous items around. The topic is open so just give us the best of you.\n" +
                 "Rohit Deb,Karan Paul\n" +
@@ -365,8 +339,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Infocus");
+                "00\n");
 
         eventDetails.put("ODYSSEY", "“If it can be written or thought, it can be filmed” A picture is worth a thousand words . Tell us your story as you capture the mobility.\n" +
                 "Rohit Deb,Karan Paul\n" +
@@ -375,8 +348,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Infocus");
+                "00\n");
 
         eventDetails.put("SHOOT M UP", "Where you capture the soul infatuation with your cell phone.\n" +
                 "Rohit Deb,Indrajeet Dhara\n" +
@@ -385,8 +357,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Infocus");
+                "00\n");
 
         eventDetails.put("INSTA CLICK", "Capture the moment that’s gone and impossible to reproduce. Shoot at the moment.\n" +
                 "Indrajit Dhara,Karan Paul\n" +
@@ -395,8 +366,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Infocus");
+                "00\n");
 
         eventDetails.put("INSTA EDIT", "INSTA EDIT is an editing competition where your creative mind blends perfectly with your Photoshop skills to create your masterpiece.\n" +
                 "Rohit Deb,Karan Paul\n" +
@@ -405,8 +375,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Infocus");
+                "00\n");
 
         eventDetails.put("INSTA FILM", "Live EDGE and thread the frames. The best mobile video with a creative approach , shot on the spot , gets rewarded.\n" +
                 "Sayantan Bhattacharya,Biswajit Banarjee\n" +
@@ -415,8 +384,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Infocus/Insta-Film");
+                "00\n");
 
         eventDetails.put("XQUIZIT", "Unleash your brain cells and win this informative quiz on a wide spectrum of topics.\n" +
                 "Sanchari Kar\n" +
@@ -425,8 +393,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Food%20for%20Fun");
+                "00\n");
 
         eventDetails.put("FOOD PRODUCT LABELLING", "Label the food products correctly to win this event.\n" +
                 "Sanchari Kar\n" +
@@ -435,29 +402,26 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Food%20for%20Fun");
+                "00\n");
 
 
-        eventDetails.put("CREATION-X-NIHILO", "Event details not available yet.\n" +
+        eventDetails.put("CREATION-X-NIHILO", "\n" +
                 "\n" +
                 "\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Food%20for%20Fun");
+                "00\n");
 
-        eventDetails.put("FOOD DISPLAY PRESENTATION", "Event details not available yet.\n" +
+        eventDetails.put("FOOD DISPLAY PRESENTATION", "\n" +
                 "Saptarsi Dey\n" +
                 "7059285164\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Food%20for%20Fun/Food%20Hunt");
+                "00\n");
 
         eventDetails.put("FOOD RELAY", "It consists of 4 sub games. Whichever team finishes the task first wins the game.\n" +
                 "Sanchari Kar\n" +
@@ -466,8 +430,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/fff");
+                "00\n");
 
         eventDetails.put("ANIMATE", "Prepare an advertisement for a specific food product in whichever possible way!\n" +
                 "Sanchari Kar\n" +
@@ -476,8 +439,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/fff");
+                "00\n");
 
 
         eventDetails.put("MEKANIX", "Knowledge and creativity go hand in hand in this event that tests how updated and polished your mind is!\n" +
@@ -487,8 +449,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Create%20It");
+                "00\n");
 
         eventDetails.put("RAGS TO RICHES", "If creativity from scratch is your strength, rags to riches is definitely your platform.\n" +
                 "Medha Mishra,Parshati Chaudhury\n" +
@@ -497,8 +458,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Create%20It");
+                "00\n");
 
         eventDetails.put("ELECTRONICALLY YOURS","It is all about how well you handle pressure and ultimately win using your knowledge in the domain of electronics.\n" +
                 "Alvin Karkun,Soumalya Ghosh\n" +
@@ -507,8 +467,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Newron");
+                "00\n");
 
         eventDetails.put("THE QUIZ","Being inquisitive is how you win this event that tests your general knowledge.\n" +
                 "Alvin Karkun,Sankarshan Sur\n" +
@@ -517,8 +476,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Newron");
+                "00\n");
 
         eventDetails.put("YOUTH PARLIAMENT","If you have a keen interest in the Indian parliamentary proceedings then this is an event where you can excel.\n" +
                 "Ankit Anjan,Alvin Karkun\n" +
@@ -527,8 +485,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Newron");
+                "00\n");
 
         eventDetails.put("CAD O MANIA", "Showcase your expertise with AutoCAD by taking on the provided challenge head-on and give a suitable solution.\n" +
                 "Sanjit Shaw,Vishal Kumar,Prashant Kumar Dubey\n" +
@@ -537,8 +494,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Elevation");
+                "00\n");
 
         eventDetails.put("NIRMAAN", "Build a model bridge good enough to take you over the competitors and take you towards the coveted winner's prize.\n" +
                 "Sanjit Shaw,Srimonti Kundu,Saptarshi Bhattacharjee\n" +
@@ -547,38 +503,34 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Elevation");
+                "00\n");
 
-        eventDetails.put("EDGE ZOOM", "Event details not available yet.\n" +
+        eventDetails.put("EDGE ZOOM", "\n" +
                 "\n" +
                 "\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Just%20Like%20That");
+                "00\n");
 
-        eventDetails.put("UDAAN", "Event details not available yet.\n" +
+        eventDetails.put("UDAAN", "\n" +
                 "\n" +
                 "\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Just%20Like%20That");
+                "00\n");
 
-        eventDetails.put("1 MINUTE STAND", "Event details not available yet.\n" +
+        eventDetails.put("1 MINUTE STAND", "\n" +
                 "\n" +
                 "\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Just%20Like%20That");
+                "00\n");
 
         eventDetails.put("RED BULL PONG", "Sponsored by Red Bull this event became quite popular amongst the youth. " +
                 "This event judged how many balls each player could land into the red bull cups. The player with the maximum score was awarded by Red Bull.\n" +
@@ -588,8 +540,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "https://edg.co.in/#/events/fun");
+                "00\n");
 
         eventDetails.put("BODY ZORBING", "This fun event procures the highest participation every year since this high energy, fun-filled activity has been a treat for the participants. " +
                 "Here participants secured themselves in transparent balls and set everybody else laughing their hearts out while they fell down, " +
@@ -600,8 +551,7 @@ class Master {
                 "7\n" +
                 "3\n" +
                 "9\n" +
-                "00\n" +
-                "https://edg.co.in/#/events/fun");
+                "00\n");
 
         eventsImg = new HashMap<String, Integer>();
         eventsImg.put("TROLL MARKETTING", R.drawable.trollmarketting);
@@ -813,7 +763,6 @@ class Master {
                 "8820070440\n" +
                 "BUGHUNT\n" +
                 "Do you often find faults in others’ codes? Or are you always on the hunt for errors whenever you see a code? Well, then this event might just be for you. Find out the trickiest of bugs in the simplest codes and correct them in the shortest and smartest way possible. Beat the others to the finish and claim the prize.\n" +
-                "http://intrafest17.edg.co.in/assets/Banner_BugHunt.pdf\n" +
                 "Ritwik Dutta\n" +
                 "8334881521\n" +
                 "CRYPTO QUEST\n" +

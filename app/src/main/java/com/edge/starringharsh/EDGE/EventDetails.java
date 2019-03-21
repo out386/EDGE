@@ -8,6 +8,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -33,7 +34,7 @@ public class EventDetails extends BaseActivity {
     ImageButton bReminder;
     ImageView iv;
     LinearLayout llUpcoming, llcontacts;
-    String name, det, linkadd, details, up;
+    String name, linkadd, up;
     int date, month, hr, min;
     int p=0;
     Calendar cal, calR;
@@ -66,8 +67,6 @@ public class EventDetails extends BaseActivity {
 
         linkadd = master.link.get(name);
 
-
-        tvDet.setText(det);
         tvDet.setMovementMethod(LinkMovementMethod.getInstance());
 
         new BackFetch().execute();
@@ -90,7 +89,7 @@ public class EventDetails extends BaseActivity {
 
 
 
-    class BackFetch extends AsyncTask<Void, Void, Void>
+    class BackFetch extends AsyncTask<Void, Void, String>
     {
 
         @Override
@@ -105,51 +104,63 @@ public class EventDetails extends BaseActivity {
         }
 
         @Override
-        protected Void doInBackground(Void... voids) {
+        protected String doInBackground(Void... voids) {
             try {
                 URL url = new URL(linkadd);
                 BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
-                String str, newDet="";
-                while ((str = br.readLine()) != null) {
-                    newDet += str + "\n";
+                String line;
+                StringBuilder allLines = new StringBuilder(5000);
+                while ((line = br.readLine()) != null) {
+                    allLines.append(line).append("\n");
                 }
                 br.close();
-                det = newDet;
                 // TODO: Deserialize directly here into a Serializable model. Will remove the need for another loop in onPostExecute
-                editor.putString(name, newDet);
-                editor.commit();
+                String res = allLines.toString();
+                editor.putString(name, res);
+                editor.apply();
+                return res;
             } catch (Exception e) {
                 System.out.println("Failed");
-                det = sharedPreferences.getString(name, master.eventDetails.get(name));
-                //e.printStackTrace();
-            }
+                StringBuilder allLines = new StringBuilder(5000);
+                allLines.append(sharedPreferences.getString(name, ""));
 
-            return null;
+                if ("".equals(allLines.toString())) {
+                    // As data not updated just now, or read from sharedprefs, don't have rules in it.
+                    allLines.append(master.eventDetails.get(name))
+                            .append(getString(rules.rules.get(name)));
+                }
+                return allLines.toString();
+            }
         }
 
         @Override
-        protected void onPostExecute(Void aVoid) {
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
             List<ContactsModel> contacts = null;
+            String shortDesc = null, longDesc = null;
             System.out.println("POST");
-            super.onPostExecute(aVoid);
             progress.dismiss();
-            BufferedReader br = new BufferedReader(new StringReader(det));
+            BufferedReader br = new BufferedReader(new StringReader(result));
 
             try {
-                details =  br.readLine();
+                shortDesc =  br.readLine();
                 contacts = splitContacts(br.readLine(), br.readLine());
                 up =  br.readLine();
                 date = Integer.parseInt(br.readLine());
                 month = Integer.parseInt(br.readLine());
                 hr = Integer.parseInt(br.readLine());
                 min = Integer.parseInt(br.readLine());
+                longDesc = br.readLine();
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
-            tvRules.setText(Html.fromHtml(getString(rules.rules.get(name))));
-
-            tvDet.setText(details);
+            tvRules.setText(Html.fromHtml(
+                    longDesc == null ? getString(rules.rules.get(name)) : longDesc));
+            if (shortDesc == null || "".equals(shortDesc))
+                tvDet.setVisibility(View.GONE);
+            else
+                tvDet.setText(shortDesc);
             if (contacts == null || contacts.size() == 0) {
                 LinearLayout ll = (LinearLayout) findViewById(R.id.contacts_layout);
                 ll.setVisibility(View.GONE);
@@ -158,8 +169,13 @@ public class EventDetails extends BaseActivity {
                     llcontacts.addView(new ContactsView(EventDetails.this, contact));
             }
 
-            if(up.equalsIgnoreCase("Y"))
-            {
+            handleUp();
+        }
+    }
+
+    private void handleUp() {
+        if(up.equalsIgnoreCase("Y"))
+        {
             cal = Calendar.getInstance();
             int dateS = cal.get(Calendar.DATE);
             int monthS = cal.get(Calendar.MONTH);
@@ -173,7 +189,7 @@ public class EventDetails extends BaseActivity {
                 tvUpcoming.setText((""+String.format("%02d",date) + "/" + String.format("%02d",(month+1)) + "/2017 " + String.format("%02d",hr) + ":" + String.format("%02d",min)));
                 bReminder.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View view) { 
+                    public void onClick(View view) {
                         Intent intent = new Intent(Intent.ACTION_EDIT);
                         intent.setType("vnd.android.cursor.item/event");
                         intent.putExtra("beginTime", calR.getTimeInMillis());
@@ -183,11 +199,8 @@ public class EventDetails extends BaseActivity {
                         startActivity(intent);
                     }
                 });
-                }
             }
-
         }
-
     }
 
 }
