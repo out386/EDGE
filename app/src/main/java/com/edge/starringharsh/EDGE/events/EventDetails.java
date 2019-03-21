@@ -1,4 +1,4 @@
-package com.edge.starringharsh.EDGE;
+package com.edge.starringharsh.EDGE.events;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,9 +15,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.edge.starringharsh.EDGE.BaseActivity;
+import com.edge.starringharsh.EDGE.Master;
+import com.edge.starringharsh.EDGE.R;
 import com.edge.starringharsh.EDGE.model.ContactsModel;
 import com.edge.starringharsh.EDGE.ui.ContactsView;
-import com.edge.starringharsh.EDGE.utils.EventsUpdateUtils;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -39,7 +41,7 @@ public class EventDetails extends BaseActivity {
     LinearLayout llUpcoming, llcontacts;
     String name, linkadd, up;
     int date, month, hr, min;
-    int p=0;
+    int p = 0;
     Calendar cal, calR;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
@@ -50,7 +52,7 @@ public class EventDetails extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_event_details);
+        setContentView(R.layout.activity_event_details);
 
         master = new Master();
         rules = new Rules();
@@ -87,22 +89,19 @@ public class EventDetails extends BaseActivity {
 
     }
 
-    void init()
-    {
-        tvDet = (TextView) findViewById(R.id.tvDetailsDet);
-        tvRules = (TextView) findViewById(R.id.tvRules);
-        tvDetails = (TextView) findViewById(R.id.tvDetails);
-        tvUpcoming = (TextView) findViewById(R.id.tvDetailsUpcoming);
-        llUpcoming = (LinearLayout) findViewById(R.id.llDetailsUpcoming);
-        llcontacts = (LinearLayout) findViewById(R.id.contacts_layout);
-                bReminder = (ImageButton) findViewById(R.id.bDetailsUpcoming);
-        iv = (ImageView) findViewById(R.id.ivDetails);
+    void init() {
+        tvDet = findViewById(R.id.tvDetailsDet);
+        tvRules = findViewById(R.id.tvRules);
+        tvDetails = findViewById(R.id.tvDetails);
+        tvUpcoming = findViewById(R.id.tvDetailsUpcoming);
+        llUpcoming = findViewById(R.id.llDetailsUpcoming);
+        llcontacts = findViewById(R.id.contacts_layout);
+        bReminder = findViewById(R.id.bDetailsUpcoming);
+        iv = findViewById(R.id.ivDetails);
     }
 
 
-
-    private class BackFetch extends AsyncTask<Void, Void, String>
-    {
+    private class BackFetch extends AsyncTask<Void, Void, String> {
         String newVersion;
 
         BackFetch(String newVersion) {
@@ -147,8 +146,7 @@ public class EventDetails extends BaseActivity {
     }
 
     private void handleUp() {
-        if(up.equalsIgnoreCase("Y"))
-        {
+        if (up.equalsIgnoreCase("Y")) {
             cal = Calendar.getInstance();
             int dateS = cal.get(Calendar.DATE);
             int monthS = cal.get(Calendar.MONTH);
@@ -156,10 +154,9 @@ public class EventDetails extends BaseActivity {
             int minS = cal.get(Calendar.MINUTE);
             calR = Calendar.getInstance();
             calR.set(2017, month, date, hr, min);
-            if(cal.getTimeInMillis() < calR.getTimeInMillis())
-            {
+            if (cal.getTimeInMillis() < calR.getTimeInMillis()) {
                 llUpcoming.setVisibility(View.VISIBLE);
-                tvUpcoming.setText((""+String.format("%02d",date) + "/" + String.format("%02d",(month+1)) + "/2017 " + String.format("%02d",hr) + ":" + String.format("%02d",min)));
+                tvUpcoming.setText(("" + String.format("%02d", date) + "/" + String.format("%02d", (month + 1)) + "/2017 " + String.format("%02d", hr) + ":" + String.format("%02d", min)));
                 bReminder.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -167,7 +164,7 @@ public class EventDetails extends BaseActivity {
                         intent.setType("vnd.android.cursor.item/event");
                         intent.putExtra("beginTime", calR.getTimeInMillis());
                         intent.putExtra("allDay", false);
-                        intent.putExtra("endTime", calR.getTimeInMillis()+120*60*1000);
+                        intent.putExtra("endTime", calR.getTimeInMillis() + 120 * 60 * 1000);
                         intent.putExtra("title", "Reminder for event: " + name);
                         startActivity(intent);
                     }
@@ -191,7 +188,7 @@ public class EventDetails extends BaseActivity {
 
     private void setData(String data) {
         System.out.println("Updating data");
-        String [] lines = data.split("\n");
+        String[] lines = data.split("\n");
         List<ContactsModel> contacts = null;
         String shortDesc = lines[0];
         contacts = splitContacts(lines[1], lines[2]);

@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.edge.starringharsh.EDGE.events.EventList;
 import com.edge.starringharsh.EDGE.utils.ButtonUtils;
 
 

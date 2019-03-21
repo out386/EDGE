@@ -8,26 +8,26 @@ import java.util.Map;
  * Created by starringharsh on 01-12-2016.
  */
 
-class Master {
+public class Master {
 
-    static final String EVENT_LINK_FORMAT = "https://firebasestorage.googleapis.com/v0/b/edge-8fc5e.appspot.com/o/event_details%%2F%s?alt=media";
-    String categories[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron",
+    public static final String EVENT_LINK_FORMAT = "https://firebasestorage.googleapis.com/v0/b/edge-8fc5e.appspot.com/o/event_details%%2F%s?alt=media";
+    public String categories[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron",
             "Elevation", "Food For Fun", "Create It", "Just Like That", "Innovati", "Fun Events"};
     String mainMenu[] = {"Events", "Intra", "Mega Events", "Upcoming Events", "Results", "Edge Kube", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
     String intraCat[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron", "Elevation", "Food For Fun", "Create It"};
 
-    String events0[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
-    String events1[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
-    String events2[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "CODE RELAY"};
-    String events3[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA EDIT"};
-    String events4[] = {"TROLL MARKETTING", "CROWD PITCH", "PITCH RIGHT", "B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
-    String events5[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
-    String events6[] = {"CAD O MANIA", "NIRMAAN"};
-    String events7[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD RELAY", "XQUIZIT", "FOOD DISPLAY PRESENTATION", "ANIMATE"};
-    String events8[] = {"MEKANIX", "RAGS TO RICHES"};
-    String events9[] = {"EDGE ZOOM", "UDAAN", "1 MINUTE STAND"};
-    String events10[] = {"PROJECT VIEW"};
-    String events11[] = {"RED BULL PONG", "BODY ZORBING"};
+    public String events0[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
+    public String events1[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
+    public String events2[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "CODE RELAY"};
+    public String events3[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA EDIT"};
+    public String events4[] = {"TROLL MARKETTING", "CROWD PITCH", "PITCH RIGHT", "B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
+    public String events5[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
+    public String events6[] = {"CAD O MANIA", "NIRMAAN"};
+    public String events7[] = {"CREATION-X-NIHILO", "FOOD PRODUCT LABELLING", "FOOD RELAY", "XQUIZIT", "FOOD DISPLAY PRESENTATION", "ANIMATE"};
+    public String events8[] = {"MEKANIX", "RAGS TO RICHES"};
+    public String events9[] = {"EDGE ZOOM", "UDAAN", "1 MINUTE STAND"};
+    public String events10[] = {"PROJECT VIEW"};
+    public String events11[] = {"RED BULL PONG", "BODY ZORBING"};
     String sponsors[] = {"GEEK ALUMS"};
     String sponsorslink = "https://drive.google.com/uc?export=download&id=1k1bsfx019J9b8BOT61Ho2cYxKGeI0k2O";
     String megalink = "https://drive.google.com/uc?export=download&id=1PBcdHlBBqekwWcKBLVqwlQXZO4oFl1Cr";
@@ -36,12 +36,14 @@ class Master {
     String team17[] = {"Ashish Choudhary", "Shubham Sharma", "Priyankar Banerjee", "Mayank", "Wriddhi Mukherjee", "Aqsa Zea", "Kumar Satyam Singh", "Anurag Ranjan", "Akhilesh Upadhyay"};
     String team18[] = {"Abhishek Singh", "Ayush Tiwari", "Deep Arora", "Shuvojit Ray Chaudhuri", "Harsh Sheth", "Ashif Iqbal", "Md. Mukarram Quraishi", "Neha Roy", "Priya Chaudhuri"};
     String team[] = {"Chandrasekhar Upadhyay", "Rohan Choudhury", "Souradipta Ojha", "Ritaban Chakrabarti", "Siddharth Verma", "Rounak Ghosh", "Shatavisha Biswas", "Urmimala Sen", "Ankur Rai"};
-    Map<String, String> eventDetails, teamPost, sponType, intraLink, intraDetails, sponImg, megaType, megaImg;
-    Map<String, Integer> teamImg, teamImg1, categoriesImg, eventsImg, mainMenuImg;
+    Map<String, String> teamPost, sponType, intraLink, intraDetails, sponImg, megaType, megaImg;
+    Map<String, Integer> teamImg, teamImg1, categoriesImg, mainMenuImg;
+    public Map<String, Integer> eventsImg;
+    public Map<String, String> eventDetails;
     Map<String, Long> teamNum;
 
 
-    Master()
+    public Master()
     {
         eventDetails = new HashMap<String, String>();
         eventDetails.put("TROLL MARKETTING", "\n" +

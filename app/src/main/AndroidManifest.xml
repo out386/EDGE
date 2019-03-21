@@ -30,10 +30,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EventList"
+            android:name=".events.EventList"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".EventDetails"
+            android:name=".events.EventDetails"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"

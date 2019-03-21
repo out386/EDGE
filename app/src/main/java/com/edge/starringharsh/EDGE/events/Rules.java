@@ -1,4 +1,6 @@
-package com.edge.starringharsh.EDGE;
+package com.edge.starringharsh.EDGE.events;
+
+import com.edge.starringharsh.EDGE.R;
 
 import java.util.HashMap;
 import java.util.Map;

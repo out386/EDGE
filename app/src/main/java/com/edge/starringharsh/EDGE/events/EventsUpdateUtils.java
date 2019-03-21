@@ -1,4 +1,4 @@
-package com.edge.starringharsh.EDGE.utils;
+package com.edge.starringharsh.EDGE.events;
 
 import android.content.Context;
 import android.content.SharedPreferences;
