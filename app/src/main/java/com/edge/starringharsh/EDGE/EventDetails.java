@@ -1,18 +1,14 @@
 package com.edge.starringharsh.EDGE;
 
 import android.app.ProgressDialog;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.telephony.PhoneNumberUtils;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -26,11 +22,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+
+import static com.edge.starringharsh.EDGE.utils.FormatUtils.splitContacts;
 
 public class EventDetails extends BaseActivity {
 
@@ -134,7 +129,7 @@ public class EventDetails extends BaseActivity {
 
         @Override
         protected void onPostExecute(Void aVoid) {
-            Set<ContactsModel> contacts = new HashSet<>(2);
+            List<ContactsModel> contacts = null;
             System.out.println("POST");
             super.onPostExecute(aVoid);
             progress.dismiss();
@@ -142,11 +137,7 @@ public class EventDetails extends BaseActivity {
 
             try {
                 details =  br.readLine();
-
-                // It physically hurt to write these
-                splitContact(contacts, br.readLine(), br.readLine());
-                splitContact(contacts, br.readLine(), br.readLine());
-
+                contacts = splitContacts(br.readLine(), br.readLine());
                 up =  br.readLine();
                 date = Integer.parseInt(br.readLine());
                 month = Integer.parseInt(br.readLine());
@@ -159,7 +150,7 @@ public class EventDetails extends BaseActivity {
             tvRules.setText(Html.fromHtml(getString(rules.rules.get(name))));
 
             tvDet.setText(details);
-            if (contacts.size() == 0) {
+            if (contacts == null || contacts.size() == 0) {
                 LinearLayout ll = (LinearLayout) findViewById(R.id.contacts_layout);
                 ll.setVisibility(View.GONE);
             } else {
@@ -197,14 +188,6 @@ public class EventDetails extends BaseActivity {
 
         }
 
-        private void splitContact(Set<ContactsModel> contacts, String name, String number) {
-            String [] names = name.split(",");
-            String [] numbers = number.split(",");
-            for (int i = 0; i < names.length; i++) {
-                if (! "".equals(names[i]) && ! "".equals(numbers[i]))
-                    contacts.add(new ContactsModel(names[i], numbers[i]));
-            }
-        }
     }
 
-    }
+}

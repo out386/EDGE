@@ -10,8 +10,6 @@ import java.util.Map;
 
 class Master {
 
-    //String categories[] = {"CIIC", "Compute Aid",    "Robotics", "Cyber Crusade", "Money Matters",
-    // "Innovati", "Infocus", "Food For Fun", "Create It", "Newron", "Elevation", "Just Like That", "Fun Events"};
     String categories[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron",
             "Elevation", "Food For Fun", "Create It", "Just Like That", "Innovati", "Fun Events"};
     String mainMenu[] = {"Events", "Intra", "Mega Events", "Upcoming Events", "Results", "Edge Kube", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
@@ -48,8 +46,6 @@ class Master {
         eventDetails.put("TROLL MARKETTING", "Event details not available yet.\n" +
                 "Medha\n" +
                 "8961187020\n" +
-                "Medha\n" +
-                "8961187020\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -58,10 +54,8 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("CROWD PITCH", "Event details not available yet.\n" +
-                "Rahul Singh\n" +
-                "8420617283\n" +
-                "Medha\n" +
-                "8961187020\n" +
+                "Rahul Singh,Medha\n" +
+                "8420617283,8961187020\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -72,8 +66,6 @@ class Master {
         eventDetails.put("PITCH RIGHT", "Event details not available yet.\n" +
                 "Medha\n" +
                 "8961187020\n" +
-                "Medha\n" +
-                "8961187020\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -82,10 +74,8 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("FLAWLESS", "Just like the name suggests, as flawless as ones codes become the better chance they have of winning.\n" +
-                "Raja Sachin\n" +
-                "9062647976\n" +
-                "Avnish Singh\n" +
-                "9162023260\n" +
+                "Raja Sachin,Avnish Kumar\n" +
+                "9062647976,9162023260\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -94,10 +84,8 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("BUG HUNT", "A coder is all about perfection and identifying the cracks and holes to make a flawed algorithm picture perfect.\n" +
-                "Shreya Agrawal\n" +
-                "9836566212\n" +
-                "Abhishek Das\n" +
-                "7033534472\n" +
+                "Shreya Agarwal,Abhishek Das\n" +
+                "9836566212,7033534472\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -106,10 +94,8 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("CRYPTO QUEST", "Put your cryptography and deciphering skills to test by proving yourself while solving the clues.\n" +
-                "Radhika Mohta\n" +
-                "9163981049\n" +
-                "Suyash Mittal\n" +
-                "7044793121\n" +
+                "Radhika Mohta,Suyash Mittal\n" +
+                "9163981049,7044793121\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -118,10 +104,8 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid");
 
        eventDetails.put("INFINITY WARS", "For coders having strategic skills in them, this online map conquest event will be a cake- walk!\n" +
-               "Shiv Kumar\n" +
-               "8820315476\n" +
-               "Saquib ul Hassan\n" +
-               "9804887223\n" +
+               "Shiv Kumar,Saquib ul Hassan\n" +
+               "8820315476,9804887223\n" +
                 "n\n" +
                 "9\n" +
                 "3\n" +
@@ -130,10 +114,8 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("CODE OUT", "A call out to all you hidden gem coders to prove your abilities in this online event.\n" +
-                "Raja Sachin\n" +
-                "9062647976\n" +
-                "Indranil Choudhary\n" +
-                "9635874015\n" +
+                "Raja Sachin,Indranil Chowdhury\n" +
+                "9062647976,9635874015\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -142,10 +124,8 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("CODE RELAY", "Description unavailable\n" +
-                "Raja Sachin\n" +
-                "9062647976\n" +
-                "Suyash Mittal\n" +
-                "7044793121\n" +
+                "Raja Sachin,Suyash Mittal\n" +
+                "9062647976,7044793121\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -154,10 +134,8 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid");
 
         eventDetails.put("BLIND CODING", "Practice in coding makes a coder perfect. But to the extent where you can code blindfolded?\n" +
-                "Amar Bathwal\n" +
-                "8820549897\n" +
-                "Meghna roy\n" +
-                "7059306878\n" +
+                "Amar Bathwal,Meghna roy\n" +
+                "8820549897,7059306878\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -166,10 +144,8 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid/Blind%20Coding");
 
         eventDetails.put("WEB DEV", "There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.\n" +
-                "Raja Sachin\n" +
-                "9062647976\n" +
-                "Suyash Mittal\n" +
-                "7044793121\n" +
+                "Raja Sachin,Suyash Mittal\n" +
+                "9062647976,7044793121\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -178,10 +154,8 @@ class Master {
                 "http://edg.co.in/#/events/Compute%20Aid/");
 
         eventDetails.put("BLITZKRIEG", "A moment of pain is worth a lifetime of glory. The bot that survives till the end emerges as the victor.\n" +
-                "Ashutosh Priyadarshi,Wahid Hussain\n" +
-                "8697276841,8583908125\n" +
-                "Rajeev Ranjan,Sujoy Basak\n" +
-                "8820879972,8013821259\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
+                "8697276841,8583908125,8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -190,10 +164,8 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("DOUBLE-UP", "You want to double-up, then first toe the line.\n" +
-                "Ashutosh Priyadarshi,Wahid Hussain\n" +
-                "8697276841,8583908125\n" +
-                "Rajeev Ranjan,Sujoy Basak\n" +
-                "8820879972,8013821259\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
+                "8697276841,8583908125,8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -202,10 +174,8 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("LIFT'N'LAY", "Put the right effort and things will get rightly placed.\n" +
-                "Ashutosh Priyadarshi,Wahid Hussain\n" +
-                "8697276841,8583908125\n" +
-                "Rajeev Ranjan,Sujoy Basak\n" +
-                "8820879972,8013821259\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
+                "8697276841,8583908125,8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -214,10 +184,8 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("MARINODRIFT", "Strategize with your bot to win glory on both the terrains.\n" +
-                "Ashutosh Priyadarshi,Wahid Hussain\n" +
-                "8697276841,8583908125\n" +
-                "Rajeev Ranjan,Sujoy Basak\n" +
-                "8820879972,8013821259\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
+                "8697276841,8583908125,8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -226,10 +194,8 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("STALKER", "Follow the trail and glory waits for you at the finishing line.\n" +
-                "Sudhanshu Shivam\n" +
-                "8697892729\n"+
-                "Sourav Ghosh\n" +
-                "8013174091\n" +
+                "Sudhanshu Shivam,Sourav Ghosh\n" +
+                "8697892729,8013174091\n"+
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -238,10 +204,8 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("JIGSAW", "Only the craze to solve the maze can help you win and subjects you to praise.\n" +
-                "Sudhanshu Shivam\n" +
-                "8697892729\n" +
-                "Sourav Ghosh\n" +
-                "8013174091\n" +
+                "Sudhanshu Shivam,Sourav Ghosh\n" +
+                "8697892729,8013174091\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -250,10 +214,8 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("ROBO RACE", "The better you maneuver, the farther you reach.\n" +
-                "Ashutosh Priyadarshi,Wahid Hussain\n" +
-                "8697276841,8583908125\n" +
-                "Rajeev Ranjan,Sujoy Basak\n" +
-                "8820879972,8013821259\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
+                "8697276841,8583908125,8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -262,10 +224,8 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("ROBO SOCCER", "Steer your bot expertly to score the maximum number of goals and win the match.\n" +
-                "Ashutosh Priyadarshi,Wahid Hussain\n" +
-                "8697276841,8583908125\n" +
-                "Rajeev Ranjan,Sujoy Basak\n" +
-                "8820879972,8013821259\n" +
+                "Ashutosh Priyadarshi,Wahid Hussain,Rajeev Ranjan,Sujoy Basak\n" +
+                "8697276841,8583908125,8820879972,8013821259\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -274,10 +234,8 @@ class Master {
                 "http://www.edg.co.in/#/events/Robotics");
 
         eventDetails.put("WALLSTREET", "Follow the trail and glory awaits you at the finishing line.\n" +
-                "Sudhanshu Shivam\n" +
-                "8697892729\n" +
-                "Sourav Ghosh\n" +
-                "8013174091\n" +
+                "Sudhanshu Shivam,Sourav Ghosh\n" +
+                "8697892729,8013174091\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -286,8 +244,6 @@ class Master {
                 "http://edg.co.in/#/events/Robotics");
 
         eventDetails.put("CS GO COLLEGE LEAGUE", "For the action frenzy college studying aficionados who got a trigger for an arm and flashbang for the other.\n" +
-                "Ahana Sarkar\n" +
-                "9674362280\n" +
                 "Ahana Sarkar\n" +
                 "9674362280\n" +
                 "n\n" +
@@ -299,8 +255,6 @@ class Master {
         eventDetails.put("CS GO PRO LEAGUE", "The PRO CSGO League , for all hardcore CS Gamers and learners alike.\n" +
                 "Swastik Samaddar Chowdhury\n" +
                 "9874436481\n" +
-                "Swastik Samaddar Chowdhury\n" +
-                "9874436481\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -310,8 +264,6 @@ class Master {
         eventDetails.put("DOTA 2", "It\'s time to choose the sides. Would you choose the might of the dark or the glory of the light?\n" +
                 "Jyotishman Chakraborty\n" +
                 "8910664354\n" +
-                "Jyotishman Chakraborty\n" +
-                "8910664354\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -319,10 +271,8 @@ class Master {
                 "00\n");
 
         eventDetails.put("NEED FOR SPEED MOST WANTED", "Put your feet down on the throttle to burn the tires with raging speed.\n" +
-                "Sohail Khan\n" +
-                "7278282148\n" +
-                "Sujoy Das\n" +
-                "91-9073107423\n" +
+                "Sohail Khan,Sujoy Das\n" +
+                "7278282148,9073107423\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -331,8 +281,6 @@ class Master {
                 "http://edg.co.in/#/events/Cyber%20Crusade/Need%20For%20Speed%20most%20wanted");
 
         eventDetails.put("FIFA COLLEGE LEAGUE", "Tuned down gameplay and graphics of FIFA here paves the way for a richer competition coming from years of experience.\n" +
-                "Arkadeep Dey\n" +
-                "9051822311\n" +
                 "Arkadeep Dey\n" +
                 "9051822311\n" +
                 "n\n" +
@@ -344,29 +292,13 @@ class Master {
         eventDetails.put("FIFA PRO LEAGUE", "For the Hard and Tough FIFA veterans out there , come battle it out.\n" +
                 "Arkadeep Dey\n" +
                 "9051822311\n" +
-                "Arkadeep Dey\n" +
-                "9051822311\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
                 "9\n" +
                 "00\n");
 
-        /*eventDetails.put("MINI MILITIA", "Go in with all guns blazing and take down your foe.\n" +
-                "Arkaprava Banerjee\n" +
-                "8101041843\n" +
-                "Abhinaba Ray\n" +
-                "9474979853\n" +
-                "n\n" +
-                "7\n" +
-                "3\n" +
-                "9\n" +
-                "00\n" +
-                "http://edg.co.in/#/events/Cyber%20Crusade/Mini%20Militia");*/
-
         eventDetails.put("PUBG MOBILE", "Event details not available yet.\n" +
-                "Agnideep Mukherjee\n" +
-                "8478954693\n" +
                 "Agnideep Mukherjee\n" +
                 "8478954693\n" +
                 "n\n" +
@@ -377,10 +309,8 @@ class Master {
 
 
         eventDetails.put("B-PLAN", "If you fail to plan, you plan to fail.\n" +
-                "Rahul Singh\n" +
-                "8420617283\n" +
-                "Prince\n" +
-                "9038610317\n" +
+                "Rahul Singh,Prince\n" +
+                "8420617283,9038610317\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -389,8 +319,6 @@ class Master {
                 "http://edg.co.in/#/events/Money%20Matters");
 
         eventDetails.put("B-QUIZ", "A one of it's kind BizTech quiz that puts your knowledge of technology and business mindedness to test.\n" +
-                "Prince\n" +
-                "9038610317\n" +
                 "Prince\n" +
                 "9038610317\n" +
                 "n\n" +
@@ -403,8 +331,6 @@ class Master {
         eventDetails.put("ADDOMEDIA", "Without innovation, advertisement won't grab attention. With innovation , it will also grab you a handsome prize money.\n" +
                 "Prince\n" +
                 "9038610317\n" +
-                "Prince\n" +
-                "9038610317\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -415,8 +341,6 @@ class Master {
         eventDetails.put("STOCK IT", "Traverse the turbulent waters of the stock market in this online event that simulates the thrill of the stock market without any of the risks involved.\n" +
                 "Medha\n" +
                 "8961187020\n" +
-                "Medha\n" +
-                "8961187020\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -425,10 +349,8 @@ class Master {
                 "http://edg.co.in/#/events/Money%20Matters/Stock%20It");
 
         eventDetails.put("PROJECT VIEW", "Ideas exploring the technical field that is advancing with every passing day need a push and here we give it to you.\n" +
-                "Medha Mishra\n" +
-                "8013290587\n" +
-                "Parshati Chaodhury\n" +
-                "8961807090\n" +
+                "Medha Mishra,Parshati Chaudhury\n" +
+                "8013290587,8961807090\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -437,10 +359,8 @@ class Master {
                 "http://edg.co.in/#/events/Innovati");
 
         eventDetails.put("CRUMBS", "Landscape photography? That’s too mainstream. Time to go against the tide and explore the elegance in the most inconspicuous items around. The topic is open so just give us the best of you.\n" +
-                "Rohit Deb\n" +
-                "9038220806\n" +
-                "Karan Paul\n" +
-                "8906833180\n" +
+                "Rohit Deb,Karan Paul\n" +
+                "9038220806,8906833180\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -449,10 +369,8 @@ class Master {
                 "http://edg.co.in/#/events/Infocus");
 
         eventDetails.put("ODYSSEY", "“If it can be written or thought, it can be filmed” A picture is worth a thousand words . Tell us your story as you capture the mobility.\n" +
-                "Rohit Deb\n" +
-                "9038220806\n" +
-                "Karan Paul\n" +
-                "8906833180\n" +
+                "Rohit Deb,Karan Paul\n" +
+                "9038220806,8906833180\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -461,10 +379,8 @@ class Master {
                 "http://edg.co.in/#/events/Infocus");
 
         eventDetails.put("SHOOT M UP", "Where you capture the soul infatuation with your cell phone.\n" +
-                "Rohit Deb\n" +
-                "9038220806\n" +
-                "Indrajeet Dhara\n" +
-                "9804179878\n" +
+                "Rohit Deb,Indrajeet Dhara\n" +
+                "9038220806,9804179878\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -473,10 +389,8 @@ class Master {
                 "http://edg.co.in/#/events/Infocus");
 
         eventDetails.put("INSTA CLICK", "Capture the moment that’s gone and impossible to reproduce. Shoot at the moment.\n" +
-                "Indrajit Dhara\n" +
-                "9804179878\n" +
-                "Karan Paul\n" +
-                "8906833180\n" +
+                "Indrajit Dhara,Karan Paul\n" +
+                "9804179878,8906833180\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -485,10 +399,8 @@ class Master {
                 "http://edg.co.in/#/events/Infocus");
 
         eventDetails.put("INSTA EDIT", "INSTA EDIT is an editing competition where your creative mind blends perfectly with your Photoshop skills to create your masterpiece.\n" +
-                "Rohit Deb\n" +
-                "9038220806\n" +
-                "Karan Paul\n" +
-                "8906833180\n" +
+                "Rohit Deb,Karan Paul\n" +
+                "9038220806,8906833180\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -497,10 +409,8 @@ class Master {
                 "http://edg.co.in/#/events/Infocus");
 
         eventDetails.put("INSTA FILM", "Live EDGE and thread the frames. The best mobile video with a creative approach , shot on the spot , gets rewarded.\n" +
-                "Sayantan Bhattacharya\n" +
-                "9163480278\n" +
-                "Biswajit Banarjee\n" +
-                "7890100127\n" +
+                "Sayantan Bhattacharya,Biswajit Banarjee\n" +
+                "9163480278,7890100127\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -509,8 +419,6 @@ class Master {
                 "http://edg.co.in/#/events/Infocus/Insta-Film");
 
         eventDetails.put("XQUIZIT", "Unleash your brain cells and win this informative quiz on a wide spectrum of topics.\n" +
-                "Sanchari Kar\n" +
-                "6290283116\n" +
                 "Sanchari Kar\n" +
                 "6290283116\n" +
                 "n\n" +
@@ -523,8 +431,6 @@ class Master {
         eventDetails.put("FOOD PRODUCT LABELLING", "Label the food products correctly to win this event.\n" +
                 "Sanchari Kar\n" +
                 "6290283116\n" +
-                "Sanchari Kar\n" +
-                "6290283116\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -535,9 +441,7 @@ class Master {
 
         eventDetails.put("CREATION-X-NIHILO", "Event details not available yet.\n" +
                 "\n" +
-                "0\n" +
                 "\n" +
-                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -546,8 +450,6 @@ class Master {
                 "http://edg.co.in/#/events/Food%20for%20Fun");
 
         eventDetails.put("FOOD DISPLAY PRESENTATION", "Event details not available yet.\n" +
-                "Saptarsi Dey\n" +
-                "7059285164\n" +
                 "Saptarsi Dey\n" +
                 "7059285164\n" +
                 "n\n" +
@@ -559,9 +461,7 @@ class Master {
 
         eventDetails.put("FOOD RELAY", "Event details not available yet.\n" +
                 "\n" +
-                "0\n" +
                 "\n" +
-                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -571,10 +471,8 @@ class Master {
 
 
         eventDetails.put("MEKANIX", "Knowledge and creativity go hand in hand in this event that tests how updated and polished your mind is!\n" +
-                "Medha Mishra\n" +
-                "8013290587\n" +
-                "Parshati Chaodhury\n" +
-                "8961807090\n" +
+                "Medha Mishra,Parshati Chaudhury\n" +
+                "8013290587,8961807090\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -583,10 +481,8 @@ class Master {
                 "http://edg.co.in/#/events/Create%20It");
 
         eventDetails.put("RAGS TO RICHES", "If creativity from scratch is your strength, rags to riches is definitely your platform.\n" +
-                "Parshati Chaodhury\n" +
-                "8961807090\n" +
-                "Medha Mishra\n" +
-                "8013290587\n" +
+                "Medha Mishra,Parshati Chaudhury\n" +
+                "8013290587,8961807090\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -595,10 +491,8 @@ class Master {
                 "http://edg.co.in/#/events/Create%20It");
 
         eventDetails.put("ELECTRONICALLY YOURS","It is all about how well you handle pressure and ultimately win using your knowledge in the domain of electronics.\n" +
-                "Alvin Karkun\n" +
-                "7890150690\n" +
-                "Soumalya Ghosh\n" +
-                "8582834183\n" +
+                "Alvin Karkun,Soumalya Ghosh\n" +
+                "7890150690,8582834183\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -607,10 +501,8 @@ class Master {
                 "http://edg.co.in/#/events/Newron");
 
         eventDetails.put("THE QUIZ","Being inquisitive is how you win this event that tests your general knowledge.\n" +
-                "Alvin Karkun\n" +
-                "7890150690\n" +
-                "Sankarshan Sur\n" +
-                "9830792503\n" +
+                "Alvin Karkun,Sankarshan Sur\n" +
+                "7890150690,9830792503\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -619,10 +511,8 @@ class Master {
                 "http://edg.co.in/#/events/Newron");
 
         eventDetails.put("YOUTH PARLIAMENT","If you have a keen interest in the Indian parliamentary proceedings then this is an event where you can excel.\n" +
-                "Ankit Anjan\n" +
-                "7739793511\n" +
-                "Alvin Karkun\n" +
-                "7890150690\n" +
+                "Ankit Anjan,Alvin Karkun\n" +
+                "7739793511,7890150690\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -630,32 +520,9 @@ class Master {
                 "00\n" +
                 "http://edg.co.in/#/events/Newron");
 
-        /*eventDetails.put("TREASURE HUNT","Time for you  to unveil an intriguing treasure that is only a few clues away.\n"+
-                "Harsh Sheth\n" +
-                "9681253545\n" +
-                "Harsh Sheth\n" +
-                "9681253545\n"+
-                "n\n" +
-                "7\n" +
-                "3\n" +
-                "9\n" +
-                "00\n" +
-                "https://drive.google.com/uc?export=download&id=0B9ir1SJLpxDEWjMyc21xcmlkbDQ");*/
-        /*eventDetails.put("GET SELFISH WITH EDGE17", "Have a craze for clicking selfies?Click innovative Selfies during the event and get maximum likes to win exciting prizes!\n"+
-        "Harsh Sheth\n" +
-                "9681253545\n" +
-                "Harsh Sheth\n" +
-                "9681253545\n"+
-                "n\n" +
-                "7\n" +
-                "3\n" +
-                "9\n" +
-                "00");*/
         eventDetails.put("CAD O MANIA", "Showcase your expertise with AutoCAD by taking on the provided challenge head-on and give a suitable solution.\n" +
-                "Sanjit Shaw\n" +
-                "9093058470\n" +
-                "Prashant Kumar Dubey\n" +
-                "9091397765\n" +
+                "Sanjit Shaw,Vishal Kumar,Prashant Kumar Dubey\n" +
+                "9093058470,7991176304,9091397765\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -664,10 +531,8 @@ class Master {
                 "http://edg.co.in/#/events/Elevation");
 
         eventDetails.put("NIRMAAN", "Build a model bridge good enough to take you over the competitors and take you towards the coveted winner's prize.\n" +
-                "Sanjit Shaw\n" +
-                "9093058470\n" +
-                "Vishal Kumar\n" +
-                "7991176304\n" +
+                "Sanjit Shaw,Srimonti Kundu,Saptarshi Bhattacharjee\n" +
+                "9093058470,8240253078,9051159470\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -677,9 +542,7 @@ class Master {
 
         eventDetails.put("EDGE ZOOM", "Event details not available yet.\n" +
                 "\n" +
-                "0\n" +
                 "\n" +
-                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -689,9 +552,7 @@ class Master {
 
         eventDetails.put("UDAAN", "Event details not available yet.\n" +
                 "\n" +
-                "0\n" +
                 "\n" +
-                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -701,9 +562,7 @@ class Master {
 
         eventDetails.put("1 MINUTE STAND", "Event details not available yet.\n" +
                 "\n" +
-                "0\n" +
                 "\n" +
-                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -714,9 +573,7 @@ class Master {
         eventDetails.put("RED BULL PONG", "Sponsored by Red Bull this event became quite popular amongst the youth. " +
                 "This event judged how many balls each player could land into the red bull cups. The player with the maximum score was awarded by Red Bull.\n" +
                 "\n" +
-                "0\n" +
                 "\n" +
-                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
@@ -728,9 +585,7 @@ class Master {
                 "Here participants secured themselves in transparent balls and set everybody else laughing their hearts out while they fell down, " +
                 "bumped on each other or rolled down, trying to overthrow their opponents.\n" +
                 "\n" +
-                "0\n" +
                 "\n" +
-                "0\n" +
                 "n\n" +
                 "7\n" +
                 "3\n" +
