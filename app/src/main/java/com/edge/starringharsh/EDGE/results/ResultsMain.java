@@ -1,4 +1,4 @@
-package com.edge.starringharsh.EDGE;
+package com.edge.starringharsh.EDGE.results;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.edge.starringharsh.EDGE.BaseActivity;
+import com.edge.starringharsh.EDGE.R;
 import com.edge.starringharsh.EDGE.utils.ButtonUtils;
 
 import java.io.BufferedReader;
@@ -16,7 +18,7 @@ import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.net.URL;
 
-public class Results extends BaseActivity {
+public class ResultsMain extends BaseActivity {
     final static String RESULTS_URL = "resultsUrl";
     final static String HEADER_CAPTION = "headerCaption";
 
@@ -136,11 +138,11 @@ public class Results extends BaseActivity {
         public void onClick(View v) {
             Intent intent;
             if(isTop) {
-                intent = new Intent(Results.this.getApplicationContext(), Results.class);
-                intent.putExtra(Results.HEADER_CAPTION, eventName);
-                intent.putExtra(Results.RESULTS_URL, url);
+                intent = new Intent(ResultsMain.this.getApplicationContext(), ResultsMain.class);
+                intent.putExtra(ResultsMain.HEADER_CAPTION, eventName);
+                intent.putExtra(ResultsMain.RESULTS_URL, url);
             } else {
-                intent = new Intent(Results.this.getApplicationContext(), ResultsDetails.class);
+                intent = new Intent(ResultsMain.this.getApplicationContext(), ResultsDetails.class);
                 intent.putExtra(ResultsDetails.RESULT_NAME, eventName);
                 intent.putExtra(ResultsDetails.RESULT_URL, url);
             }

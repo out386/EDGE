@@ -14,12 +14,10 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/results_top_ll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:weightSum="1">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -38,6 +36,13 @@
                 android:fontFamily="@font/megrim"
                 android:textSize="30sp"
                 android:textColor="#FFFFFF"/>
+
+            <LinearLayout
+                android:id="@+id/results_top_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"/>
 
         </LinearLayout>
 

@@ -1,4 +1,4 @@
-package com.edge.starringharsh.EDGE;
+package com.edge.starringharsh.EDGE.results;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.edge.starringharsh.EDGE.BaseActivity;
+import com.edge.starringharsh.EDGE.R;
 import com.edge.starringharsh.EDGE.utils.ButtonUtils;
 import com.edge.starringharsh.EDGE.utils.FormatUtils;
 
