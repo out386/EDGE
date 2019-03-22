@@ -7,14 +7,13 @@ import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.edge.starringharsh.EDGE.ui.SnakesGameActivity;
+import com.edge.starringharsh.EDGE.results.ResultsTopActivity;
 import com.edge.starringharsh.EDGE.utils.ButtonUtils;
 
 public class MainMenu extends BaseActivity {
@@ -249,9 +248,9 @@ public class MainMenu extends BaseActivity {
                 intent.putExtra("actLink", master.upcominglink);
                 return intent;
             case "Results":
-                intent = new Intent(MainMenu.this, Results.class);
-                intent.putExtra(Results.RESULTS_URL,
-                        "https://firebasestorage.googleapis.com/v0/b/edge-8fc5e.appspot.com/o/results%2Fresults_all_types.txt?alt=media");
+                intent = new Intent(MainMenu.this, ResultsTopActivity.class);
+                intent.putExtra(ResultsTopActivity.RESULTS_URL,
+                        "https://firebasestorage.googleapis.com/v0/b/edge-8fc5e.appspot.com/o/results_test%2Fresults_all_types.txt?alt=media");
                 return intent;
             case "Edge Kube":
                 intent = new Intent(MainMenu.this, KukuKube.class);

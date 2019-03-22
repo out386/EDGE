@@ -90,8 +90,9 @@
 
         <activity android:name=".TeamTemporary" />
         <activity android:name=".SubmitScoreSnakes"/>
-        <activity android:name=".Results" />
-        <activity android:name=".ResultsDetails" />
+        <activity android:name=".results.ResultsTopActivity" />
+        <activity android:name=".results.ResultsJsonActivity" />
+        <activity android:name=".results.ResultsDetailsActivity" />
     </application>
 
 </manifest>
