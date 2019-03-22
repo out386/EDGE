@@ -1,9 +1,10 @@
 package com.edge.starringharsh.EDGE.results.models;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ResultsModel {
+public class ResultsModel implements Serializable {
 
     private Map<String, TopEvent> data;
 
@@ -15,5 +16,9 @@ public class ResultsModel {
         if (data == null)
             data = new HashMap<>();
         data.put(name, event);
+    }
+
+    public TopEvent getTopEvent(String name) {
+        return data.get(name);
     }
 }

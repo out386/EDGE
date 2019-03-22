@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.edge.starringharsh.EDGE.results.ResultsTop;
+import com.edge.starringharsh.EDGE.results.ResultsTopActivity;
 import com.edge.starringharsh.EDGE.utils.ButtonUtils;
 
 public class MainMenu extends BaseActivity {
@@ -248,9 +248,9 @@ public class MainMenu extends BaseActivity {
                 intent.putExtra("actLink", master.upcominglink);
                 return intent;
             case "Results":
-                intent = new Intent(MainMenu.this, ResultsTop.class);
-                intent.putExtra(ResultsTop.RESULTS_URL,
-                        "https://firebasestorage.googleapis.com/v0/b/edge-8fc5e.appspot.com/o/results%2Fresults_all_types.txt?alt=media");
+                intent = new Intent(MainMenu.this, ResultsTopActivity.class);
+                intent.putExtra(ResultsTopActivity.RESULTS_URL,
+                        "https://firebasestorage.googleapis.com/v0/b/edge-8fc5e.appspot.com/o/results_test%2Fresults_all_types.txt?alt=media");
                 return intent;
             case "Edge Kube":
                 intent = new Intent(MainMenu.this, KukuKube.class);

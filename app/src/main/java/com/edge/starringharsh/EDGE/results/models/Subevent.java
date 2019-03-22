@@ -1,9 +1,10 @@
 package com.edge.starringharsh.EDGE.results.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Subevent {
+public class Subevent implements Serializable {
     private List<Team> winners;
 
     public List<Team> getWinners() {

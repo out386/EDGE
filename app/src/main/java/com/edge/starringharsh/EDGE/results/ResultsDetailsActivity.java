@@ -20,7 +20,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ResultsDetails extends BaseActivity {
+public class ResultsDetailsActivity extends BaseActivity {
 
     static final String RESULT_NAME = "resultName";
     static final String RESULT_URL = "resultUrl";

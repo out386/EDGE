@@ -1,9 +1,10 @@
 package com.edge.starringharsh.EDGE.results.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Team {
+public class Team implements Serializable {
     private String name;
     private List<String> members;
 
