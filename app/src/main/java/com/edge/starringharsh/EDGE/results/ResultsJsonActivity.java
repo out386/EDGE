@@ -12,6 +12,7 @@ import com.edge.starringharsh.EDGE.results.models.ResultsModel;
 import com.edge.starringharsh.EDGE.results.models.TopEvent;
 import com.edge.starringharsh.EDGE.utils.ButtonUtils;
 
+import java.util.Map;
 import java.util.Set;
 
 public class ResultsJsonActivity extends BaseActivity {
@@ -44,19 +45,24 @@ public class ResultsJsonActivity extends BaseActivity {
 
     private void showResults(int resultsType) {
         if (resultsType == RESULTS_TYPE_EVENTS) {
-            Set<String> events = resultsModel.getData().keySet();
-            setData(events, RESULTS_TYPE_SUBEVENTS);
+            Map<String, TopEvent> eventsMap = resultsModel.getData();
+            if (eventsMap == null || eventsMap.size() == 0) {
+                onFailed(R.string.results_unavailable);
+            } else {
+                Set<String> events = eventsMap.keySet();
+                setData(events, RESULTS_TYPE_SUBEVENTS);
+            }
         } else if (resultsType == RESULTS_TYPE_SUBEVENTS) {
             TopEvent topEvent = resultsModel.getTopEvent(eventName);
             if (topEvent == null) {
-                onFailed();
+                onFailed(R.string.results_failed);
                 return;
             }
 
             Set<String> subevents = topEvent.getSubevents().keySet();
             setData(subevents, RESULTS_TYPE_SINGLE_EVENT);
         } else {
-            onFailed();
+            onFailed(R.string.results_failed);
         }
 
     }
@@ -73,8 +79,8 @@ public class ResultsJsonActivity extends BaseActivity {
         return ButtonUtils.getResultsTv(getApplicationContext(), text, false);
     }
 
-    private void onFailed() {
-        TextView view = getTv(getString(R.string.results_failed));
+    private void onFailed(int res) {
+        TextView view = getTv(getString(res));
         topLayout.removeAllViews();
         topLayout.addView(view);
     }
