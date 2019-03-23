@@ -26,7 +26,7 @@ public class Accomodation extends BaseActivity {
             public void onClick(View view) {
                 
                 Intent intent = new Intent(Accomodation.this, CampusAmbassadors.class);
-                intent.putExtra("weblink", "https://docs.google.com/forms/d/e/1FAIpQLSdWeIXHyfydLeDCh6sDSKZZNNPlLMTFpopVz5GupL8OQuDSKw/viewform");
+                intent.putExtra("weblink", "https://goo.gl/forms/PD1RDRL1VZIkAghr2");
                 startActivity(intent);
             }
         });
