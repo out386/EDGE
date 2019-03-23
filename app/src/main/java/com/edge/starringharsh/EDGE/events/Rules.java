@@ -55,7 +55,7 @@ class Rules {
         rules.put("BUG HUNT", R.string.rules_bug_hunt);
         rules.put("CRYPTO QUEST", R.string.rules_crypto_quest);
         rules.put("CODE OUT", R.string.rules_code_out);
-        rules.put("CODE RELAY", R.string.rules_placeholder);
+        rules.put("CODE RELAY", R.string.rules_code_relay);
         rules.put("WEB DEV", R.string.rules_placeholder);
         rules.put("TROLL MARKETTING", R.string.rules_placeholder);
         rules.put("CROWD PITCH", R.string.rules_placeholder);

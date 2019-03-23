@@ -118,7 +118,8 @@ public class Master {
                 "9\n" +
                 "00\n");
 
-        eventDetails.put("CODE RELAY", "Description unavailable\n" +
+        eventDetails.put("CODE RELAY",
+                "A fun event where both team members take turns to solve different questions without changing each others code\n" +
                 "Raja Sachin,Suyash Mittal\n" +
                 "9062647976,7044793121\n" +
                 "n\n" +
