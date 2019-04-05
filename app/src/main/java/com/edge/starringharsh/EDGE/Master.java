@@ -13,7 +13,7 @@ public class Master {
     public static final String EVENT_LINK_FORMAT = "https://firebasestorage.googleapis.com/v0/b/edge-8fc5e.appspot.com/o/event_details%%2F%s?alt=media";
     public String categories[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron",
             "Elevation", "Food For Fun", "Create It", "Just Like That", "Innovati", "Fun Events"};
-    String mainMenu[] = {"Events", "Intra", "Mega Events", "Upcoming Events", "Results", "Edge Kube", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
+    String mainMenu[] = {"Events", "Intra", "Mega Events", "Registrations", "Upcoming Events", "Results", "Edge Kube", "Team EDGE", "Our Sponsors", "Accomodation", "About Us"};
     String intraCat[] = {"Robotics", "Cyber Crusade", "Compute Aid", "Infocus", "CIIC", "Newron", "Elevation", "Food For Fun", "Create It"};
 
     public String events0[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
@@ -642,6 +642,7 @@ public class Master {
         mainMenuImg.put("Our Sponsors", R.drawable.sponsers);
         mainMenuImg.put("Accomodation", R.drawable.accomodation);
         mainMenuImg.put("About Us", R.drawable.aboutus);
+        mainMenuImg.put("Registrations", R.drawable.upcomingevents);
 
         teamImg = new HashMap<String, Integer>();
         teamImg.put("Chandrasekhar Upadhyay", R.drawable.chandrasekhar);

@@ -271,6 +271,11 @@ public class MainMenu extends BaseActivity {
             case "About Us":
                 intent = new Intent(MainMenu.this, AboutUs.class);
                 return intent;
+            case "Registrations":
+                String url = "https://docs.google.com/forms/d/e/1FAIpQLSfNHSFNkfrTOkwELAc00sM4hidsBovG_1S3mPbdgmjPR19JCw/viewform";
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                return intent;
             default:
                 return null;
         }
