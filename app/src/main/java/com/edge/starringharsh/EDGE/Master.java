@@ -18,7 +18,7 @@ public class Master {
 
     public String events0[] = {"LIFT'N'LAY", "STALKER", "JIGSAW", "WALLSTREET", "MARINODRIFT", "DOUBLE-UP", "ROBO SOCCER", "BLITZKRIEG", "ROBO RACE"};
     public String events1[] = {"CS GO COLLEGE LEAGUE", "CS GO PRO LEAGUE", "DOTA 2", "FIFA COLLEGE LEAGUE", "FIFA PRO LEAGUE", "PUBG MOBILE"};
-    public String events2[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "CODE RELAY"};
+    public String events2[] = {"FLAWLESS", "BUG HUNT", "CRYPTO QUEST", "CODE OUT", "CODE RELAY", "WEB DEV"};
     public String events3[] = {"CRUMBS", "ODYSSEY", "SHOOT M UP", "INSTA CLICK", "INSTA EDIT"};
     public String events4[] = {"TROLL MARKETTING", "CROWD PITCH", "PITCH RIGHT", "B-PLAN", "B-QUIZ","ADDOMEDIA", "STOCK IT"};
     public String events5[] = {"ELECTRONICALLY YOURS", "THE QUIZ", "YOUTH PARLIAMENT"};
@@ -73,7 +73,9 @@ public class Master {
                 "9\n" +
                 "00\n");
 
-        eventDetails.put("FLAWLESS", "Just like the name suggests, as flawless as ones codes become the better chance they have of winning.\n" +
+        eventDetails.put("FLAWLESS", "Just like the name suggests, as flawless as ones codes become the better chance they have of winning."
+                +"<br><br><b>05/04/2019</b><br><i>Prelims 1st day</i> - 01:30pm - 04:30pm<br><b>06/04/2019</b><br><i>Prelims 2nd day</i> - 01:30pm - 04:30pm"
+                +"<br><b>07/04/2019</b><br><i>Finals</i> - 01:30pm - 04:30pm\n" +
                 "Raja Sachin,Avnish Kumar\n" +
                 "9062647976,9162023260\n" +
                 "n\n" +
@@ -82,7 +84,9 @@ public class Master {
                 "9\n" +
                 "00\n");
 
-        eventDetails.put("BUG HUNT", "A coder is all about perfection and identifying the cracks and holes to make a flawed algorithm picture perfect.\n" +
+        eventDetails.put("BUG HUNT", "A coder is all about perfection and identifying the cracks and holes to make a flawed algorithm picture perfect."
+                +"<br><br><b>05/04/2019</b><br><i>Prelims 1st day</i> - 11:00am - 11:45pm<br><b>06/04/2019</b><br><i>Prelims 2nd day</i> - 12:30pm - 01:15pm"
+                +"<br><b>07/04/2019</b><br><i>Finals</i> - 12:15am - 1:15pm\n" +
                 "Shreya Agarwal,Abhishek Das\n" +
                 "9836566212,7033534472\n" +
                 "n\n" +
@@ -91,7 +95,8 @@ public class Master {
                 "9\n" +
                 "00\n");
 
-        eventDetails.put("CRYPTO QUEST", "Put your cryptography and deciphering skills to test by proving yourself while solving the clues.\n" +
+        eventDetails.put("CRYPTO QUEST", "Put your cryptography and deciphering skills to test by proving yourself while solving the clues."
+                +"<br><br><b>06/04/2019</b><br>09:30am - 12:30pm\n" +
                 "Radhika Mohta,Suyash Mittal\n" +
                 "9163981049,7044793121\n" +
                 "n\n" +
@@ -109,7 +114,8 @@ public class Master {
                 "13\n" +
                 "00\n");
 
-        eventDetails.put("CODE OUT", "A call out to all you hidden gem coders to prove your abilities in this online event.\n" +
+        eventDetails.put("CODE OUT", "A call out to all you hidden gem coders to prove your abilities in this online event."
+                +"<br><br><b>06/04/2019</b><br>09:00pm - 11:59pm\n" +
                 "Raja Sachin,Indranil Chowdhury\n" +
                 "9062647976,9635874015\n" +
                 "n\n" +
@@ -119,7 +125,9 @@ public class Master {
                 "00\n");
 
         eventDetails.put("CODE RELAY",
-                "A fun event where both team members take turns to solve different questions without changing each others code\n" +
+                "A fun event where both team members take turns to solve different questions without changing each others code."
+                        +"<br><br><b>05/04/2019</b><br>10:00am - 05:00pm<br><b>06/04/2019</b><br>09:00am - 05:00pm"
+                        +"<br><b>07/04/2019</b><br>9:00am - 05:00pm\n" +
                 "Raja Sachin,Suyash Mittal\n" +
                 "9062647976,7044793121\n" +
                 "n\n" +
@@ -137,7 +145,8 @@ public class Master {
                 "9\n" +
                 "00\n");
 
-        eventDetails.put("WEB DEV", "There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.\n" +
+        eventDetails.put("WEB DEV", "There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for."
+                +"<br><br><b>05/04/2019</b><br><i>Prelims 1st day</i> - 10:00am - 10:45am<br><b>07/04/2019</b><br><i>Finals</i> - 9:30am - 12:00pm\n" +
                 "Raja Sachin,Suyash Mittal\n" +
                 "9062647976,7044793121\n" +
                 "n\n" +

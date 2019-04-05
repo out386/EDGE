@@ -225,7 +225,7 @@ public class EventDetails extends BaseActivity {
         if (shortDesc == null || "".equals(shortDesc))
             tvDet.setVisibility(View.GONE);
         else
-            tvDet.setText(shortDesc);
+            tvDet.setText(Html.fromHtml(shortDesc));
 
         llcontacts.removeAllViews();
         if (contacts == null || contacts.size() == 0) {
